@@ -1,4 +1,4 @@
 module.exports={
-    nodeAddName:' → openitsub.com',
-    dnsServers:['223.5.5.5','114.114.114.114']
+    nodeAddName:'|TG@BPXD666',
+    dnsServers:['119.29.29.29','8.8.8.8']
 }
