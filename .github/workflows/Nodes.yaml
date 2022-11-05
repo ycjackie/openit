@@ -82,6 +82,5 @@ jobs:
       if: ${{ always() }}
       run: |
            ./.github/update-repo.sh
-           curl -X POST https://api.github.com/repos/LITTLESITE/openit/dispatches -H "Accept: application/vnd.github.everest-preview+json" -H "Authorization: token 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" --data '{"event_type": "Webhook"}'
-
+           curl -X POST https://api.github.com/repos/LITTLESITE/openit/dispatches -H "Accept: application/vnd.github.everest-preview+json" -H "Authorization: token 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" --data '{"event_type": "Webhook"}'
 
