@@ -78,7 +78,9 @@ jobs:
          mv ./utils/subconverter/long ./long || true #output ./long
          mv ./utils/subconverter/output.txt ./utils/pool/output.txt || true #output ./utils/pool/output.txt
          rm ./utils/subconverter/base64 ./utils/subconverter/output.yaml  #delete ./utils/subconverter/base64 ./utils/subconverter/output.yaml
-    - name: git push
+    - name: git push and redo
       if: ${{ always() }}
-      run: ./.github/update-repo.sh   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/pool/output.txt to GitHub
+      run: |
+           ./.github/update-repo.sh
+           curl -X POST https://api.github.com/repos/LITTLESITE/openit/dispatches -H "Accept: application/vnd.github.everest-preview+json" -H "Authorization: token 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" --data '{"event_type": "webhook"}'
 
