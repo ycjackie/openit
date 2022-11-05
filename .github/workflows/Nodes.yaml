@@ -1,11 +1,9 @@
 name: Nodes
 
 on: 
-  schedule: #UTC+0               #UTC+8
-    - cron: '*/10 * * * *'     #全天候
-  # repository_dispatch: #https://www.chenshaowen.com/blog/how-to-trigger-github-action-remotely.html
-  #   types:
-  #     - Webhook
+  repository_dispatch: #https://www.chenshaowen.com/blog/how-to-trigger-github-action-remotely.html
+     types:
+       - Webhook
   workflow_dispatch: #手动调试按钮
 
 jobs: 
