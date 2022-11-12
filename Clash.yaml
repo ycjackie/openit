@@ -198,13 +198,11 @@ dns:
 proxies:
   - {name: 🇭🇰 HK 1|TG@BPXD666, server: hk-02.proxyvip.top, port: 23002, type: trojan, password: 66ab1fb2-48c4-4587-978f-a44d1cfd68de, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 JP 1|TG@BPXD666, server: trs07.bolab.net, port: 443, type: trojan, password: 14bdba6dede262387ebdebaa706e1c90, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 2|TG@BPXD666, server: 43.200.181.74, port: 42517, type: vmess, uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇸🇬 SG 1|TG@BPXD666, server: 00000000000000000000000000000000000000000000000000000000000026a.rui77.com, port: 52356, type: vmess, uuid: c5c32a05-8dac-47f3-b8f3-c927f03ccd05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 2|TG@BPXD666, server: 8.218.63.184, port: 20113, type: vmess, uuid: cdc72c7d-6ab8-4cb4-a0f7-18b0ec7bfbfa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 🇸🇬 SG 3|TG@BPXD666, server: 00000000000000000000000000000000000000000000000000000000000005a.rui77.com, port: 80, type: vmess, uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 4|TG@BPXD666, server: 8.218.83.148, port: 63239, type: vmess, uuid: bc035c93-4a47-4f06-8833-fadc03527539, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: 00000000000000000000000000000000000000000000000000000000000039a.rui77.com, port: 12356, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: 138.2.115.240, port: 443, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 1|TG@BPXD666, server: 8.218.83.148, port: 63239, type: vmess, uuid: bc035c93-4a47-4f06-8833-fadc03527539, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇸🇬 SG 2|TG@BPXD666, server: 8.218.80.207, port: 58793, type: vmess, uuid: 652919af-4b0f-4211-8f06-952958d05038, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 00000000000000000000000000000000000000000000000000000000000009a.rui77.com, port: 80, type: vmess, uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 00000000000000000000000000000000000000000000000000000000000029a.rui77.com, port: 52356, type: vmess, uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 00000000000000000000000000000000000000000000000000000000000040a.rui77.com, port: 12356, type: vmess, uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -224,13 +222,11 @@ proxy-groups:
     proxies:
       - 🇭🇰 HK 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
       - 🇸🇬 SG 2|TG@BPXD666
-      - 🇸🇬 SG 3|TG@BPXD666
-      - 🇸🇬 SG 4|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -239,13 +235,11 @@ proxy-groups:
     proxies:
       - 🇭🇰 HK 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
       - 🇸🇬 SG 2|TG@BPXD666
-      - 🇸🇬 SG 3|TG@BPXD666
-      - 🇸🇬 SG 4|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -260,7 +254,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -269,6 +262,7 @@ proxy-groups:
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -284,8 +278,6 @@ proxy-groups:
     proxies:
       - 🇸🇬 SG 1|TG@BPXD666
       - 🇸🇬 SG 2|TG@BPXD666
-      - 🇸🇬 SG 3|TG@BPXD666
-      - 🇸🇬 SG 4|TG@BPXD666
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -298,13 +290,11 @@ proxy-groups:
     proxies:
       - 🇭🇰 HK 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
       - 🇸🇬 SG 2|TG@BPXD666
-      - 🇸🇬 SG 3|TG@BPXD666
-      - 🇸🇬 SG 4|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -313,13 +303,11 @@ proxy-groups:
     proxies:
       - 🇭🇰 HK 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
       - 🇸🇬 SG 2|TG@BPXD666
-      - 🇸🇬 SG 3|TG@BPXD666
-      - 🇸🇬 SG 4|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
