@@ -196,10 +196,10 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇫🇷 FR 1|TG@BPXD666, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL 1|TG@BPXD666, server: content-provider24.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: powerservice.com, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: powerservice.com}}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: 104.26.9.74, port: 443, type: vmess, uuid: f6c1babe-416e-47d1-8726-049678e25c7a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshocean}, udp: true}
+  - {name: 🇫🇷 FR 1|TG@BPXD666, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 2|TG@BPXD666, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 104.26.9.74, port: 443, type: vmess, uuid: f6c1babe-416e-47d1-8726-049678e25c7a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshocean}, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: powerservice.com, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: powerservice.com}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -218,7 +218,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇫🇷 FR 1|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
+      - 🇫🇷 FR 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
@@ -228,7 +228,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇫🇷 FR 1|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
+      - 🇫🇷 FR 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
@@ -278,7 +278,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇫🇷 FR 1|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
+      - 🇫🇷 FR 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
@@ -288,7 +288,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇫🇷 FR 1|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
+      - 🇫🇷 FR 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
