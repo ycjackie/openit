@@ -196,14 +196,18 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
+  - {name: 🇩🇪 DE 1|TG@BPXD666, server: 188.34.159.186, port: 35855, type: vmess, uuid: 97e8fba7-327a-4752-8aca-043858a7e518, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇫🇷 FR 1|TG@BPXD666, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 2|TG@BPXD666, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 3|TG@BPXD666, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
   - {name: 🇬🇧 GB 1|TG@BPXD666, server: ocrb2.happyfree.top, port: 443, type: trojan, password: 6578df36-8b6f-4411-b42a-521877145573, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 1|TG@BPXD666, server: kr1.api-aws.com, port: 443, type: trojan, password: aa7d24e0-b60c-44bb-bcd1-8b74a297cdbc, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 1|TG@BPXD666, server: jp1.happyfree.top, port: 443, type: trojan, password: 6578df36-8b6f-4411-b42a-521877145573, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL 1|TG@BPXD666, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: taobao.babazhuji.com, port: 443, type: vmess, uuid: 2a4918de-adce-4c4e-aa00-88a4227cf6ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /didi, headers: {Host: taobao.babazhuji.com}}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: ocrb1.happyfree.top, port: 443, type: trojan, password: 6578df36-8b6f-4411-b42a-521877145573, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: 172.64.154.222, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray}, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: techplanet.today, port: 2083, type: vmess, uuid: 8a21b84d-183e-450d-ec82-8d45855d8180, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: techplanet.today}}, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: ocrb1.happyfree.top, port: 443, type: trojan, password: 6578df36-8b6f-4411-b42a-521877145573, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: 172.64.154.222, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray}, udp: true}
+  - {name: 🇺🇸 US 5|TG@BPXD666, server: jp1.mayaa.cf, port: 443, type: vmess, uuid: 595b4629-116d-4fe1-dcab-d2a6b112b81a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hfhqqweqwxxx, headers: {Host: jp1.mayaa.cf}}, udp: true}
+  - {name: 🇺🇸 US 6|TG@BPXD666, server: 129.146.190.42, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 7|TG@BPXD666, server: 172.67.225.31, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -221,28 +225,36 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - 🇩🇪 DE 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
-      - 🇫🇷 FR 2|TG@BPXD666
-      - 🇫🇷 FR 3|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇩🇪 DE 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
-      - 🇫🇷 FR 2|TG@BPXD666
-      - 🇫🇷 FR 3|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -266,6 +278,10 @@ proxy-groups:
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -290,28 +306,36 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - 🇩🇪 DE 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
-      - 🇫🇷 FR 2|TG@BPXD666
-      - 🇫🇷 FR 3|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇩🇪 DE 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
-      - 🇫🇷 FR 2|TG@BPXD666
-      - 🇫🇷 FR 3|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
