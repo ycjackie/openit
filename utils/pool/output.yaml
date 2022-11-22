@@ -1,6 +1,34 @@
 proxies:
+- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  server: '14.101.105.110 '
+  port: 32898
+  type: vmess
+  uuid: 7204d6b8-ddaf-417b-c8d8-5f983dc9f6cb
+  alterId: 0
+  cipher: auto
+  country: "\U0001F1FF\U0001F1E6_ZA_\u5357\u975E_1"
+  skip-cert-verify: true
+  tls: false
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  server: 120.233.10.71
+  port: 38007
+  type: ss
+  country: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1ED\U0001F1F0_HK_\u9999\u6E2F\
+    _2"
+  cipher: chacha20-ietf-poly1305
+  password: 66aa4ba9-8df9-4d58-ad8e-1026a2b0219b
+- name: "\U0001F1FA\U0001F1F3 UN 3 TJN"
+  server: hncu.relay.qchwnd.moe
+  port: 10201
+  type: trojan
+  country: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1EF\U0001F1F5_JP_\u65E5\u672C\
+    _3"
+  skip-cert-verify: true
+  udp: true
+  password: 5b059403-c05c-4609-ab01-a9352041d2e4
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 1 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 4 VMS"
   ws-opts:
     path: /
   server: 154.23.190.162
@@ -10,26 +38,26 @@ proxies:
   cipher: auto
   network: ws
 - type: trojan
-  name: "\U0001F1E8\U0001F1E6 CA 2 TJN"
+  name: "\U0001F1E8\U0001F1E6 CA 5 TJN"
   server: ca-trojan.bonds.id
   port: 443
   password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
   udp: true
   skip-cert-verify: true
 - type: http
-  name: "\U0001F1E8\U0001F1F3 CN 3 HTT"
+  name: "\U0001F1E8\U0001F1F3 CN 6 HTT"
   server: 124.15.12.24
   port: 251
   username: username
   password: password
   udp: true
 - type: socks5
-  name: "\U0001F1E8\U0001F1F3 CN 4 SK5"
+  name: "\U0001F1E8\U0001F1F3 CN 7 SK5"
   server: 124.15.12.24
   port: 2312
   udp: true
 - type: socks5
-  name: "\U0001F1E6\U0001F1FA AU 5 SK5"
+  name: "\U0001F1E6\U0001F1FA AU 8 SK5"
   server: 1.2.3.4
   port: 123
   username: username
@@ -39,21 +67,27 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 2 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 3 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 4 SK5"
-  - "\U0001F1E6\U0001F1FA AU 5 SK5"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 3 TJN"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 5 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 6 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 7 SK5"
+  - "\U0001F1E6\U0001F1FA AU 8 SK5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 2 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 3 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 4 SK5"
-  - "\U0001F1E6\U0001F1FA AU 5 SK5"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 3 TJN"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 5 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 6 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 7 SK5"
+  - "\U0001F1E6\U0001F1FA AU 8 SK5"
 rules:
 - "MATCH,\U0001F310 Proxy"
