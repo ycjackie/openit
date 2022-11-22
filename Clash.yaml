@@ -196,14 +196,16 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
+  - {name: CH 1|TG@BPXD666, server: www.liuyiyang19891222.tk, port: 443, type: vmess, uuid: ad48ebeb-f949-472b-9717-e8c8f0f7984d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.liuyiyang19891222.tk}}, udp: true}
+  - {name: IT 1|TG@BPXD666, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, skip-cert-verify: true, udp: true}
   - {name: 🇫🇷 FR 1|TG@BPXD666, server: 51.77.71.134, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 2|TG@BPXD666, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 3|TG@BPXD666, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 1|TG@BPXD666, server: trs12.bolab.net, port: 443, type: trojan, password: 14bdba6dede262387ebdebaa706e1c90, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: 138.2.113.248, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: 168.138.43.89, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: 23.237.33.106, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com}, udp: true}
-  - {name: 🇺🇸 US 4|TG@BPXD666, server: 129.146.255.158, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 2|TG@BPXD666, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 1|TG@BPXD666, server: 132.145.51.172, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL 1|TG@BPXD666, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 148.113.141.99, port: 443, type: trojan, password: HdsUZmsHQW, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 152.67.160.174, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 129.146.255.158, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: 138.2.114.255, port: 443, type: trojan, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -221,10 +223,12 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - CH 1|TG@BPXD666
+      - IT 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇫🇷 FR 2|TG@BPXD666
-      - 🇫🇷 FR 3|TG@BPXD666
-      - 🇯🇵 JP 1|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -235,10 +239,12 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - CH 1|TG@BPXD666
+      - IT 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇫🇷 FR 2|TG@BPXD666
-      - 🇫🇷 FR 3|TG@BPXD666
-      - 🇯🇵 JP 1|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -256,7 +262,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 JP 1|TG@BPXD666
+      - DIRECT
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -291,10 +297,12 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - CH 1|TG@BPXD666
+      - IT 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇫🇷 FR 2|TG@BPXD666
-      - 🇫🇷 FR 3|TG@BPXD666
-      - 🇯🇵 JP 1|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -305,10 +313,12 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - CH 1|TG@BPXD666
+      - IT 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇫🇷 FR 2|TG@BPXD666
-      - 🇫🇷 FR 3|TG@BPXD666
-      - 🇯🇵 JP 1|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
