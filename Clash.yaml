@@ -196,13 +196,14 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇫🇷 FR 1|TG@BPXD666, server: 176.31.83.90, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 2|TG@BPXD666, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 3|TG@BPXD666, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
+  - {name: IT 1|TG@BPXD666, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 1|TG@BPXD666, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 2|TG@BPXD666, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 1|TG@BPXD666, server: 132.145.51.172, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 JP 1|TG@BPXD666, server: trs12.bolab.net, port: 443, type: trojan, password: 14bdba6dede262387ebdebaa706e1c90, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL 1|TG@BPXD666, server: content-provider24.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 1|TG@BPXD666, server: jp.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: 148.113.141.99, port: 443, type: trojan, password: HdsUZmsHQW, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: jp.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 138.2.113.248, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 168.138.43.89, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -220,26 +221,28 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - IT 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇫🇷 FR 2|TG@BPXD666
-      - 🇫🇷 FR 3|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
-      - 🇸🇬 SG 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - IT 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇫🇷 FR 2|TG@BPXD666
-      - 🇫🇷 FR 3|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
-      - 🇸🇬 SG 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -261,6 +264,8 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -274,7 +279,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇸🇬 SG 1|TG@BPXD666
+      - DIRECT
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -285,26 +290,28 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - IT 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇫🇷 FR 2|TG@BPXD666
-      - 🇫🇷 FR 3|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
-      - 🇸🇬 SG 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - IT 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇫🇷 FR 2|TG@BPXD666
-      - 🇫🇷 FR 3|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
-      - 🇸🇬 SG 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
