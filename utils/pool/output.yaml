@@ -63,6 +63,69 @@ proxies:
   username: username
   password: password
   udp: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 9 VMS"
+  ws-opts:
+    path: /dongtaiwang.com
+    headers:
+      host: v2ray2.ssr-free2.xyz
+  server: 128.14.140.254
+  port: 443
+  uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+- type: vmess
+  name: "\U0001F1F7\U0001F1FA RU 10 VMS"
+  http-opts:
+    path:
+    - /
+    headers:
+      Host:
+      - apple.com
+  server: 176.119.159.245
+  port: 37672
+  uuid: 86b4e35c-1061-47b3-8c6c-811d1853a477
+  alterId: 64
+  cipher: auto
+  network: http
+- type: trojan
+  name: "\U0001F1F0\U0001F1F7 KR 11 TJN"
+  server: 146.56.189.146
+  port: 443
+  password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 12 TJN"
+  server: trs12.bolab.net
+  port: 443
+  password: 14bdba6dede262387ebdebaa706e1c90
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EB\U0001F1F7 FR 13 TJN"
+  server: 51.77.71.134
+  port: 443
+  password: origin
+  udp: true
+  skip-cert-verify: true
+- type: vmess
+  name: "\U0001F1E8\U0001F1F3 CN 14 VMS"
+  server: zfd-moble.gatknqh.cn
+  port: 16129
+  uuid: ee867204-3f52-3faf-8de4-6f4180939d7c
+  alterId: 0
+  cipher: auto
+  network: tcp
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 15 TJN"
+  server: 51.81.211.171
+  port: 443
+  password: 2dab5d78-5c56-4252-850d-c037753a40db
+  udp: true
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -75,6 +138,13 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 6 HTT"
   - "\U0001F1E8\U0001F1F3 CN 7 SK5"
   - "\U0001F1E6\U0001F1FA AU 8 SK5"
+  - "\U0001F1FA\U0001F1F8 US 9 VMS"
+  - "\U0001F1F7\U0001F1FA RU 10 VMS"
+  - "\U0001F1F0\U0001F1F7 KR 11 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 12 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 13 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 14 VMS"
+  - "\U0001F1FA\U0001F1F8 US 15 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -89,5 +159,12 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 6 HTT"
   - "\U0001F1E8\U0001F1F3 CN 7 SK5"
   - "\U0001F1E6\U0001F1FA AU 8 SK5"
+  - "\U0001F1FA\U0001F1F8 US 9 VMS"
+  - "\U0001F1F7\U0001F1FA RU 10 VMS"
+  - "\U0001F1F0\U0001F1F7 KR 11 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 12 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 13 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 14 VMS"
+  - "\U0001F1FA\U0001F1F8 US 15 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
