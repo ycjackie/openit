@@ -1,13 +1,251 @@
-proxies: []
+proxies:
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 1 TJN"
+  server: 51.81.211.171
+  port: 443
+  password: 2dab5d78-5c56-4252-850d-c037753a40db
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 2 TJN"
+  server: 129.146.242.130
+  port: 443
+  password: 05742120-ce23-4cc8-88f5-6d221ce45bf4
+  udp: true
+  skip-cert-verify: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 3 VMS"
+  ws-opts:
+    path: /sshkit/401452697/635b464921141/
+    headers:
+      host: sg1-v2ray.sshkit.org
+  server: hynesconstruction.com
+  port: 443
+  uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 4 VMS"
+  server: c87s3.jamjams3.net
+  port: 17102
+  uuid: 024e6fd6-cee4-4f2a-8f47-00dff8c146bd
+  alterId: 0
+  cipher: auto
+  network: tcp
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 5 VMS"
+  server: c87s801.jamjams3.net
+  port: 17102
+  uuid: 024e6fd6-cee4-4f2a-8f47-00dff8c146bd
+  alterId: 0
+  cipher: auto
+  network: tcp
+- type: trojan
+  name: "\U0001F1EB\U0001F1F7 FR 6 TJN"
+  server: content-provider12.cdn-delivery.akamaicd.com
+  port: 443
+  password: origin
+  udp: true
+  skip-cert-verify: true
+- type: vmess
+  name: "\U0001F1EF\U0001F1F5 JP 7 VMS"
+  server: c87s4.jamjams3.net
+  port: 17102
+  uuid: 024e6fd6-cee4-4f2a-8f47-00dff8c146bd
+  alterId: 0
+  cipher: auto
+  network: tcp
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 8 SSR"
+  server: 42.157.195.236
+  port: 12127
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: 68xdgu9eyif
+  obfs-param: MGYwOTk2MDA3NzcudjIzZjduTTA=
+  protocol-param: 600777:154T8b
+- type: vmess
+  name: "\U0001F1E9\U0001F1EA DE 9 VMS"
+  ws-opts:
+    path: /
+  server: 150.230.149.55
+  port: 6374
+  uuid: 80f25361-877d-46d4-8404-f0dce1faf84f
+  alterId: 0
+  cipher: auto
+  network: ws
+- type: trojan
+  name: "\U0001F1E8\U0001F1E6 CA 10 TJN"
+  server: 148.113.141.99
+  port: 443
+  password: HdsUZmsHQW
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 11 SSR"
+  server: 42.157.195.232
+  port: 12127
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: 68xdgu9eyif
+  obfs-param: MGYwOTk2MDA3NzcudjIzZjduTTA=
+  protocol-param: 600777:154T8b
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 12 SSR"
+  server: 42.157.195.239
+  port: 12127
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: 68xdgu9eyif
+  obfs-param: MGYwOTk2MDA3NzcudjIzZjduTTA=
+  protocol-param: 600777:154T8b
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 13 SSR"
+  server: 42.157.195.233
+  port: 12127
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: 68xdgu9eyif
+  obfs-param: MGYwOTk2MDA3NzcudjIzZjduTTA=
+  protocol-param: 600777:154T8b
+- type: trojan
+  name: "\U0001F1EB\U0001F1F7 FR 14 TJN"
+  server: 51.77.71.131
+  port: 443
+  password: Sp3eDVp
+  udp: true
+  skip-cert-verify: true
+- type: vmess
+  name: "\U0001F1F3\U0001F1F1 NL 15 VMS"
+  server: c87s5.jamjams3.net
+  port: 17102
+  uuid: 024e6fd6-cee4-4f2a-8f47-00dff8c146bd
+  alterId: 0
+  cipher: auto
+  network: tcp
+- type: trojan
+  name: "\U0001F1EB\U0001F1F7 FR 16 TJN"
+  server: 176.31.83.90
+  port: 443
+  password: origin
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 17 SSR"
+  server: 14.152.92.73
+  port: 12127
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: 68xdgu9eyif
+  obfs-param: MGYwOTk2MDA3NzcudjIzZjduTTA=
+  protocol-param: 600777:154T8b
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 18 SSR"
+  server: 42.157.195.246
+  port: 12127
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: 68xdgu9eyif
+  obfs-param: MGYwOTk2MDA3NzcudjIzZjduTTA=
+  protocol-param: 600777:154T8b
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 19 SSR"
+  server: 14.152.92.71
+  port: 12127
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: 68xdgu9eyif
+  obfs-param: MGYwOTk2MDA3NzcudjIzZjduTTA=
+  protocol-param: 600777:154T8b
+- type: trojan
+  name: "\U0001F1ED\U0001F1F0 HK 20 TJN"
+  server: hk01.awcloud.top
+  port: 443
+  password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70
+  udp: true
+  skip-cert-verify: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 21 VMS"
+  ws-opts:
+    path: /dongtaiwang.com
+    headers:
+      host: v2ray1.zhujicn2.org
+  server: 141.101.114.100
+  port: 443
+  uuid: 4679f00e-90ce-430d-9714-6a19367ba112
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+- type: trojan
+  name: "\U0001F1EE\U0001F1F3 IN 22 TJN"
+  server: 152.67.160.174
+  port: 443
+  password: 54080134-2cba-4535-8599-95650bd9aa54
+  udp: true
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US 1 TJN"
+  - "\U0001F1FA\U0001F1F8 US 2 TJN"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1FA\U0001F1F8 US 5 VMS"
+  - "\U0001F1EB\U0001F1F7 FR 6 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 7 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 8 SSR"
+  - "\U0001F1E9\U0001F1EA DE 9 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 10 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 11 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 12 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 13 SSR"
+  - "\U0001F1EB\U0001F1F7 FR 14 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 15 VMS"
+  - "\U0001F1EB\U0001F1F7 FR 16 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 17 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 18 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 19 SSR"
+  - "\U0001F1ED\U0001F1F0 HK 20 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 21 VMS"
+  - "\U0001F1EE\U0001F1F3 IN 22 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1FA\U0001F1F8 US 1 TJN"
+  - "\U0001F1FA\U0001F1F8 US 2 TJN"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1FA\U0001F1F8 US 5 VMS"
+  - "\U0001F1EB\U0001F1F7 FR 6 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 7 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 8 SSR"
+  - "\U0001F1E9\U0001F1EA DE 9 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 10 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 11 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 12 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 13 SSR"
+  - "\U0001F1EB\U0001F1F7 FR 14 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 15 VMS"
+  - "\U0001F1EB\U0001F1F7 FR 16 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 17 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 18 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 19 SSR"
+  - "\U0001F1ED\U0001F1F0 HK 20 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 21 VMS"
+  - "\U0001F1EE\U0001F1F3 IN 22 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
