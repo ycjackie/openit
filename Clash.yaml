@@ -197,15 +197,14 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: 🇨🇦 CA 1|TG@BPXD666, server: c87s5.jamjams3.net, port: 17102, type: vmess, uuid: 024e6fd6-cee4-4f2a-8f47-00dff8c146bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 1|TG@BPXD666, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 2|TG@BPXD666, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: c87s3.jamjams3.net, port: 17102, type: vmess, uuid: 024e6fd6-cee4-4f2a-8f47-00dff8c146bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 2|TG@BPXD666, server: c87s801.jamjams3.net, port: 17102, type: vmess, uuid: 024e6fd6-cee4-4f2a-8f47-00dff8c146bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: c87s4.jamjams3.net, port: 17102, type: vmess, uuid: 024e6fd6-cee4-4f2a-8f47-00dff8c146bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 4|TG@BPXD666, server: 150.230.149.55, port: 6374, type: vmess, uuid: 80f25361-877d-46d4-8404-f0dce1faf84f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 5|TG@BPXD666, server: 51.81.211.171, port: 443, type: trojan, password: 2dab5d78-5c56-4252-850d-c037753a40db, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 6|TG@BPXD666, server: 148.113.141.99, port: 443, type: trojan, password: HdsUZmsHQW, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 7|TG@BPXD666, server: hynesconstruction.com, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/401452697/635b464921141/, headers: {Host: hynesconstruction.com}}, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 150.230.149.55, port: 6374, type: vmess, uuid: 80f25361-877d-46d4-8404-f0dce1faf84f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: 51.81.211.171, port: 443, type: trojan, password: 2dab5d78-5c56-4252-850d-c037753a40db, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 5|TG@BPXD666, server: 129.146.242.130, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 6|TG@BPXD666, server: c87s4.jamjams3.net, port: 17102, type: vmess, uuid: 024e6fd6-cee4-4f2a-8f47-00dff8c146bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 7|TG@BPXD666, server: 148.113.141.99, port: 443, type: trojan, password: HdsUZmsHQW, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 8|TG@BPXD666, server: hynesconstruction.com, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/401452697/635b464921141/, headers: {Host: hynesconstruction.com}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -224,8 +223,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
-      - 🇫🇷 FR 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -233,6 +230,7 @@ proxy-groups:
       - 🇺🇸 US 5|TG@BPXD666
       - 🇺🇸 US 6|TG@BPXD666
       - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -240,8 +238,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
-      - 🇫🇷 FR 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -249,6 +245,7 @@ proxy-groups:
       - 🇺🇸 US 5|TG@BPXD666
       - 🇺🇸 US 6|TG@BPXD666
       - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -276,6 +273,7 @@ proxy-groups:
       - 🇺🇸 US 5|TG@BPXD666
       - 🇺🇸 US 6|TG@BPXD666
       - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -301,8 +299,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
-      - 🇫🇷 FR 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -310,6 +306,7 @@ proxy-groups:
       - 🇺🇸 US 5|TG@BPXD666
       - 🇺🇸 US 6|TG@BPXD666
       - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -317,8 +314,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
-      - 🇫🇷 FR 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -326,6 +321,7 @@ proxy-groups:
       - 🇺🇸 US 5|TG@BPXD666
       - 🇺🇸 US 6|TG@BPXD666
       - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
