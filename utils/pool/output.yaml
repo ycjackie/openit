@@ -253,6 +253,73 @@ proxies:
   cipher: auto
   network: ws
   tls: true
+- type: trojan
+  name: "\U0001F1ED\U0001F1F0 HK 28 TJN"
+  server: azgy001.xibai6.top
+  port: 20790
+  password: ca2345ba-46e7-3991-b1b7-45d18954caf1
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 29 SSS"
+  server: kqs-moble.gatknqh.cn
+  port: 10781
+  cipher: aes-256-gcm
+  password: 717e4533-dc2f-4978-848b-cab323a4da86
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 30 SSS"
+  server: kqs-moble.gatknqh.cn
+  port: 45001
+  cipher: aes-256-gcm
+  password: 717e4533-dc2f-4978-848b-cab323a4da86
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 31 SSS"
+  server: kqs-moble.gatknqh.cn
+  port: 22284
+  cipher: aes-256-gcm
+  password: 717e4533-dc2f-4978-848b-cab323a4da86
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 32 SSS"
+  server: kqs-moble.gatknqh.cn
+  port: 23166
+  cipher: aes-256-gcm
+  password: 717e4533-dc2f-4978-848b-cab323a4da86
+- type: trojan
+  name: "\U0001F1EE\U0001F1F3 IN 33 TJN"
+  server: 152.67.160.174
+  port: 443
+  password: 54080134-2cba-4535-8599-95650bd9aa54
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 34 SSS"
+  server: kqs-moble.gatknqh.cn
+  port: 43035
+  cipher: aes-256-gcm
+  password: 717e4533-dc2f-4978-848b-cab323a4da86
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 35 SSS"
+  server: kqs-moble.gatknqh.cn
+  port: 49971
+  cipher: aes-256-gcm
+  password: 717e4533-dc2f-4978-848b-cab323a4da86
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 36 VMS"
+  ws-opts:
+    path: /
+  server: uk.xlkjjs.top
+  port: 443
+  uuid: 6ea22ab5-2923-3feb-827c-79e4b8cd3f38
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 37 SSS"
+  server: h745768.waihuizhibiaowang.com
+  port: 15443
+  cipher: chacha20-ietf-poly1305
+  password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2
 proxy-groups:
 - name: automatic
   type: url-test
@@ -284,6 +351,16 @@ proxy-groups:
   - "\U0001F1F3\U0001F1F1 NL 25 TJN"
   - "\U0001F1FA\U0001F1F3 UN 26 VMS"
   - "\U0001F1FA\U0001F1F3 UN 27 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 28 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 29 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 30 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 31 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 32 SSS"
+  - "\U0001F1EE\U0001F1F3 IN 33 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 34 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 35 SSS"
+  - "\U0001F1FA\U0001F1F8 US 36 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 37 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -317,5 +394,15 @@ proxy-groups:
   - "\U0001F1F3\U0001F1F1 NL 25 TJN"
   - "\U0001F1FA\U0001F1F3 UN 26 VMS"
   - "\U0001F1FA\U0001F1F3 UN 27 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 28 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 29 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 30 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 31 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 32 SSS"
+  - "\U0001F1EE\U0001F1F3 IN 33 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 34 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 35 SSS"
+  - "\U0001F1FA\U0001F1F8 US 36 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 37 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
