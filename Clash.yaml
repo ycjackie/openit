@@ -196,8 +196,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇫🇷 FR 1|TG@BPXD666, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 GB 1|TG@BPXD666, server: 132.145.51.172, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR, server: 176.31.83.90, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -215,16 +214,14 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - 🇫🇷 FR 1|TG@BPXD666
-      - 🇬🇧 GB 1|TG@BPXD666
+      - 🇫🇷 FR
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇫🇷 FR 1|TG@BPXD666
-      - 🇬🇧 GB 1|TG@BPXD666
+      - 🇫🇷 FR
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -270,16 +267,14 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 🇫🇷 FR 1|TG@BPXD666
-      - 🇬🇧 GB 1|TG@BPXD666
+      - 🇫🇷 FR
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇫🇷 FR 1|TG@BPXD666
-      - 🇬🇧 GB 1|TG@BPXD666
+      - 🇫🇷 FR
   - name: 👉 国内网站
     type: select
     proxies:
