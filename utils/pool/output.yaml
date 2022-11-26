@@ -1,13 +1,147 @@
-proxies: []
+proxies:
+- type: trojan
+  name: "\U0001F1F3\U0001F1F1 NL 1 TJN"
+  server: 5.255.103.209
+  port: 443
+  password: 3dacbaa8-784b-430c-9c1e-57d33648981d
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1F3\U0001F1F1 NL 2 TJN"
+  server: 185.212.200.75
+  port: 443
+  password: Sp3eDVp
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EB\U0001F1F7 FR 3 TJN"
+  server: content-provider12.cdn-delivery.akamaicd.com
+  port: 443
+  password: origin
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EB\U0001F1F7 FR 4 TJN"
+  server: 176.31.83.90
+  port: 443
+  password: origin
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1E6 CA 5 TJN"
+  server: 148.113.141.99
+  port: 443
+  password: HdsUZmsHQW
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 6 SSS"
+  server: h745768.waihuizhibiaowang.com
+  port: 15443
+  cipher: chacha20-ietf-poly1305
+  password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2
+- type: trojan
+  name: "\U0001F1EC\U0001F1E7 GB 7 TJN"
+  server: 132.145.51.172
+  port: 443
+  password: 02e653c9-7c93-46a9-999d-11834bd0c577
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EB\U0001F1F7 FR 8 TJN"
+  server: 51.77.71.131
+  port: 443
+  password: Sp3eDVp
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 9 TJN"
+  server: 168.138.44.176
+  port: 443
+  password: 8d2d5953-d649-4034-94f2-72f2df2623da
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 10 TJN"
+  server: 168.138.43.89
+  port: 443
+  password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1F3\U0001F1F1 NL 11 TJN"
+  server: content-provider23.cdn-delivery.akamaicd.com
+  port: 443
+  password: Sp3eDVp
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 12 TJN"
+  server: 129.146.242.130
+  port: 443
+  password: 05742120-ce23-4cc8-88f5-6d221ce45bf4
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 13 TJN"
+  server: trs17.bolab.net
+  port: 443
+  password: 40c89b10235c40321e7a3cef82b53a03
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1ED\U0001F1F0 HK 14 TJN"
+  server: azgy001.xibai6.top
+  port: 20790
+  password: ca2345ba-46e7-3991-b1b7-45d18954caf1
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1F0\U0001F1F7 KR 15 TJN"
+  server: 52.141.26.55
+  port: 443
+  password: 3dacbaa8-784b-430c-9c1e-57d33648981d
+  udp: true
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1F3\U0001F1F1 NL 1 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 2 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 3 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 4 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 5 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 6 SSS"
+  - "\U0001F1EC\U0001F1E7 GB 7 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 8 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 9 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 10 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 11 TJN"
+  - "\U0001F1FA\U0001F1F8 US 12 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 13 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 14 TJN"
+  - "\U0001F1F0\U0001F1F7 KR 15 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1F3\U0001F1F1 NL 1 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 2 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 3 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 4 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 5 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 6 SSS"
+  - "\U0001F1EC\U0001F1E7 GB 7 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 8 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 9 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 10 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 11 TJN"
+  - "\U0001F1FA\U0001F1F8 US 12 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 13 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 14 TJN"
+  - "\U0001F1F0\U0001F1F7 KR 15 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
