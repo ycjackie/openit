@@ -1,13 +1,54 @@
-proxies: []
+proxies:
+- type: trojan
+  name: "\U0001F1E8\U0001F1E6 CA 1 TJN"
+  server: 148.113.141.99
+  port: 443
+  password: HdsUZmsHQW
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  server: hnt.cndns.shop
+  port: 27766
+  cipher: chacha20-ietf-poly1305
+  password: 31347057-7af5-4562-b912-f1c217c4c160
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 3 TJN"
+  server: 116.129.253.134
+  port: 3389
+  password: faf42aa0a9ad4c1e
+  udp: true
+  skip-cert-verify: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 4 VMS"
+  ws-opts:
+    path: /
+    headers:
+      host: d200.clco.in
+  server: d200.clco.in
+  port: 54279
+  uuid: 0bbe1b09-9ff0-473a-fc00-a3ddba9e7ace
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E8\U0001F1E6 CA 1 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 3 TJN"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E8\U0001F1E6 CA 1 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 3 TJN"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
