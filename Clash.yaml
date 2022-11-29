@@ -196,13 +196,14 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇳 CN 1|TG@BPXD666, server: 120.233.11.136, port: 9010, type: vmess, uuid: 3346872e-3104-3c5b-8f6f-4b809309fa8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 1|TG@BPXD666, server: 120.233.11.136, port: 9008, type: vmess, uuid: 3346872e-3104-3c5b-8f6f-4b809309fa8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 2|TG@BPXD666, server: 120.233.11.136, port: 9045, type: vmess, uuid: 3346872e-3104-3c5b-8f6f-4b809309fa8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 3|TG@BPXD666, server: 120.233.11.136, port: 9003, type: vmess, uuid: 3346872e-3104-3c5b-8f6f-4b809309fa8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 4|TG@BPXD666, server: 120.233.11.136, port: 9042, type: vmess, uuid: 3346872e-3104-3c5b-8f6f-4b809309fa8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 1|TG@BPXD666, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 3|TG@BPXD666, server: 120.233.11.136, port: 9042, type: vmess, uuid: 3346872e-3104-3c5b-8f6f-4b809309fa8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 1|TG@BPXD666, server: 132.145.51.172, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL 1|TG@BPXD666, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: 129.213.117.66, port: 41106, type: trojan, password: Yaib2g1jy3, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 2|TG@BPXD666, server: 150.136.57.125, port: 41106, type: trojan, password: kSZddpnUKy, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 138.2.113.248, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -223,10 +224,11 @@ proxy-groups:
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
       - 🇨🇳 CN 3|TG@BPXD666
-      - 🇨🇳 CN 4|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -236,10 +238,11 @@ proxy-groups:
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
       - 🇨🇳 CN 3|TG@BPXD666
-      - 🇨🇳 CN 4|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -262,6 +265,7 @@ proxy-groups:
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -289,10 +293,11 @@ proxy-groups:
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
       - 🇨🇳 CN 3|TG@BPXD666
-      - 🇨🇳 CN 4|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -302,10 +307,11 @@ proxy-groups:
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
       - 🇨🇳 CN 3|TG@BPXD666
-      - 🇨🇳 CN 4|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
