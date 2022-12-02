@@ -1,31 +1,6 @@
 proxies:
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
-  ws-opts:
-    path: /5QNROSRV
-    headers:
-      host: oplg1.zhujicn2.com
-  server: 141.101.114.31
-  port: 443
-  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  server: hnt.cndns.shop
-  port: 27766
-  cipher: chacha20-ietf-poly1305
-  password: 31347057-7af5-4562-b912-f1c217c4c160
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  server: hnt.cndns.shop
-  port: 27761
-  cipher: chacha20-ietf-poly1305
-  password: 31347057-7af5-4562-b912-f1c217c4c160
-- type: vmess
-  name: "\U0001F1E7\U0001F1FF BZ 4 VMS"
+  name: "\U0001F1E7\U0001F1FF BZ 1 VMS"
   ws-opts:
     path: /IYKLD53M
     headers:
@@ -38,7 +13,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 2 VMS"
   ws-opts:
     path: /ray
     headers:
@@ -51,7 +26,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 6 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 3 VMS"
   ws-opts:
     path: /A2DJOPFT
     headers:
@@ -64,7 +39,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 7 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
   ws-opts:
     path: /9JZFDTKE
     headers:
@@ -76,6 +51,31 @@ proxies:
   cipher: auto
   network: ws
   tls: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  ws-opts:
+    path: /5QNROSRV
+    headers:
+      host: oplg1.zhujicn2.com
+  server: 141.101.114.31
+  port: 443
+  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 6 SSS"
+  server: hnt.cndns.shop
+  port: 27766
+  cipher: chacha20-ietf-poly1305
+  password: 31347057-7af5-4562-b912-f1c217c4c160
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 7 SSS"
+  server: hnt.cndns.shop
+  port: 27761
+  cipher: chacha20-ietf-poly1305
+  password: 31347057-7af5-4562-b912-f1c217c4c160
 - type: vmess
   name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
   ws-opts:
@@ -104,13 +104,13 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  - "\U0001F1E7\U0001F1FF BZ 4 VMS"
+  - "\U0001F1E7\U0001F1FF BZ 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1FA\U0001F1F3 UN 5 VMS"
-  - "\U0001F1FA\U0001F1F8 US 6 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 7 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 6 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 7 SSS"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   - "\U0001F1E6\U0001F1F2 AM 9 VMS"
   url: https://www.google.com/favicon.ico
@@ -119,13 +119,13 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  - "\U0001F1E7\U0001F1FF BZ 4 VMS"
+  - "\U0001F1E7\U0001F1FF BZ 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1FA\U0001F1F3 UN 5 VMS"
-  - "\U0001F1FA\U0001F1F8 US 6 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 7 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 6 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 7 SSS"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   - "\U0001F1E6\U0001F1F2 AM 9 VMS"
 rules:
