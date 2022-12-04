@@ -196,7 +196,6 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇩🇰 DK 1|TG@BPXD666, server: 185.162.228.230, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: uicdn.cf, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/fdfadsfa/63848bfe228fd/, headers: {Host: uicdn.cf}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -215,7 +214,6 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - 🇩🇰 DK 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
@@ -223,7 +221,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇩🇰 DK 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
@@ -270,7 +267,6 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 🇩🇰 DK 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
@@ -278,7 +274,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇩🇰 DK 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 👉 国内网站
     type: select
