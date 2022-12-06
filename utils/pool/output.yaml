@@ -82,8 +82,15 @@ proxies:
   cipher: auto
   network: ws
   tls: true
+- type: trojan
+  name: "\U0001F1F9\U0001F1FC TW 9 TJN"
+  server: 211.72.35.155
+  port: 3389
+  password: b84d16a244460e09
+  udp: true
+  skip-cert-verify: true
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 9 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 10 SSR"
   server: 116.162.120.23
   port: 561
   protocol: auth_aes128_md5
@@ -93,7 +100,7 @@ proxies:
   obfs-param: dC5tZS92cG5oYXQ=
   protocol-param: 27445:jgjgjgjgjgjg
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 10 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 11 SSR"
   server: 116.162.120.30
   port: 561
   protocol: auth_aes128_md5
@@ -103,7 +110,7 @@ proxies:
   obfs-param: dC5tZS92cG5oYXQ=
   protocol-param: 27445:jgjgjgjgjgjg
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 11 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 12 VMS"
   ws-opts:
     path: /sshkit/fdfadsfa/63848bfe228fd/
     headers:
@@ -114,13 +121,6 @@ proxies:
   alterId: 0
   cipher: auto
   network: ws
-- type: trojan
-  name: "\U0001F1F9\U0001F1FC TW 12 TJN"
-  server: 211.72.35.155
-  port: 3389
-  password: b84d16a244460e09
-  udp: true
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -133,10 +133,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1F9\U0001F1FC TW 7 TJN"
   - "\U0001F1E7\U0001F1FF BZ 8 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 9 SSR"
+  - "\U0001F1F9\U0001F1FC TW 9 TJN"
   - "\U0001F1E8\U0001F1F3 CN 10 SSR"
-  - "\U0001F1FA\U0001F1F3 UN 11 VMS"
-  - "\U0001F1F9\U0001F1FC TW 12 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 11 SSR"
+  - "\U0001F1FA\U0001F1F8 US 12 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -151,9 +151,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1F9\U0001F1FC TW 7 TJN"
   - "\U0001F1E7\U0001F1FF BZ 8 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 9 SSR"
+  - "\U0001F1F9\U0001F1FC TW 9 TJN"
   - "\U0001F1E8\U0001F1F3 CN 10 SSR"
-  - "\U0001F1FA\U0001F1F3 UN 11 VMS"
-  - "\U0001F1F9\U0001F1FC TW 12 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 11 SSR"
+  - "\U0001F1FA\U0001F1F8 US 12 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
