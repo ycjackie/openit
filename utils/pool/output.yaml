@@ -60,7 +60,7 @@ proxies:
   udp: true
   skip-cert-verify: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 7 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 7 VMS"
   ws-opts:
     path: /sshkit/fdfadsfa/63848bfe228fd/
     headers:
@@ -78,6 +78,49 @@ proxies:
   password: b84d16a244460e09
   udp: true
   skip-cert-verify: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 9 VMS"
+  ws-opts:
+    path: /9JZFDTKE
+    headers:
+      host: fr1.trump2023.org
+  server: 198.41.203.6
+  port: 443
+  uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 10 TJN"
+  server: tj2.dalazhi.cyou
+  port: 443
+  password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 11 SSR"
+  server: 116.162.120.30
+  port: 561
+  protocol: auth_aes128_md5
+  cipher: chacha20-ietf
+  obfs: plain
+  password: mblank1port
+  obfs-param: dC5tZS92cG5oYXQ=
+  protocol-param: 27445:jgjgjgjgjgjg
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 12 VMS"
+  ws-opts:
+    path: /
+    headers:
+      host: 30.tehvp.xyz
+  server: 30.tehvp.xyz
+  port: 2083
+  uuid: 1ffeca67-a2bc-471b-b138-369d6762967d
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -88,8 +131,12 @@ proxy-groups:
   - "\U0001F1E7\U0001F1FF BZ 4 VMS"
   - "\U0001F1E7\U0001F1FF BZ 5 VMS"
   - "\U0001F1F9\U0001F1FC TW 6 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 7 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 VMS"
   - "\U0001F1F9\U0001F1FC TW 8 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
+  - "\U0001F1FA\U0001F1F8 US 10 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 11 SSR"
+  - "\U0001F1FA\U0001F1F8 US 12 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -102,7 +149,11 @@ proxy-groups:
   - "\U0001F1E7\U0001F1FF BZ 4 VMS"
   - "\U0001F1E7\U0001F1FF BZ 5 VMS"
   - "\U0001F1F9\U0001F1FC TW 6 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 7 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 VMS"
   - "\U0001F1F9\U0001F1FC TW 8 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
+  - "\U0001F1FA\U0001F1F8 US 10 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 11 SSR"
+  - "\U0001F1FA\U0001F1F8 US 12 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
