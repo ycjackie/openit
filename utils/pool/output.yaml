@@ -1,6 +1,13 @@
 proxies:
+- type: trojan
+  name: "\U0001F1F9\U0001F1FC TW 1 TJN"
+  server: 211.72.35.155
+  port: 3389
+  password: b84d16a244460e09
+  udp: true
+  skip-cert-verify: true
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 1 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 2 SSR"
   server: 116.162.120.23
   port: 561
   protocol: auth_aes128_md5
@@ -10,14 +17,14 @@ proxies:
   obfs-param: dC5tZS92cG5oYXQ=
   protocol-param: 27445:jgjgjgjgjgjg
 - type: trojan
-  name: "\U0001F1F9\U0001F1FC TW 2 TJN"
+  name: "\U0001F1F9\U0001F1FC TW 3 TJN"
   server: 211.72.35.152
   port: 3389
   password: b84d16a244460e09
   udp: true
   skip-cert-verify: true
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 3 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 4 SSR"
   server: 116.162.120.30
   port: 561
   protocol: auth_aes128_md5
@@ -26,8 +33,15 @@ proxies:
   password: mblank1port
   obfs-param: dC5tZS92cG5oYXQ=
   protocol-param: 27445:jgjgjgjgjgjg
+- type: trojan
+  name: "\U0001F1F9\U0001F1FC TW 5 TJN"
+  server: 211.72.35.157
+  port: 3389
+  password: 0cc6b4268dea0ba8
+  udp: true
+  skip-cert-verify: true
 - type: vmess
-  name: "\U0001F1E7\U0001F1FF BZ 4 VMS"
+  name: "\U0001F1E7\U0001F1FF BZ 6 VMS"
   ws-opts:
     path: /5QNROSRV
     headers:
@@ -40,7 +54,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1E7\U0001F1FF BZ 5 VMS"
+  name: "\U0001F1E7\U0001F1FF BZ 7 VMS"
   ws-opts:
     path: /IYKLD53M
     headers:
@@ -52,15 +66,8 @@ proxies:
   cipher: auto
   network: ws
   tls: true
-- type: trojan
-  name: "\U0001F1F9\U0001F1FC TW 6 TJN"
-  server: 211.72.35.157
-  port: 3389
-  password: 0cc6b4268dea0ba8
-  udp: true
-  skip-cert-verify: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 7 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 8 VMS"
   ws-opts:
     path: /sshkit/fdfadsfa/63848bfe228fd/
     headers:
@@ -71,38 +78,31 @@ proxies:
   alterId: 0
   cipher: auto
   network: ws
-- type: trojan
-  name: "\U0001F1F9\U0001F1FC TW 8 TJN"
-  server: 211.72.35.155
-  port: 3389
-  password: b84d16a244460e09
-  udp: true
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1 SSR"
-  - "\U0001F1F9\U0001F1FC TW 2 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 3 SSR"
-  - "\U0001F1E7\U0001F1FF BZ 4 VMS"
-  - "\U0001F1E7\U0001F1FF BZ 5 VMS"
-  - "\U0001F1F9\U0001F1FC TW 6 TJN"
-  - "\U0001F1FA\U0001F1F8 US 7 VMS"
-  - "\U0001F1F9\U0001F1FC TW 8 TJN"
+  - "\U0001F1F9\U0001F1FC TW 1 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSR"
+  - "\U0001F1F9\U0001F1FC TW 3 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 4 SSR"
+  - "\U0001F1F9\U0001F1FC TW 5 TJN"
+  - "\U0001F1E7\U0001F1FF BZ 6 VMS"
+  - "\U0001F1E7\U0001F1FF BZ 7 VMS"
+  - "\U0001F1FA\U0001F1F8 US 8 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1 SSR"
-  - "\U0001F1F9\U0001F1FC TW 2 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 3 SSR"
-  - "\U0001F1E7\U0001F1FF BZ 4 VMS"
-  - "\U0001F1E7\U0001F1FF BZ 5 VMS"
-  - "\U0001F1F9\U0001F1FC TW 6 TJN"
-  - "\U0001F1FA\U0001F1F8 US 7 VMS"
-  - "\U0001F1F9\U0001F1FC TW 8 TJN"
+  - "\U0001F1F9\U0001F1FC TW 1 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSR"
+  - "\U0001F1F9\U0001F1FC TW 3 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 4 SSR"
+  - "\U0001F1F9\U0001F1FC TW 5 TJN"
+  - "\U0001F1E7\U0001F1FF BZ 6 VMS"
+  - "\U0001F1E7\U0001F1FF BZ 7 VMS"
+  - "\U0001F1FA\U0001F1F8 US 8 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
