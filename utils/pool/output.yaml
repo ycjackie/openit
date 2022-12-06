@@ -65,21 +65,18 @@ proxies:
   cipher: auto
   network: ws
   tls: true
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 7 SSR"
-  server: 116.162.120.23
-  port: 561
-  protocol: auth_aes128_md5
-  cipher: chacha20-ietf
-  obfs: plain
-  password: mblank1port
-  obfs-param: dC5tZS92cG5oYXQ=
-  protocol-param: 27445:jgjgjgjgjgjg
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 7 TJN"
+  server: tj2.dalazhi.cyou
+  port: 443
+  password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
+  udp: true
+  skip-cert-verify: true
 - type: trojan
   name: "\U0001F1F9\U0001F1FC TW 8 TJN"
-  server: 211.72.35.152
+  server: 211.72.35.157
   port: 3389
-  password: b84d16a244460e09
+  password: 0cc6b4268dea0ba8
   udp: true
   skip-cert-verify: true
 - type: ssr
@@ -92,32 +89,8 @@ proxies:
   password: mblank1port
   obfs-param: dC5tZS92cG5oYXQ=
   protocol-param: 27445:jgjgjgjgjgjg
-- type: trojan
-  name: "\U0001F1F9\U0001F1FC TW 10 TJN"
-  server: 211.72.35.157
-  port: 3389
-  password: 0cc6b4268dea0ba8
-  udp: true
-  skip-cert-verify: true
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 11 TJN"
-  server: tj2.dalazhi.cyou
-  port: 443
-  password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
-  udp: true
-  skip-cert-verify: true
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 12 SSR"
-  server: 116.162.120.30
-  port: 561
-  protocol: auth_aes128_md5
-  cipher: chacha20-ietf
-  obfs: plain
-  password: mblank1port
-  obfs-param: dC5tZS92cG5oYXQ=
-  protocol-param: 27445:jgjgjgjgjgjg
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 13 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 10 VMS"
   ws-opts:
     path: /
     headers:
@@ -129,8 +102,15 @@ proxies:
   cipher: auto
   network: ws
   tls: true
+- type: trojan
+  name: "\U0001F1F9\U0001F1FC TW 11 TJN"
+  server: 211.72.35.152
+  port: 3389
+  password: 182228812d1e0f23
+  udp: true
+  skip-cert-verify: true
 - type: vmess
-  name: "\U0001F1E7\U0001F1FF BZ 14 VMS"
+  name: "\U0001F1E7\U0001F1FF BZ 12 VMS"
   ws-opts:
     path: /5QNROSRV
     headers:
@@ -142,8 +122,28 @@ proxies:
   cipher: auto
   network: ws
   tls: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 13 SSR"
+  server: 116.162.120.23
+  port: 561
+  protocol: auth_aes128_md5
+  cipher: chacha20-ietf
+  obfs: plain
+  password: mblank1port
+  obfs-param: dC5tZS92cG5oYXQ=
+  protocol-param: 27445:jgjgjgjgjgjg
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 14 SSR"
+  server: 116.162.120.30
+  port: 561
+  protocol: auth_aes128_md5
+  cipher: chacha20-ietf
+  obfs: plain
+  password: mblank1port
+  obfs-param: dC5tZS92cG5oYXQ=
+  protocol-param: 27445:jgjgjgjgjgjg
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 15 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 15 VMS"
   ws-opts:
     path: /sshkit/fdfadsfa/63848bfe228fd/
     headers:
@@ -164,15 +164,15 @@ proxy-groups:
   - "\U0001F1E7\U0001F1FF BZ 4 VMS"
   - "\U0001F1EF\U0001F1F5 JP 5 TJN"
   - "\U0001F1FA\U0001F1F3 UN 6 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 7 SSR"
+  - "\U0001F1FA\U0001F1F8 US 7 TJN"
   - "\U0001F1F9\U0001F1FC TW 8 TJN"
   - "\U0001F1E8\U0001F1F3 CN 9 SSR"
-  - "\U0001F1F9\U0001F1FC TW 10 TJN"
-  - "\U0001F1FA\U0001F1F8 US 11 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 12 SSR"
-  - "\U0001F1FA\U0001F1F8 US 13 VMS"
-  - "\U0001F1E7\U0001F1FF BZ 14 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 15 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
+  - "\U0001F1F9\U0001F1FC TW 11 TJN"
+  - "\U0001F1E7\U0001F1FF BZ 12 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 13 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 14 SSR"
+  - "\U0001F1FA\U0001F1F8 US 15 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -185,14 +185,14 @@ proxy-groups:
   - "\U0001F1E7\U0001F1FF BZ 4 VMS"
   - "\U0001F1EF\U0001F1F5 JP 5 TJN"
   - "\U0001F1FA\U0001F1F3 UN 6 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 7 SSR"
+  - "\U0001F1FA\U0001F1F8 US 7 TJN"
   - "\U0001F1F9\U0001F1FC TW 8 TJN"
   - "\U0001F1E8\U0001F1F3 CN 9 SSR"
-  - "\U0001F1F9\U0001F1FC TW 10 TJN"
-  - "\U0001F1FA\U0001F1F8 US 11 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 12 SSR"
-  - "\U0001F1FA\U0001F1F8 US 13 VMS"
-  - "\U0001F1E7\U0001F1FF BZ 14 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 15 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
+  - "\U0001F1F9\U0001F1FC TW 11 TJN"
+  - "\U0001F1E7\U0001F1FF BZ 12 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 13 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 14 SSR"
+  - "\U0001F1FA\U0001F1F8 US 15 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
