@@ -1,12 +1,5 @@
 proxies:
-- type: trojan
-  name: "\U0001F1F9\U0001F1FC TW 1 TJN"
-  server: 211.72.35.155
-  port: 3389
-  password: 26a663656e575c0b
-  udp: true
-  skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1E8 SC 2 VMS"
+- name: "\U0001F1F8\U0001F1E8 SC 1 VMS"
   server: 156.251.191.241
   port: 32898
   type: vmess
@@ -18,7 +11,7 @@ proxies:
   tls: false
   network: tcp
   index: 1
-- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
   server: 120.233.10.71
   port: 38007
   type: ss
@@ -27,7 +20,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 66aa4ba9-8df9-4d58-ad8e-1026a2b0219b
   index: 2
-- name: "\U0001F1FA\U0001F1F3 UN 4 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 3 TJN"
   server: hncu.relay.qchwnd.moe
   port: 10201
   type: trojan
@@ -37,6 +30,13 @@ proxies:
   udp: true
   password: 5b059403-c05c-4609-ab01-a9352041d2e4
   index: 3
+- type: trojan
+  name: "\U0001F1F9\U0001F1FC TW 4 TJN"
+  server: 211.72.35.155
+  port: 3389
+  password: 26a663656e575c0b
+  udp: true
+  skip-cert-verify: true
 - type: ssr
   name: "\U0001F1E8\U0001F1F3 CN 5 SSR"
   server: 120.232.179.214
@@ -436,10 +436,10 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F9\U0001F1FC TW 1 TJN"
-  - "\U0001F1F8\U0001F1E8 SC 2 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 4 TJN"
+  - "\U0001F1F8\U0001F1E8 SC 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 3 TJN"
+  - "\U0001F1F9\U0001F1FC TW 4 TJN"
   - "\U0001F1E8\U0001F1F3 CN 5 SSR"
   - "\U0001F1E8\U0001F1F3 CN 6 SSR"
   - "\U0001F1E8\U0001F1F3 CN 7 SSR"
@@ -485,10 +485,10 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1F9\U0001F1FC TW 1 TJN"
-  - "\U0001F1F8\U0001F1E8 SC 2 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 4 TJN"
+  - "\U0001F1F8\U0001F1E8 SC 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 3 TJN"
+  - "\U0001F1F9\U0001F1FC TW 4 TJN"
   - "\U0001F1E8\U0001F1F3 CN 5 SSR"
   - "\U0001F1E8\U0001F1F3 CN 6 SSR"
   - "\U0001F1E8\U0001F1F3 CN 7 SSR"
