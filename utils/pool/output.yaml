@@ -1,6 +1,44 @@
 proxies:
+- name: "\U0001F1F8\U0001F1E8 SC 1 VMS"
+  server: 156.251.191.241
+  port: 32898
+  type: vmess
+  uuid: 7204d6b8-ddaf-417b-c8d8-5f983dc9f6cb
+  alterId: 0
+  cipher: auto
+  country: "\U0001F1FF\U0001F1E6_ZA_\u5357\u975E_1"
+  skip-cert-verify: true
+  tls: false
+  network: tcp
+  index: 1
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  server: 120.233.10.71
+  port: 38007
+  type: ss
+  country: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1ED\U0001F1F0_HK_\u9999\u6E2F\
+    _2"
+  cipher: chacha20-ietf-poly1305
+  password: 66aa4ba9-8df9-4d58-ad8e-1026a2b0219b
+  index: 2
+- name: "\U0001F1FA\U0001F1F3 UN 3 TJN"
+  server: hncu.relay.qchwnd.moe
+  port: 10201
+  type: trojan
+  country: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1EF\U0001F1F5_JP_\u65E5\u672C\
+    _3"
+  skip-cert-verify: true
+  udp: true
+  password: 5b059403-c05c-4609-ab01-a9352041d2e4
+  index: 3
+- type: trojan
+  name: "\U0001F1F9\U0001F1FC TW 4 TJN"
+  server: 211.72.35.155
+  port: 3389
+  password: 26a663656e575c0b
+  udp: true
+  skip-cert-verify: true
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 1 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 5 SSR"
   server: 120.232.179.214
   port: 13499
   protocol: auth_aes128_md5
@@ -10,7 +48,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 2 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 6 SSR"
   server: 120.232.179.214
   port: 13444
   protocol: auth_aes128_md5
@@ -20,7 +58,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 3 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 7 SSR"
   server: 120.232.179.216
   port: 13440
   protocol: auth_aes128_md5
@@ -30,7 +68,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
   ws-opts:
     path: /9JZFDTKE
     headers:
@@ -43,7 +81,7 @@ proxies:
   network: ws
   tls: true
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 5 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 9 SSR"
   server: 120.232.179.216
   port: 13439
   protocol: auth_aes128_md5
@@ -53,7 +91,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 6 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 10 SSR"
   server: 120.232.179.215
   port: 13632
   protocol: auth_aes128_md5
@@ -63,7 +101,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 7 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 11 SSR"
   server: 120.232.179.216
   port: 13042
   protocol: auth_aes128_md5
@@ -73,7 +111,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 8 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 12 SSR"
   server: 120.232.179.215
   port: 13205
   protocol: auth_aes128_md5
@@ -83,7 +121,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 9 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 13 SSR"
   server: 120.232.179.214
   port: 13679
   protocol: auth_aes128_md5
@@ -93,7 +131,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: vmess
-  name: "\U0001F1E7\U0001F1FF BZ 10 VMS"
+  name: "\U0001F1E7\U0001F1FF BZ 14 VMS"
   ws-opts:
     path: /IYKLD53M
     headers:
@@ -106,7 +144,7 @@ proxies:
   network: ws
   tls: true
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 11 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 15 SSR"
   server: 120.232.179.215
   port: 13640
   protocol: auth_aes128_md5
@@ -116,7 +154,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 12 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 16 SSR"
   server: 120.232.179.215
   port: 13263
   protocol: auth_aes128_md5
@@ -126,7 +164,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 13 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 17 SSR"
   server: 120.232.179.216
   port: 13049
   protocol: auth_aes128_md5
@@ -136,7 +174,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 14 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 18 SSR"
   server: 120.232.179.216
   port: 13448
   protocol: auth_aes128_md5
@@ -146,7 +184,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 15 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 19 SSR"
   server: 120.232.179.216
   port: 13415
   protocol: auth_aes128_md5
@@ -156,7 +194,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 16 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 20 SSR"
   server: 120.232.179.214
   port: 13490
   protocol: auth_aes128_md5
@@ -166,7 +204,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 17 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 21 SSR"
   server: 120.232.179.216
   port: 13260
   protocol: auth_aes128_md5
@@ -176,7 +214,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 18 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 22 SSR"
   server: 120.232.179.215
   port: 13545
   protocol: auth_aes128_md5
@@ -186,7 +224,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 19 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 23 SSR"
   server: 120.232.179.216
   port: 13543
   protocol: auth_aes128_md5
@@ -196,7 +234,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 20 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 24 SSR"
   server: 120.232.179.214
   port: 13340
   protocol: auth_aes128_md5
@@ -206,7 +244,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 21 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 25 SSR"
   server: 120.232.179.215
   port: 13679
   protocol: auth_aes128_md5
@@ -216,7 +254,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: vmess
-  name: "\U0001F1E8\U0001F1F3 CN 22 VMS"
+  name: "\U0001F1E8\U0001F1F3 CN 26 VMS"
   ws-opts:
     path: /
     headers:
@@ -228,7 +266,7 @@ proxies:
   cipher: auto
   network: ws
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 23 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 27 SSR"
   server: 120.232.179.214
   port: 13584
   protocol: auth_aes128_md5
@@ -238,7 +276,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 24 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 28 SSR"
   server: 120.232.179.216
   port: 13643
   protocol: auth_aes128_md5
@@ -248,7 +286,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 25 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 29 SSR"
   server: 120.232.179.214
   port: 13443
   protocol: auth_aes128_md5
@@ -258,14 +296,14 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: trojan
-  name: "\U0001F1F9\U0001F1FC TW 26 TJN"
+  name: "\U0001F1F9\U0001F1FC TW 30 TJN"
   server: 211.72.35.157
   port: 3389
   password: 7b06d22a8a7c764f
   udp: true
   skip-cert-verify: true
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 27 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 31 SSR"
   server: 120.232.179.216
   port: 13501
   protocol: auth_aes128_md5
@@ -275,7 +313,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 28 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 32 SSR"
   server: 120.232.179.215
   port: 13448
   protocol: auth_aes128_md5
@@ -285,7 +323,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 29 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 33 SSR"
   server: 120.232.179.215
   port: 13645
   protocol: auth_aes128_md5
@@ -295,7 +333,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 30 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 34 SSR"
   server: 120.232.179.216
   port: 13490
   protocol: auth_aes128_md5
@@ -305,7 +343,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 31 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 35 SSR"
   server: 120.232.179.216
   port: 13547
   protocol: auth_aes128_md5
@@ -315,7 +353,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 32 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 36 SSR"
   server: 120.232.179.215
   port: 13523
   protocol: auth_aes128_md5
@@ -325,7 +363,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 33 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 37 SSR"
   server: 120.232.179.214
   port: 13042
   protocol: auth_aes128_md5
@@ -335,7 +373,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 34 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 38 SSR"
   server: 120.232.179.216
   port: 13584
   protocol: auth_aes128_md5
@@ -345,7 +383,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 35 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 39 SSR"
   server: 120.232.179.214
   port: 10772
   protocol: auth_aes128_md5
@@ -355,7 +393,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 36 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 40 SSR"
   server: 120.232.179.214
   port: 13683
   protocol: auth_aes128_md5
@@ -365,7 +403,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 37 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 41 SSR"
   server: 120.232.179.214
   port: 13422
   protocol: auth_aes128_md5
@@ -375,7 +413,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 38 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 42 SSR"
   server: 120.232.179.214
   port: 13489
   protocol: auth_aes128_md5
@@ -385,7 +423,7 @@ proxies:
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 39 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 43 SSR"
   server: 120.232.179.216
   port: 13580
   protocol: auth_aes128_md5
@@ -394,31 +432,24 @@ proxies:
   password: Cskw6d
   obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJ
   protocol-param: 400218:vCQCEl
-- type: trojan
-  name: "\U0001F1F9\U0001F1FC TW 40 TJN"
-  server: 211.72.35.155
-  port: 3389
-  password: 7b06d22a8a7c764f
-  udp: true
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 2 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 3 SSR"
-  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1F8\U0001F1E8 SC 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 3 TJN"
+  - "\U0001F1F9\U0001F1FC TW 4 TJN"
   - "\U0001F1E8\U0001F1F3 CN 5 SSR"
   - "\U0001F1E8\U0001F1F3 CN 6 SSR"
   - "\U0001F1E8\U0001F1F3 CN 7 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 8 SSR"
+  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   - "\U0001F1E8\U0001F1F3 CN 9 SSR"
-  - "\U0001F1E7\U0001F1FF BZ 10 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 10 SSR"
   - "\U0001F1E8\U0001F1F3 CN 11 SSR"
   - "\U0001F1E8\U0001F1F3 CN 12 SSR"
   - "\U0001F1E8\U0001F1F3 CN 13 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 14 SSR"
+  - "\U0001F1E7\U0001F1FF BZ 14 VMS"
   - "\U0001F1E8\U0001F1F3 CN 15 SSR"
   - "\U0001F1E8\U0001F1F3 CN 16 SSR"
   - "\U0001F1E8\U0001F1F3 CN 17 SSR"
@@ -426,15 +457,15 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 19 SSR"
   - "\U0001F1E8\U0001F1F3 CN 20 SSR"
   - "\U0001F1E8\U0001F1F3 CN 21 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 22 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 22 SSR"
   - "\U0001F1E8\U0001F1F3 CN 23 SSR"
   - "\U0001F1E8\U0001F1F3 CN 24 SSR"
   - "\U0001F1E8\U0001F1F3 CN 25 SSR"
-  - "\U0001F1F9\U0001F1FC TW 26 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 26 VMS"
   - "\U0001F1E8\U0001F1F3 CN 27 SSR"
   - "\U0001F1E8\U0001F1F3 CN 28 SSR"
   - "\U0001F1E8\U0001F1F3 CN 29 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 30 SSR"
+  - "\U0001F1F9\U0001F1FC TW 30 TJN"
   - "\U0001F1E8\U0001F1F3 CN 31 SSR"
   - "\U0001F1E8\U0001F1F3 CN 32 SSR"
   - "\U0001F1E8\U0001F1F3 CN 33 SSR"
@@ -444,27 +475,30 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 37 SSR"
   - "\U0001F1E8\U0001F1F3 CN 38 SSR"
   - "\U0001F1E8\U0001F1F3 CN 39 SSR"
-  - "\U0001F1F9\U0001F1FC TW 40 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 40 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 41 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 42 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 43 SSR"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 2 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 3 SSR"
-  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1F8\U0001F1E8 SC 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 3 TJN"
+  - "\U0001F1F9\U0001F1FC TW 4 TJN"
   - "\U0001F1E8\U0001F1F3 CN 5 SSR"
   - "\U0001F1E8\U0001F1F3 CN 6 SSR"
   - "\U0001F1E8\U0001F1F3 CN 7 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 8 SSR"
+  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   - "\U0001F1E8\U0001F1F3 CN 9 SSR"
-  - "\U0001F1E7\U0001F1FF BZ 10 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 10 SSR"
   - "\U0001F1E8\U0001F1F3 CN 11 SSR"
   - "\U0001F1E8\U0001F1F3 CN 12 SSR"
   - "\U0001F1E8\U0001F1F3 CN 13 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 14 SSR"
+  - "\U0001F1E7\U0001F1FF BZ 14 VMS"
   - "\U0001F1E8\U0001F1F3 CN 15 SSR"
   - "\U0001F1E8\U0001F1F3 CN 16 SSR"
   - "\U0001F1E8\U0001F1F3 CN 17 SSR"
@@ -472,15 +506,15 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 19 SSR"
   - "\U0001F1E8\U0001F1F3 CN 20 SSR"
   - "\U0001F1E8\U0001F1F3 CN 21 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 22 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 22 SSR"
   - "\U0001F1E8\U0001F1F3 CN 23 SSR"
   - "\U0001F1E8\U0001F1F3 CN 24 SSR"
   - "\U0001F1E8\U0001F1F3 CN 25 SSR"
-  - "\U0001F1F9\U0001F1FC TW 26 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 26 VMS"
   - "\U0001F1E8\U0001F1F3 CN 27 SSR"
   - "\U0001F1E8\U0001F1F3 CN 28 SSR"
   - "\U0001F1E8\U0001F1F3 CN 29 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 30 SSR"
+  - "\U0001F1F9\U0001F1FC TW 30 TJN"
   - "\U0001F1E8\U0001F1F3 CN 31 SSR"
   - "\U0001F1E8\U0001F1F3 CN 32 SSR"
   - "\U0001F1E8\U0001F1F3 CN 33 SSR"
@@ -490,6 +524,9 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 37 SSR"
   - "\U0001F1E8\U0001F1F3 CN 38 SSR"
   - "\U0001F1E8\U0001F1F3 CN 39 SSR"
-  - "\U0001F1F9\U0001F1FC TW 40 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 40 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 41 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 42 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 43 SSR"
 rules:
 - "MATCH,\U0001F310 Proxy"
