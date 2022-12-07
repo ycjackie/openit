@@ -1,48 +1,12 @@
 proxies:
-- type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 1 VMS"
-  ws-opts:
-    path: /
-  server: 154.23.190.162
-  port: 443
-  uuid: b9984674-f771-4e67-a198-c7e60720ba2c
-  alterId: '0'
-  cipher: auto
-  network: ws
 - type: trojan
-  name: "\U0001F1E8\U0001F1E6 CA 2 TJN"
-  server: ca-trojan.bonds.id
-  port: 443
-  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
-  udp: true
-  skip-cert-verify: true
-- type: http
-  name: "\U0001F1E8\U0001F1F3 CN 3 HTT"
-  server: 124.15.12.24
-  port: 251
-  username: username
-  password: password
-  udp: true
-- type: socks5
-  name: "\U0001F1E8\U0001F1F3 CN 4 SK5"
-  server: 124.15.12.24
-  port: 2312
-  udp: true
-- type: socks5
-  name: "\U0001F1E6\U0001F1FA AU 5 SK5"
-  server: 1.2.3.4
-  port: 123
-  username: username
-  password: password
-  udp: true
-- type: trojan
-  name: "\U0001F1F9\U0001F1FC TW 6 TJN"
+  name: "\U0001F1F9\U0001F1FC TW 1 TJN"
   server: 211.72.35.155
   port: 3389
   password: 26a663656e575c0b
   udp: true
   skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1E8 SC 7 VMS"
+- name: "\U0001F1F8\U0001F1E8 SC 2 VMS"
   server: 156.251.191.241
   port: 32898
   type: vmess
@@ -54,7 +18,7 @@ proxies:
   tls: false
   network: tcp
   index: 1
-- name: "\U0001F1E8\U0001F1F3 CN 8 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
   server: 120.233.10.71
   port: 38007
   type: ss
@@ -63,7 +27,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 66aa4ba9-8df9-4d58-ad8e-1026a2b0219b
   index: 2
-- name: "\U0001F1FA\U0001F1F3 UN 9 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 4 TJN"
   server: hncu.relay.qchwnd.moe
   port: 10201
   type: trojan
@@ -73,6 +37,42 @@ proxies:
   udp: true
   password: 5b059403-c05c-4609-ab01-a9352041d2e4
   index: 3
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 5 VMS"
+  ws-opts:
+    path: /
+  server: 154.23.190.162
+  port: 443
+  uuid: b9984674-f771-4e67-a198-c7e60720ba2c
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: trojan
+  name: "\U0001F1E8\U0001F1E6 CA 6 TJN"
+  server: ca-trojan.bonds.id
+  port: 443
+  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
+  udp: true
+  skip-cert-verify: true
+- type: http
+  name: "\U0001F1E8\U0001F1F3 CN 7 HTT"
+  server: 124.15.12.24
+  port: 251
+  username: username
+  password: password
+  udp: true
+- type: socks5
+  name: "\U0001F1E8\U0001F1F3 CN 8 SK5"
+  server: 124.15.12.24
+  port: 2312
+  udp: true
+- type: socks5
+  name: "\U0001F1E6\U0001F1FA AU 9 SK5"
+  server: 1.2.3.4
+  port: 123
+  username: username
+  password: password
+  udp: true
 - type: ssr
   name: "\U0001F1E8\U0001F1F3 CN 10 SSR"
   server: 120.232.179.214
@@ -519,36 +519,36 @@ proxies:
   skip-cert-verify: true
   index: 36
 - name: "\U0001F1ED\U0001F1F0 HK 54 TJN"
-  server: sg.stablize.top
+  server: uk.stablize.top
   type: trojan
   country: "\U0001F1FA\U0001F1F8 US"
   port: 443
   password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
   skip-cert-verify: true
   udp: true
-  index: 41
+  index: 39
 - name: "\U0001F1ED\U0001F1F0 HK 55 TJN"
-  server: ap.liangyuandian.top
+  server: de.stablize.top
   type: trojan
   country: "\U0001F1FA\U0001F1F8 US"
   port: 443
-  password: ceaea123-1b4b-469b-8358-bcd5f5529305
+  password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
   skip-cert-verify: true
   udp: true
-  index: 42
+  index: 40
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 2 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 3 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 4 SK5"
-  - "\U0001F1E6\U0001F1FA AU 5 SK5"
-  - "\U0001F1F9\U0001F1FC TW 6 TJN"
-  - "\U0001F1F8\U0001F1E8 SC 7 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 8 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 9 TJN"
+  - "\U0001F1F9\U0001F1FC TW 1 TJN"
+  - "\U0001F1F8\U0001F1E8 SC 2 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 4 TJN"
+  - "\U0001F1FA\U0001F1F8 US 5 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 6 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 7 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 8 SK5"
+  - "\U0001F1E6\U0001F1FA AU 9 SK5"
   - "\U0001F1E8\U0001F1F3 CN 10 SSR"
   - "\U0001F1E8\U0001F1F3 CN 11 SSR"
   - "\U0001F1E8\U0001F1F3 CN 12 SSR"
@@ -601,15 +601,15 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 2 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 3 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 4 SK5"
-  - "\U0001F1E6\U0001F1FA AU 5 SK5"
-  - "\U0001F1F9\U0001F1FC TW 6 TJN"
-  - "\U0001F1F8\U0001F1E8 SC 7 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 8 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 9 TJN"
+  - "\U0001F1F9\U0001F1FC TW 1 TJN"
+  - "\U0001F1F8\U0001F1E8 SC 2 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 4 TJN"
+  - "\U0001F1FA\U0001F1F8 US 5 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 6 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 7 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 8 SK5"
+  - "\U0001F1E6\U0001F1FA AU 9 SK5"
   - "\U0001F1E8\U0001F1F3 CN 10 SSR"
   - "\U0001F1E8\U0001F1F3 CN 11 SSR"
   - "\U0001F1E8\U0001F1F3 CN 12 SSR"
