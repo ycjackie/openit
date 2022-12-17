@@ -288,7 +288,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 30 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 30 VMS"
   ws-opts:
     path: /huhu
     headers:
@@ -515,7 +515,7 @@ proxies:
   udp: true
   skip-cert-verify: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 53 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 53 VMS"
   ws-opts:
     path: /DQsafRJn/
     headers:
@@ -743,7 +743,7 @@ proxies:
   cipher: auto
   network: http
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 74 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 74 VMS"
   ws-opts:
     path: /sshocean
     headers:
@@ -1264,30 +1264,30 @@ proxies:
   skip-cert-verify: true
 - type: trojan
   name: "\U0001F1ED\U0001F1F0 HK 125 TJN"
-  server: my01.trojanyyds.xyz
+  server: sg02.trojanyyds.xyz
   port: 443
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   udp: true
   skip-cert-verify: true
+- type: vmess
+  name: "\U0001F1F3\U0001F1F1 NL 126 VMS"
+  http-opts:
+    path:
+    - /
+  server: xray.tawanaclub.tk
+  port: 8443
+  uuid: d2cc9a33-9f5d-4e1f-e4a0-7ac0a9aa42d0
+  alterId: '0'
+  cipher: auto
+  network: http
 - type: trojan
-  name: "\U0001F1F3\U0001F1F1 NL 126 TJN"
+  name: "\U0001F1F3\U0001F1F1 NL 127 TJN"
   server: xray.tawanaclub.tk
   port: 17968
   password: Tawana0Proxy
   udp: true
   skip-cert-verify: true
   sni: xray.tawanaclub.tk
-- type: vmess
-  name: "\U0001F1F3\U0001F1F1 NL 127 VMS"
-  http-opts:
-    path:
-    - /tawanaproxy
-  server: xray.tawanaclub.tk
-  port: 18904
-  uuid: 33ca6d33-af3b-4e17-e6fb-92aa1e405ea5
-  alterId: '0'
-  cipher: auto
-  network: http
 - type: ss
   name: "\U0001F1E8\U0001F1F3 CN 128 SSS"
   server: 119.36.161.40
@@ -1302,7 +1302,7 @@ proxies:
     path: /
     host: fn600mliness030.fnline.info
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 129 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 129 VMS"
   ws-opts:
     path: /huhu
     headers:
@@ -1336,6 +1336,19 @@ proxies:
 - type: vmess
   name: "\U0001F1FA\U0001F1F8 US 132 VMS"
   ws-opts:
+    path: /DQsafRJn/
+    headers:
+      host: v2ray.wefuckgfw.ga
+  server: cacerts.digicert.com
+  port: 2053
+  uuid: ab323ed9-dda5-4feb-9f17-c77c7fd811b6
+  alterId: '0'
+  cipher: auto
+  network: ws
+  tls: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 133 VMS"
+  ws-opts:
     path: /
   server: cdn1.parshost.site
   port: 80
@@ -1344,29 +1357,7 @@ proxies:
   cipher: auto
   network: ws
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 133 VMS"
-  ws-opts:
-    path: /1f213abcf6?ed=2048
-  server: www.xvbu.de
-  port: 443
-  uuid: 213694e5-56e7-4987-96dc-839abdb8d461
-  alterId: '0'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 134 VMS"
-  ws-opts:
-    path: /
-  server: de100.tehvp.xyz
-  port: 443
-  uuid: 9bd493b0-f91e-4059-ef7c-9e2b3da5f26d
-  alterId: '0'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: "\U0001F1F3\U0001F1F1 NL 135 VMS"
+  name: "\U0001F1F3\U0001F1F1 NL 134 VMS"
   http-opts:
     path:
     - /TawanaproxyTcpTls
@@ -1377,6 +1368,18 @@ proxies:
   cipher: auto
   network: http
   tls: true
+- type: vmess
+  name: "\U0001F1E9\U0001F1EA DE 135 VMS"
+  ws-opts:
+    path: /
+    headers:
+      host: zzz.wearezombies.com
+  server: zzz.wearezombies.com
+  port: 80
+  uuid: 85b6dbea-5001-4cb6-a34f-6e026b878954
+  alterId: '0'
+  cipher: auto
+  network: ws
 - type: vmess
   name: "\U0001F1F3\U0001F1F1 NL 136 VMS"
   ws-opts:
@@ -1399,34 +1402,26 @@ proxies:
   alterId: '0'
   cipher: auto
   network: ws
+- type: vmess
+  name: "\U0001F1F3\U0001F1F1 NL 138 VMS"
+  http-opts:
+    path:
+    - /
+  server: xray.tawanaclub.tk
+  port: 30422
+  uuid: d2f66520-2051-4f2d-86fe-53815429e6b4
+  alterId: '0'
+  cipher: auto
+  network: http
 - type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 138 TJN"
-  server: ca.stablize.top
+  name: "\U0001F1EF\U0001F1F5 JP 139 TJN"
+  server: uk.stablize.top
   port: 443
   password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
   udp: true
   skip-cert-verify: true
 - type: vmess
-  name: "\U0001F1F3\U0001F1F1 NL 139 VMS"
-  http-opts:
-    path:
-    - /
-  server: xray.tawanaclub.tk
-  port: 8443
-  uuid: d2cc9a33-9f5d-4e1f-e4a0-7ac0a9aa42d0
-  alterId: '0'
-  cipher: auto
-  network: http
-- type: trojan
-  name: "\U0001F1F3\U0001F1F1 NL 140 TJN"
-  server: xray.tawanaclub.tk
-  port: 17968
-  password: Tawana0Proxy
-  udp: true
-  skip-cert-verify: true
-  sni: xray.tawanaclub.tk
-- type: vmess
-  name: "\U0001F1F3\U0001F1F1 NL 141 VMS"
+  name: "\U0001F1F3\U0001F1F1 NL 140 VMS"
   http-opts:
     path:
     - /tawanaproxy
@@ -1437,7 +1432,7 @@ proxies:
   cipher: auto
   network: http
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 142 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 141 VMS"
   ws-opts:
     path: /DQsafRJn/
     headers:
@@ -1450,24 +1445,46 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1F3\U0001F1F1 NL 143 VMS"
+  name: "\U0001F1F3\U0001F1F1 NL 142 VMS"
   http-opts:
     path:
-    - /TawanaproxyTcpTls
+    - /
   server: xray.tawanaclub.tk
-  port: 26535
-  uuid: fd1445c8-3fd4-492e-b086-70ad804e02e4
+  port: 443
+  uuid: 69a9fe39-a358-4249-d92f-8ed81947130c
   alterId: '0'
   cipher: auto
   network: http
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 143 VMS"
+  ws-opts:
+    path: /1f213abcf6?ed=2048
+  server: www.xvbu.de
+  port: 443
+  uuid: 213694e5-56e7-4987-96dc-839abdb8d461
+  alterId: '0'
+  cipher: auto
+  network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1F3\U0001F1F1 NL 144 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 144 VMS"
   ws-opts:
-    path: /Tawanaproxy6
-  server: xray.tawanaclub.tk
-  port: 15048
-  uuid: cfd9e1ba-6489-4c23-e15d-f7fe1b61b546
+    path: /
+  server: cdn1.parshost.site
+  port: 80
+  uuid: ff2cc50d-d579-49a8-9560-cb5eaa33612f
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: vmess
+  name: "\U0001F1EE\U0001F1F7 IR 145 VMS"
+  ws-opts:
+    path: /ray
+    headers:
+      host: 122.zirogame.site
+  server: arvancloud.ir
+  port: 80
+  uuid: 9803a2ca-eb5a-4a3a-99c0-5e08738b5605
   alterId: '0'
   cipher: auto
   network: ws
@@ -1504,7 +1521,7 @@ proxy-groups:
   - "\U0001F1EA\U0001F1EA EE 27 VMS"
   - "\U0001F1E9\U0001F1EA DE 28 VMS"
   - "\U0001F1FA\U0001F1F8 US 29 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 30 VMS"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
   - "\U0001F1ED\U0001F1F0 HK 31 VMS"
   - "\U0001F1ED\U0001F1F0 HK 32 VMS"
   - "\U0001F1FA\U0001F1F8 US 33 TJN"
@@ -1527,7 +1544,7 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 50 VMS"
   - "\U0001F1ED\U0001F1F0 HK 51 VMS"
   - "\U0001F1F8\U0001F1EC SG 52 TJN"
-  - "\U0001F1FA\U0001F1F8 US 53 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 53 VMS"
   - "\U0001F1ED\U0001F1F0 HK 54 VMS"
   - "\U0001F1FA\U0001F1F8 US 55 VMS"
   - "\U0001F1FA\U0001F1F8 US 56 TJN"
@@ -1548,7 +1565,7 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 71 VMS"
   - "\U0001F1F8\U0001F1EC SG 72 VMS"
   - "\U0001F1ED\U0001F1F0 HK 73 VMS"
-  - "\U0001F1FA\U0001F1F8 US 74 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 74 VMS"
   - "\U0001F1F3\U0001F1F1 NL 75 VMS"
   - "\U0001F1FA\U0001F1F8 US 76 VMS"
   - "\U0001F1E9\U0001F1EA DE 77 VMS"
@@ -1600,25 +1617,26 @@ proxy-groups:
   - "\U0001F1F3\U0001F1F1 NL 123 VMS"
   - "\U0001F1EF\U0001F1F5 JP 124 TJN"
   - "\U0001F1ED\U0001F1F0 HK 125 TJN"
-  - "\U0001F1F3\U0001F1F1 NL 126 TJN"
-  - "\U0001F1F3\U0001F1F1 NL 127 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 126 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 127 TJN"
   - "\U0001F1E8\U0001F1F3 CN 128 SSS"
-  - "\U0001F1FA\U0001F1F8 US 129 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 129 VMS"
   - "\U0001F1F3\U0001F1F1 NL 130 VMS"
   - "\U0001F1F3\U0001F1F1 NL 131 TJN"
   - "\U0001F1FA\U0001F1F8 US 132 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 133 VMS"
-  - "\U0001F1FA\U0001F1F8 US 134 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 135 VMS"
+  - "\U0001F1FA\U0001F1F8 US 133 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 134 VMS"
+  - "\U0001F1E9\U0001F1EA DE 135 VMS"
   - "\U0001F1F3\U0001F1F1 NL 136 VMS"
   - "\U0001F1EE\U0001F1F7 IR 137 VMS"
-  - "\U0001F1F8\U0001F1EC SG 138 TJN"
-  - "\U0001F1F3\U0001F1F1 NL 139 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 140 TJN"
-  - "\U0001F1F3\U0001F1F1 NL 141 VMS"
-  - "\U0001F1FA\U0001F1F8 US 142 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 143 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 144 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 138 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 139 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 140 VMS"
+  - "\U0001F1FA\U0001F1F8 US 141 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 142 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 143 VMS"
+  - "\U0001F1FA\U0001F1F8 US 144 VMS"
+  - "\U0001F1EE\U0001F1F7 IR 145 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1654,7 +1672,7 @@ proxy-groups:
   - "\U0001F1EA\U0001F1EA EE 27 VMS"
   - "\U0001F1E9\U0001F1EA DE 28 VMS"
   - "\U0001F1FA\U0001F1F8 US 29 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 30 VMS"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
   - "\U0001F1ED\U0001F1F0 HK 31 VMS"
   - "\U0001F1ED\U0001F1F0 HK 32 VMS"
   - "\U0001F1FA\U0001F1F8 US 33 TJN"
@@ -1677,7 +1695,7 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 50 VMS"
   - "\U0001F1ED\U0001F1F0 HK 51 VMS"
   - "\U0001F1F8\U0001F1EC SG 52 TJN"
-  - "\U0001F1FA\U0001F1F8 US 53 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 53 VMS"
   - "\U0001F1ED\U0001F1F0 HK 54 VMS"
   - "\U0001F1FA\U0001F1F8 US 55 VMS"
   - "\U0001F1FA\U0001F1F8 US 56 TJN"
@@ -1698,7 +1716,7 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 71 VMS"
   - "\U0001F1F8\U0001F1EC SG 72 VMS"
   - "\U0001F1ED\U0001F1F0 HK 73 VMS"
-  - "\U0001F1FA\U0001F1F8 US 74 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 74 VMS"
   - "\U0001F1F3\U0001F1F1 NL 75 VMS"
   - "\U0001F1FA\U0001F1F8 US 76 VMS"
   - "\U0001F1E9\U0001F1EA DE 77 VMS"
@@ -1750,24 +1768,25 @@ proxy-groups:
   - "\U0001F1F3\U0001F1F1 NL 123 VMS"
   - "\U0001F1EF\U0001F1F5 JP 124 TJN"
   - "\U0001F1ED\U0001F1F0 HK 125 TJN"
-  - "\U0001F1F3\U0001F1F1 NL 126 TJN"
-  - "\U0001F1F3\U0001F1F1 NL 127 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 126 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 127 TJN"
   - "\U0001F1E8\U0001F1F3 CN 128 SSS"
-  - "\U0001F1FA\U0001F1F8 US 129 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 129 VMS"
   - "\U0001F1F3\U0001F1F1 NL 130 VMS"
   - "\U0001F1F3\U0001F1F1 NL 131 TJN"
   - "\U0001F1FA\U0001F1F8 US 132 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 133 VMS"
-  - "\U0001F1FA\U0001F1F8 US 134 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 135 VMS"
+  - "\U0001F1FA\U0001F1F8 US 133 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 134 VMS"
+  - "\U0001F1E9\U0001F1EA DE 135 VMS"
   - "\U0001F1F3\U0001F1F1 NL 136 VMS"
   - "\U0001F1EE\U0001F1F7 IR 137 VMS"
-  - "\U0001F1F8\U0001F1EC SG 138 TJN"
-  - "\U0001F1F3\U0001F1F1 NL 139 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 140 TJN"
-  - "\U0001F1F3\U0001F1F1 NL 141 VMS"
-  - "\U0001F1FA\U0001F1F8 US 142 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 143 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 144 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 138 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 139 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 140 VMS"
+  - "\U0001F1FA\U0001F1F8 US 141 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 142 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 143 VMS"
+  - "\U0001F1FA\U0001F1F8 US 144 VMS"
+  - "\U0001F1EE\U0001F1F7 IR 145 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
