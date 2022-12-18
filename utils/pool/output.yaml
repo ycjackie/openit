@@ -299,7 +299,7 @@ proxies:
   udp: true
   skip-cert-verify: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 30 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 30 VMS"
   ws-opts:
     path: /DQsafRJn/
     headers:
@@ -332,7 +332,7 @@ proxies:
   cipher: auto
   network: ws
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 33 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 33 VMS"
   ws-opts:
     path: /1f213abcf6?ed=2048
   server: www.xvbu.de
@@ -934,7 +934,7 @@ proxies:
   network: tcp
   tls: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 91 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 91 VMS"
   ws-opts:
     path: /huhu
     headers:
@@ -1014,7 +1014,7 @@ proxies:
   cipher: auto
   network: ws
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 99 TJN"
+  name: "\U0001F1FA\U0001F1F3 UN 99 TJN"
   server: s4.mynameismahsa.info
   port: 2053
   password: user
@@ -1087,8 +1087,38 @@ proxies:
   password: '123456'
   udp: true
   skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1ED\U0001F1F0 HK 108 TJN"
+  server: uk01.trojanyyds.xyz
+  port: 443
+  password: cd41b9d7-df15-46ad-a778-257b0851525a
+  udp: true
+  skip-cert-verify: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 108 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 109 VMS"
+  ws-opts:
+    path: /1f213abcf6?ed=2048
+  server: www.xvbu.de
+  port: 443
+  uuid: 213694e5-56e7-4987-96dc-839abdb8d461
+  alterId: '0'
+  cipher: auto
+  network: ws
+  tls: true
+- type: vmess
+  name: "\U0001F1EE\U0001F1F7 IR 110 VMS"
+  ws-opts:
+    path: /ray
+    headers:
+      host: 122.zirogame.site
+  server: arvancloud.ir
+  port: 80
+  uuid: 9803a2ca-eb5a-4a3a-99c0-5e08738b5605
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 111 VMS"
   ws-opts:
     path: /ezN9pvil/
     headers:
@@ -1101,7 +1131,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 109 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 112 VMS"
   ws-opts:
     path: /huhu
     headers:
@@ -1114,7 +1144,7 @@ proxies:
   network: ws
   tls: true
 - type: trojan
-  name: "\U0001F1FA\U0001F1F3 UN 110 TJN"
+  name: "\U0001F1FA\U0001F1F8 US 113 TJN"
   server: s4.mynameismahsa.info
   port: 2053
   password: user
@@ -1154,10 +1184,10 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 27 VMS"
   - "\U0001F1E9\U0001F1EA DE 28 VMS"
   - "\U0001F1ED\U0001F1F0 HK 29 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 30 VMS"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
   - "\U0001F1FA\U0001F1F8 US 31 TJN"
   - "\U0001F1F8\U0001F1EC SG 32 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 33 VMS"
+  - "\U0001F1FA\U0001F1F8 US 33 VMS"
   - "\U0001F1EB\U0001F1F7 FR 34 VMS"
   - "\U0001F1EB\U0001F1F7 FR 35 VMS"
   - "\U0001F1F0\U0001F1F7 KR 36 VMS"
@@ -1215,7 +1245,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1E6 UA 88 VMS"
   - "\U0001F1FB\U0001F1F3 VN 89 VMS"
   - "\U0001F1F8\U0001F1EC SG 90 VMS"
-  - "\U0001F1FA\U0001F1F8 US 91 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 91 VMS"
   - "\U0001F1E6\U0001F1EA AE 92 TJN"
   - "\U0001F1F3\U0001F1F1 NL 93 TJN"
   - "\U0001F1FA\U0001F1F8 US 94 TJN"
@@ -1223,7 +1253,7 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 96 VMS"
   - "\U0001F1ED\U0001F1F0 HK 97 VMS"
   - "\U0001F1FA\U0001F1F8 US 98 VMS"
-  - "\U0001F1FA\U0001F1F8 US 99 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 99 TJN"
   - "\U0001F1ED\U0001F1F0 HK 100 TJN"
   - "\U0001F1ED\U0001F1F0 HK 101 TJN"
   - "\U0001F1EC\U0001F1E7 GB 102 TJN"
@@ -1232,9 +1262,12 @@ proxy-groups:
   - "\U0001F1EA\U0001F1EA EE 105 VMS"
   - "\U0001F1ED\U0001F1F0 HK 106 VMS"
   - "\U0001F1F8\U0001F1EC SG 107 TJN"
-  - "\U0001F1FA\U0001F1F8 US 108 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 108 TJN"
   - "\U0001F1FA\U0001F1F3 UN 109 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 110 TJN"
+  - "\U0001F1EE\U0001F1F7 IR 110 VMS"
+  - "\U0001F1FA\U0001F1F8 US 111 VMS"
+  - "\U0001F1FA\U0001F1F8 US 112 VMS"
+  - "\U0001F1FA\U0001F1F8 US 113 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1270,10 +1303,10 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 27 VMS"
   - "\U0001F1E9\U0001F1EA DE 28 VMS"
   - "\U0001F1ED\U0001F1F0 HK 29 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 30 VMS"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
   - "\U0001F1FA\U0001F1F8 US 31 TJN"
   - "\U0001F1F8\U0001F1EC SG 32 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 33 VMS"
+  - "\U0001F1FA\U0001F1F8 US 33 VMS"
   - "\U0001F1EB\U0001F1F7 FR 34 VMS"
   - "\U0001F1EB\U0001F1F7 FR 35 VMS"
   - "\U0001F1F0\U0001F1F7 KR 36 VMS"
@@ -1331,7 +1364,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1E6 UA 88 VMS"
   - "\U0001F1FB\U0001F1F3 VN 89 VMS"
   - "\U0001F1F8\U0001F1EC SG 90 VMS"
-  - "\U0001F1FA\U0001F1F8 US 91 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 91 VMS"
   - "\U0001F1E6\U0001F1EA AE 92 TJN"
   - "\U0001F1F3\U0001F1F1 NL 93 TJN"
   - "\U0001F1FA\U0001F1F8 US 94 TJN"
@@ -1339,7 +1372,7 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 96 VMS"
   - "\U0001F1ED\U0001F1F0 HK 97 VMS"
   - "\U0001F1FA\U0001F1F8 US 98 VMS"
-  - "\U0001F1FA\U0001F1F8 US 99 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 99 TJN"
   - "\U0001F1ED\U0001F1F0 HK 100 TJN"
   - "\U0001F1ED\U0001F1F0 HK 101 TJN"
   - "\U0001F1EC\U0001F1E7 GB 102 TJN"
@@ -1348,8 +1381,11 @@ proxy-groups:
   - "\U0001F1EA\U0001F1EA EE 105 VMS"
   - "\U0001F1ED\U0001F1F0 HK 106 VMS"
   - "\U0001F1F8\U0001F1EC SG 107 TJN"
-  - "\U0001F1FA\U0001F1F8 US 108 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 108 TJN"
   - "\U0001F1FA\U0001F1F3 UN 109 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 110 TJN"
+  - "\U0001F1EE\U0001F1F7 IR 110 VMS"
+  - "\U0001F1FA\U0001F1F8 US 111 VMS"
+  - "\U0001F1FA\U0001F1F8 US 112 VMS"
+  - "\U0001F1FA\U0001F1F8 US 113 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
