@@ -299,7 +299,7 @@ proxies:
   udp: true
   skip-cert-verify: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 30 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 30 VMS"
   ws-opts:
     path: /DQsafRJn/
     headers:
@@ -1087,13 +1087,18 @@ proxies:
   password: '123456'
   udp: true
   skip-cert-verify: true
-- type: trojan
-  name: "\U0001F1ED\U0001F1F0 HK 108 TJN"
-  server: uk01.trojanyyds.xyz
-  port: 443
-  password: cd41b9d7-df15-46ad-a778-257b0851525a
-  udp: true
-  skip-cert-verify: true
+- type: vmess
+  name: "\U0001F1EE\U0001F1F7 IR 108 VMS"
+  ws-opts:
+    path: /ray
+    headers:
+      host: 122.zirogame.site
+  server: arvancloud.ir
+  port: 80
+  uuid: 9803a2ca-eb5a-4a3a-99c0-5e08738b5605
+  alterId: '0'
+  cipher: auto
+  network: ws
 - type: vmess
   name: "\U0001F1FA\U0001F1F8 US 109 VMS"
   ws-opts:
@@ -1106,19 +1111,14 @@ proxies:
   alterId: '0'
   cipher: auto
   network: ws
-- type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 110 VMS"
-  ws-opts:
-    path: /huhu
-    headers:
-      host: hucloud.tk
-  server: hucloud.tk
-  port: 443
-  uuid: 2df3ed4a-4313-45f9-b742-2f02ce593a6e
-  alterId: '0'
-  cipher: auto
-  network: ws
-  tls: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F3 UN 110 TJN"
+  server: s4.mynameismahsa.info
+  port: 2053
+  password: user
+  udp: true
+  skip-cert-verify: true
+  sni: s4.mynameismahsa.info
 proxy-groups:
 - name: automatic
   type: url-test
@@ -1152,7 +1152,7 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 27 VMS"
   - "\U0001F1E9\U0001F1EA DE 28 VMS"
   - "\U0001F1ED\U0001F1F0 HK 29 TJN"
-  - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 30 VMS"
   - "\U0001F1FA\U0001F1F8 US 31 TJN"
   - "\U0001F1F8\U0001F1EC SG 32 VMS"
   - "\U0001F1FA\U0001F1F8 US 33 VMS"
@@ -1230,9 +1230,9 @@ proxy-groups:
   - "\U0001F1EA\U0001F1EA EE 105 VMS"
   - "\U0001F1ED\U0001F1F0 HK 106 VMS"
   - "\U0001F1F8\U0001F1EC SG 107 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 108 TJN"
+  - "\U0001F1EE\U0001F1F7 IR 108 VMS"
   - "\U0001F1FA\U0001F1F8 US 109 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 110 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 110 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1268,7 +1268,7 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 27 VMS"
   - "\U0001F1E9\U0001F1EA DE 28 VMS"
   - "\U0001F1ED\U0001F1F0 HK 29 TJN"
-  - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 30 VMS"
   - "\U0001F1FA\U0001F1F8 US 31 TJN"
   - "\U0001F1F8\U0001F1EC SG 32 VMS"
   - "\U0001F1FA\U0001F1F8 US 33 VMS"
@@ -1346,8 +1346,8 @@ proxy-groups:
   - "\U0001F1EA\U0001F1EA EE 105 VMS"
   - "\U0001F1ED\U0001F1F0 HK 106 VMS"
   - "\U0001F1F8\U0001F1EC SG 107 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 108 TJN"
+  - "\U0001F1EE\U0001F1F7 IR 108 VMS"
   - "\U0001F1FA\U0001F1F8 US 109 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 110 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 110 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
