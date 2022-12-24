@@ -218,7 +218,7 @@ proxies:
   cipher: auto
   network: ws
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 20 VMS"
+  name: "\U0001F1E9\U0001F1EA DE 20 VMS"
   http-opts:
     path:
     - /
@@ -667,19 +667,15 @@ proxies:
   alterId: '0'
   cipher: auto
   network: ws
-- type: vmess
-  name: "\U0001F1E9\U0001F1EA DE 64 VMS"
-  http-opts:
-    path:
-    - /
-  server: freesaqqanet.xyz
-  port: 32625
-  uuid: eec9b35a-a2d3-4fa3-b402-a23e80fb8b37
-  alterId: '0'
-  cipher: auto
-  network: http
 - type: trojan
-  name: "\U0001F1ED\U0001F1F0 HK 65 TJN"
+  name: "\U0001F1ED\U0001F1F0 HK 64 TJN"
+  server: de.stablize.top
+  port: 443
+  password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 65 TJN"
   server: ap.stablize.top
   port: 443
   password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
@@ -687,13 +683,32 @@ proxies:
   skip-cert-verify: true
 - type: trojan
   name: "\U0001F1ED\U0001F1F0 HK 66 TJN"
+  server: us01.trojanyyds.xyz
+  port: 443
+  password: cd41b9d7-df15-46ad-a778-257b0851525a
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1ED\U0001F1F0 HK 67 TJN"
   server: ca.stablize.top
   port: 443
   password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
   udp: true
   skip-cert-verify: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 68 VMS"
+  ws-opts:
+    path: /wafa/
+    headers:
+      host: lg.iwafa.tk
+  server: ads.phonepe.com
+  port: 80
+  uuid: 11288503-4f79-4659-a033-bf538ab14499
+  alterId: '0'
+  cipher: auto
+  network: ws
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 67 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 69 SSR"
   server: 14.29.124.168
   port: 24001
   protocol: origin
@@ -723,7 +738,7 @@ proxy-groups:
   - "\U0001F1F3\U0001F1F1 NL 17 VMS"
   - "\U0001F1F8\U0001F1EC SG 18 TJN"
   - "\U0001F1EB\U0001F1EE FI 19 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 20 VMS"
+  - "\U0001F1E9\U0001F1EA DE 20 VMS"
   - "\U0001F1EB\U0001F1F7 FR 21 VMS"
   - "\U0001F1E9\U0001F1EA DE 22 VMS"
   - "\U0001F1F8\U0001F1EC SG 23 TJN"
@@ -767,10 +782,12 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 61 VMS"
   - "\U0001F1FA\U0001F1F8 US 62 VMS"
   - "\U0001F1E9\U0001F1EA DE 63 VMS"
-  - "\U0001F1E9\U0001F1EA DE 64 VMS"
-  - "\U0001F1ED\U0001F1F0 HK 65 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 64 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 65 TJN"
   - "\U0001F1ED\U0001F1F0 HK 66 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 67 SSR"
+  - "\U0001F1ED\U0001F1F0 HK 67 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 68 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 69 SSR"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -796,7 +813,7 @@ proxy-groups:
   - "\U0001F1F3\U0001F1F1 NL 17 VMS"
   - "\U0001F1F8\U0001F1EC SG 18 TJN"
   - "\U0001F1EB\U0001F1EE FI 19 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 20 VMS"
+  - "\U0001F1E9\U0001F1EA DE 20 VMS"
   - "\U0001F1EB\U0001F1F7 FR 21 VMS"
   - "\U0001F1E9\U0001F1EA DE 22 VMS"
   - "\U0001F1F8\U0001F1EC SG 23 TJN"
@@ -840,9 +857,11 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 61 VMS"
   - "\U0001F1FA\U0001F1F8 US 62 VMS"
   - "\U0001F1E9\U0001F1EA DE 63 VMS"
-  - "\U0001F1E9\U0001F1EA DE 64 VMS"
-  - "\U0001F1ED\U0001F1F0 HK 65 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 64 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 65 TJN"
   - "\U0001F1ED\U0001F1F0 HK 66 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 67 SSR"
+  - "\U0001F1ED\U0001F1F0 HK 67 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 68 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 69 SSR"
 rules:
 - "MATCH,\U0001F310 Proxy"
