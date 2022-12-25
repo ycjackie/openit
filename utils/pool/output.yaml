@@ -179,7 +179,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1F3\U0001F1F1 NL 18 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 18 VMS"
   ws-opts:
     path: /
   server: fr-9.sourcekade.site
@@ -218,7 +218,7 @@ proxies:
   cipher: auto
   network: http
 - type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 22 TJN"
+  name: "\U0001F1EF\U0001F1F5 JP 22 TJN"
   server: de.stablize.top
   port: 443
   password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
@@ -232,8 +232,18 @@ proxies:
   cipher: aes-128-cfb
   obfs: plain
   password: QazEdcTgb159@$*
+- type: vmess
+  name: "\U0001F1F3\U0001F1F1 NL 24 VMS"
+  ws-opts:
+    path: /
+  server: fr-9.sourcekade.site
+  port: 8080
+  uuid: 3f0bc389-0f54-4b6f-f0e4-1f7ea6519b95
+  alterId: '0'
+  cipher: auto
+  network: ws
 - type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 24 SSS"
+  name: "\U0001F1E8\U0001F1F3 CN 25 SSS"
   server: 175.6.138.60
   port: 56782
   cipher: aes-256-gcm
@@ -259,13 +269,14 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 15 VMS"
   - "\U0001F1EB\U0001F1EE FI 16 VMS"
   - "\U0001F1EB\U0001F1EE FI 17 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 18 VMS"
   - "\U0001F1E8\U0001F1F3 CN 19 SSS"
   - "\U0001F1FA\U0001F1F8 US 20 VMS"
   - "\U0001F1ED\U0001F1F0 HK 21 VMS"
-  - "\U0001F1F8\U0001F1EC SG 22 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 22 TJN"
   - "\U0001F1E8\U0001F1F3 CN 23 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 24 SSS"
+  - "\U0001F1F3\U0001F1F1 NL 24 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 25 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -289,12 +300,13 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 15 VMS"
   - "\U0001F1EB\U0001F1EE FI 16 VMS"
   - "\U0001F1EB\U0001F1EE FI 17 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 18 VMS"
   - "\U0001F1E8\U0001F1F3 CN 19 SSS"
   - "\U0001F1FA\U0001F1F8 US 20 VMS"
   - "\U0001F1ED\U0001F1F0 HK 21 VMS"
-  - "\U0001F1F8\U0001F1EC SG 22 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 22 TJN"
   - "\U0001F1E8\U0001F1F3 CN 23 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 24 SSS"
+  - "\U0001F1F3\U0001F1F1 NL 24 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 25 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
