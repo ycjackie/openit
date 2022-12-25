@@ -217,8 +217,15 @@ proxies:
   alterId: '0'
   cipher: auto
   network: http
+- type: trojan
+  name: "\U0001F1F8\U0001F1EC SG 22 TJN"
+  server: de.stablize.top
+  port: 443
+  password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
+  udp: true
+  skip-cert-verify: true
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 22 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 23 SSR"
   server: 14.29.124.168
   port: 24008
   protocol: origin
@@ -226,7 +233,7 @@ proxies:
   obfs: plain
   password: QazEdcTgb159@$*
 - type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 23 SSS"
+  name: "\U0001F1E8\U0001F1F3 CN 24 SSS"
   server: 175.6.138.60
   port: 56782
   cipher: aes-256-gcm
@@ -256,8 +263,9 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 19 SSS"
   - "\U0001F1FA\U0001F1F8 US 20 VMS"
   - "\U0001F1ED\U0001F1F0 HK 21 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 22 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 23 SSS"
+  - "\U0001F1F8\U0001F1EC SG 22 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 23 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 24 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -285,7 +293,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 19 SSS"
   - "\U0001F1FA\U0001F1F8 US 20 VMS"
   - "\U0001F1ED\U0001F1F0 HK 21 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 22 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 23 SSS"
+  - "\U0001F1F8\U0001F1EC SG 22 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 23 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 24 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
