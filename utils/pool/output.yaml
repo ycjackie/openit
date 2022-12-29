@@ -308,7 +308,15 @@ proxies:
   skip-cert-verify: true
   sni: de01.trojanyyds.xyz
 - type: trojan
-  name: "\U0001F1EF\U0001F1F5 JP 34 TJN"
+  name: "\U0001F1ED\U0001F1F0 HK 34 TJN"
+  server: in01.trojanyyds.xyz
+  port: 443
+  password: cd41b9d7-df15-46ad-a778-257b0851525a
+  udp: true
+  skip-cert-verify: true
+  sni: in01.trojanyyds.xyz
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 35 TJN"
   server: trs09.bolab.net
   port: 443
   password: 7a566d21dfcd0f12490275fd3dd3cfc4
@@ -316,7 +324,7 @@ proxies:
   skip-cert-verify: true
   sni: trs09.bolab.net
 - type: trojan
-  name: "\U0001F1ED\U0001F1F0 HK 35 TJN"
+  name: "\U0001F1ED\U0001F1F0 HK 36 TJN"
   server: kr.mjt001.com
   port: 443
   password: 6ca86014-8d5b-45e4-ae7c-90994689037f
@@ -324,21 +332,13 @@ proxies:
   skip-cert-verify: true
   sni: kr.mjt001.com
 - type: trojan
-  name: "\U0001F1FB\U0001F1F3 VN 36 TJN"
+  name: "\U0001F1FB\U0001F1F3 VN 37 TJN"
   server: 103.81.85.238
   port: 443
   password: d2727ecc-87bd-4bd0-b321-eb037b5d4cca
   udp: true
   skip-cert-verify: true
   sni: mzy.hruqoaw.cn
-- type: trojan
-  name: "\U0001F1ED\U0001F1F0 HK 37 TJN"
-  server: sg01.trojanyyds.xyz
-  port: 443
-  password: cd41b9d7-df15-46ad-a778-257b0851525a
-  udp: true
-  skip-cert-verify: true
-  sni: sg01.trojanyyds.xyz
 - type: trojan
   name: "\U0001F1ED\U0001F1F0 HK 38 TJN"
   server: 20.205.35.26
@@ -421,12 +421,12 @@ proxies:
   network: ws
 - type: trojan
   name: "\U0001F1ED\U0001F1F0 HK 47 TJN"
-  server: uk.mjt001.com
+  server: my.mjt001.com
   port: 443
   password: 6ca86014-8d5b-45e4-ae7c-90994689037f
   udp: true
   skip-cert-verify: true
-  sni: uk.mjt001.com
+  sni: my.mjt001.com
 - type: trojan
   name: "\U0001F1E8\U0001F1F3 CN 48 TJN"
   server: 223.111.202.209
@@ -444,7 +444,15 @@ proxies:
   skip-cert-verify: true
   sni: soft98.ir
 - type: trojan
-  name: "\U0001F1EC\U0001F1E7 GB 50 TJN"
+  name: "\U0001F1F8\U0001F1EC SG 50 TJN"
+  server: jp.mjt001.com
+  port: 443
+  password: 6ca86014-8d5b-45e4-ae7c-90994689037f
+  udp: true
+  skip-cert-verify: true
+  sni: jp.mjt001.com
+- type: trojan
+  name: "\U0001F1EC\U0001F1E7 GB 51 TJN"
   server: content-provider20.cdn-delivery.akamaicd.com
   port: 443
   password: shefelnak
@@ -452,7 +460,7 @@ proxies:
   skip-cert-verify: true
   sni: content-provider20.cdn-delivery.akamaicd.com
 - type: vmess
-  name: "\U0001F1EE\U0001F1F7 IR 51 VMS"
+  name: "\U0001F1EE\U0001F1F7 IR 52 VMS"
   ws-opts:
     path: /ws
   server: 185.24.255.24
@@ -461,8 +469,17 @@ proxies:
   alterId: '0'
   cipher: auto
   network: ws
+- type: http
+  name: "\U0001F1F7\U0001F1FA RU 53 HTT"
+  server: ru.secureconnect.me
+  port: 993
+  username: b2jj4gng51nehjl
+  password: 4cbNbK3dFaf3802
+  tls: true
+  skip-cert-verify: true
+  udp: true
 - type: vmess
-  name: "\U0001F1E8\U0001F1F3 CN 52 VMS"
+  name: "\U0001F1E8\U0001F1F3 CN 54 VMS"
   server: 47.104.237.32
   port: 50002
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -470,7 +487,7 @@ proxies:
   cipher: auto
   network: tcp
 - type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 53 TJN"
+  name: "\U0001F1ED\U0001F1F0 HK 55 TJN"
   server: ap.stablize.top
   port: 443
   password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
@@ -479,7 +496,7 @@ proxies:
   sni: ap.stablize.top
   network: tcp
 - type: trojan
-  name: "\U0001F1E8\U0001F1F3 CN 54 TJN"
+  name: "\U0001F1E8\U0001F1F3 CN 56 TJN"
   server: 223.111.202.209
   port: 30060
   password: d2727ecc-87bd-4bd0-b321-eb037b5d4cca
@@ -488,7 +505,7 @@ proxies:
   sni: mzy.hruqoaw.cn
   network: tcp
 - type: trojan
-  name: "\U0001F1ED\U0001F1F0 HK 55 TJN"
+  name: "\U0001F1ED\U0001F1F0 HK 57 TJN"
   server: sg.stablize.top
   port: 443
   password: f84eb1cc-1558-409b-a871-8dfa9563274e
@@ -497,7 +514,7 @@ proxies:
   sni: sg.stablize.top
   network: tcp
 - type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 56 TJN"
+  name: "\U0001F1F8\U0001F1EC SG 58 TJN"
   server: jp.stablize.top
   port: 443
   password: f84eb1cc-1558-409b-a871-8dfa9563274e
@@ -506,16 +523,7 @@ proxies:
   sni: jp.stablize.top
   network: tcp
 - type: trojan
-  name: "\U0001F1ED\U0001F1F0 HK 57 TJN"
-  server: ap.stablize.top
-  port: 443
-  password: f84eb1cc-1558-409b-a871-8dfa9563274e
-  udp: true
-  skip-cert-verify: true
-  sni: ap.stablize.top
-  network: tcp
-- type: trojan
-  name: "\U0001F1ED\U0001F1F0 HK 58 TJN"
+  name: "\U0001F1F8\U0001F1EC SG 59 TJN"
   server: jp.stablize.top
   port: 443
   password: 8fb84310-7f34-4e8e-baa8-83001844cc27
@@ -524,22 +532,13 @@ proxies:
   sni: jp.stablize.top
   network: tcp
 - type: trojan
-  name: "\U0001F1EF\U0001F1F5 JP 59 TJN"
+  name: "\U0001F1EF\U0001F1F5 JP 60 TJN"
   server: uk.stablize.top
   port: 443
   password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
   udp: true
   skip-cert-verify: true
   sni: uk.stablize.top
-  network: tcp
-- type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 60 TJN"
-  server: sg.mjt001.com
-  port: 443
-  password: 6ca86014-8d5b-45e4-ae7c-90994689037f
-  udp: true
-  skip-cert-verify: true
-  sni: sg.mjt001.com
   network: tcp
 - type: trojan
   name: "\U0001F1E8\U0001F1F3 CN 61 TJN"
@@ -549,6 +548,15 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: official.taipeicitygovernment.com.ua
+  network: tcp
+- type: trojan
+  name: "\U0001F1ED\U0001F1F0 HK 62 TJN"
+  server: de.stablize.top
+  port: 443
+  password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
+  udp: true
+  skip-cert-verify: true
+  sni: de.stablize.top
   network: tcp
 proxy-groups:
 - name: automatic
@@ -587,10 +595,10 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 31 TJN"
   - "\U0001F1E8\U0001F1F3 CN 32 TJN"
   - "\U0001F1ED\U0001F1F0 HK 33 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 34 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 35 TJN"
-  - "\U0001F1FB\U0001F1F3 VN 36 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 37 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 34 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 35 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 36 TJN"
+  - "\U0001F1FB\U0001F1F3 VN 37 TJN"
   - "\U0001F1ED\U0001F1F0 HK 38 TJN"
   - "\U0001F1ED\U0001F1F0 HK 39 TJN"
   - "\U0001F1FB\U0001F1F3 VN 40 TJN"
@@ -603,18 +611,19 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 47 TJN"
   - "\U0001F1E8\U0001F1F3 CN 48 TJN"
   - "\U0001F1EB\U0001F1F7 FR 49 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 50 TJN"
-  - "\U0001F1EE\U0001F1F7 IR 51 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 52 VMS"
-  - "\U0001F1F8\U0001F1EC SG 53 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 54 TJN"
+  - "\U0001F1F8\U0001F1EC SG 50 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 51 TJN"
+  - "\U0001F1EE\U0001F1F7 IR 52 VMS"
+  - "\U0001F1F7\U0001F1FA RU 53 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 54 VMS"
   - "\U0001F1ED\U0001F1F0 HK 55 TJN"
-  - "\U0001F1F8\U0001F1EC SG 56 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 56 TJN"
   - "\U0001F1ED\U0001F1F0 HK 57 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 58 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 59 TJN"
-  - "\U0001F1F8\U0001F1EC SG 60 TJN"
+  - "\U0001F1F8\U0001F1EC SG 58 TJN"
+  - "\U0001F1F8\U0001F1EC SG 59 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 60 TJN"
   - "\U0001F1E8\U0001F1F3 CN 61 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 62 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -654,10 +663,10 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 31 TJN"
   - "\U0001F1E8\U0001F1F3 CN 32 TJN"
   - "\U0001F1ED\U0001F1F0 HK 33 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 34 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 35 TJN"
-  - "\U0001F1FB\U0001F1F3 VN 36 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 37 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 34 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 35 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 36 TJN"
+  - "\U0001F1FB\U0001F1F3 VN 37 TJN"
   - "\U0001F1ED\U0001F1F0 HK 38 TJN"
   - "\U0001F1ED\U0001F1F0 HK 39 TJN"
   - "\U0001F1FB\U0001F1F3 VN 40 TJN"
@@ -670,17 +679,18 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 47 TJN"
   - "\U0001F1E8\U0001F1F3 CN 48 TJN"
   - "\U0001F1EB\U0001F1F7 FR 49 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 50 TJN"
-  - "\U0001F1EE\U0001F1F7 IR 51 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 52 VMS"
-  - "\U0001F1F8\U0001F1EC SG 53 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 54 TJN"
+  - "\U0001F1F8\U0001F1EC SG 50 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 51 TJN"
+  - "\U0001F1EE\U0001F1F7 IR 52 VMS"
+  - "\U0001F1F7\U0001F1FA RU 53 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 54 VMS"
   - "\U0001F1ED\U0001F1F0 HK 55 TJN"
-  - "\U0001F1F8\U0001F1EC SG 56 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 56 TJN"
   - "\U0001F1ED\U0001F1F0 HK 57 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 58 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 59 TJN"
-  - "\U0001F1F8\U0001F1EC SG 60 TJN"
+  - "\U0001F1F8\U0001F1EC SG 58 TJN"
+  - "\U0001F1F8\U0001F1EC SG 59 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 60 TJN"
   - "\U0001F1E8\U0001F1F3 CN 61 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 62 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
