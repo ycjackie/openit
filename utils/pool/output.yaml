@@ -660,17 +660,6 @@ proxies:
   alterId: '0'
   cipher: auto
   network: tcp
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 62 TJN"
-  server: s20.mynameismahsa.info
-  port: 2053
-  password: user
-  udp: true
-  skip-cert-verify: true
-  sni: s20.mynameismahsa.info
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: automatic
   type: url-test
@@ -736,7 +725,6 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 59 VMS"
   - "\U0001F1F8\U0001F1EC SG 60 VMS"
   - "\U0001F1E8\U0001F1F3 CN 61 VMS"
-  - "\U0001F1FA\U0001F1F8 US 62 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -804,6 +792,5 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 59 VMS"
   - "\U0001F1F8\U0001F1EC SG 60 VMS"
   - "\U0001F1E8\U0001F1F3 CN 61 VMS"
-  - "\U0001F1FA\U0001F1F8 US 62 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
