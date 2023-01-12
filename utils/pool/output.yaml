@@ -352,6 +352,19 @@ proxies:
   cipher: aes-128-gcm
   network: ws
   tls: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 34 VMS"
+  ws-opts:
+    path: /shirker
+    headers:
+      host: us-dp.sharecentre.online
+  server: cf-lt.sharecentre.online
+  port: 443
+  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  alterId: '0'
+  cipher: aes-128-gcm
+  network: ws
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -389,6 +402,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 31 VMS"
   - "\U0001F1E8\U0001F1F3 CN 32 VMS"
   - "\U0001F1FA\U0001F1F8 US 33 VMS"
+  - "\U0001F1FA\U0001F1F8 US 34 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -428,5 +442,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 31 VMS"
   - "\U0001F1E8\U0001F1F3 CN 32 VMS"
   - "\U0001F1FA\U0001F1F8 US 33 VMS"
+  - "\U0001F1FA\U0001F1F8 US 34 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
