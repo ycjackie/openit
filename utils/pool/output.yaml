@@ -1,13 +1,28 @@
-proxies: []
+proxies:
+- type: vmess
+  name: "\U0001F1E7\U0001F1FF BZ 1 VMS"
+  ws-opts:
+    path: /5QNROSRV
+    headers:
+      host: oplg1.zhujicn2.com
+  server: 203.30.189.190
+  port: 443
+  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+  alterId: '0'
+  cipher: auto
+  network: ws
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E7\U0001F1FF BZ 1 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E7\U0001F1FF BZ 1 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
