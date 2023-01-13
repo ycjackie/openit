@@ -717,7 +717,7 @@ proxies:
   cipher: auto
   network: ws
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 68 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 68 VMS"
   ws-opts:
     path: /myblog
   server: vfly3.win
@@ -809,6 +809,17 @@ proxies:
   udp: true
   skip-cert-verify: true
   network: tcp
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 80 VMS"
+  ws-opts:
+    path: /huhublog
+  server: zhuyong.hucloud-dns.xyz
+  port: 443
+  uuid: 9a18cbb1-81d2-4720-9f09-46ea276b6ddb
+  alterId: '0'
+  cipher: auto
+  network: ws
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -880,7 +891,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 65 VMS"
   - "\U0001F1E6\U0001F1F2 AM 66 VMS"
   - "\U0001F1EB\U0001F1F7 FR 67 VMS"
-  - "\U0001F1FA\U0001F1F8 US 68 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 68 VMS"
   - "\U0001F1E8\U0001F1F3 CN 69 SSS"
   - "\U0001F1E7\U0001F1FF BZ 70 VMS"
   - "\U0001F1E8\U0001F1F3 CN 71 SSS"
@@ -892,6 +903,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 77 TJN"
   - "\U0001F1FA\U0001F1F8 US 78 VMS"
   - "\U0001F1F8\U0001F1EC SG 79 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 80 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -965,7 +977,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 65 VMS"
   - "\U0001F1E6\U0001F1F2 AM 66 VMS"
   - "\U0001F1EB\U0001F1F7 FR 67 VMS"
-  - "\U0001F1FA\U0001F1F8 US 68 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 68 VMS"
   - "\U0001F1E8\U0001F1F3 CN 69 SSS"
   - "\U0001F1E7\U0001F1FF BZ 70 VMS"
   - "\U0001F1E8\U0001F1F3 CN 71 SSS"
@@ -977,5 +989,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 77 TJN"
   - "\U0001F1FA\U0001F1F8 US 78 VMS"
   - "\U0001F1F8\U0001F1EC SG 79 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 80 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
