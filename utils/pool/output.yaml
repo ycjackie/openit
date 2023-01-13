@@ -382,17 +382,6 @@ proxies:
   alterId: '0'
   cipher: auto
   network: http
-- type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 36 VMS"
-  ws-opts:
-    path: /huhublog
-  server: zhuyong.hucloud-dns.xyz
-  port: 443
-  uuid: 9a18cbb1-81d2-4720-9f09-46ea276b6ddb
-  alterId: '0'
-  cipher: auto
-  network: ws
-  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -432,7 +421,6 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 33 VMS"
   - "\U0001F1ED\U0001F1F0 HK 34 VMS"
   - "\U0001F1ED\U0001F1F0 HK 35 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 36 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -474,6 +462,5 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 33 VMS"
   - "\U0001F1ED\U0001F1F0 HK 34 VMS"
   - "\U0001F1ED\U0001F1F0 HK 35 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 36 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
