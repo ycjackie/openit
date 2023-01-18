@@ -567,6 +567,66 @@ proxies:
   skip-cert-verify: true
   sni: jp2.91js.pw
   network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 63 VMS"
+  server: 162.159.152.100
+  port: 2086
+  type: vmess
+  uuid: 756913b7-3733-469c-d988-bed6abf08d43
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /aries?ed=2048
+    headers:
+      Host: tr.cloudflare.quest
+  udp: true
+- name: "\U0001F1FA\U0001F1F3 UN 64 VMS"
+  server: 162.159.128.100
+  port: 2086
+  type: vmess
+  uuid: 2ab46798-379c-47f0-84e9-998d3b9814e7
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /aries?ed=2048
+    headers:
+      Host: au.gcore.cloudflare.quest
+  udp: true
+- name: "\U0001F1FA\U0001F1F3 UN 65 VMS"
+  server: 162.159.152.100
+  port: 2082
+  type: vmess
+  uuid: 80837af3-1ed8-4686-fa8a-6bf9214d5351
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /aries
+    headers:
+      Host: UK.CLOUDFLARE.QUEST
+  udp: true
+- name: "\U0001F1FA\U0001F1F3 UN 66 VMS"
+  server: 162.159.128.100
+  port: 2082
+  type: vmess
+  uuid: bac3209d-d7c0-4879-c522-be43430a0b4c
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /aries
+    headers:
+      Host: jp.gcore.cloudflare.quest
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -633,6 +693,10 @@ proxy-groups:
   - "\U0001F1FB\U0001F1F3 VN 60 VMS"
   - "\U0001F1E8\U0001F1F3 CN 61 SSR"
   - "\U0001F1E8\U0001F1F3 CN 62 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 63 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 64 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 65 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 66 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -701,5 +765,9 @@ proxy-groups:
   - "\U0001F1FB\U0001F1F3 VN 60 VMS"
   - "\U0001F1E8\U0001F1F3 CN 61 SSR"
   - "\U0001F1E8\U0001F1F3 CN 62 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 63 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 64 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 65 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 66 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
