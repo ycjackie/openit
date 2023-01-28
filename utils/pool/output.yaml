@@ -585,6 +585,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: azhk003.xiaohouzi.club
+  network: tcp
 - type: vmess
   name: "\U0001F1FB\U0001F1F3 VN 52 VMS"
   ws-opts:
@@ -632,6 +633,9 @@ proxies:
   http-opts:
     path:
     - /
+    headers:
+      Host:
+      - 47.242.203.73
   server: 47.242.203.73
   port: 61652
   uuid: 3ca2c716-801f-4385-9948-4bc58903ac49
@@ -669,6 +673,9 @@ proxies:
   http-opts:
     path:
     - /
+    headers:
+      Host:
+      - 8.210.253.102
   server: 8.210.253.102
   port: 52032
   uuid: d4d339ea-e1b4-44fb-b6e5-5460b229d03a
@@ -723,6 +730,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: azhk097.xiaohouzi.club
+  network: tcp
 - type: vmess
   name: "\U0001F1FA\U0001F1F8 US 67 VMS"
   ws-opts:
@@ -868,7 +876,15 @@ proxies:
   cipher: auto
   network: tcp
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 83 VMS"
+  name: "\U0001F1E8\U0001F1F3 CN 83 VMS"
+  server: 58.32.13.93
+  port: 10001
+  uuid: cb7001c7-e495-41ac-b942-f25f60523414
+  alterId: '0'
+  cipher: auto
+  network: tcp
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 84 VMS"
   ws-opts:
     path: /
   server: hcm2.safepn.net
@@ -878,7 +894,7 @@ proxies:
   cipher: auto
   network: ws
 - type: vmess
-  name: "\U0001F1E8\U0001F1F3 CN 84 VMS"
+  name: "\U0001F1E8\U0001F1F3 CN 85 VMS"
   server: 112.132.215.189
   port: 50002
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -886,7 +902,7 @@ proxies:
   cipher: auto
   network: tcp
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 85 TJN"
+  name: "\U0001F1FA\U0001F1F8 US 86 TJN"
   server: 155.248.193.254
   port: 31853
   password: jKRJgS7uvI
@@ -894,7 +910,7 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 86 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 87 VMS"
   ws-opts:
     path: /AUIKN8AU
     headers:
@@ -907,7 +923,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1F3\U0001F1F1 NL 87 VMS"
+  name: "\U0001F1F3\U0001F1F1 NL 88 VMS"
   ws-opts:
     path: /5QNROSRV
     headers:
@@ -920,7 +936,7 @@ proxies:
   network: ws
   tls: true
 - type: trojan
-  name: "\U0001F1E8\U0001F1F3 CN 88 TJN"
+  name: "\U0001F1E8\U0001F1F3 CN 89 TJN"
   server: hnm.xiaohouzi.club
   port: 47553
   password: a3278882-3614-39cf-a3d6-faefa8c910ab
@@ -928,7 +944,7 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - type: vmess
-  name: "\U0001F1E7\U0001F1FF BZ 89 VMS"
+  name: "\U0001F1E7\U0001F1FF BZ 90 VMS"
   ws-opts:
     path: /ECTCJ0DF
     headers:
@@ -941,7 +957,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1E8\U0001F1FE CY 90 VMS"
+  name: "\U0001F1E8\U0001F1FE CY 91 VMS"
   ws-opts:
     path: /5QNROSRV
     headers:
@@ -954,7 +970,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 91 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 92 VMS"
   ws-opts:
     path: /dongtaiwang.com
     headers:
@@ -967,13 +983,13 @@ proxies:
   network: ws
   tls: true
 - type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 92 SSS"
+  name: "\U0001F1E8\U0001F1F3 CN 93 SSS"
   server: sh.cm.izhimajiasu.com
   port: 45001
   cipher: chacha20-ietf-poly1305
   password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da
 - type: vmess
-  name: "\U0001F1E8\U0001F1E6 CA 93 VMS"
+  name: "\U0001F1E8\U0001F1E6 CA 94 VMS"
   http-opts:
     path:
     - /
@@ -984,7 +1000,7 @@ proxies:
   cipher: auto
   network: http
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 94 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 95 VMS"
   ws-opts:
     path: /aries
     headers:
@@ -996,7 +1012,20 @@ proxies:
   cipher: auto
   network: ws
 - type: vmess
-  name: "\U0001F1F8\U0001F1EC SG 95 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 96 VMS"
+  ws-opts:
+    path: /IYKLD53M
+    headers:
+      host: opfr1.v2rayfree1.xyz
+  server: 141.193.213.20
+  port: 443
+  uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
+  alterId: '0'
+  cipher: auto
+  network: ws
+  tls: true
+- type: vmess
+  name: "\U0001F1F8\U0001F1EC SG 97 VMS"
   ws-opts:
     path: /sg1
     headers:
@@ -1008,7 +1037,7 @@ proxies:
   cipher: auto
   network: ws
 - type: vmess
-  name: "\U0001F1E8\U0001F1FE CY 96 VMS"
+  name: "\U0001F1E8\U0001F1FE CY 98 VMS"
   ws-opts:
     path: /A2DJOPFT
     headers:
@@ -1021,20 +1050,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 97 VMS"
-  ws-opts:
-    path: /9JZFDTKE
-    headers:
-      host: fr1.trump2023.org
-  server: hohm.microsoft.com
-  port: 443
-  uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
-  alterId: '0'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 98 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 99 VMS"
   ws-opts:
     path: /dsadsa1dsadsa33434
     headers:
@@ -1047,7 +1063,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 99 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 100 VMS"
   ws-opts:
     path: /dsadsa1dsadsa33434
   server: xjp4h.mayaa.ml
@@ -1058,31 +1074,18 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1E8\U0001F1F3 CN 100 VMS"
+  name: "\U0001F1E8\U0001F1F3 CN 101 VMS"
   server: 39.103.165.178
   port: 50002
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: '64'
   cipher: auto
 - type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 101 SSS"
+  name: "\U0001F1E8\U0001F1F3 CN 102 SSS"
   server: sh.cm.izhimajiasu.com
   port: 45077
   cipher: chacha20-ietf-poly1305
   password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da
-- type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 102 VMS"
-  ws-opts:
-    path: /9JZFDTKE
-    headers:
-      host: fr1.trump2023.org
-  server: 141.193.213.21
-  port: 443
-  uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
-  alterId: '0'
-  cipher: auto
-  network: ws
-  tls: true
 - type: vmess
   name: "\U0001F1F0\U0001F1F7 KR 103 VMS"
   http-opts:
@@ -1170,14 +1173,6 @@ proxies:
   alterId: '0'
   cipher: auto
   network: ws
-- type: vmess
-  name: "\U0001F1E8\U0001F1F3 CN 116 VMS"
-  server: 58.32.13.93
-  port: 10001
-  uuid: cb7001c7-e495-41ac-b942-f25f60523414
-  alterId: '0'
-  cipher: auto
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -1264,26 +1259,26 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 80 VMS"
   - "\U0001F1F0\U0001F1F7 KR 81 VMS"
   - "\U0001F1F8\U0001F1EC SG 82 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 83 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 84 VMS"
-  - "\U0001F1FA\U0001F1F8 US 85 TJN"
-  - "\U0001F1FA\U0001F1F8 US 86 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 87 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 88 TJN"
-  - "\U0001F1E7\U0001F1FF BZ 89 VMS"
-  - "\U0001F1E8\U0001F1FE CY 90 VMS"
-  - "\U0001F1FA\U0001F1F8 US 91 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 92 SSS"
-  - "\U0001F1E8\U0001F1E6 CA 93 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 94 VMS"
-  - "\U0001F1F8\U0001F1EC SG 95 VMS"
-  - "\U0001F1E8\U0001F1FE CY 96 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 97 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 98 VMS"
-  - "\U0001F1FA\U0001F1F8 US 99 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 100 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 101 SSS"
-  - "\U0001F1FA\U0001F1F8 US 102 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 83 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 84 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 85 VMS"
+  - "\U0001F1FA\U0001F1F8 US 86 TJN"
+  - "\U0001F1FA\U0001F1F8 US 87 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 88 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 89 TJN"
+  - "\U0001F1E7\U0001F1FF BZ 90 VMS"
+  - "\U0001F1E8\U0001F1FE CY 91 VMS"
+  - "\U0001F1FA\U0001F1F8 US 92 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 93 SSS"
+  - "\U0001F1E8\U0001F1E6 CA 94 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 95 VMS"
+  - "\U0001F1FA\U0001F1F8 US 96 VMS"
+  - "\U0001F1F8\U0001F1EC SG 97 VMS"
+  - "\U0001F1E8\U0001F1FE CY 98 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 99 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 100 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 101 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 102 SSS"
   - "\U0001F1F0\U0001F1F7 KR 103 VMS"
   - "\U0001F1E8\U0001F1F3 CN 104 SSS"
   - "\U0001F1E8\U0001F1F3 CN 105 SSS"
@@ -1297,7 +1292,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 113 SSS"
   - "\U0001F1E8\U0001F1F3 CN 114 SSS"
   - "\U0001F1F2\U0001F1FD MX 115 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 116 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1386,26 +1380,26 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 80 VMS"
   - "\U0001F1F0\U0001F1F7 KR 81 VMS"
   - "\U0001F1F8\U0001F1EC SG 82 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 83 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 84 VMS"
-  - "\U0001F1FA\U0001F1F8 US 85 TJN"
-  - "\U0001F1FA\U0001F1F8 US 86 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 87 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 88 TJN"
-  - "\U0001F1E7\U0001F1FF BZ 89 VMS"
-  - "\U0001F1E8\U0001F1FE CY 90 VMS"
-  - "\U0001F1FA\U0001F1F8 US 91 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 92 SSS"
-  - "\U0001F1E8\U0001F1E6 CA 93 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 94 VMS"
-  - "\U0001F1F8\U0001F1EC SG 95 VMS"
-  - "\U0001F1E8\U0001F1FE CY 96 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 97 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 98 VMS"
-  - "\U0001F1FA\U0001F1F8 US 99 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 100 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 101 SSS"
-  - "\U0001F1FA\U0001F1F8 US 102 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 83 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 84 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 85 VMS"
+  - "\U0001F1FA\U0001F1F8 US 86 TJN"
+  - "\U0001F1FA\U0001F1F8 US 87 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 88 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 89 TJN"
+  - "\U0001F1E7\U0001F1FF BZ 90 VMS"
+  - "\U0001F1E8\U0001F1FE CY 91 VMS"
+  - "\U0001F1FA\U0001F1F8 US 92 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 93 SSS"
+  - "\U0001F1E8\U0001F1E6 CA 94 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 95 VMS"
+  - "\U0001F1FA\U0001F1F8 US 96 VMS"
+  - "\U0001F1F8\U0001F1EC SG 97 VMS"
+  - "\U0001F1E8\U0001F1FE CY 98 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 99 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 100 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 101 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 102 SSS"
   - "\U0001F1F0\U0001F1F7 KR 103 VMS"
   - "\U0001F1E8\U0001F1F3 CN 104 SSS"
   - "\U0001F1E8\U0001F1F3 CN 105 SSS"
@@ -1419,6 +1413,5 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 113 SSS"
   - "\U0001F1E8\U0001F1F3 CN 114 SSS"
   - "\U0001F1F2\U0001F1FD MX 115 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 116 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
