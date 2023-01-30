@@ -196,11 +196,9 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: IT 1|TG@BPXD666, server: 188.114.96.3, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray}, udp: true}
   - {name: LT 1|TG@BPXD666, server: 185.77.96.29, port: 57888, type: vmess, uuid: 3a8dbd85-d483-48ec-cc57-fcf857c32f02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: RW 1|TG@BPXD666, server: 103.231.248.222, port: 443, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: 20.211.38.190, port: 443, type: trojan, password: d91ed572, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: 172.67.132.15, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray}, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: 161.129.34.126, port: 443, type: vmess, uuid: a0b1fb66-ed41-4077-86a9-a61c143d3777, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /a0b1fb66-ed41-4077-86a9-a61c143d3777}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -218,22 +216,18 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - IT 1|TG@BPXD666
       - LT 1|TG@BPXD666
+      - RW 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - IT 1|TG@BPXD666
       - LT 1|TG@BPXD666
+      - RW 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -255,8 +249,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -281,22 +273,18 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - IT 1|TG@BPXD666
       - LT 1|TG@BPXD666
+      - RW 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - IT 1|TG@BPXD666
       - LT 1|TG@BPXD666
+      - RW 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
