@@ -1,13 +1,128 @@
-proxies: []
+proxies:
+- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
+  type: vmess
+  server: 172.64.152.150
+  port: 443
+  cipher: auto
+  uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /dongtaiwang.com
+    headers:
+      host: clash6.ssr-free.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  type: ss
+  server: 14.29.124.168
+  port: 25251
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: "\U0001F1EF\U0001F1F5 JP 3 VMS"
+  type: vmess
+  server: 172.104.122.21
+  port: 443
+  cipher: auto
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts: {}
+- name: "\U0001F1EF\U0001F1F5 JP 4 VMS"
+  type: vmess
+  server: 172.105.220.10
+  port: 443
+  cipher: auto
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /chat
+- name: "\U0001F1FA\U0001F1F8 US 5 TJN"
+  type: trojan
+  server: 148.59.74.184
+  port: 443
+  udp: true
+  password: 0469291f-33cf-4909-aac2-265c22fe9e1e
+  sni: $pcd462233.netvigator.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1E6 CA 6 VMS"
+  type: vmess
+  server: 23.227.38.39
+  port: 443
+  cipher: auto
+  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5QNROSRV
+    headers:
+      host: oplg1.zhujicn2.com
+- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
+  type: vmess
+  server: 172.67.205.70
+  port: 443
+  cipher: auto
+  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /shirker
+    headers:
+      host: sg-gcore.sharecentre.online
+- name: "\U0001F1F0\U0001F1F7 KR 8 VMS"
+  type: vmess
+  server: kr-05.wxfz.ml
+  port: 48413
+  cipher: auto
+  uuid: a06748d4-7669-49dd-dd1a-25d73471a051
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts: {}
+- name: "\U0001F1E8\U0001F1F3 CN 9 SSS"
+  type: ss
+  server: 14.29.124.168
+  port: 25297
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1EF\U0001F1F5 JP 3 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 4 VMS"
+  - "\U0001F1FA\U0001F1F8 US 5 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1F0\U0001F1F7 KR 8 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 9 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1EF\U0001F1F5 JP 3 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 4 VMS"
+  - "\U0001F1FA\U0001F1F8 US 5 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1F0\U0001F1F7 KR 8 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 9 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
