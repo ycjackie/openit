@@ -25,7 +25,7 @@ proxies:
   network: tcp
   alpn:
   - http/1.1
-- name: "\U0001F1FA\U0001F1F3 UN 3 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
   type: vmess
   server: spidar.spidar.workers.dev
   port: 443
@@ -419,15 +419,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: "\U0001F1E8\U0001F1F3 CN 35 SSR"
-  type: ssr
-  server: 36.156.222.25
-  port: 32986
-  password: zztw9jk7gu
-  cipher: chacha20-ietf
-  obfs: http_simple
-  protocol: auth_aes128_sha1
-- name: "\U0001F1F0\U0001F1F7 KR 36 VMS"
+- name: "\U0001F1F0\U0001F1F7 KR 35 VMS"
   type: vmess
   server: 13.125.10.194
   port: 31730
@@ -437,22 +429,30 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 37 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 36 TJN"
   type: trojan
   server: 52.253.117.77
   port: 443
   udp: true
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
-  sni: $$$$paydiu.com
+  sni: $$$paydiu.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 37 SSR"
+  type: ssr
+  server: 36.156.222.25
+  port: 32986
+  password: zztw9jk7gu
+  cipher: chacha20-ietf
+  obfs: http_simple
+  protocol: auth_aes128_sha1
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EB\U0001F1F7 FR 1 VMS"
   - "\U0001F1EB\U0001F1F7 FR 2 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
   - "\U0001F1E8\U0001F1F3 CN 5 SSS"
   - "\U0001F1EF\U0001F1F5 JP 6 VMS"
@@ -484,9 +484,9 @@ proxy-groups:
   - "\U0001F1F7\U0001F1FA RU 32 VMS"
   - "\U0001F1E8\U0001F1F3 CN 33 VMS"
   - "\U0001F1FA\U0001F1F8 US 34 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 35 SSR"
-  - "\U0001F1F0\U0001F1F7 KR 36 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 37 TJN"
+  - "\U0001F1F0\U0001F1F7 KR 35 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 36 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 37 SSR"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -495,7 +495,7 @@ proxy-groups:
   - automatic
   - "\U0001F1EB\U0001F1F7 FR 1 VMS"
   - "\U0001F1EB\U0001F1F7 FR 2 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
   - "\U0001F1E8\U0001F1F3 CN 5 SSS"
   - "\U0001F1EF\U0001F1F5 JP 6 VMS"
@@ -527,8 +527,8 @@ proxy-groups:
   - "\U0001F1F7\U0001F1FA RU 32 VMS"
   - "\U0001F1E8\U0001F1F3 CN 33 VMS"
   - "\U0001F1FA\U0001F1F8 US 34 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 35 SSR"
-  - "\U0001F1F0\U0001F1F7 KR 36 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 37 TJN"
+  - "\U0001F1F0\U0001F1F7 KR 35 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 36 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 37 SSR"
 rules:
 - "MATCH,\U0001F310 Proxy"
