@@ -1,20 +1,20 @@
 proxies:
-- name: "\U0001F1F0\U0001F1F7 KR 1 VMS"
-  type: vmess
-  server: 146.56.40.195
-  port: 21875
-  cipher: auto
-  uuid: 3462409a-61c9-4fd2-ed4b-fa929217b282
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-- name: "\U0001F1F8\U0001F1EC SG 2 VMS"
+- name: "\U0001F1F8\U0001F1EC SG 1 VMS"
   type: vmess
   server: 24a51f02-f25c-87fa-7acf-eea632e63c7c.cnnic.rip
   port: 80
   cipher: auto
   uuid: 3ed486c9-f581-477f-85b8-f48c0095064a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+- name: "\U0001F1F0\U0001F1F7 KR 2 VMS"
+  type: vmess
+  server: 146.56.40.195
+  port: 21875
+  cipher: auto
+  uuid: 3462409a-61c9-4fd2-ed4b-fa929217b282
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -469,8 +469,8 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F0\U0001F1F7 KR 1 VMS"
-  - "\U0001F1F8\U0001F1EC SG 2 VMS"
+  - "\U0001F1F8\U0001F1EC SG 1 VMS"
+  - "\U0001F1F0\U0001F1F7 KR 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1E8\U0001F1F3 CN 4 VMS"
   - "\U0001F1ED\U0001F1F0 HK 5 VMS"
@@ -519,8 +519,8 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1F0\U0001F1F7 KR 1 VMS"
-  - "\U0001F1F8\U0001F1EC SG 2 VMS"
+  - "\U0001F1F8\U0001F1EC SG 1 VMS"
+  - "\U0001F1F0\U0001F1F7 KR 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1E8\U0001F1F3 CN 4 VMS"
   - "\U0001F1ED\U0001F1F0 HK 5 VMS"
