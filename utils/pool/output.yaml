@@ -1,13 +1,83 @@
-proxies: []
+proxies:
+- name: "\U0001F1F8\U0001F1EC SG 1 VMS"
+  type: vmess
+  server: 139.99.91.95
+  port: 443
+  cipher: auto
+  uuid: c0156451-4efb-45e2-84fc-8d315c4650db
+  alterId: 32
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: tcp
+- name: "\U0001F1F7\U0001F1F4 RO 2 VMS"
+  type: vmess
+  server: 45.85.119.94
+  port: 443
+  cipher: auto
+  uuid: ee30d3ff-da14-4ea8-bcd2-02e8ee3667de
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  servername: hstr1675520106270.aidapp.life
+  network: ws
+  ws-opts:
+    path: /aidapp.lifevws
+    headers:
+      host: hstr1675520106270.aidapp.life
+- name: "\U0001F1EE\U0001F1F7 IR 3 TJN"
+  type: trojan
+  server: login.progbyrazyar.ir
+  port: 2087
+  udp: true
+  password: qMmvouLC77
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EC\U0001F1E7 GB 4 VMS"
+  type: vmess
+  server: vtor8.net2vip.com
+  port: 54766
+  cipher: auto
+  uuid: 6620d0e4-9a9f-4a49-d0e0-e0be3775078f
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  type: vmess
+  server: vc-de1.sudoxin.tk
+  port: 443
+  cipher: auto
+  uuid: 2b0aa472-73f8-4c44-b194-988261aed232
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  servername: vc-de1.sudoxin.tk
+  network: ws
+  ws-opts:
+    path: /2b0aa472-73f8-4c44-b194-988261aed232
+    headers:
+      host: vc-de1.sudoxin.tk
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1F8\U0001F1EC SG 1 VMS"
+  - "\U0001F1F7\U0001F1F4 RO 2 VMS"
+  - "\U0001F1EE\U0001F1F7 IR 3 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1F8\U0001F1EC SG 1 VMS"
+  - "\U0001F1F7\U0001F1F4 RO 2 VMS"
+  - "\U0001F1EE\U0001F1F7 IR 3 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
