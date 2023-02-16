@@ -26,7 +26,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 3 VMS"
   ws-opts:
     path: /ray
     headers:
@@ -62,8 +62,20 @@ proxies:
   alterId: '0'
   cipher: auto
   network: ws
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  ws-opts:
+    path: /usv125N93nz
+    headers:
+      host: v125.toddns.tk
+  server: v125.toddns.tk
+  port: 80
+  uuid: a25881f3-967f-3265-bc7f-9e66857b016b
+  alterId: '0'
+  cipher: auto
+  network: ws
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 6 TJN"
+  name: "\U0001F1FA\U0001F1F8 US 7 TJN"
   server: 23.145.24.30
   port: 443
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
@@ -71,7 +83,7 @@ proxies:
   skip-cert-verify: true
   sni: paydiu.com
 - type: trojan
-  name: "\U0001F1ED\U0001F1F0 HK 7 TJN"
+  name: "\U0001F1ED\U0001F1F0 HK 8 TJN"
   server: 103.135.103.224
   port: 443
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
@@ -79,7 +91,7 @@ proxies:
   skip-cert-verify: true
   sni: paydiu.com
 - type: trojan
-  name: "\U0001F1EC\U0001F1E7 GB 8 TJN"
+  name: "\U0001F1EC\U0001F1E7 GB 9 TJN"
   server: 185.49.33.47
   port: 8461
   password: shenmegui
@@ -87,7 +99,7 @@ proxies:
   skip-cert-verify: true
   sni: $jp.swiftfalcon.app
 - type: vmess
-  name: "\U0001F1F8\U0001F1EC SG 9 VMS"
+  name: "\U0001F1F8\U0001F1EC SG 10 VMS"
   ws-opts:
     path: /v2ray
     headers:
@@ -99,19 +111,7 @@ proxies:
   cipher: auto
   network: ws
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 10 VMS"
-  ws-opts:
-    path: /ZPK2023jLBv10Ey
-    headers:
-      host: v10.toddns.tk
-  server: v10.toddns.tk
-  port: 80
-  uuid: a25881f3-967f-3265-bc7f-9e66857b016b
-  alterId: '0'
-  cipher: auto
-  network: ws
-- type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 11 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 11 VMS"
   ws-opts:
     path: /
     headers:
@@ -123,20 +123,8 @@ proxies:
   cipher: auto
   network: ws
   tls: true
-- type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 12 VMS"
-  ws-opts:
-    path: /ray
-    headers:
-      host: uk2vc.vps-jdkz.cf
-  server: 172.67.190.72
-  port: 80
-  uuid: 462a1f83-f2f6-41de-c844-3e738d5a5648
-  alterId: '0'
-  cipher: auto
-  network: ws
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 13 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 12 SSR"
   server: 111.6.86.10
   port: 668
   protocol: auth_aes128_md5
@@ -146,7 +134,7 @@ proxies:
   obfs-param: ajax.microsoft.com
   protocol-param: 51063:265f092f-418b-30c9-a479-4800fd44dd19
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 14 SSR"
+  name: "\U0001F1E8\U0001F1F3 CN 13 SSR"
   server: 103.45.78.241
   port: 42833
   protocol: origin
@@ -155,7 +143,7 @@ proxies:
   password: YpX2opBbrfqJzzMs
   obfs-param: www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 15 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 14 VMS"
   ws-opts:
     path: /vmess
     headers:
@@ -168,7 +156,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1EF\U0001F1F5 JP 16 VMS"
+  name: "\U0001F1EF\U0001F1F5 JP 15 VMS"
   ws-opts:
     path: /chat
     headers:
@@ -181,7 +169,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 17 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 16 VMS"
   ws-opts:
     path: /api
     headers:
@@ -199,21 +187,20 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F3 UN 1 TJN"
   - "\U0001F1FA\U0001F1F3 UN 2 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1F0\U0001F1F7 KR 4 VMS"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
-  - "\U0001F1FA\U0001F1F8 US 6 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 7 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 8 TJN"
-  - "\U0001F1F8\U0001F1EC SG 9 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
-  - "\U0001F1FA\U0001F1F8 US 11 VMS"
-  - "\U0001F1FA\U0001F1F8 US 12 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 8 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 9 TJN"
+  - "\U0001F1F8\U0001F1EC SG 10 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 11 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 12 SSR"
   - "\U0001F1E8\U0001F1F3 CN 13 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 14 SSR"
-  - "\U0001F1FA\U0001F1F3 UN 15 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 16 VMS"
-  - "\U0001F1FA\U0001F1F8 US 17 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 14 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 15 VMS"
+  - "\U0001F1FA\U0001F1F8 US 16 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -222,20 +209,19 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F3 UN 1 TJN"
   - "\U0001F1FA\U0001F1F3 UN 2 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1F0\U0001F1F7 KR 4 VMS"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
-  - "\U0001F1FA\U0001F1F8 US 6 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 7 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 8 TJN"
-  - "\U0001F1F8\U0001F1EC SG 9 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
-  - "\U0001F1FA\U0001F1F8 US 11 VMS"
-  - "\U0001F1FA\U0001F1F8 US 12 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 8 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 9 TJN"
+  - "\U0001F1F8\U0001F1EC SG 10 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 11 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 12 SSR"
   - "\U0001F1E8\U0001F1F3 CN 13 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 14 SSR"
-  - "\U0001F1FA\U0001F1F3 UN 15 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 16 VMS"
-  - "\U0001F1FA\U0001F1F8 US 17 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 14 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 15 VMS"
+  - "\U0001F1FA\U0001F1F8 US 16 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
