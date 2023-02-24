@@ -67,17 +67,14 @@ proxies:
   skip-cert-verify: true
   sni: v2sg01.fuqiangren.com
   network: tcp
-- type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 8 VMS"
-  ws-opts:
-    path: /cone
-  server: ncdn.paotung.org
-  port: 443
-  uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-  alterId: '0'
-  cipher: auto
-  network: ws
-  tls: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 8 TJN"
+  server: hk01.shenzhouplus.cf
+  port: 10005
+  password: 623d6c1ffc2a4f4f8eb7575c45429df5
+  udp: true
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 9 VMS"
   type: vmess
   server: 152.69.206.73
@@ -182,7 +179,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 5 VMS"
   - "\U0001F1E8\U0001F1F3 CN 6 VMS"
   - "\U0001F1E8\U0001F1F3 CN 7 TJN"
-  - "\U0001F1FA\U0001F1F8 US 8 VMS"
+  - "\U0001F1FA\U0001F1F8 US 8 TJN"
   - "\U0001F1EF\U0001F1F5 JP 9 VMS"
   - "\U0001F1F9\U0001F1FC TW 10 VMS"
   - "\U0001F1FA\U0001F1F8 US 11 VMS"
@@ -206,7 +203,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 5 VMS"
   - "\U0001F1E8\U0001F1F3 CN 6 VMS"
   - "\U0001F1E8\U0001F1F3 CN 7 TJN"
-  - "\U0001F1FA\U0001F1F8 US 8 VMS"
+  - "\U0001F1FA\U0001F1F8 US 8 TJN"
   - "\U0001F1EF\U0001F1F5 JP 9 VMS"
   - "\U0001F1F9\U0001F1FC TW 10 VMS"
   - "\U0001F1FA\U0001F1F8 US 11 VMS"
