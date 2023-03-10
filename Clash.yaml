@@ -196,11 +196,13 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
+  - {name: 🇨🇦 CA 1|TG@BPXD666, server: 23.227.38.38, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU}, udp: true}
   - {name: 🇳🇱 NL 1|TG@BPXD666, server: 185.212.200.76, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
   - {name: 🇳🇱 NL 2|TG@BPXD666, server: 185.143.220.25, port: 443, type: vmess, uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6e9EtZ2dL}, udp: true}
   - {name: 🇸🇬 SG 1|TG@BPXD666, server: 8.218.184.30, port: 25800, type: vmess, uuid: af6d7eb3-c0e5-4bd8-b650-5ffd299be97c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: 172.67.199.31, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: 141.193.213.20, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE}, udp: true}
+  - {name: 🇸🇬 SG 2|TG@BPXD666, server: 8.218.168.163, port: 42675, type: vmess, uuid: 6f532e4c-1ea2-4e1d-a18a-af34c766ea02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 141.193.213.20, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE}, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 172.67.199.31, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -218,9 +220,11 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - 🇨🇦 CA 1|TG@BPXD666
       - 🇳🇱 NL 1|TG@BPXD666
       - 🇳🇱 NL 2|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
+      - 🇸🇬 SG 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
@@ -229,9 +233,11 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 🇨🇦 CA 1|TG@BPXD666
       - 🇳🇱 NL 1|TG@BPXD666
       - 🇳🇱 NL 2|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
+      - 🇸🇬 SG 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
@@ -270,6 +276,7 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇸🇬 SG 1|TG@BPXD666
+      - 🇸🇬 SG 2|TG@BPXD666
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -280,9 +287,11 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - 🇨🇦 CA 1|TG@BPXD666
       - 🇳🇱 NL 1|TG@BPXD666
       - 🇳🇱 NL 2|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
+      - 🇸🇬 SG 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
@@ -291,9 +300,11 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 🇨🇦 CA 1|TG@BPXD666
       - 🇳🇱 NL 1|TG@BPXD666
       - 🇳🇱 NL 2|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
+      - 🇸🇬 SG 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
