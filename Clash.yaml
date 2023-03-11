@@ -197,13 +197,13 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: IR 1|TG@BPXD666, server: wew.rest8746.ml, port: 22301, type: vmess, uuid: 176ed834-75dc-4e4c-a536-f05479b39b3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [wew.rest8746.ml]}}, udp: true}
+  - {name: IR 2|TG@BPXD666, server: v2ray.serverpanis.org, port: 20003, type: vmess, uuid: 718e1c28-2d41-42c9-9143-19fa8f5c9ef4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v2ray.serverpanis.org}}, udp: true}
+  - {name: 🇦🇺 AU 1|TG@BPXD666, server: 203.30.191.2, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU}, udp: true}
   - {name: 🇨🇦 CA 1|TG@BPXD666, server: c81s5.jjvip8.com, port: 19198, type: vmess, uuid: f6d65c6b-0a10-4887-8541-b86d85c31d09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇦 CA 2|TG@BPXD666, server: 23.227.38.11, port: 443, type: vmess, uuid: 9379fea0-006d-4fd3-8e35-d45a5af72aa2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /UMW36262}, udp: true}
-  - {name: 🇳🇱 NL 1|TG@BPXD666, server: 185.212.200.76, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: c81s801.jjvip8.com, port: 19198, type: vmess, uuid: f6d65c6b-0a10-4887-8541-b86d85c31d09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 2|TG@BPXD666, server: de.strand21.xyz, port: 443, type: trojan, password: 14d52626-92ff-4860-9748-503169e45692, sni: dedede.maoka.one, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: 172.67.199.31, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE}, udp: true}
-  - {name: 🇺🇸 US 4|TG@BPXD666, server: 172.67.145.166, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU}, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 172.67.145.166, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU}, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: 172.67.45.144, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -222,9 +222,9 @@ proxy-groups:
     type: select
     proxies:
       - IR 1|TG@BPXD666
+      - IR 2|TG@BPXD666
+      - 🇦🇺 AU 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇨🇦 CA 2|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -236,9 +236,9 @@ proxy-groups:
     tolerance: 50
     proxies:
       - IR 1|TG@BPXD666
+      - IR 2|TG@BPXD666
+      - 🇦🇺 AU 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇨🇦 CA 2|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -292,9 +292,9 @@ proxy-groups:
     type: select
     proxies:
       - IR 1|TG@BPXD666
+      - IR 2|TG@BPXD666
+      - 🇦🇺 AU 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇨🇦 CA 2|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -306,9 +306,9 @@ proxy-groups:
     tolerance: 50
     proxies:
       - IR 1|TG@BPXD666
+      - IR 2|TG@BPXD666
+      - 🇦🇺 AU 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇨🇦 CA 2|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
