@@ -19,7 +19,7 @@ proxies:
   port: 33614
   password: 3772f7db-6ba0-47e3-bbd5-a9807cb87932
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F3 UN 3 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
   type: vmess
   server: 154.v2ray3.xyz
   port: 443
@@ -55,7 +55,7 @@ proxies:
   network: ws
   ws-opts:
     path: /chat
-- name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
   type: vmess
   server: de1.scproxy.top
   port: 443
@@ -65,7 +65,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   network: ws
-- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 7 VMS"
   type: vmess
   server: finland2.yj2022.ga
   port: 443
@@ -88,7 +88,7 @@ proxies:
   sni: trojan-ctb-sg01.globalssh.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 9 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 9 VMS"
   type: vmess
   server: hk-hytron.ilovescp.com
   port: 443
@@ -272,7 +272,21 @@ proxies:
   tls: true
   skip-cert-verify: true
   network: ws
-- name: "\U0001F1FA\U0001F1F8 US 23 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  type: vmess
+  server: dp2.scproxy.top
+  port: 443
+  cipher: auto
+  uuid: 823c31da-701f-483d-b36e-896e5cf0987a
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /shirker
+    headers:
+      host: dp2.scproxy.top
+- name: "\U0001F1FA\U0001F1F8 US 24 VMS"
   type: vmess
   server: 172.64.132.63
   port: 2095
@@ -292,13 +306,13 @@ proxy-groups:
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1 VMS"
   - "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1E7\U0001F1FF BZ 4 VMS"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
-  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 7 VMS"
   - "\U0001F1F2\U0001F1F4 MO 8 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
+  - "\U0001F1FA\U0001F1F8 US 9 VMS"
   - "\U0001F1E7\U0001F1FF BZ 10 VMS"
   - "\U0001F1F3\U0001F1F1 NL 11 VMS"
   - "\U0001F1FA\U0001F1F8 US 12 VMS"
@@ -312,7 +326,8 @@ proxy-groups:
   - "\U0001F1E7\U0001F1FF BZ 20 VMS"
   - "\U0001F1FA\U0001F1F3 UN 21 VMS"
   - "\U0001F1FA\U0001F1F8 US 22 VMS"
-  - "\U0001F1FA\U0001F1F8 US 23 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  - "\U0001F1FA\U0001F1F8 US 24 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -321,13 +336,13 @@ proxy-groups:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1 VMS"
   - "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1E7\U0001F1FF BZ 4 VMS"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
-  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 7 VMS"
   - "\U0001F1F2\U0001F1F4 MO 8 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
+  - "\U0001F1FA\U0001F1F8 US 9 VMS"
   - "\U0001F1E7\U0001F1FF BZ 10 VMS"
   - "\U0001F1F3\U0001F1F1 NL 11 VMS"
   - "\U0001F1FA\U0001F1F8 US 12 VMS"
@@ -341,6 +356,7 @@ proxy-groups:
   - "\U0001F1E7\U0001F1FF BZ 20 VMS"
   - "\U0001F1FA\U0001F1F3 UN 21 VMS"
   - "\U0001F1FA\U0001F1F8 US 22 VMS"
-  - "\U0001F1FA\U0001F1F8 US 23 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  - "\U0001F1FA\U0001F1F8 US 24 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
