@@ -261,7 +261,7 @@ proxies:
   sni: vzwzasc.cn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 24 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 24 VMS"
   type: vmess
   server: no.aries.ovh
   port: 2052
@@ -275,16 +275,6 @@ proxies:
     path: /aries?ed=2048
     headers:
       host: contabo.cloudflare.quest
-- name: "\U0001F1FA\U0001F1F8 US 25 VMS"
-  type: vmess
-  server: dp2.scproxy.top
-  port: 443
-  cipher: auto
-  uuid: 823c31da-701f-483d-b36e-896e5cf0987a
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
 proxy-groups:
 - name: automatic
   type: url-test
@@ -312,8 +302,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 21 VMS"
   - "\U0001F1EE\U0001F1E9 ID 22 TJN"
   - "\U0001F1FA\U0001F1F8 US 23 TJN"
-  - "\U0001F1FA\U0001F1F8 US 24 VMS"
-  - "\U0001F1FA\U0001F1F8 US 25 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 24 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -343,7 +332,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 21 VMS"
   - "\U0001F1EE\U0001F1E9 ID 22 TJN"
   - "\U0001F1FA\U0001F1F8 US 23 TJN"
-  - "\U0001F1FA\U0001F1F8 US 24 VMS"
-  - "\U0001F1FA\U0001F1F8 US 25 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 24 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
