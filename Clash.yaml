@@ -196,14 +196,16 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇦🇺 AU 1|TG@BPXD666, server: 203.30.189.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF}, udp: true}
+  - {name: CY 1|TG@BPXD666, server: 203.24.108.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT}, udp: true}
+  - {name: 🇦🇺 AU 1|TG@BPXD666, server: 203.30.188.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT}, udp: true}
+  - {name: 🇦🇺 AU 2|TG@BPXD666, server: 203.30.189.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF}, udp: true}
   - {name: 🇨🇳 CN 1|TG@BPXD666, server: 34.wgong1.top, port: 52234, type: vmess, uuid: f0330805-d5d5-3cf2-95a2-2195ff5aaf9b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇩🇰 DK 1|TG@BPXD666, server: 185.162.228.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF}, udp: true}
   - {name: 🇬🇧 GB 1|TG@BPXD666, server: 45.12.30.192, port: 443, type: vmess, uuid: EB176736-29D0-484E-8464-28547013A162, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest}, udp: true}
   - {name: 🇸🇬 SG 1|TG@BPXD666, server: 8.210.47.216, port: 43469, type: vmess, uuid: 163cc2ef-a4c8-4f48-9898-f8a7074d1947, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: france1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /E86414F638E11, headers: {Host: france1.yj2022.ga}}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: 23.224.191.5, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: 154.v2ray3.xyz, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 23.224.191.5, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 154.v2ray3.xyz, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: france1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /E86414F638E11, headers: {Host: france1.yj2022.ga}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -221,7 +223,9 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - CY 1|TG@BPXD666
       - 🇦🇺 AU 1|TG@BPXD666
+      - 🇦🇺 AU 2|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇩🇰 DK 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
@@ -235,7 +239,9 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - CY 1|TG@BPXD666
       - 🇦🇺 AU 1|TG@BPXD666
+      - 🇦🇺 AU 2|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇩🇰 DK 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
@@ -290,7 +296,9 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - CY 1|TG@BPXD666
       - 🇦🇺 AU 1|TG@BPXD666
+      - 🇦🇺 AU 2|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇩🇰 DK 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
@@ -304,7 +312,9 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - CY 1|TG@BPXD666
       - 🇦🇺 AU 1|TG@BPXD666
+      - 🇦🇺 AU 2|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇩🇰 DK 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
