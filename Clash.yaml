@@ -198,10 +198,13 @@ dns:
 proxies:
   - {name: 🇦🇺 AU 1|TG@BPXD666, server: 203.30.189.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT}, udp: true}
   - {name: 🇦🇺 AU 2|TG@BPXD666, server: 203.30.188.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT}, udp: true}
+  - {name: 🇨🇦 CA 1|TG@BPXD666, server: 23.227.38.27, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU}, udp: true}
+  - {name: 🇨🇳 TW 1|TG@BPXD666, server: azgy001.xibai6.top, port: 20787, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇳🇱 NL 1|TG@BPXD666, server: ping1.yebrahimi.ir, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: ping1.yebrahimi.ir}}, udp: true}
   - {name: 🇷🇺 RU 1|TG@BPXD666, server: 185.148.104.215, port: 2053, type: vmess, uuid: 0268eba3-522d-43f2-ba0e-93674fa8017a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram-@VPNHouse_Official}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: quranweb15.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb15.xyz}}, udp: true}
   - {name: 🇺🇸 US 2|TG@BPXD666, server: quranweb24.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb24.xyz}}, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 204.216.214.102, port: 44386, type: trojan, password: C931CWacy8, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -221,10 +224,13 @@ proxy-groups:
     proxies:
       - 🇦🇺 AU 1|TG@BPXD666
       - 🇦🇺 AU 2|TG@BPXD666
+      - 🇨🇦 CA 1|TG@BPXD666
+      - 🇨🇳 TW 1|TG@BPXD666
       - 🇳🇱 NL 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -233,10 +239,13 @@ proxy-groups:
     proxies:
       - 🇦🇺 AU 1|TG@BPXD666
       - 🇦🇺 AU 2|TG@BPXD666
+      - 🇨🇦 CA 1|TG@BPXD666
+      - 🇨🇳 TW 1|TG@BPXD666
       - 🇳🇱 NL 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -259,13 +268,14 @@ proxy-groups:
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇨🇳 TW 1|TG@BPXD666
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -285,10 +295,13 @@ proxy-groups:
     proxies:
       - 🇦🇺 AU 1|TG@BPXD666
       - 🇦🇺 AU 2|TG@BPXD666
+      - 🇨🇦 CA 1|TG@BPXD666
+      - 🇨🇳 TW 1|TG@BPXD666
       - 🇳🇱 NL 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -297,10 +310,13 @@ proxy-groups:
     proxies:
       - 🇦🇺 AU 1|TG@BPXD666
       - 🇦🇺 AU 2|TG@BPXD666
+      - 🇨🇦 CA 1|TG@BPXD666
+      - 🇨🇳 TW 1|TG@BPXD666
       - 🇳🇱 NL 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
