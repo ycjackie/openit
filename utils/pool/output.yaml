@@ -1,5 +1,37 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
+- name: "\U0001F1EE\U0001F1F3 IN 1 VMS"
+  type: vmess
+  server: blog.itzjx.top
+  port: 3306
+  uuid: fdf7dcdc-96f0-4d36-a412-1866c737c3fe
+  alterId: 0
+  level: 0
+  cipher: none
+  tls: true
+  skip-cert-verify: true
+  servername: blog.itzjx.top
+  network: ws
+  ws-opts:
+    path: /ray
+    headers:
+      Host: blog.itzjx.top
+- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
+  type: vmess
+  server: www.itzjx.top
+  port: 443
+  uuid: 0d839a04-b3d4-11ec-a01a-560003ec423d
+  alterId: 0
+  level: 0
+  cipher: none
+  tls: true
+  skip-cert-verify: true
+  servername: www.itzjx.top
+  network: ws
+  ws-opts:
+    path: /V5Au4cQL/
+    headers:
+      Host: www.itzjx.top
+- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
   type: vmess
   server: holyquran11.store
   port: 443
@@ -9,7 +41,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   network: ws
-- name: "\U0001F1E8\U0001F1F3 CN 2 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 4 VMS"
   type: vmess
   server: 183.237.20.147
   port: 33242
@@ -19,7 +51,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
   type: vmess
   server: Kansas.kotick.site
   port: 443
@@ -33,7 +65,7 @@ proxies:
     path: /speedtest
     headers:
       host: Kansas.kotick.site
-- name: "\U0001F1F8\U0001F1EC SG 4 VMS"
+- name: "\U0001F1F8\U0001F1EC SG 6 VMS"
   type: vmess
   server: sg5.lianpi.xyz
   port: 54126
@@ -43,7 +75,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: ''
-- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
   type: vmess
   server: us2-vmiss.bilicapr.cn
   port: 443
@@ -53,7 +85,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   network: ws
-- name: "\U0001F1ED\U0001F1F0 HK 6 VMS"
+- name: "\U0001F1ED\U0001F1F0 HK 8 VMS"
   type: vmess
   server: b1.ss1011.top
   port: 1506
@@ -63,7 +95,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: ''
-- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 9 VMS"
   type: vmess
   server: quran-audio2.xyz
   port: 443
@@ -77,7 +109,7 @@ proxies:
     path: /current_time
     headers:
       host: quran-audio2.xyz
-- name: "\U0001F1F8\U0001F1EC SG 8 VMS"
+- name: "\U0001F1F8\U0001F1EC SG 10 VMS"
   type: vmess
   server: sg17.microsoftjs.top
   port: 443
@@ -91,7 +123,7 @@ proxies:
     path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b
     headers:
       host: awkj
-- name: "\U0001F1EE\U0001F1F3 IN 9 TJN"
+- name: "\U0001F1EE\U0001F1F3 IN 11 TJN"
   type: trojan
   server: 152.70.74.66
   port: 443
@@ -99,7 +131,7 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 10 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 12 VMS"
   type: vmess
   server: dp1.scproxy.top
   port: 443
@@ -113,31 +145,35 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 2 VMS"
+  - "\U0001F1EE\U0001F1F3 IN 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
-  - "\U0001F1F8\U0001F1EC SG 4 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 4 VMS"
   - "\U0001F1FA\U0001F1F3 UN 5 VMS"
-  - "\U0001F1ED\U0001F1F0 HK 6 VMS"
+  - "\U0001F1F8\U0001F1EC SG 6 VMS"
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
-  - "\U0001F1F8\U0001F1EC SG 8 VMS"
-  - "\U0001F1EE\U0001F1F3 IN 9 TJN"
-  - "\U0001F1FA\U0001F1F8 US 10 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 8 VMS"
+  - "\U0001F1FA\U0001F1F8 US 9 VMS"
+  - "\U0001F1F8\U0001F1EC SG 10 VMS"
+  - "\U0001F1EE\U0001F1F3 IN 11 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 12 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 2 VMS"
+  - "\U0001F1EE\U0001F1F3 IN 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
-  - "\U0001F1F8\U0001F1EC SG 4 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 4 VMS"
   - "\U0001F1FA\U0001F1F3 UN 5 VMS"
-  - "\U0001F1ED\U0001F1F0 HK 6 VMS"
+  - "\U0001F1F8\U0001F1EC SG 6 VMS"
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
-  - "\U0001F1F8\U0001F1EC SG 8 VMS"
-  - "\U0001F1EE\U0001F1F3 IN 9 TJN"
-  - "\U0001F1FA\U0001F1F8 US 10 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 8 VMS"
+  - "\U0001F1FA\U0001F1F8 US 9 VMS"
+  - "\U0001F1F8\U0001F1EC SG 10 VMS"
+  - "\U0001F1EE\U0001F1F3 IN 11 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 12 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
