@@ -49,7 +49,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 6 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
   ws-opts:
     path: /
   server: v13.583181.xyz
@@ -247,7 +247,7 @@ proxies:
   cipher: auto
   network: tcp
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 29 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 29 VMS"
   ws-opts:
     path: /
   server: v14.583182.xyz
@@ -264,6 +264,21 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: '64'
   cipher: auto
+- name: "\U0001F1FA\U0001F1F3 UN 31 VMS"
+  type: vmess
+  server: 162.159.35.252
+  port: 443
+  cipher: auto
+  uuid: 823c31da-701f-483d-b36e-896e5cf0987a
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  servername: late-poetry-125a.ahmadi-reza-63.workers.dev
+  network: ws
+  ws-opts:
+    path: /ca-nnc.ilovescp.com/shirker
+    headers:
+      host: late-poetry-125a.ahmadi-reza-63.workers.dev
 proxy-groups:
 - name: automatic
   type: url-test
@@ -273,7 +288,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1E8\U0001F1F3 CN 4 VMS"
   - "\U0001F1F0\U0001F1F7 KR 5 VMS"
-  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1EE\U0001F1F3 IN 7 TJN"
   - "\U0001F1FA\U0001F1F8 US 8 VMS"
   - "\U0001F1FA\U0001F1F8 US 9 VMS"
@@ -296,8 +311,9 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 26 TJN"
   - "\U0001F1E7\U0001F1FF BZ 27 VMS"
   - "\U0001F1FA\U0001F1F8 US 28 VMS"
-  - "\U0001F1FA\U0001F1F8 US 29 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 29 VMS"
   - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 31 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -309,7 +325,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1E8\U0001F1F3 CN 4 VMS"
   - "\U0001F1F0\U0001F1F7 KR 5 VMS"
-  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1EE\U0001F1F3 IN 7 TJN"
   - "\U0001F1FA\U0001F1F8 US 8 VMS"
   - "\U0001F1FA\U0001F1F8 US 9 VMS"
@@ -332,7 +348,8 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 26 TJN"
   - "\U0001F1E7\U0001F1FF BZ 27 VMS"
   - "\U0001F1FA\U0001F1F8 US 28 VMS"
-  - "\U0001F1FA\U0001F1F8 US 29 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 29 VMS"
   - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 31 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
