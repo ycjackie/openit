@@ -1428,7 +1428,7 @@ proxies:
   cipher: auto
   network: ws
 - type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 135 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 135 VMS"
   ws-opts:
     path: /
     headers:
@@ -1579,7 +1579,19 @@ proxies:
   cipher: auto
   network: ws
 - type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 150 VMS"
+  name: "\U0001F1FA\U0001F1F3 UN 150 VMS"
+  ws-opts:
+    path: /
+    headers:
+      host: pm.motori.pw
+  server: 104.21.93.220
+  port: 8880
+  uuid: d1c59699-1874-49f1-b9ba-bbbfd7968075
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 151 VMS"
   ws-opts:
     path: /
     headers:
@@ -1728,7 +1740,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 132 VMS"
   - "\U0001F1FA\U0001F1F3 UN 133 VMS"
   - "\U0001F1FA\U0001F1F3 UN 134 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 135 VMS"
+  - "\U0001F1FA\U0001F1F8 US 135 VMS"
   - "\U0001F1F8\U0001F1EC SG 136 VMS"
   - "\U0001F1F8\U0001F1EC SG 137 VMS"
   - "\U0001F1FB\U0001F1F3 VN 138 VMS"
@@ -1743,7 +1755,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 147 VMS"
   - "\U0001F1FA\U0001F1F8 US 148 VMS"
   - "\U0001F1F3\U0001F1F1 NL 149 VMS"
-  - "\U0001F1FA\U0001F1F8 US 150 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 150 VMS"
+  - "\U0001F1FA\U0001F1F8 US 151 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1884,7 +1897,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 132 VMS"
   - "\U0001F1FA\U0001F1F3 UN 133 VMS"
   - "\U0001F1FA\U0001F1F3 UN 134 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 135 VMS"
+  - "\U0001F1FA\U0001F1F8 US 135 VMS"
   - "\U0001F1F8\U0001F1EC SG 136 VMS"
   - "\U0001F1F8\U0001F1EC SG 137 VMS"
   - "\U0001F1FB\U0001F1F3 VN 138 VMS"
@@ -1899,6 +1912,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 147 VMS"
   - "\U0001F1FA\U0001F1F8 US 148 VMS"
   - "\U0001F1F3\U0001F1F1 NL 149 VMS"
-  - "\U0001F1FA\U0001F1F8 US 150 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 150 VMS"
+  - "\U0001F1FA\U0001F1F8 US 151 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
