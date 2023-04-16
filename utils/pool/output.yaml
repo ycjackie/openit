@@ -5,7 +5,16 @@ proxies:
   port: 993
   username: tor20b
   password: p1C71H5mGd
-- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
+- name: "\U0001F1EB\U0001F1EE FI 2 HTT"
+  type: http
+  server: fn.secureconnect.me
+  port: 993
+  username: tor20b
+  password: p1C71H5mGd
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
   type: vmess
   server: 172.67.250.239
   port: 80
@@ -19,7 +28,7 @@ proxies:
     path: /shirker
     headers:
       host: dp2.scproxy.top
-- name: "\U0001F1FA\U0001F1F8 US 3 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 4 TJN"
   type: trojan
   server: rnrn3g.555456.xyz
   port: 443
@@ -28,7 +37,7 @@ proxies:
   sni: rnrn3g.555456.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 4 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 5 VMS"
   type: vmess
   server: vuk1.0bad.com
   port: 443
@@ -38,7 +47,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   network: ws
-- name: "\U0001F1FA\U0001F1F8 US 5 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
   type: vmess
   server: 172.67.86.214
   port: 80
@@ -52,7 +61,7 @@ proxies:
     path: /shirker
     headers:
       host: lv2.sharecentrepro.org
-- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
   type: vmess
   server: 38.40.219.187
   port: 50462
@@ -62,7 +71,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: ''
-- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 8 VMS"
   type: vmess
   server: fr2.cachexy.ga
   port: 80
@@ -76,7 +85,7 @@ proxies:
     path: /g5D0hFMY/
     headers:
       host: fr2.cachexy.ga
-- name: "\U0001F1E8\U0001F1F3 CN 8 SSR"
+- name: "\U0001F1E8\U0001F1F3 CN 9 SSR"
   type: ssr
   server: usstand2.eucdurl.me
   port: 562
@@ -85,15 +94,6 @@ proxies:
   obfs: plain
   protocol: auth_aes128_md5
   protocol-param: 48566:LLLiuiuiu787878
-- name: "\U0001F1EB\U0001F1EE FI 9 HTT"
-  type: http
-  server: fn.secureconnect.me
-  port: 993
-  username: tor20b
-  password: p1C71H5mGd
-  tls: true
-  skip-cert-verify: true
-  udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 10 VMS"
   type: vmess
   server: yes.iamagoodman.net
@@ -193,7 +193,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: ''
-- name: "\U0001F1FA\U0001F1F8 US 20 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 20 VMS"
   type: vmess
   server: 4bb4ced4.8200860.xyz
   port: 2096
@@ -366,14 +366,14 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1EB\U0001F1EE FI 1 HTT"
-  - "\U0001F1FA\U0001F1F8 US 2 VMS"
-  - "\U0001F1FA\U0001F1F8 US 3 TJN"
-  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1EB\U0001F1EE FI 2 HTT"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 TJN"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 8 SSR"
-  - "\U0001F1EB\U0001F1EE FI 9 HTT"
+  - "\U0001F1FA\U0001F1F8 US 8 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 9 SSR"
   - "\U0001F1E8\U0001F1F3 CN 10 VMS"
   - "\U0001F1E8\U0001F1F3 CN 11 VMS"
   - "\U0001F1FA\U0001F1F8 US 12 VMS"
@@ -384,7 +384,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 17 VMS"
   - "\U0001F1FA\U0001F1F8 US 18 VMS"
   - "\U0001F1FA\U0001F1F8 US 19 VMS"
-  - "\U0001F1FA\U0001F1F8 US 20 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 20 VMS"
   - "\U0001F1FA\U0001F1F8 US 21 VMS"
   - "\U0001F1FA\U0001F1F8 US 22 VMS"
   - "\U0001F1FA\U0001F1F8 US 23 VMS"
@@ -407,14 +407,14 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EB\U0001F1EE FI 1 HTT"
-  - "\U0001F1FA\U0001F1F8 US 2 VMS"
-  - "\U0001F1FA\U0001F1F8 US 3 TJN"
-  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1EB\U0001F1EE FI 2 HTT"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 TJN"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 8 SSR"
-  - "\U0001F1EB\U0001F1EE FI 9 HTT"
+  - "\U0001F1FA\U0001F1F8 US 8 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 9 SSR"
   - "\U0001F1E8\U0001F1F3 CN 10 VMS"
   - "\U0001F1E8\U0001F1F3 CN 11 VMS"
   - "\U0001F1FA\U0001F1F8 US 12 VMS"
@@ -425,7 +425,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 17 VMS"
   - "\U0001F1FA\U0001F1F8 US 18 VMS"
   - "\U0001F1FA\U0001F1F8 US 19 VMS"
-  - "\U0001F1FA\U0001F1F8 US 20 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 20 VMS"
   - "\U0001F1FA\U0001F1F8 US 21 VMS"
   - "\U0001F1FA\U0001F1F8 US 22 VMS"
   - "\U0001F1FA\U0001F1F8 US 23 VMS"
