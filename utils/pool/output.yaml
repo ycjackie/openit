@@ -49,7 +49,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 6 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 6 TJN"
   type: trojan
   server: bgptw3.cnamazon.sbs
   port: 443
@@ -375,7 +375,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 40 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 40 VMS"
   type: vmess
   server: shiresho.foriran.nl
   port: 443
@@ -463,6 +463,16 @@ proxies:
   network: ws
 - name: "\U0001F1FA\U0001F1F8 US 49 VMS"
   type: vmess
+  server: atal.foriran.nl
+  port: 443
+  cipher: auto
+  uuid: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+- name: "\U0001F1FA\U0001F1F8 US 50 VMS"
+  type: vmess
   server: 198.2.206.45
   port: 33012
   cipher: auto
@@ -471,7 +481,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 50 VMS"
+- name: "\U0001F1EE\U0001F1F3 IN 51 VMS"
   type: vmess
   server: in2.25c9e320-7b14-48c9-8127-3393c7a16a2a.cloudspeed.online
   port: 80
@@ -481,7 +491,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: ws
-- name: "\U0001F1FA\U0001F1F3 UN 51 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 52 VMS"
   type: vmess
   server: cf.yxjnode.com
   port: 80
@@ -495,7 +505,7 @@ proxies:
     path: /yxzbp
     headers:
       host: dp1.yxjnode.com
-- name: "\U0001F1E8\U0001F1F3 CN 52 SSR"
+- name: "\U0001F1E8\U0001F1F3 CN 53 SSR"
   type: ssr
   server: usa1.vfun.icu
   port: 443
@@ -505,7 +515,7 @@ proxies:
   protocol: auth_aes128_sha1
   obfs-param: ab93117422.jd.hk
   protocol-param: 17422:TTp0SX
-- name: "\U0001F1E8\U0001F1F3 CN 53 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 54 VMS"
   type: vmess
   server: 183.232.196.0
   port: 59629
@@ -524,7 +534,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
   - "\U0001F1ED\U0001F1F0 HK 5 VMS"
-  - "\U0001F1F8\U0001F1EC SG 6 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 6 TJN"
   - "\U0001F1ED\U0001F1F0 HK 7 TJN"
   - "\U0001F1ED\U0001F1F0 HK 8 TJN"
   - "\U0001F1ED\U0001F1F0 HK 9 TJN"
@@ -558,7 +568,7 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 37 VMS"
   - "\U0001F1FA\U0001F1F8 US 38 VMS"
   - "\U0001F1FA\U0001F1F8 US 39 VMS"
-  - "\U0001F1FA\U0001F1F8 US 40 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 40 VMS"
   - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1F0\U0001F1F7 KR 42 VMS"
   - "\U0001F1FA\U0001F1F8 US 43 VMS"
@@ -568,10 +578,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 47 VMS"
   - "\U0001F1E6\U0001F1FA AU 48 VMS"
   - "\U0001F1FA\U0001F1F8 US 49 VMS"
-  - "\U0001F1EE\U0001F1F3 IN 50 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 51 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 52 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 53 VMS"
+  - "\U0001F1FA\U0001F1F8 US 50 VMS"
+  - "\U0001F1EE\U0001F1F3 IN 51 VMS"
+  - "\U0001F1FA\U0001F1F8 US 52 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 53 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 54 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -583,7 +594,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
   - "\U0001F1ED\U0001F1F0 HK 5 VMS"
-  - "\U0001F1F8\U0001F1EC SG 6 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 6 TJN"
   - "\U0001F1ED\U0001F1F0 HK 7 TJN"
   - "\U0001F1ED\U0001F1F0 HK 8 TJN"
   - "\U0001F1ED\U0001F1F0 HK 9 TJN"
@@ -617,7 +628,7 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 37 VMS"
   - "\U0001F1FA\U0001F1F8 US 38 VMS"
   - "\U0001F1FA\U0001F1F8 US 39 VMS"
-  - "\U0001F1FA\U0001F1F8 US 40 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 40 VMS"
   - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1F0\U0001F1F7 KR 42 VMS"
   - "\U0001F1FA\U0001F1F8 US 43 VMS"
@@ -627,9 +638,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 47 VMS"
   - "\U0001F1E6\U0001F1FA AU 48 VMS"
   - "\U0001F1FA\U0001F1F8 US 49 VMS"
-  - "\U0001F1EE\U0001F1F3 IN 50 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 51 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 52 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 53 VMS"
+  - "\U0001F1FA\U0001F1F8 US 50 VMS"
+  - "\U0001F1EE\U0001F1F3 IN 51 VMS"
+  - "\U0001F1FA\U0001F1F8 US 52 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 53 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 54 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
