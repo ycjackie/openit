@@ -1,14 +1,14 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
-  type: vmess
-  server: 137.175.52.21
-  port: 33002
-  cipher: auto
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  tls: false
+- name: "\U0001F1FA\U0001F1F3 UN 1 TJN"
+  type: trojan
+  server: bhjuyyyyyho.toxesi52532231.workers.dev
+  port: 443
+  udp: true
+  password: db5b4014-d2da-11ed-afa1-0242ac120002
   skip-cert-verify: true
-  network: tcp
+  network: ws
+  ws-opts:
+    path: malta-potter-whom-owns.trycloudflare.com/mio
 - name: "\U0001F1EF\U0001F1F5 JP 2 VMS"
   type: vmess
   server: jp01-alt-vm0.entry.srthdw.art
@@ -71,16 +71,16 @@ proxies:
     path: /3G6WPDL7
     headers:
       host: 1.freek1.xyz
-- name: "\U0001F1FA\U0001F1F8 US 7 TJN"
-  type: trojan
-  server: bhjuyyyyyho.toxesi52532231.workers.dev
-  port: 443
-  udp: true
-  password: db5b4014-d2da-11ed-afa1-0242ac120002
+- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
+  type: vmess
+  server: 137.175.52.21
+  port: 33002
+  cipher: auto
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: malta-potter-whom-owns.trycloudflare.com/mio
+  network: tcp
 - name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
   type: vmess
   server: c6br44-8080.csb.app
@@ -273,7 +273,7 @@ proxies:
     path: /
     headers:
       host: h3.mamadcucu.com
-- name: "\U0001F1FA\U0001F1F3 UN 26 VMS"
+- name: "\U0001F1EB\U0001F1F7 FR 26 VMS"
   type: vmess
   server: cf-lt.sharecentre.online
   port: 80
@@ -407,7 +407,7 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 39 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 39 VMS"
   type: vmess
   server: HKG.MIFJUN.ORG
   port: 8080
@@ -535,13 +535,13 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 1 TJN"
   - "\U0001F1EF\U0001F1F5 JP 2 VMS"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
   - "\U0001F1E8\U0001F1E6 CA 6 VMS"
-  - "\U0001F1FA\U0001F1F8 US 7 TJN"
+  - "\U0001F1FA\U0001F1F8 US 7 VMS"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   - "\U0001F1FA\U0001F1F3 UN 9 TJN"
   - "\U0001F1EF\U0001F1F5 JP 10 TJN"
@@ -560,7 +560,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 23 VMS"
   - "\U0001F1FA\U0001F1F8 US 24 VMS"
   - "\U0001F1F8\U0001F1EC SG 25 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 26 VMS"
+  - "\U0001F1EB\U0001F1F7 FR 26 VMS"
   - "\U0001F1FA\U0001F1F8 US 27 VMS"
   - "\U0001F1FA\U0001F1F8 US 28 VMS"
   - "\U0001F1EF\U0001F1F5 JP 29 VMS"
@@ -573,7 +573,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 36 VMS"
   - "\U0001F1EF\U0001F1F5 JP 37 TJN"
   - "\U0001F1EE\U0001F1F3 IN 38 TJN"
-  - "\U0001F1FA\U0001F1F8 US 39 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 39 VMS"
   - "\U0001F1F8\U0001F1EC SG 40 TJN"
   - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1FA\U0001F1F8 US 42 VMS"
@@ -591,13 +591,13 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 1 TJN"
   - "\U0001F1EF\U0001F1F5 JP 2 VMS"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
   - "\U0001F1E8\U0001F1E6 CA 6 VMS"
-  - "\U0001F1FA\U0001F1F8 US 7 TJN"
+  - "\U0001F1FA\U0001F1F8 US 7 VMS"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   - "\U0001F1FA\U0001F1F3 UN 9 TJN"
   - "\U0001F1EF\U0001F1F5 JP 10 TJN"
@@ -616,7 +616,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 23 VMS"
   - "\U0001F1FA\U0001F1F8 US 24 VMS"
   - "\U0001F1F8\U0001F1EC SG 25 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 26 VMS"
+  - "\U0001F1EB\U0001F1F7 FR 26 VMS"
   - "\U0001F1FA\U0001F1F8 US 27 VMS"
   - "\U0001F1FA\U0001F1F8 US 28 VMS"
   - "\U0001F1EF\U0001F1F5 JP 29 VMS"
@@ -629,7 +629,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 36 VMS"
   - "\U0001F1EF\U0001F1F5 JP 37 TJN"
   - "\U0001F1EE\U0001F1F3 IN 38 TJN"
-  - "\U0001F1FA\U0001F1F8 US 39 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 39 VMS"
   - "\U0001F1F8\U0001F1EC SG 40 TJN"
   - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1FA\U0001F1F8 US 42 VMS"
