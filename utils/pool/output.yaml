@@ -1,5 +1,15 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 1 TJN"
+  type: trojan
+  server: bhjuyyyyyho.toxesi52532231.workers.dev
+  port: 443
+  udp: true
+  password: db5b4014-d2da-11ed-afa1-0242ac120002
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: malta-potter-whom-owns.trycloudflare.com/mio
+- name: "\U0001F1FA\U0001F1F3 UN 2 VMS"
   type: vmess
   server: c6br44-8080.csb.app
   port: 443
@@ -14,7 +24,7 @@ proxies:
     path: /vms
     headers:
       host: c6br44-8080.csb.app
-- name: "\U0001F1FA\U0001F1F3 UN 2 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 3 TJN"
   type: trojan
   server: preservation-hood-stands-consult.trycloudflare.com
   port: 443
@@ -26,16 +36,6 @@ proxies:
     path: /mio
     headers:
       host: preservation-hood-stands-consult.trycloudflare.com
-- name: "\U0001F1FA\U0001F1F8 US 3 TJN"
-  type: trojan
-  server: bhjuyyyyyho.toxesi52532231.workers.dev
-  port: 443
-  udp: true
-  password: db5b4014-d2da-11ed-afa1-0242ac120002
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: malta-potter-whom-owns.trycloudflare.com/mio
 - name: "\U0001F1EF\U0001F1F5 JP 4 VMS"
   type: vmess
   server: jp01-alt-vm0.entry.srthdw.art
@@ -116,9 +116,9 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 2 TJN"
-  - "\U0001F1FA\U0001F1F8 US 3 TJN"
+  - "\U0001F1FA\U0001F1F8 US 1 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 3 TJN"
   - "\U0001F1EF\U0001F1F5 JP 4 VMS"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
@@ -131,9 +131,9 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 2 TJN"
-  - "\U0001F1FA\U0001F1F8 US 3 TJN"
+  - "\U0001F1FA\U0001F1F8 US 1 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 3 TJN"
   - "\U0001F1EF\U0001F1F5 JP 4 VMS"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
