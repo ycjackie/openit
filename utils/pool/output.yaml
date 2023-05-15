@@ -11,16 +11,6 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 2 VMS"
   type: vmess
-  server: 140.99.59.228
-  port: 55512
-  cipher: auto
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  tls: false
-  skip-cert-verify: true
-  network: ''
-- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
-  type: vmess
   server: 38.63.17.164
   port: 50702
   cipher: auto
@@ -29,6 +19,16 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
+  type: vmess
+  server: 140.99.59.228
+  port: 55512
+  cipher: auto
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  tls: false
+  skip-cert-verify: true
+  network: ''
 - name: "\U0001F1FA\U0001F1F8 US 4 VMS"
   type: vmess
   server: 192.203.230.6
@@ -52,7 +52,7 @@ proxies:
   sni: tlsdata.cnamazon.sbs
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
   type: vmess
   server: ca.moop.wiki
   port: 80
@@ -118,7 +118,7 @@ proxies:
   password: 0fb4f44f-82eb-452b-9570-066a07e31fb5
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 13 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 13 VMS"
   type: vmess
   server: v3.gitvpn.eu.org
   port: 443
@@ -197,7 +197,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 21 TJN"
+- name: "\U0001F1F8\U0001F1EC SG 21 TJN"
   type: trojan
   server: bgptw1.cnamazon.sbs
   port: 443
@@ -376,7 +376,7 @@ proxies:
   password: 9229374b-8ed5-4e78-aba9-eb572c8a5f27
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 40 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 40 VMS"
   type: vmess
   server: bl.nanke.eu.org
   port: 443
@@ -447,14 +447,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
   - "\U0001F1F8\U0001F1EC SG 5 TJN"
-  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1F0\U0001F1F7 KR 7 TJN"
   - "\U0001F1FA\U0001F1F8 US 8 VMS"
   - "\U0001F1FA\U0001F1F8 US 9 VMS"
   - "\U0001F1F0\U0001F1F7 KR 10 TJN"
   - "\U0001F1F8\U0001F1EC SG 11 TJN"
   - "\U0001F1EF\U0001F1F5 JP 12 TJN"
-  - "\U0001F1FA\U0001F1F8 US 13 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 13 VMS"
   - "\U0001F1E6\U0001F1EA AE 14 TJN"
   - "\U0001F1ED\U0001F1F0 HK 15 TJN"
   - "\U0001F1EF\U0001F1F5 JP 16 TJN"
@@ -462,7 +462,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 18 TJN"
   - "\U0001F1F9\U0001F1FC TW 19 VMS"
   - "\U0001F1FA\U0001F1F8 US 20 VMS"
-  - "\U0001F1ED\U0001F1F0 HK 21 TJN"
+  - "\U0001F1F8\U0001F1EC SG 21 TJN"
   - "\U0001F1FA\U0001F1F8 US 22 VMS"
   - "\U0001F1FA\U0001F1F8 US 23 VMS"
   - "\U0001F1EF\U0001F1F5 JP 24 TJN"
@@ -481,7 +481,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 37 SSR"
   - "\U0001F1FA\U0001F1F8 US 38 VMS"
   - "\U0001F1EF\U0001F1F5 JP 39 TJN"
-  - "\U0001F1FA\U0001F1F8 US 40 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 40 VMS"
   - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1FA\U0001F1F8 US 42 VMS"
   - "\U0001F1E9\U0001F1F0 DK 43 VMS"
@@ -498,14 +498,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
   - "\U0001F1F8\U0001F1EC SG 5 TJN"
-  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1F0\U0001F1F7 KR 7 TJN"
   - "\U0001F1FA\U0001F1F8 US 8 VMS"
   - "\U0001F1FA\U0001F1F8 US 9 VMS"
   - "\U0001F1F0\U0001F1F7 KR 10 TJN"
   - "\U0001F1F8\U0001F1EC SG 11 TJN"
   - "\U0001F1EF\U0001F1F5 JP 12 TJN"
-  - "\U0001F1FA\U0001F1F8 US 13 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 13 VMS"
   - "\U0001F1E6\U0001F1EA AE 14 TJN"
   - "\U0001F1ED\U0001F1F0 HK 15 TJN"
   - "\U0001F1EF\U0001F1F5 JP 16 TJN"
@@ -513,7 +513,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 18 TJN"
   - "\U0001F1F9\U0001F1FC TW 19 VMS"
   - "\U0001F1FA\U0001F1F8 US 20 VMS"
-  - "\U0001F1ED\U0001F1F0 HK 21 TJN"
+  - "\U0001F1F8\U0001F1EC SG 21 TJN"
   - "\U0001F1FA\U0001F1F8 US 22 VMS"
   - "\U0001F1FA\U0001F1F8 US 23 VMS"
   - "\U0001F1EF\U0001F1F5 JP 24 TJN"
@@ -532,7 +532,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 37 SSR"
   - "\U0001F1FA\U0001F1F8 US 38 VMS"
   - "\U0001F1EF\U0001F1F5 JP 39 TJN"
-  - "\U0001F1FA\U0001F1F8 US 40 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 40 VMS"
   - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1FA\U0001F1F8 US 42 VMS"
   - "\U0001F1E9\U0001F1F0 DK 43 VMS"
