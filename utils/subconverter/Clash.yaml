@@ -1,0 +1,812 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - dns.msftncsi.com
+    - www.msftncsi.com
+    - www.msftconnecttest.com
+    - stun.*.*.*
+    - stun.*.*
+    - miwifi.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - netis.cc
+    - router.asus.com
+    - repeater.asus.com
+    - routerlogin.com
+    - routerlogin.net
+    - tendawifi.com
+    - tendawifi.net
+    - tplinklogin.net
+    - tplinkwifi.net
+    - tplinkrepeater.net
+    - "*.ntp.org.cn"
+    - "*.openwrt.pool.ntp.org"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+    - "*.*.*.srv.nintendo.net"
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - "*.*.xboxlive.com"
+    - speedtest.cros.wr.pvp.net
+  default-nameserver:
+    - 114.114.114.114
+    - 9.9.9.9
+  nameserver:
+    - 1.2.4.8
+    - 210.2.4.8
+    - 223.5.5.5
+    - 223.6.6.6
+    - 52.80.52.52
+    - 117.50.10.10
+    - 180.76.76.76
+    - 119.28.28.28
+    - 119.29.29.29
+    - 114.114.114.114
+    - 114.114.115.115
+    - 101.226.4.6
+    - 218.30.118.6
+    - 123.125.81.6
+    - 140.207.198.6
+    - 202.38.64.1
+    - 202.112.20.131
+    - 202.141.160.95
+    - 202.141.160.99
+    - 202.141.176.95
+    - 202.141.176.99
+    - tls://dot.pub:853
+    - tls://1.12.12.12:853
+    - tls://120.53.53.53:853
+    - https://doh.pub/dns-query
+    - https://sm2.doh.pub/dns-query
+    - https://1.12.12.12/dns-query
+    - https://120.53.53.53/dns-query
+    - https://dns.alidns.com/dns-query
+    - https://doh.dns.sb/dns-query
+    - https://dns.rubyfish.cn/dns-query
+  fallback:
+    - 9.9.9.9
+    - 149.112.112.112
+    - 8.8.4.4
+    - 8.8.8.8
+    - 1.0.0.1
+    - 1.1.1.1
+    - 208.67.220.220
+    - 208.67.220.222
+    - 208.67.222.220
+    - 208.67.222.222
+    - 195.46.39.39
+    - 195.46.39.40
+    - 168.95.1.1
+    - 203.80.96.10
+    - 168.95.192.1
+    - 164.124.101.2
+    - 164.124.107.9
+    - 203.248.252.2
+    - 203.248.242.2
+    - 80.80.80.80
+    - 80.80.81.81
+    - 199.85.126.10
+    - 199.85.127.10
+    - 168.126.63.1
+    - 168.126.63.2
+    - 139.175.252.16
+    - 139.175.55.244
+    - 202.45.84.58
+    - 202.45.84.59
+    - 8.26.56.26
+    - 23.253.163.53
+    - 77.88.8.1
+    - 77.88.8.8
+    - 89.233.43.71
+    - 91.239.100.100
+    - 198.101.242.72
+    - 8.20.247.20
+    - 64.6.64.6
+    - 64.6.65.6
+    - 209.244.0.3
+    - 209.244.0.4
+    - 210.220.163.82
+    - 219.250.36.130
+    - 202.14.67.4
+    - 84.200.69.80
+    - 84.200.70.40
+    - 202.14.67.14
+    - 156.154.70.1
+    - 156.154.71.1
+    - 216.146.35.35
+    - 216.146.36.36
+    - 77.109.148.136
+    - 77.109.148.137
+    - 101.101.101.101
+    - 101.102.103.104
+    - 74.82.42.42
+    - 66.220.18.42
+    - https://dns.quad9.net/dns-query
+    - https://dns9.quad9.net/dns-query
+    - tls://dns.google:853
+    - https://8.8.4.4/dns-query
+    - https://8.8.8.8/dns-query
+    - https://dns.google/dns-query
+    - tls://1.0.0.1:853
+    - tls://1.1.1.1:853
+    - tls://one.one.one.one
+    - tls://1dot1dot1dot1.cloudflare-dns.com
+    - https://1.0.0.1/dns-query
+    - https://1.1.1.1/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.daycat.space/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://dns-family.adguard.com/dns-query
+    - https://dns-unfiltered.adguard.com/dns-query
+    - tls://b.iqiq.io:853
+    - tls://h.iqiq.io:853
+    - tls://j.iqiq.io:853
+    - tls://c.passcloud.xyz:853
+    - tls://x.passcloud.xyz:853
+    - https://a.passcloud.xyz/hk
+    - https://a.passcloud.xyz/am
+    - https://a.passcloud.xyz/us
+    - https://a.passcloud.xyz/sz
+    - https://a.passcloud.xyz/cdn
+    - https://a.passcloud.xyz/dns-query
+    - https://worldwide.passcloud.xyz/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 127.0.0.1/8
+      - 0.0.0.0/32
+    domain:
+      - +.google.com
+      - +.github.com
+      - +.facebook.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.googleapis.com
+      - +.gvt1.com
+proxies:
+  - {name: IR 1|TG@BPXD666, server: aparat.persianmizban.com, port: 4433, type: vmess, uuid: 88790a1b-f059-40c7-9c9d-b7c943b4420b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: IR 2|TG@BPXD666, server: de63.thugiping.cloud, port: 443, type: vmess, uuid: c9a22360-3f66-48c8-89ab-13799b05a730, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: IT 1|TG@BPXD666, server: 188.114.97.3, port: 443, type: vmess, uuid: 8357816b-68e4-4a2b-830c-e9bdd369ea22, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /7ouWwj1jH2IbuOfQj2chg}, udp: true}
+  - {name: ZA 1|TG@BPXD666, server: 156.251.135.14, port: 53302, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 1|TG@BPXD666, server: stw10-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 2|TG@BPXD666, server: scloudtw2-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 3|TG@BPXD666, server: stw7-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 4|TG@BPXD666, server: bgptw2.cnamazon.sbs, port: 443, type: trojan, password: e015d739-1656-4e9a-b0cc-5d8f11b0db5b, sni: tlsdata.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 5|TG@BPXD666, server: stw4-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 6|TG@BPXD666, server: stw8-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 7|TG@BPXD666, server: bgptw2.cnamazon.sbs, port: 443, type: trojan, password: 3e7ad819-03dd-46e1-8292-116fd2cea1c2, sni: tlsdata.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 8|TG@BPXD666, server: stw5-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 9|TG@BPXD666, server: stw7-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 TW 1|TG@BPXD666, server: CHT.MIFJUN.ORG, port: 80, type: vmess, uuid: c76bf073-d8c6-4d2d-aa5f-3bbdd3b6d0b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 1|TG@BPXD666, server: 202.79.174.157, port: 55264, type: vmess, uuid: 121c9c89-7d11-4f49-9112-dc1e85363f6f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL 1|TG@BPXD666, server: 45.136.235.10, port: 41632, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 10|TG@BPXD666, server: 192.74.228.178, port: 42857, type: vmess, uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 11|TG@BPXD666, server: 192.74.242.156, port: 44667, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 12|TG@BPXD666, server: 192.74.230.61, port: 42689, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 13|TG@BPXD666, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: cf.yxjnode.com}}, udp: true}
+  - {name: 🇺🇸 US 14|TG@BPXD666, server: 142.0.130.11, port: 53452, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 15|TG@BPXD666, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 16|TG@BPXD666, server: awshk9-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 17|TG@BPXD666, server: 108.186.116.174, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 18|TG@BPXD666, server: 138.2.71.111, port: 80, type: vmess, uuid: b2947942-701b-4de2-91cd-f6810d5d03bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 19|TG@BPXD666, server: hendostan.foriran.nl, port: 443, type: vmess, uuid: 8357816b-68e4-4a2b-830c-e9bdd369ea22, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /7ouWwj1jH2IbuOfQj2chg, headers: {Host: hendostan.foriran.nl}}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 135.148.149.209, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 45.12.144.80, port: 47127, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 107.167.12.26, port: 41702, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: 192.74.229.220, port: 51592, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 5|TG@BPXD666, server: 137.175.61.152, port: 53940, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 6|TG@BPXD666, server: 192.74.231.176, port: 49202, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 7|TG@BPXD666, server: 142.0.133.39, port: 51412, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 8|TG@BPXD666, server: 142.4.112.17, port: 51091, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 9|TG@BPXD666, server: 148.59.74.143, port: 443, type: trojan, password: 3e49b072-4746-4e46-a256-233c3c7b52bf, sni: 20-24-33-134.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+proxy-groups:
+  - name: 🌐 节点选择
+    type: select
+    proxies:
+      - ✋ 手动选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: ✋ 手动选择
+    type: select
+    proxies:
+      - IR 1|TG@BPXD666
+      - IR 2|TG@BPXD666
+      - IT 1|TG@BPXD666
+      - ZA 1|TG@BPXD666
+      - 🇨🇦 CA 1|TG@BPXD666
+      - 🇨🇦 CA 2|TG@BPXD666
+      - 🇨🇦 CA 3|TG@BPXD666
+      - 🇨🇦 CA 4|TG@BPXD666
+      - 🇨🇦 CA 5|TG@BPXD666
+      - 🇨🇦 CA 6|TG@BPXD666
+      - 🇨🇦 CA 7|TG@BPXD666
+      - 🇨🇦 CA 8|TG@BPXD666
+      - 🇨🇦 CA 9|TG@BPXD666
+      - 🇨🇳 TW 1|TG@BPXD666
+      - 🇭🇰 HK 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
+      - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 12|TG@BPXD666
+      - 🇺🇸 US 13|TG@BPXD666
+      - 🇺🇸 US 14|TG@BPXD666
+      - 🇺🇸 US 15|TG@BPXD666
+      - 🇺🇸 US 16|TG@BPXD666
+      - 🇺🇸 US 17|TG@BPXD666
+      - 🇺🇸 US 18|TG@BPXD666
+      - 🇺🇸 US 19|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
+      - 🇺🇸 US 9|TG@BPXD666
+  - name: 💡 自动选择
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - IR 1|TG@BPXD666
+      - IR 2|TG@BPXD666
+      - IT 1|TG@BPXD666
+      - ZA 1|TG@BPXD666
+      - 🇨🇦 CA 1|TG@BPXD666
+      - 🇨🇦 CA 2|TG@BPXD666
+      - 🇨🇦 CA 3|TG@BPXD666
+      - 🇨🇦 CA 4|TG@BPXD666
+      - 🇨🇦 CA 5|TG@BPXD666
+      - 🇨🇦 CA 6|TG@BPXD666
+      - 🇨🇦 CA 7|TG@BPXD666
+      - 🇨🇦 CA 8|TG@BPXD666
+      - 🇨🇦 CA 9|TG@BPXD666
+      - 🇨🇳 TW 1|TG@BPXD666
+      - 🇭🇰 HK 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
+      - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 12|TG@BPXD666
+      - 🇺🇸 US 13|TG@BPXD666
+      - 🇺🇸 US 14|TG@BPXD666
+      - 🇺🇸 US 15|TG@BPXD666
+      - 🇺🇸 US 16|TG@BPXD666
+      - 🇺🇸 US 17|TG@BPXD666
+      - 🇺🇸 US 18|TG@BPXD666
+      - 🇺🇸 US 19|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
+      - 🇺🇸 US 9|TG@BPXD666
+  - name: 🇭🇰 香港节点
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - 🇭🇰 HK 1|TG@BPXD666
+  - name: 🇯🇵 日本节点
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - DIRECT
+  - name: 🇺🇲 美国节点
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 12|TG@BPXD666
+      - 🇺🇸 US 13|TG@BPXD666
+      - 🇺🇸 US 14|TG@BPXD666
+      - 🇺🇸 US 15|TG@BPXD666
+      - 🇺🇸 US 16|TG@BPXD666
+      - 🇺🇸 US 17|TG@BPXD666
+      - 🇺🇸 US 18|TG@BPXD666
+      - 🇺🇸 US 19|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
+      - 🇺🇸 US 9|TG@BPXD666
+  - name: 🇹🇼 台湾节点
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - 🇨🇳 TW 1|TG@BPXD666
+  - name: 🇸🇬 狮城节点
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - DIRECT
+  - name: 🇰🇷 韩国节点
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - DIRECT
+  - name: 🌍 其他地区
+    type: select
+    proxies:
+      - IR 1|TG@BPXD666
+      - IR 2|TG@BPXD666
+      - IT 1|TG@BPXD666
+      - ZA 1|TG@BPXD666
+      - 🇨🇦 CA 1|TG@BPXD666
+      - 🇨🇦 CA 2|TG@BPXD666
+      - 🇨🇦 CA 3|TG@BPXD666
+      - 🇨🇦 CA 4|TG@BPXD666
+      - 🇨🇦 CA 5|TG@BPXD666
+      - 🇨🇦 CA 6|TG@BPXD666
+      - 🇨🇦 CA 7|TG@BPXD666
+      - 🇨🇦 CA 8|TG@BPXD666
+      - 🇨🇦 CA 9|TG@BPXD666
+      - 🇨🇳 TW 1|TG@BPXD666
+      - 🇭🇰 HK 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
+      - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 12|TG@BPXD666
+      - 🇺🇸 US 13|TG@BPXD666
+      - 🇺🇸 US 14|TG@BPXD666
+      - 🇺🇸 US 15|TG@BPXD666
+      - 🇺🇸 US 16|TG@BPXD666
+      - 🇺🇸 US 17|TG@BPXD666
+      - 🇺🇸 US 18|TG@BPXD666
+      - 🇺🇸 US 19|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
+      - 🇺🇸 US 9|TG@BPXD666
+  - name: 🪜 故障转移
+    type: fallback
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - IR 1|TG@BPXD666
+      - IR 2|TG@BPXD666
+      - IT 1|TG@BPXD666
+      - ZA 1|TG@BPXD666
+      - 🇨🇦 CA 1|TG@BPXD666
+      - 🇨🇦 CA 2|TG@BPXD666
+      - 🇨🇦 CA 3|TG@BPXD666
+      - 🇨🇦 CA 4|TG@BPXD666
+      - 🇨🇦 CA 5|TG@BPXD666
+      - 🇨🇦 CA 6|TG@BPXD666
+      - 🇨🇦 CA 7|TG@BPXD666
+      - 🇨🇦 CA 8|TG@BPXD666
+      - 🇨🇦 CA 9|TG@BPXD666
+      - 🇨🇳 TW 1|TG@BPXD666
+      - 🇭🇰 HK 1|TG@BPXD666
+      - 🇳🇱 NL 1|TG@BPXD666
+      - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 12|TG@BPXD666
+      - 🇺🇸 US 13|TG@BPXD666
+      - 🇺🇸 US 14|TG@BPXD666
+      - 🇺🇸 US 15|TG@BPXD666
+      - 🇺🇸 US 16|TG@BPXD666
+      - 🇺🇸 US 17|TG@BPXD666
+      - 🇺🇸 US 18|TG@BPXD666
+      - 🇺🇸 US 19|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
+      - 🇺🇸 US 9|TG@BPXD666
+  - name: 👉 国内网站
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 👉 国外网站
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 👉 例外网站
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📲 聊天软件
+    type: select
+    proxies:
+      - 🪜 故障转移
+      - 🌐 节点选择
+      - 💡 自动选择
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🌏 日韩媒体
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇯🇵 日本节点
+      - 🇭🇰 香港节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🌏 港台媒体
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📹 YouTube
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🎵 Spotify
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🎬 NETFLIX
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🎬 Disney+
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🎬 HBO
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🎬 Prime
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📺 Emby
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📺 TikTok
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇯🇵 日本节点
+      - 🇭🇰 香港节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📺 巴哈姆特
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇹🇼 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📺 哔哩哔哩
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📺 爱奇艺
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🧩 微软服务
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🎮 游戏平台
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🌐 节点选择
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📥 BT & PT
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🌐 节点选择
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: ☁️ 全球直连
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🛡 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+cfw-bypass:
+  - localhost
+  - 127.*
+  - 10.*
+  - 172.16.*
+  - 172.17.*
+  - 172.18.*
+  - 172.19.*
+  - 172.20.*
+  - 172.21.*
+  - 172.22.*
+  - 172.23.*
+  - 172.24.*
+  - 172.25.*
+  - 172.26.*
+  - 172.27.*
+  - 172.28.*
+  - 172.29.*
+  - 172.30.*
+  - 172.31.*
+  - 192.168.*
+  - <local>
+rules:
+ - GEOIP,CN,👉 国内网站
+ - MATCH,👉 例外网站
