@@ -1,13 +1,49 @@
-proxies: []
+proxies:
+- name: "\U0001F1EE\U0001F1F7 IR 1 VMS"
+  type: vmess
+  server: ss2.zwtg888.com
+  port: 12345
+  cipher: auto
+  uuid: a45e9868-639b-35b6-9b28-5ec454144085
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ''
+- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
+  type: vmess
+  server: 198.2.218.200
+  port: 443
+  cipher: auto
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  tls: true
+  skip-cert-verify: true
+  network: ws
+- name: "\U0001F1EC\U0001F1E7 GB 3 VMS"
+  type: vmess
+  server: wfi.sahnama.com
+  port: 80
+  cipher: auto
+  uuid: 61280f80-cd25-4c7b-8e5a-b1560617047a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1EE\U0001F1F7 IR 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 3 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1EE\U0001F1F7 IR 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 3 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
