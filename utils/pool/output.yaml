@@ -658,7 +658,7 @@ proxies:
   sni: doxjp01.588511.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 57 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 57 VMS"
   type: vmess
   server: cf-lt.sharecentre.online
   port: 80
@@ -1293,7 +1293,7 @@ proxies:
   sni: us3.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 121 VMS"
+- name: "\U0001F1E9\U0001F1EA DE 121 VMS"
   type: vmess
   server: cdn.twitter.now.cc
   port: 443
@@ -1307,6 +1307,20 @@ proxies:
     path: /ikun
     headers:
       host: lo.twittei.me
+- name: "\U0001F1FA\U0001F1F8 US 122 VMS"
+  type: vmess
+  server: tech.noaries.de
+  port: 80
+  cipher: auto
+  uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /shirker
+    headers:
+      host: nl.sharecentrepro.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -1367,7 +1381,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 54 VMS"
   - "\U0001F1EE\U0001F1F9 IT 55 TJN"
   - "\U0001F1FA\U0001F1F8 US 56 TJN"
-  - "\U0001F1FA\U0001F1F8 US 57 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 57 VMS"
   - "\U0001F1FA\U0001F1F8 US 58 VMS"
   - "\U0001F1FA\U0001F1F8 US 59 VMS"
   - "\U0001F1E8\U0001F1F3 CN 60 SSS"
@@ -1431,7 +1445,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 118 VMS"
   - "\U0001F1E8\U0001F1F3 CN 119 SSR"
   - "\U0001F1EF\U0001F1F5 JP 120 TJN"
-  - "\U0001F1F8\U0001F1EC SG 121 VMS"
+  - "\U0001F1E9\U0001F1EA DE 121 VMS"
+  - "\U0001F1FA\U0001F1F8 US 122 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1494,7 +1509,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 54 VMS"
   - "\U0001F1EE\U0001F1F9 IT 55 TJN"
   - "\U0001F1FA\U0001F1F8 US 56 TJN"
-  - "\U0001F1FA\U0001F1F8 US 57 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 57 VMS"
   - "\U0001F1FA\U0001F1F8 US 58 VMS"
   - "\U0001F1FA\U0001F1F8 US 59 VMS"
   - "\U0001F1E8\U0001F1F3 CN 60 SSS"
@@ -1558,6 +1573,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 118 VMS"
   - "\U0001F1E8\U0001F1F3 CN 119 SSR"
   - "\U0001F1EF\U0001F1F5 JP 120 TJN"
-  - "\U0001F1F8\U0001F1EC SG 121 VMS"
+  - "\U0001F1E9\U0001F1EA DE 121 VMS"
+  - "\U0001F1FA\U0001F1F8 US 122 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
