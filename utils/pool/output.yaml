@@ -175,7 +175,7 @@ proxies:
   sni: tckr01.xiaohouzi.club
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 20 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 20 VMS"
   type: vmess
   server: v2-ca1.silverdragon.cn
   port: 443
@@ -293,6 +293,20 @@ proxies:
     path: /djjc/us1
     headers:
       host: us1.djjc.sbs
+- name: "\U0001F1FA\U0001F1F8 US 32 VMS"
+  type: vmess
+  server: downloadvip.cfd
+  port: 443
+  cipher: auto
+  uuid: bab079c9-bc60-4ed4-9b94-043dee75d1b9
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /djjc/us2
+    headers:
+      host: us2.djjc.sbs
 proxy-groups:
 - name: automatic
   type: url-test
@@ -316,7 +330,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 17 TJN"
   - "\U0001F1FA\U0001F1F8 US 18 TJN"
   - "\U0001F1E8\U0001F1F3 CN 19 TJN"
-  - "\U0001F1FA\U0001F1F8 US 20 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 20 VMS"
   - "\U0001F1E8\U0001F1F3 CN 21 TJN"
   - "\U0001F1FA\U0001F1F8 US 22 TJN"
   - "\U0001F1FA\U0001F1F8 US 23 TJN"
@@ -328,6 +342,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 29 TJN"
   - "\U0001F1F9\U0001F1FC TW 30 TJN"
   - "\U0001F1FA\U0001F1F8 US 31 VMS"
+  - "\U0001F1FA\U0001F1F8 US 32 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -353,7 +368,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 17 TJN"
   - "\U0001F1FA\U0001F1F8 US 18 TJN"
   - "\U0001F1E8\U0001F1F3 CN 19 TJN"
-  - "\U0001F1FA\U0001F1F8 US 20 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 20 VMS"
   - "\U0001F1E8\U0001F1F3 CN 21 TJN"
   - "\U0001F1FA\U0001F1F8 US 22 TJN"
   - "\U0001F1FA\U0001F1F8 US 23 TJN"
@@ -365,5 +380,6 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 29 TJN"
   - "\U0001F1F9\U0001F1FC TW 30 TJN"
   - "\U0001F1FA\U0001F1F8 US 31 VMS"
+  - "\U0001F1FA\U0001F1F8 US 32 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
