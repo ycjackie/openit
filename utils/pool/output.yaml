@@ -414,7 +414,21 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 36 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 36 VMS"
+  type: vmess
+  server: beta.noaries.de
+  port: 8080
+  cipher: auto
+  uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /aries?ed=2048
+    headers:
+      host: contabo-sg.iiio.wiki
+- name: "\U0001F1FA\U0001F1F3 UN 37 VMS"
   type: vmess
   server: 190.93.245.228
   port: 2052
@@ -428,7 +442,7 @@ proxies:
     path: /qwer10
     headers:
       host: tou.vtcss.top
-- name: "\U0001F1E8\U0001F1F3 CN 37 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 38 VMS"
   type: vmess
   server: iepl2.airtcp.vip
   port: 51002
@@ -438,7 +452,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 38 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 39 VMS"
   type: vmess
   server: 190.93.245.64
   port: 2052
@@ -452,7 +466,7 @@ proxies:
     path: /qwer10
     headers:
       host: tou.vtcss.top
-- name: "\U0001F1FA\U0001F1F8 US 39 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 40 VMS"
   type: vmess
   server: tech.noaries.de
   port: 80
@@ -505,10 +519,11 @@ proxy-groups:
   - "\U0001F1F3\U0001F1F1 NL 33 VMS"
   - "\U0001F1FA\U0001F1F3 UN 34 VMS"
   - "\U0001F1FA\U0001F1F8 US 35 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 36 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 37 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 38 VMS"
-  - "\U0001F1FA\U0001F1F8 US 39 VMS"
+  - "\U0001F1FA\U0001F1F8 US 36 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 37 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 38 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 39 VMS"
+  - "\U0001F1FA\U0001F1F8 US 40 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -550,9 +565,10 @@ proxy-groups:
   - "\U0001F1F3\U0001F1F1 NL 33 VMS"
   - "\U0001F1FA\U0001F1F3 UN 34 VMS"
   - "\U0001F1FA\U0001F1F8 US 35 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 36 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 37 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 38 VMS"
-  - "\U0001F1FA\U0001F1F8 US 39 VMS"
+  - "\U0001F1FA\U0001F1F8 US 36 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 37 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 38 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 39 VMS"
+  - "\U0001F1FA\U0001F1F8 US 40 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
