@@ -1,5 +1,13 @@
 proxies:
-- name: "\U0001F1F8\U0001F1EC SG 1 VMS"
+- name: "\U0001F1EE\U0001F1F1 IL 1 TJN"
+  type: trojan
+  server: nl3.chuqiangtou.net
+  port: 4003
+  udp: true
+  password: TJCfE7Mx2YcA8kX8zg
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 2 VMS"
   type: vmess
   server: cdncf.scyu.app
   port: 80
@@ -13,7 +21,7 @@ proxies:
     path: /api/v3/download.getFile
     headers:
       host: ssrsub.v01.ssrsub.com
-- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
   type: vmess
   server: 104.27.50.200
   port: 80
@@ -27,7 +35,7 @@ proxies:
     path: /qwer00
     headers:
       host: tou.vtcss.top
-- name: "\U0001F1FA\U0001F1F3 UN 3 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
   type: vmess
   server: 104.18.26.68
   port: 80
@@ -41,7 +49,7 @@ proxies:
     path: /qwer00
     headers:
       host: tou.vtcss.top
-- name: "\U0001F1E8\U0001F1F3 CN 4 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 5 TJN"
   type: trojan
   server: h961359.waihuizhibiaowang.com
   port: 13543
@@ -49,7 +57,7 @@ proxies:
   password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
   type: vmess
   server: 198.41.197.135
   port: 80
@@ -63,7 +71,7 @@ proxies:
     path: /qwer00
     headers:
       host: tou.vtcss.top
-- name: "\U0001F1FA\U0001F1F8 US 6 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 7 TJN"
   type: trojan
   server: 163.123.192.60
   port: 443
@@ -72,7 +80,7 @@ proxies:
   sni: 18-140-66-207.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1E6 CA 7 VMS"
+- name: "\U0001F1E8\U0001F1E6 CA 8 VMS"
   type: vmess
   server: shopify.com
   port: 8080
@@ -86,7 +94,7 @@ proxies:
     path: /
     headers:
       host: vceu.1688888888.eu.org
-- name: "\U0001F1EE\U0001F1F1 IL 8 TJN"
+- name: "\U0001F1EE\U0001F1F1 IL 9 TJN"
   type: trojan
   server: us3.chuqiangtou.net
   port: 4003
@@ -94,17 +102,9 @@ proxies:
   password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F1 IL 9 TJN"
-  type: trojan
-  server: hk1.chuqiangtou.net
-  port: 4003
-  udp: true
-  password: TJCfE7Mx2YcA8kX8zg
-  skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1EE\U0001F1F1 IL 10 TJN"
   type: trojan
-  server: nl3.chuqiangtou.net
+  server: hk1.chuqiangtou.net
   port: 4003
   udp: true
   password: TJCfE7Mx2YcA8kX8zg
@@ -114,14 +114,14 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F8\U0001F1EC SG 1 VMS"
-  - "\U0001F1FA\U0001F1F8 US 2 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 4 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
-  - "\U0001F1FA\U0001F1F8 US 6 TJN"
-  - "\U0001F1E8\U0001F1E6 CA 7 VMS"
-  - "\U0001F1EE\U0001F1F1 IL 8 TJN"
+  - "\U0001F1EE\U0001F1F1 IL 1 TJN"
+  - "\U0001F1F8\U0001F1EC SG 2 VMS"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 5 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 8 VMS"
   - "\U0001F1EE\U0001F1F1 IL 9 TJN"
   - "\U0001F1EE\U0001F1F1 IL 10 TJN"
   url: https://www.google.com/favicon.ico
@@ -130,14 +130,14 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1F8\U0001F1EC SG 1 VMS"
-  - "\U0001F1FA\U0001F1F8 US 2 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 4 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
-  - "\U0001F1FA\U0001F1F8 US 6 TJN"
-  - "\U0001F1E8\U0001F1E6 CA 7 VMS"
-  - "\U0001F1EE\U0001F1F1 IL 8 TJN"
+  - "\U0001F1EE\U0001F1F1 IL 1 TJN"
+  - "\U0001F1F8\U0001F1EC SG 2 VMS"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 5 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 8 VMS"
   - "\U0001F1EE\U0001F1F1 IL 9 TJN"
   - "\U0001F1EE\U0001F1F1 IL 10 TJN"
 rules:
