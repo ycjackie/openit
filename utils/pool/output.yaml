@@ -374,7 +374,7 @@ proxies:
   sni: de2.nigirocloud.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 42 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 42 VMS"
   type: vmess
   server: dl.v001sssv.pw
   port: 80
@@ -512,7 +512,7 @@ proxies:
   password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 56 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 56 VMS"
   type: vmess
   server: dl.v001sssv.pw
   port: 80
@@ -745,6 +745,70 @@ proxies:
   password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EE\U0001F1F1 IL 80 TJN"
+  type: trojan
+  server: uk1.nigirocloud.com
+  port: 4003
+  udp: true
+  password: PlF471nxneY0YevI
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F1 IL 81 TJN"
+  type: trojan
+  server: uk1.barbecuepie.com
+  port: 4003
+  udp: true
+  password: TJCfE7Mx2YcA8kX8zg
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 82 VMS"
+  type: vmess
+  server: 107.167.16.90
+  port: 45689
+  cipher: auto
+  uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f
+  alterId: 64
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 83 VMS"
+  type: vmess
+  server: 142.4.112.28
+  port: 51091
+  cipher: auto
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 84 VMS"
+  type: vmess
+  server: cn-guangzhou.applebench.tech
+  port: 56268
+  cipher: auto
+  uuid: 7e319f7a-4c47-4606-8008-ce6c92634dd8
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 85 VMS"
+  type: vmess
+  server: 112.29.94.76
+  port: 47589
+  cipher: auto
+  uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921
+  alterId: 64
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F1 IL 86 TJN"
+  type: trojan
+  server: 149.50.77.95
+  port: 4003
+  udp: true
+  password: TJCfE7Mx2YcA8kX8zg
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -790,7 +854,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 39 TJN"
   - "\U0001F1FA\U0001F1F3 UN 40 VMS"
   - "\U0001F1EE\U0001F1F1 IL 41 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 42 VMS"
+  - "\U0001F1FA\U0001F1F8 US 42 VMS"
   - "\U0001F1EE\U0001F1F1 IL 43 TJN"
   - "\U0001F1EE\U0001F1F1 IL 44 TJN"
   - "\U0001F1FA\U0001F1F8 US 45 VMS"
@@ -804,7 +868,7 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 53 VMS"
   - "\U0001F1E8\U0001F1F3 CN 54 SSS"
   - "\U0001F1EE\U0001F1F1 IL 55 TJN"
-  - "\U0001F1FA\U0001F1F8 US 56 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 56 VMS"
   - "\U0001F1FA\U0001F1F8 US 57 VMS"
   - "\U0001F1EE\U0001F1F1 IL 58 TJN"
   - "\U0001F1EE\U0001F1F1 IL 59 TJN"
@@ -828,6 +892,13 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 77 TJN"
   - "\U0001F1F3\U0001F1F1 NL 78 VMS"
   - "\U0001F1EE\U0001F1F1 IL 79 TJN"
+  - "\U0001F1EE\U0001F1F1 IL 80 TJN"
+  - "\U0001F1EE\U0001F1F1 IL 81 TJN"
+  - "\U0001F1FA\U0001F1F8 US 82 VMS"
+  - "\U0001F1FA\U0001F1F8 US 83 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 84 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 85 VMS"
+  - "\U0001F1EE\U0001F1F1 IL 86 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -875,7 +946,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 39 TJN"
   - "\U0001F1FA\U0001F1F3 UN 40 VMS"
   - "\U0001F1EE\U0001F1F1 IL 41 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 42 VMS"
+  - "\U0001F1FA\U0001F1F8 US 42 VMS"
   - "\U0001F1EE\U0001F1F1 IL 43 TJN"
   - "\U0001F1EE\U0001F1F1 IL 44 TJN"
   - "\U0001F1FA\U0001F1F8 US 45 VMS"
@@ -889,7 +960,7 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 53 VMS"
   - "\U0001F1E8\U0001F1F3 CN 54 SSS"
   - "\U0001F1EE\U0001F1F1 IL 55 TJN"
-  - "\U0001F1FA\U0001F1F8 US 56 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 56 VMS"
   - "\U0001F1FA\U0001F1F8 US 57 VMS"
   - "\U0001F1EE\U0001F1F1 IL 58 TJN"
   - "\U0001F1EE\U0001F1F1 IL 59 TJN"
@@ -913,5 +984,12 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 77 TJN"
   - "\U0001F1F3\U0001F1F1 NL 78 VMS"
   - "\U0001F1EE\U0001F1F1 IL 79 TJN"
+  - "\U0001F1EE\U0001F1F1 IL 80 TJN"
+  - "\U0001F1EE\U0001F1F1 IL 81 TJN"
+  - "\U0001F1FA\U0001F1F8 US 82 VMS"
+  - "\U0001F1FA\U0001F1F8 US 83 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 84 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 85 VMS"
+  - "\U0001F1EE\U0001F1F1 IL 86 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
