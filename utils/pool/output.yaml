@@ -709,7 +709,7 @@ proxies:
   sni: usmax05.170203.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 80 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 80 VMS"
   type: vmess
   server: dl.v001sssv.pw
   port: 80
@@ -1101,20 +1101,6 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 122 VMS"
   type: vmess
-  server: dl.v001sssv.pw
-  port: 80
-  cipher: auto
-  uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: dl.v001sssv.pw
-- name: "\U0001F1FA\U0001F1F3 UN 123 VMS"
-  type: vmess
   server: cf-lt.sharecentre.online
   port: 80
   cipher: auto
@@ -1127,7 +1113,7 @@ proxies:
     path: /api/v3/download.getFile
     headers:
       host: ssrsub.v03.ssrsub.com
-- name: "\U0001F1FA\U0001F1F3 UN 124 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 123 VMS"
   type: vmess
   server: www.digitalocean.com
   port: 80
@@ -1141,7 +1127,7 @@ proxies:
     path: /api/v3/download.getFile
     headers:
       host: ssrsub.v01.ssrsub.com
-- name: "\U0001F1EE\U0001F1F1 IL 125 TJN"
+- name: "\U0001F1EE\U0001F1F1 IL 124 TJN"
   type: trojan
   server: 149.50.69.99
   port: 4003
@@ -1149,7 +1135,7 @@ proxies:
   password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F1 IL 126 TJN"
+- name: "\U0001F1EE\U0001F1F1 IL 125 TJN"
   type: trojan
   server: 149.50.77.102
   port: 4003
@@ -1157,7 +1143,7 @@ proxies:
   password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F1 IL 127 TJN"
+- name: "\U0001F1EE\U0001F1F1 IL 126 TJN"
   type: trojan
   server: 149.50.71.124
   port: 4003
@@ -1248,7 +1234,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 77 VMS"
   - "\U0001F1EE\U0001F1F1 IL 78 TJN"
   - "\U0001F1F9\U0001F1FC TW 79 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 80 VMS"
+  - "\U0001F1FA\U0001F1F8 US 80 VMS"
   - "\U0001F1EE\U0001F1F1 IL 81 TJN"
   - "\U0001F1F9\U0001F1FC TW 82 TJN"
   - "\U0001F1EE\U0001F1F1 IL 83 TJN"
@@ -1292,10 +1278,9 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 121 TJN"
   - "\U0001F1FA\U0001F1F8 US 122 VMS"
   - "\U0001F1FA\U0001F1F3 UN 123 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 124 VMS"
+  - "\U0001F1EE\U0001F1F1 IL 124 TJN"
   - "\U0001F1EE\U0001F1F1 IL 125 TJN"
   - "\U0001F1EE\U0001F1F1 IL 126 TJN"
-  - "\U0001F1EE\U0001F1F1 IL 127 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1381,7 +1366,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 77 VMS"
   - "\U0001F1EE\U0001F1F1 IL 78 TJN"
   - "\U0001F1F9\U0001F1FC TW 79 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 80 VMS"
+  - "\U0001F1FA\U0001F1F8 US 80 VMS"
   - "\U0001F1EE\U0001F1F1 IL 81 TJN"
   - "\U0001F1F9\U0001F1FC TW 82 TJN"
   - "\U0001F1EE\U0001F1F1 IL 83 TJN"
@@ -1425,9 +1410,8 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 121 TJN"
   - "\U0001F1FA\U0001F1F8 US 122 VMS"
   - "\U0001F1FA\U0001F1F3 UN 123 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 124 VMS"
+  - "\U0001F1EE\U0001F1F1 IL 124 TJN"
   - "\U0001F1EE\U0001F1F1 IL 125 TJN"
   - "\U0001F1EE\U0001F1F1 IL 126 TJN"
-  - "\U0001F1EE\U0001F1F1 IL 127 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
