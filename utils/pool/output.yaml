@@ -1,5 +1,5 @@
 proxies:
-- name: "\U0001F1E8\U0001F1FE CY 1 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
   type: vmess
   server: mci.saintink.eu.org
   port: 443
@@ -516,6 +516,20 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F3 UN 49 VMS"
   type: vmess
+  server: cfcdn.sanfencdn.net
+  port: 80
+  cipher: auto
+  uuid: 8216e1fd-7f67-440d-9a63-51d0f6c38b10
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /zh-cn
+    headers:
+      host: jp4.sanfencdn2.com
+- name: "\U0001F1FA\U0001F1F3 UN 50 VMS"
+  type: vmess
   server: cfcdn2.sanfencdn.net
   port: 2052
   cipher: auto
@@ -528,7 +542,7 @@ proxies:
     path: /zh-cn
     headers:
       host: us6.sanfencdn2.com
-- name: "\U0001F1FA\U0001F1F8 US 50 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 51 VMS"
   type: vmess
   server: 156.225.67.233
   port: 48123
@@ -538,7 +552,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 51 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 52 VMS"
   type: vmess
   server: 107.148.194.233
   port: 55504
@@ -548,7 +562,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 52 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 53 VMS"
   type: vmess
   server: 137.175.18.88
   port: 42002
@@ -558,20 +572,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 53 VMS"
-  type: vmess
-  server: cfcdn2.sanfencdn.net
-  port: 80
-  cipher: auto
-  uuid: 8216e1fd-7f67-440d-9a63-51d0f6c38b10
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /zh-cn
-    headers:
-      host: jp3.sanfencdn2.com
 - name: "\U0001F1FA\U0001F1F8 US 54 VMS"
   type: vmess
   server: 140.99.157.84
@@ -708,7 +708,7 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1FE CY 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1E8\U0001F1F3 CN 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
@@ -757,10 +757,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 47 VMS"
   - "\U0001F1FA\U0001F1F8 US 48 VMS"
   - "\U0001F1FA\U0001F1F3 UN 49 VMS"
-  - "\U0001F1FA\U0001F1F8 US 50 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 50 VMS"
   - "\U0001F1FA\U0001F1F8 US 51 VMS"
   - "\U0001F1FA\U0001F1F8 US 52 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 53 VMS"
+  - "\U0001F1FA\U0001F1F8 US 53 VMS"
   - "\U0001F1FA\U0001F1F8 US 54 VMS"
   - "\U0001F1E8\U0001F1FE CY 55 VMS"
   - "\U0001F1FA\U0001F1F8 US 56 VMS"
@@ -780,7 +780,7 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1FE CY 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1E8\U0001F1F3 CN 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
@@ -829,10 +829,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 47 VMS"
   - "\U0001F1FA\U0001F1F8 US 48 VMS"
   - "\U0001F1FA\U0001F1F3 UN 49 VMS"
-  - "\U0001F1FA\U0001F1F8 US 50 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 50 VMS"
   - "\U0001F1FA\U0001F1F8 US 51 VMS"
   - "\U0001F1FA\U0001F1F8 US 52 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 53 VMS"
+  - "\U0001F1FA\U0001F1F8 US 53 VMS"
   - "\U0001F1FA\U0001F1F8 US 54 VMS"
   - "\U0001F1E8\U0001F1FE CY 55 VMS"
   - "\U0001F1FA\U0001F1F8 US 56 VMS"
