@@ -53,7 +53,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   network: ws
-- name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
   type: vmess
   server: us.mlxg.org
   port: 80
@@ -299,20 +299,6 @@ proxies:
       host: us-v.sshmax.xyz
 - name: "\U0001F1FA\U0001F1F8 US 27 VMS"
   type: vmess
-  server: hk.mlxg.org
-  port: 80
-  cipher: auto
-  uuid: c7442852-5a48-4456-8783-b7b8eebbca6c
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: us1.mlxg.org
-- name: "\U0001F1FA\U0001F1F8 US 28 VMS"
-  type: vmess
   server: 140.99.59.227
   port: 55512
   cipher: auto
@@ -321,7 +307,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 29 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 28 VMS"
   type: vmess
   server: 137.175.18.86
   port: 42002
@@ -331,7 +317,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 30 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 29 VMS"
   type: vmess
   server: 198.2.203.60
   port: 44672
@@ -341,13 +327,23 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 31 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 30 VMS"
   type: vmess
   server: 140.99.57.35
   port: 59418
   cipher: auto
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 64
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 31 VMS"
+  type: vmess
+  server: qzcn2-01.dajuzi.cc
+  port: 15598
+  cipher: auto
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa
+  alterId: 0
   tls: false
   skip-cert-verify: true
   network: tcp
@@ -823,16 +819,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 73 VMS"
-  type: vmess
-  server: qzcn2-01.dajuzi.cc
-  port: 15598
-  cipher: auto
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -842,7 +828,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
   - "\U0001F1FA\U0001F1F8 US 8 VMS"
   - "\U0001F1FA\U0001F1F3 UN 9 VMS"
@@ -867,7 +853,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 28 VMS"
   - "\U0001F1FA\U0001F1F8 US 29 VMS"
   - "\U0001F1FA\U0001F1F8 US 30 VMS"
-  - "\U0001F1FA\U0001F1F8 US 31 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 31 VMS"
   - "\U0001F1F8\U0001F1EC SG 32 TJN"
   - "\U0001F1FA\U0001F1F8 US 33 VMS"
   - "\U0001F1FA\U0001F1F8 US 34 VMS"
@@ -909,7 +895,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 70 VMS"
   - "\U0001F1E9\U0001F1EA DE 71 VMS"
   - "\U0001F1EB\U0001F1F7 FR 72 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 73 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -921,7 +906,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
   - "\U0001F1FA\U0001F1F8 US 8 VMS"
   - "\U0001F1FA\U0001F1F3 UN 9 VMS"
@@ -946,7 +931,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 28 VMS"
   - "\U0001F1FA\U0001F1F8 US 29 VMS"
   - "\U0001F1FA\U0001F1F8 US 30 VMS"
-  - "\U0001F1FA\U0001F1F8 US 31 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 31 VMS"
   - "\U0001F1F8\U0001F1EC SG 32 TJN"
   - "\U0001F1FA\U0001F1F8 US 33 VMS"
   - "\U0001F1FA\U0001F1F8 US 34 VMS"
@@ -988,6 +973,5 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 70 VMS"
   - "\U0001F1E9\U0001F1EA DE 71 VMS"
   - "\U0001F1EB\U0001F1F7 FR 72 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 73 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
