@@ -464,21 +464,21 @@ proxies:
       host: dld.shabijichang.com
 - name: "\U0001F1FA\U0001F1F8 US 38 VMS"
   type: vmess
-  server: 104.25.254.60
-  port: 443
+  server: sdyg.shabijichang.com
+  port: 80
   cipher: auto
-  uuid: 79770a32-9607-4919-9483-0f1794559390
+  uuid: abe2c9db-717d-4e27-af3b-50a8bccdfdff
   alterId: 0
-  tls: true
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /juYLyvNBpY0LBOAommy2aJE
+    path: /
     headers:
-      host: nika3hdfy2.foriran.trade
+      host: sdyg.shabijichang.com
 - name: "\U0001F1FA\U0001F1F8 US 39 VMS"
   type: vmess
-  server: 104.31.16.223
+  server: 104.25.254.60
   port: 443
   cipher: auto
   uuid: 79770a32-9607-4919-9483-0f1794559390
@@ -492,6 +492,20 @@ proxies:
       host: nika3hdfy2.foriran.trade
 - name: "\U0001F1FA\U0001F1F8 US 40 VMS"
   type: vmess
+  server: 104.31.16.223
+  port: 443
+  cipher: auto
+  uuid: 79770a32-9607-4919-9483-0f1794559390
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /juYLyvNBpY0LBOAommy2aJE
+    headers:
+      host: nika3hdfy2.foriran.trade
+- name: "\U0001F1FA\U0001F1F8 US 41 VMS"
+  type: vmess
   server: 45.199.138.135
   port: 49129
   cipher: auto
@@ -500,7 +514,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 41 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 42 VMS"
   type: vmess
   server: 172.67.198.131
   port: 2095
@@ -514,7 +528,7 @@ proxies:
     path: /hgcefomn
     headers:
       host: amszx.66666654.xyz
-- name: "\U0001F1FA\U0001F1F8 US 42 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 43 VMS"
   type: vmess
   server: 172.67.10.121
   port: 80
@@ -574,6 +588,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 40 VMS"
   - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1FA\U0001F1F8 US 42 VMS"
+  - "\U0001F1FA\U0001F1F8 US 43 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -622,5 +637,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 40 VMS"
   - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1FA\U0001F1F8 US 42 VMS"
+  - "\U0001F1FA\U0001F1F8 US 43 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
