@@ -450,10 +450,10 @@ proxies:
       host: ca4.tehme2.fun
 - name: "\U0001F1FA\U0001F1F8 US 37 VMS"
   type: vmess
-  server: dld.shabijichang.com
+  server: sdyg.shabijichang.com
   port: 80
   cipher: auto
-  uuid: 2123d4f5-0e8f-4641-a45f-0c8ec799b380
+  uuid: abe2c9db-717d-4e27-af3b-50a8bccdfdff
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -461,7 +461,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      host: dld.shabijichang.com
+      host: sdyg.shabijichang.com
 - name: "\U0001F1FA\U0001F1F8 US 38 VMS"
   type: vmess
   server: 104.25.254.60
@@ -528,6 +528,20 @@ proxies:
     path: /shirker
     headers:
       host: uk2.scproxy.top
+- name: "\U0001F1FA\U0001F1F8 US 43 VMS"
+  type: vmess
+  server: yhnsb.shabijichang.com
+  port: 80
+  cipher: auto
+  uuid: 2123d4f5-0e8f-4641-a45f-0c8ec799b380
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: yhnsb.shabijichang.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -574,6 +588,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 40 VMS"
   - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1FA\U0001F1F8 US 42 VMS"
+  - "\U0001F1FA\U0001F1F8 US 43 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -622,5 +637,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 40 VMS"
   - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1FA\U0001F1F8 US 42 VMS"
+  - "\U0001F1FA\U0001F1F8 US 43 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
