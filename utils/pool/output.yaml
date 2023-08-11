@@ -196,7 +196,7 @@ proxies:
     path: /shirker
     headers:
       host: ca.ilovescp.com
-- name: "\U0001F1FA\U0001F1F3 UN 17 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 17 TJN"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -633,6 +633,17 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 54 TJN"
+  type: trojan
+  server: cnamemc.cdncisco.org
+  port: 443
+  udp: true
+  password: 0ad5e311-7189-4124-ac8f-f828b681f10e
+  sni: c5mc.cdncisco.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5CSwsJSwLmxCxOCSBhOZubb
 proxy-groups:
 - name: automatic
   type: url-test
@@ -653,7 +664,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 14 VMS"
   - "\U0001F1FA\U0001F1F3 UN 15 VMS"
   - "\U0001F1EB\U0001F1F7 FR 16 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 17 TJN"
+  - "\U0001F1FA\U0001F1F8 US 17 TJN"
   - "\U0001F1ED\U0001F1F0 HK 18 VMS"
   - "\U0001F1EF\U0001F1F5 JP 19 TJN"
   - "\U0001F1FA\U0001F1F3 UN 20 TJN"
@@ -690,6 +701,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 51 VMS"
   - "\U0001F1FA\U0001F1F8 US 52 TJN"
   - "\U0001F1E9\U0001F1EA DE 53 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 54 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -712,7 +724,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 14 VMS"
   - "\U0001F1FA\U0001F1F3 UN 15 VMS"
   - "\U0001F1EB\U0001F1F7 FR 16 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 17 TJN"
+  - "\U0001F1FA\U0001F1F8 US 17 TJN"
   - "\U0001F1ED\U0001F1F0 HK 18 VMS"
   - "\U0001F1EF\U0001F1F5 JP 19 TJN"
   - "\U0001F1FA\U0001F1F3 UN 20 TJN"
@@ -749,5 +761,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 51 VMS"
   - "\U0001F1FA\U0001F1F8 US 52 TJN"
   - "\U0001F1E9\U0001F1EA DE 53 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 54 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
