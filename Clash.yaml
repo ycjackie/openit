@@ -196,9 +196,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇯🇵 JP 1|TG@BPXD666, server: azzz.aitrjc.xyz, port: 10090, type: vmess, uuid: 145ce29e-9294-4fbb-9cfb-4900b9d95c8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tangrenjichang, headers: {Host: azzz.aitrjc.xyz}}, udp: true}
-  - {name: 🇯🇵 JP 2|TG@BPXD666, server: azzz.aitrjc.xyz, port: 10087, type: vmess, uuid: 145ce29e-9294-4fbb-9cfb-4900b9d95c8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tangrenjichang, headers: {Host: azzz.aitrjc.xyz}}, udp: true}
-  - {name: 🇯🇵 JP 3|TG@BPXD666, server: azzz.aitrjc.xyz, port: 10086, type: vmess, uuid: 145ce29e-9294-4fbb-9cfb-4900b9d95c8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tangrenjichang, headers: {Host: azzz.aitrjc.xyz}}, udp: true}
+  - {name: 🇯🇵 JP 1|TG@BPXD666, server: azzz.aitrjc.xyz, port: 10087, type: vmess, uuid: 145ce29e-9294-4fbb-9cfb-4900b9d95c8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tangrenjichang, headers: {Host: azzz.aitrjc.xyz}}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: speedip.eu.org, port: 80, type: vmess, uuid: 145ce29e-9294-4fbb-9cfb-4900b9d95c8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tangrenjichang, headers: {Host: speedip.eu.org}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -218,8 +216,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
-      - 🇯🇵 JP 3|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
@@ -228,8 +224,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
-      - 🇯🇵 JP 3|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
@@ -245,8 +239,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
-      - 🇯🇵 JP 3|TG@BPXD666
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -279,8 +271,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
-      - 🇯🇵 JP 3|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
@@ -289,8 +279,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
-      - 🇯🇵 JP 3|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 👉 国内网站
     type: select
