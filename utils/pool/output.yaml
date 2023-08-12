@@ -350,7 +350,7 @@ proxies:
   sni: telewebion.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 32 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 32 TJN"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -488,7 +488,7 @@ proxies:
     path: /dongtaiwang.com
     headers:
       host: 2.freek1.xyz
-- name: "\U0001F1FA\U0001F1F8 US 43 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 43 VMS"
   type: vmess
   server: Lille.kotick.site
   port: 443
@@ -1061,6 +1061,17 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 91 TJN"
+  type: trojan
+  server: cnamemc.cdncisco.org
+  port: 443
+  udp: true
+  password: 0ad5e311-7189-4124-ac8f-f828b681f10e
+  sni: c5mc.cdncisco.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5CSwsJSwLmxCxOCSBhOZubb
 proxy-groups:
 - name: automatic
   type: url-test
@@ -1096,7 +1107,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 29 VMS"
   - "\U0001F1E9\U0001F1EA DE 30 VMS"
   - "\U0001F1FA\U0001F1F8 US 31 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 32 TJN"
+  - "\U0001F1FA\U0001F1F8 US 32 TJN"
   - "\U0001F1FA\U0001F1F8 US 33 VMS"
   - "\U0001F1F7\U0001F1FA RU 34 VMS"
   - "\U0001F1EF\U0001F1F5 JP 35 TJN"
@@ -1107,7 +1118,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 40 VMS"
   - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1E8\U0001F1E6 CA 42 VMS"
-  - "\U0001F1FA\U0001F1F8 US 43 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 43 VMS"
   - "\U0001F1FA\U0001F1F3 UN 44 TJN"
   - "\U0001F1FA\U0001F1F8 US 45 VMS"
   - "\U0001F1ED\U0001F1F0 HK 46 VMS"
@@ -1155,6 +1166,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 88 VMS"
   - "\U0001F1E8\U0001F1F3 CN 89 VMS"
   - "\U0001F1E9\U0001F1EA DE 90 TJN"
+  - "\U0001F1FA\U0001F1F8 US 91 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1192,7 +1204,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 29 VMS"
   - "\U0001F1E9\U0001F1EA DE 30 VMS"
   - "\U0001F1FA\U0001F1F8 US 31 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 32 TJN"
+  - "\U0001F1FA\U0001F1F8 US 32 TJN"
   - "\U0001F1FA\U0001F1F8 US 33 VMS"
   - "\U0001F1F7\U0001F1FA RU 34 VMS"
   - "\U0001F1EF\U0001F1F5 JP 35 TJN"
@@ -1203,7 +1215,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 40 VMS"
   - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1E8\U0001F1E6 CA 42 VMS"
-  - "\U0001F1FA\U0001F1F8 US 43 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 43 VMS"
   - "\U0001F1FA\U0001F1F3 UN 44 TJN"
   - "\U0001F1FA\U0001F1F8 US 45 VMS"
   - "\U0001F1ED\U0001F1F0 HK 46 VMS"
@@ -1251,5 +1263,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 88 VMS"
   - "\U0001F1E8\U0001F1F3 CN 89 VMS"
   - "\U0001F1E9\U0001F1EA DE 90 TJN"
+  - "\U0001F1FA\U0001F1F8 US 91 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
