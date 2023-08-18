@@ -231,7 +231,7 @@ proxies:
     path: /shirker
     headers:
       host: dp3.scproxy.top
-- name: "\U0001F1E9\U0001F1EA DE 20 VMS"
+- name: "\U0001F1EC\U0001F1E7 GB 20 VMS"
   type: vmess
   server: cdn.anycast.eu.org
   port: 80
@@ -303,7 +303,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 26 TJN"
+- name: "\U0001F1F2\U0001F1FE MY 26 TJN"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -437,6 +437,100 @@ proxies:
     path: /blue
     headers:
       host: ecc.vtcss.top
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 37 VMS"
+  server: 108.166.203.181
+  port: 44945
+  uuid: 268a491b-764c-44d1-81a4-30de16130867
+  alterId: '64'
+  cipher: auto
+  network: tcp
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 38 VMS"
+  ws-opts:
+    path: /shirker
+    headers:
+      host: ca.ilovescp.com
+  server: 172.67.196.139
+  port: 80
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 39 VMS"
+  ws-opts:
+    path: /shirker
+    headers:
+      host: dp3.scproxy.top
+  server: 162.159.247.47
+  port: 80
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 40 VMS"
+  ws-opts:
+    path: /path/1692094854083
+    headers:
+      host: www.79367975.xyz
+  server: 140.99.49.60
+  port: 443
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: '64'
+  cipher: auto
+  network: ws
+  tls: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 41 VMS"
+  server: 137.175.86.187
+  port: 56651
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: '64'
+  cipher: auto
+  network: tcp
+- type: vmess
+  name: "\U0001F1ED\U0001F1F0 HK 42 VMS"
+  ws-opts:
+    path: /blue99
+    headers:
+      host: ecc.vtcss.top
+  server: 103.160.204.71
+  port: 2082
+  uuid: 0afb8b2c-149a-49a8-e90f-d77884ac922f
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 43 TJN"
+  server: sj1.alieszvps.cf
+  port: 45555
+  password: VpRuqFDCJo
+  udp: true
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1EB\U0001F1F7 FR 44 TJN"
+  server: 57.128.173.6
+  port: 443
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  udp: true
+  skip-cert-verify: true
+  sni: www.speedtest.net
+  network: tcp
+- type: vmess
+  name: "\U0001F1ED\U0001F1F0 HK 45 VMS"
+  ws-opts:
+    path: /blue99
+    headers:
+      host: ecc.vtcss.top
+  server: 103.160.204.115
+  port: 2082
+  uuid: 0afb8b2c-149a-49a8-e90f-d77884ac922f
+  alterId: '0'
+  cipher: auto
+  network: ws
 proxy-groups:
 - name: automatic
   type: url-test
@@ -460,13 +554,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 17 VMS"
   - "\U0001F1FA\U0001F1F8 US 18 VMS"
   - "\U0001F1FA\U0001F1F8 US 19 VMS"
-  - "\U0001F1E9\U0001F1EA DE 20 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 20 VMS"
   - "\U0001F1FA\U0001F1F8 US 21 VMS"
   - "\U0001F1FA\U0001F1F8 US 22 VMS"
   - "\U0001F1FA\U0001F1F8 US 23 VMS"
   - "\U0001F1FA\U0001F1F8 US 24 VMS"
   - "\U0001F1FA\U0001F1F8 US 25 VMS"
-  - "\U0001F1FA\U0001F1F8 US 26 TJN"
+  - "\U0001F1F2\U0001F1FE MY 26 TJN"
   - "\U0001F1F8\U0001F1EC SG 27 TJN"
   - "\U0001F1E8\U0001F1E6 CA 28 VMS"
   - "\U0001F1FA\U0001F1F3 UN 29 VMS"
@@ -477,6 +571,15 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 34 VMS"
   - "\U0001F1EB\U0001F1F7 FR 35 VMS"
   - "\U0001F1FA\U0001F1F3 UN 36 VMS"
+  - "\U0001F1FA\U0001F1F8 US 37 VMS"
+  - "\U0001F1FA\U0001F1F8 US 38 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 39 VMS"
+  - "\U0001F1FA\U0001F1F8 US 40 VMS"
+  - "\U0001F1FA\U0001F1F8 US 41 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 42 VMS"
+  - "\U0001F1FA\U0001F1F8 US 43 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 44 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 45 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -502,13 +605,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 17 VMS"
   - "\U0001F1FA\U0001F1F8 US 18 VMS"
   - "\U0001F1FA\U0001F1F8 US 19 VMS"
-  - "\U0001F1E9\U0001F1EA DE 20 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 20 VMS"
   - "\U0001F1FA\U0001F1F8 US 21 VMS"
   - "\U0001F1FA\U0001F1F8 US 22 VMS"
   - "\U0001F1FA\U0001F1F8 US 23 VMS"
   - "\U0001F1FA\U0001F1F8 US 24 VMS"
   - "\U0001F1FA\U0001F1F8 US 25 VMS"
-  - "\U0001F1FA\U0001F1F8 US 26 TJN"
+  - "\U0001F1F2\U0001F1FE MY 26 TJN"
   - "\U0001F1F8\U0001F1EC SG 27 TJN"
   - "\U0001F1E8\U0001F1E6 CA 28 VMS"
   - "\U0001F1FA\U0001F1F3 UN 29 VMS"
@@ -519,5 +622,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 34 VMS"
   - "\U0001F1EB\U0001F1F7 FR 35 VMS"
   - "\U0001F1FA\U0001F1F3 UN 36 VMS"
+  - "\U0001F1FA\U0001F1F8 US 37 VMS"
+  - "\U0001F1FA\U0001F1F8 US 38 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 39 VMS"
+  - "\U0001F1FA\U0001F1F8 US 40 VMS"
+  - "\U0001F1FA\U0001F1F8 US 41 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 42 VMS"
+  - "\U0001F1FA\U0001F1F8 US 43 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 44 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 45 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
