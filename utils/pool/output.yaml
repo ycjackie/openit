@@ -1,13 +1,49 @@
-proxies: []
+proxies:
+- name: "\U0001F1E8\U0001F1F3 CN 1 TJN"
+  type: trojan
+  server: cttw2.createmofa.xyz
+  port: 34998
+  udp: true
+  password: b102cfbf-182e-4562-afc2-e6c35d9fc495
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 2 TJN"
+  type: trojan
+  server: 57.128.173.6
+  port: 443
+  udp: true
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
+  type: vmess
+  server: wxxjp.e5outllok.me
+  port: 80
+  cipher: auto
+  uuid: e68cad90-c74c-40bd-a7bf-ef3fd4767e87
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: wxxjp.e5outllok.me
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E8\U0001F1F3 CN 1 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 2 TJN"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E8\U0001F1F3 CN 1 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 2 TJN"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
