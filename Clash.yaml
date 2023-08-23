@@ -200,8 +200,7 @@ proxies:
   - {name: 🇨🇦 CA 1|TG@BPXD666, server: 23.227.39.82, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com}, udp: true}
   - {name: 🇨🇳 TW 1|TG@BPXD666, server: hinet.lxjc.app, port: 443, type: trojan, password: a00330bc-7f67-4bad-a59b-481cd2d67456, sni: 16-163-218-240.nhost.00cdn.com, skip-cert-verify: true, udp: true}
   - {name: 🇫🇷 FR 1|TG@BPXD666, server: 51.161.35.200, port: 443, type: trojan, password: 006e3baa-cacd-4530-ae52-d633c4e9056d, sni: speed.cloudflare.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: dx1.992688.xyz, port: 8880, type: vmess, uuid: e5f9073b-a23c-487f-b2a8-e5eb6abad21d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dx1.992688.xyz}}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: cnamemk.ciscocdn1.live, port: 443, type: trojan, password: 4d706727-996f-4427-930d-60f3bd414cf9, sni: c2mk.ciscocdn1.live, skip-cert-verify: true, network: ws, ws-opts: {path: "%2FrDCYQta83d0oPABKBhcIX", headers: {Host: c2mk.ciscocdn1.live}}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: ru1.mianfenyun012.eu.org, port: 80, type: vmess, uuid: c5964a63-d67c-4668-cdae-6443a1581e76, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jdbp606, headers: {Host: ru1.mianfenyun012.eu.org}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -224,7 +223,6 @@ proxy-groups:
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -236,7 +234,6 @@ proxy-groups:
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -258,7 +255,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -288,7 +284,6 @@ proxy-groups:
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -300,7 +295,6 @@ proxy-groups:
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
