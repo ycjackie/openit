@@ -196,8 +196,10 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
+  - {name: SA 1|TG@BPXD666, server: cnamemc1.cdncisco3.co, port: 443, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, sni: c1mc.cdncisco3.co, skip-cert-verify: true, network: ws, ws-opts: {path: "%2FywQ9KSLI4ZBm9wOAXUaN", headers: {Host: c1mc.cdncisco3.co}}, udp: true}
   - {name: 🇯🇵 JP 1|TG@BPXD666, server: jp2.lxjc.app, port: 443, type: trojan, password: e62db6f7-88ea-425d-90de-a9ba7770b1d6, sni: 16-163-218-240.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: au-01.cloudlion.me, port: 2082, type: vmess, uuid: 476165e4-8862-4c50-a0f3-6a544017df09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: au-01.cloudlion.me}}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: uuss.azzhuangaping.tw, port: 80, type: vmess, uuid: dd46dd47-8bc0-3f05-83fc-f0e551cc6fc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /adobe, headers: {Host: uuss.azzhuangaping.tw}}, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: au-01.cloudlion.me, port: 2082, type: vmess, uuid: 476165e4-8862-4c50-a0f3-6a544017df09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: au-01.cloudlion.me}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -215,16 +217,20 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - SA 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - SA 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -246,6 +252,7 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -270,16 +277,20 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - SA 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - SA 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
