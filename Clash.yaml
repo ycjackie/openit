@@ -197,6 +197,7 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: ZA 1|TG@BPXD666, server: 156.225.67.73, port: 48909, type: vmess, uuid: 21155efd-8e29-43d2-95bc-fe3190ecb1c6, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: cnamemc.cdncisco.org, port: 443, type: trojan, password: 0ad5e311-7189-4124-ac8f-f828b681f10e, sni: c5mc.cdncisco.org, skip-cert-verify: true, network: ws, ws-opts: {path: "%2F5CSwsJSwLmxCxOCSBhOZubb", headers: {Host: c5mc.cdncisco.org}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -215,6 +216,7 @@ proxy-groups:
     type: select
     proxies:
       - ZA 1|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -222,6 +224,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - ZA 1|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -242,7 +245,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -268,6 +271,7 @@ proxy-groups:
     type: select
     proxies:
       - ZA 1|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -275,6 +279,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - ZA 1|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
