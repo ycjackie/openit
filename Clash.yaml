@@ -196,14 +196,13 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇦 CA 1|TG@BPXD666, server: 23.227.39.82, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com}, udp: true}
-  - {name: 🇨🇳 CN 1|TG@BPXD666, server: c48d14f.nb.gladns.com, port: 3306, type: trojan, password: 5227e84e4f026b71, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
+  - {name: 🇨🇳 CN 1|TG@BPXD666, server: 603b827.nc.gladns.com, port: 3306, type: trojan, password: d4e41ff772c7fd45, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
   - {name: 🇨🇳 CN 2|TG@BPXD666, server: 49dafd9.na.gladns.com, port: 3306, type: trojan, password: dc2d9db59868ba6b, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
-  - {name: 🇨🇳 CN 3|TG@BPXD666, server: 603b827.nc.gladns.com, port: 3306, type: trojan, password: d4e41ff772c7fd45, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
-  - {name: 🇨🇳 CN 4|TG@BPXD666, server: 110.72.99.118, port: 3306, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
+  - {name: 🇨🇳 CN 3|TG@BPXD666, server: 110.72.99.118, port: 3306, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
+  - {name: 🇨🇳 CN 4|TG@BPXD666, server: 0bee9ed.na.gladns.com, port: 3306, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: kianoosh.ddns.net, port: 443, type: vmess, uuid: E97A1F83-B0C6-48E5-82E1-556292153FA7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: kianoosh.ddns.net}}, udp: true}
   - {name: 🇺🇸 US 2|TG@BPXD666, server: 216.24.57.1, port: 443, type: vmess, uuid: a7ee85f4-2528-412e-994f-ce65f54754e4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: a7ee85f4}, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: sdygarm.e5outllok.me, port: 80, type: vmess, uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sdygarm.e5outllok.me}}, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 104.27.43.111, port: 80, type: vmess, uuid: 185d6ff9-a0a7-4d39-f3e8-783b7a6bbc79, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /blue}, udp: true}
   - {name: 🇺🇸 US 4|TG@BPXD666, server: 38.26.135.12, port: 40940, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -222,7 +221,6 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - 🇨🇦 CA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
       - 🇨🇳 CN 3|TG@BPXD666
@@ -237,7 +235,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇦 CA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
       - 🇨🇳 CN 3|TG@BPXD666
@@ -294,7 +291,6 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 🇨🇦 CA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
       - 🇨🇳 CN 3|TG@BPXD666
@@ -309,7 +305,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇦 CA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
       - 🇨🇳 CN 3|TG@BPXD666
