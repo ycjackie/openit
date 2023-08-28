@@ -196,10 +196,8 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: 4a2ee56d-c70a-4c43-b18b-e1e15013a177, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ns1.v2-vip.fun}}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: speedip.eu.org, port: 8080, type: vmess, uuid: 4a2ee56d-c70a-4c43-b18b-e1e15013a177, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: speedip.eu.org}}, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: 38.26.135.12, port: 40940, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 4|TG@BPXD666, server: 104.27.43.111, port: 80, type: vmess, uuid: 185d6ff9-a0a7-4d39-f3e8-783b7a6bbc79, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /blue}, udp: true}
+  - {name: 🇫🇷 FR 1|TG@BPXD666, server: 51.161.35.200, port: 443, type: trojan, password: 006e3baa-cacd-4530-ae52-d633c4e9056d, sni: speed.cloudflare.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: wxxjp.e5outllok.me, port: 80, type: vmess, uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: wxxjp.e5outllok.me}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -217,20 +215,16 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -252,9 +246,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -279,20 +270,16 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
