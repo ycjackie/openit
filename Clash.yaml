@@ -197,7 +197,6 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: ZA 1|TG@BPXD666, server: 156.225.67.95, port: 31965, type: vmess, uuid: 5a4d69ad-20a9-4941-b223-87bbd09f5f52, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇦 CA 1|TG@BPXD666, server: 23.227.38.81, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: 45.199.138.62, port: 34325, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 2|TG@BPXD666, server: 199.188.111.250, port: 46500, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
@@ -218,7 +217,6 @@ proxy-groups:
     type: select
     proxies:
       - ZA 1|TG@BPXD666
-      - 🇨🇦 CA 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
@@ -228,7 +226,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - ZA 1|TG@BPXD666
-      - 🇨🇦 CA 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
@@ -278,7 +275,6 @@ proxy-groups:
     type: select
     proxies:
       - ZA 1|TG@BPXD666
-      - 🇨🇦 CA 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
@@ -288,7 +284,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - ZA 1|TG@BPXD666
-      - 🇨🇦 CA 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
