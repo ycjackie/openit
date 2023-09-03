@@ -196,14 +196,15 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇦 CA 1|TG@BPXD666, server: 23.227.38.81, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com}, udp: true}
-  - {name: 🇨🇦 CA 2|TG@BPXD666, server: 23.227.39.109, port: 443, type: vmess, uuid: 87a95522-985c-4a17-afea-9b7d7208bce5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com}, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: cdn.twitter.now.cc, port: 443, type: vmess, uuid: 8d2ba456-2f0d-4c13-b8a0-bff99c679709, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ikun, headers: {Host: cdn.twitter.now.cc}}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: 74.217.182.122, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1693390440063}, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: 172.67.91.164, port: 80, type: vmess, uuid: 1db82775-c1fe-4305-94ff-eee83174528e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 4|TG@BPXD666, server: 172.67.179.254, port: 80, type: vmess, uuid: 1db82775-c1fe-4305-94ff-eee83174528e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 5|TG@BPXD666, server: 172.67.135.195, port: 443, type: vmess, uuid: AB135628-07F6-4F78-AF4D-E9CD8715143C, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/speedtest?ed=2048"}, udp: true}
-  - {name: 🇺🇸 US 6|TG@BPXD666, server: 172.67.205.203, port: 80, type: vmess, uuid: 99c25b0e-db17-494d-bbb4-98397ea8fe4e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: CZ 1|TG@BPXD666, server: fusion.mlinuu.top, port: 3504, type: vmess, uuid: ce6c3ee0-e0bd-39d2-8b49-97c6add325c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CZ 2|TG@BPXD666, server: fusion.mlinuu.top, port: 3505, type: vmess, uuid: ce6c3ee0-e0bd-39d2-8b49-97c6add325c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ZA 1|TG@BPXD666, server: 156.225.67.101, port: 53797, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 1|TG@BPXD666, server: 183.232.249.52, port: 46784, type: vmess, uuid: f11aa310-006b-3db4-910d-3f7217fbfa73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 2|TG@BPXD666, server: 120.233.42.184, port: 36785, type: vmess, uuid: f11aa310-006b-3db4-910d-3f7217fbfa73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 108.166.203.181, port: 44945, type: vmess, uuid: 268a491b-764c-44d1-81a4-30de16130867, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 171.22.116.45, port: 36709, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 172.67.149.81, port: 80, type: vmess, uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: 172.67.160.88, port: 80, type: vmess, uuid: 567d3fe2-8df2-466c-ab0d-640cc151c62c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /blue}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -221,28 +222,30 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - 🇨🇦 CA 1|TG@BPXD666
-      - 🇨🇦 CA 2|TG@BPXD666
+      - CZ 1|TG@BPXD666
+      - CZ 2|TG@BPXD666
+      - ZA 1|TG@BPXD666
+      - 🇨🇳 CN 1|TG@BPXD666
+      - 🇨🇳 CN 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇦 CA 1|TG@BPXD666
-      - 🇨🇦 CA 2|TG@BPXD666
+      - CZ 1|TG@BPXD666
+      - CZ 2|TG@BPXD666
+      - ZA 1|TG@BPXD666
+      - 🇨🇳 CN 1|TG@BPXD666
+      - 🇨🇳 CN 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -267,8 +270,6 @@ proxy-groups:
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -293,28 +294,30 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 🇨🇦 CA 1|TG@BPXD666
-      - 🇨🇦 CA 2|TG@BPXD666
+      - CZ 1|TG@BPXD666
+      - CZ 2|TG@BPXD666
+      - ZA 1|TG@BPXD666
+      - 🇨🇳 CN 1|TG@BPXD666
+      - 🇨🇳 CN 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇦 CA 1|TG@BPXD666
-      - 🇨🇦 CA 2|TG@BPXD666
+      - CZ 1|TG@BPXD666
+      - CZ 2|TG@BPXD666
+      - ZA 1|TG@BPXD666
+      - 🇨🇳 CN 1|TG@BPXD666
+      - 🇨🇳 CN 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
