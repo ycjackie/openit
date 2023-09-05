@@ -196,18 +196,16 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
+  - {name: 🇨🇦 CA 1|TG@BPXD666, server: cloudqwq.cf, port: 80, type: vmess, uuid: cd0c570f-757c-48d2-a1b6-c0940431cc47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cloudqwq.cf}}, udp: true}
   - {name: 🇨🇳 TW 1|TG@BPXD666, server: tw1.kidcc.xyz, port: 8443, type: vmess, uuid: a8974bec-526d-4b4e-a46f-f0d6626ca576, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tw1.kidcc.xyz}}, udp: true}
   - {name: 🇩🇪 DE 1|TG@BPXD666, server: 213.202.216.14, port: 443, type: trojan, password: e5e88a39-31ee-4b33-9213-5b266dbcd4b6, sni: downloadde.xn--mes358acgm99l.com, skip-cert-verify: true, udp: true}
   - {name: 🇮🇳 IN 1|TG@BPXD666, server: 103.106.228.223, port: 443, type: trojan, password: 9aa1e1569a, sni: jp1.connecton.surf, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: singapore.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: singapore.com}}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: ophelia.mom, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: ophelia.mom}}, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 104.20.27.27, port: 80, type: vmess, uuid: 21b54b80-48b5-11ee-b338-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oy0ns6x3}, udp: true}
   - {name: 🇺🇸 US 3|TG@BPXD666, server: odelia.autos, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: odelia.autos}}, udp: true}
   - {name: 🇺🇸 US 4|TG@BPXD666, server: edeen.makeup, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: edeen.makeup}}, udp: true}
   - {name: 🇺🇸 US 5|TG@BPXD666, server: waynn.makeup, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: waynn.makeup}}, udp: true}
-  - {name: 🇺🇸 US 6|TG@BPXD666, server: 104.20.27.27, port: 80, type: vmess, uuid: 21b54b80-48b5-11ee-b338-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oy0ns6x3}, udp: true}
-  - {name: 🇺🇸 US 7|TG@BPXD666, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 6f7404b8-9933-4230-9f54-0bcca0a761a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fd.shabijichang.com}}, udp: true}
-  - {name: 🇺🇸 US 8|TG@BPXD666, server: cloudqwq.cf, port: 80, type: vmess, uuid: cd0c570f-757c-48d2-a1b6-c0940431cc47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cloudqwq.cf}}, udp: true}
-  - {name: 🇺🇸 US 9|TG@BPXD666, server: sdygarm.e5outllok.me, port: 80, type: vmess, uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sdygarm.e5outllok.me}}, udp: true}
+  - {name: 🇺🇸 US 6|TG@BPXD666, server: ophelia.mom, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: ophelia.mom}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -225,6 +223,7 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - 🇨🇦 CA 1|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇮🇳 IN 1|TG@BPXD666
@@ -234,15 +233,13 @@ proxy-groups:
       - 🇺🇸 US 4|TG@BPXD666
       - 🇺🇸 US 5|TG@BPXD666
       - 🇺🇸 US 6|TG@BPXD666
-      - 🇺🇸 US 7|TG@BPXD666
-      - 🇺🇸 US 8|TG@BPXD666
-      - 🇺🇸 US 9|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇨🇦 CA 1|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇮🇳 IN 1|TG@BPXD666
@@ -252,9 +249,6 @@ proxy-groups:
       - 🇺🇸 US 4|TG@BPXD666
       - 🇺🇸 US 5|TG@BPXD666
       - 🇺🇸 US 6|TG@BPXD666
-      - 🇺🇸 US 7|TG@BPXD666
-      - 🇺🇸 US 8|TG@BPXD666
-      - 🇺🇸 US 9|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -281,9 +275,6 @@ proxy-groups:
       - 🇺🇸 US 4|TG@BPXD666
       - 🇺🇸 US 5|TG@BPXD666
       - 🇺🇸 US 6|TG@BPXD666
-      - 🇺🇸 US 7|TG@BPXD666
-      - 🇺🇸 US 8|TG@BPXD666
-      - 🇺🇸 US 9|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -308,6 +299,7 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - 🇨🇦 CA 1|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇮🇳 IN 1|TG@BPXD666
@@ -317,15 +309,13 @@ proxy-groups:
       - 🇺🇸 US 4|TG@BPXD666
       - 🇺🇸 US 5|TG@BPXD666
       - 🇺🇸 US 6|TG@BPXD666
-      - 🇺🇸 US 7|TG@BPXD666
-      - 🇺🇸 US 8|TG@BPXD666
-      - 🇺🇸 US 9|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇨🇦 CA 1|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇮🇳 IN 1|TG@BPXD666
@@ -335,9 +325,6 @@ proxy-groups:
       - 🇺🇸 US 4|TG@BPXD666
       - 🇺🇸 US 5|TG@BPXD666
       - 🇺🇸 US 6|TG@BPXD666
-      - 🇺🇸 US 7|TG@BPXD666
-      - 🇺🇸 US 8|TG@BPXD666
-      - 🇺🇸 US 9|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:

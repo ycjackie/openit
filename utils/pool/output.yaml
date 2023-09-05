@@ -29,7 +29,7 @@ proxies:
   port: 27116
   password: 4712117e-ca95-411a-98e9-abd57667754e
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
   type: vmess
   server: odelia.autos
   port: 443
@@ -206,20 +206,6 @@ proxies:
       host: edeen.makeup
 - name: "\U0001F1FA\U0001F1F3 UN 20 VMS"
   type: vmess
-  server: odelia.autos
-  port: 443
-  cipher: auto
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      host: odelia.autos
-- name: "\U0001F1FA\U0001F1F3 UN 21 VMS"
-  type: vmess
   server: ophelia.mom
   port: 443
   cipher: auto
@@ -232,7 +218,7 @@ proxies:
     path: linkvws
     headers:
       host: ophelia.mom
-- name: "\U0001F1F9\U0001F1FC TW 22 VMS"
+- name: "\U0001F1F9\U0001F1FC TW 21 VMS"
   type: vmess
   server: tw1.kidcc.xyz
   port: 8443
@@ -255,7 +241,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 3 SSS"
   - "\U0001F1E8\U0001F1F3 CN 4 SSS"
   - "\U0001F1E8\U0001F1F3 CN 5 SSS"
-  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1E8\U0001F1F3 CN 7 SSS"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   - "\U0001F1FA\U0001F1F3 UN 9 VMS"
@@ -270,8 +256,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 18 VMS"
   - "\U0001F1FA\U0001F1F3 UN 19 VMS"
   - "\U0001F1FA\U0001F1F3 UN 20 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 21 VMS"
-  - "\U0001F1F9\U0001F1FC TW 22 VMS"
+  - "\U0001F1F9\U0001F1FC TW 21 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -283,7 +268,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 3 SSS"
   - "\U0001F1E8\U0001F1F3 CN 4 SSS"
   - "\U0001F1E8\U0001F1F3 CN 5 SSS"
-  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1E8\U0001F1F3 CN 7 SSS"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   - "\U0001F1FA\U0001F1F3 UN 9 VMS"
@@ -298,7 +283,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 18 VMS"
   - "\U0001F1FA\U0001F1F3 UN 19 VMS"
   - "\U0001F1FA\U0001F1F3 UN 20 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 21 VMS"
-  - "\U0001F1F9\U0001F1FC TW 22 VMS"
+  - "\U0001F1F9\U0001F1FC TW 21 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
