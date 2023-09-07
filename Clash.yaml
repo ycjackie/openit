@@ -198,9 +198,9 @@ dns:
 proxies:
   - {name: ZA 1|TG@BPXD666, server: 156.225.67.170, port: 49812, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 1|TG@BPXD666, server: 183.233.187.232, port: 51165, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 2|TG@BPXD666, server: hz.xzyunjiasu.icu, port: 36671, type: ss, cipher: aes-256-gcm, password: 2c69b81f-1298-44b3-a76e-4ed46075fd78, udp: true}
   - {name: 🇨🇳 TW 1|TG@BPXD666, server: v2tw3.doubledou.icu, port: 4598, type: trojan, password: 24822a1f-d142-3d26-9cff-d6095701255c, sni: v2tw3.doubledou.icu, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 553128fc-df6d-4ff0-b608-67e4c625abcc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fd.shabijichang.com}}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: hdlb4.shabijichang.com, port: 80, type: vmess, uuid: 392053a2-c18f-4914-890c-fd326ee27b4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hdlb4.shabijichang.com}}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: hdlb4.shabijichang.com, port: 80, type: vmess, uuid: 392053a2-c18f-4914-890c-fd326ee27b4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hdlb4.shabijichang.com}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -220,9 +220,9 @@ proxy-groups:
     proxies:
       - ZA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
+      - 🇨🇳 CN 2|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -231,9 +231,9 @@ proxy-groups:
     proxies:
       - ZA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
+      - 🇨🇳 CN 2|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -255,7 +255,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -282,9 +281,9 @@ proxy-groups:
     proxies:
       - ZA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
+      - 🇨🇳 CN 2|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -293,9 +292,9 @@ proxy-groups:
     proxies:
       - ZA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
+      - 🇨🇳 CN 2|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
