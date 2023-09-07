@@ -516,6 +516,20 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1E6 CA 67 VMS"
+  type: vmess
+  server: dongtaiwang3.com
+  port: 443
+  cipher: auto
+  uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /dongtaiwang.com
+    headers:
+      host: d.freeh1.xyz
 proxy-groups:
 - name: automatic
   type: url-test
@@ -586,6 +600,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 64 SSS"
   - "\U0001F1E8\U0001F1F3 CN 65 SSS"
   - "\U0001F1E8\U0001F1F3 CN 66 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 67 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -658,5 +673,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 64 SSS"
   - "\U0001F1E8\U0001F1F3 CN 65 SSS"
   - "\U0001F1E8\U0001F1F3 CN 66 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 67 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
