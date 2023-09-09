@@ -198,10 +198,9 @@ dns:
 proxies:
   - {name: SA 1|TG@BPXD666, server: nyr048.xyz, port: 6023, type: trojan, password: 00fad53c-684f-469e-8062-6950cc4500bc, sni: nyr048.xyz, skip-cert-verify: true, udp: true}
   - {name: ZA 1|TG@BPXD666, server: luyangmao.store, port: 443, type: trojan, password: 21ff1543-b38d-4a3c-9007-6118b8ee796f, sni: luyangmao.store, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 GB 1|TG@BPXD666, server: ipoints.shop, port: 6023, type: trojan, password: 892c9285-96c3-4623-8e6c-3e8b321eee8e, sni: ipoints.shop, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 GB 2|TG@BPXD666, server: lucheap.store, port: 6023, type: trojan, password: c0f25d60-620e-4b1b-8e44-78ecd0da57d0, sni: lucheap.store, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: winfo.shop, port: 8003, type: trojan, password: 39cfe88e-c58e-419c-9054-637575d07008, sni: winfo.shop, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: mynyr.site, port: 8003, type: trojan, password: ef10ed06-f061-4ed3-b418-0df34c9ab325, sni: mynyr.site, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 1|TG@BPXD666, server: lucheap.store, port: 6023, type: trojan, password: c0f25d60-620e-4b1b-8e44-78ecd0da57d0, sni: lucheap.store, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 2|TG@BPXD666, server: ipoints.shop, port: 6023, type: trojan, password: 892c9285-96c3-4623-8e6c-3e8b321eee8e, sni: ipoints.shop, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: mynyr.site, port: 8003, type: trojan, password: ef10ed06-f061-4ed3-b418-0df34c9ab325, sni: mynyr.site, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -224,7 +223,6 @@ proxy-groups:
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -236,7 +234,6 @@ proxy-groups:
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -258,7 +255,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -288,7 +284,6 @@ proxy-groups:
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -300,7 +295,6 @@ proxy-groups:
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
