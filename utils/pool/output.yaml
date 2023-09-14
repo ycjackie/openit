@@ -57,6 +57,20 @@ proxies:
       host: hdlb2.shabijichang.com
 - name: "\U0001F1FA\U0001F1F8 US 5 VMS"
   type: vmess
+  server: mm4.shabijichang.com
+  port: 80
+  cipher: auto
+  uuid: f1865e50-2510-46d1-bcb2-e00b4b656305
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: mm4.shabijichang.com
+- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
+  type: vmess
   server: 137.175.86.129
   port: 443
   cipher: auto
@@ -69,20 +83,6 @@ proxies:
     path: /path/1694516064215
     headers:
       host: www.46074906.xyz
-- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
-  type: vmess
-  server: mm.shabijichang.com
-  port: 80
-  cipher: auto
-  uuid: f1865e50-2510-46d1-bcb2-e00b4b656305
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: mm.shabijichang.com
 - name: "\U0001F1F8\U0001F1EC SG 7 TJN"
   type: trojan
   server: 5.44.249.52
