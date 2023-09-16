@@ -198,13 +198,12 @@ dns:
 proxies:
   - {name: RW 1|TG@BPXD666, server: 134.195.101.32, port: 3306, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
   - {name: ZA 1|TG@BPXD666, server: 156.249.18.16, port: 443, type: vmess, uuid: 375e70f0-5d46-476f-8d69-0fb35c5548a9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1685094923408}, udp: true}
-  - {name: 🇨🇳 CN 1|TG@BPXD666, server: 110.72.99.118, port: 3306, type: trojan, password: 8a1ab0df6abea549, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
-  - {name: 🇨🇳 CN 2|TG@BPXD666, server: 120.226.50.77, port: 53737, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW 1|TG@BPXD666, server: 60.248.114.188, port: 3306, type: trojan, password: d02058f4f819dced, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
+  - {name: 🇨🇳 CN 1|TG@BPXD666, server: 120.226.50.77, port: 53737, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 2|TG@BPXD666, server: 110.72.99.118, port: 3306, type: trojan, password: 8a1ab0df6abea549, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: 192.74.234.210, port: 41015, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: 137.175.0.149, port: 41551, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: sg2.wyhkaa0.cf, port: 80, type: vmess, uuid: fc426675-5daa-46c0-d998-61f9f5323e3f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: sg2.wyhkaa0.cf}}, udp: true}
-  - {name: 🇺🇸 US 4|TG@BPXD666, server: 192.74.234.90, port: 56986, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: sg2.wyhkaa0.cf, port: 80, type: vmess, uuid: fc426675-5daa-46c0-d998-61f9f5323e3f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: sg2.wyhkaa0.cf}}, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 137.175.0.149, port: 41551, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: ns1.v2-vip.fun, port: 8880, type: vmess, uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY, headers: {Host: ns1.v2-vip.fun}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -226,7 +225,6 @@ proxy-groups:
       - ZA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
-      - 🇨🇳 TW 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -241,7 +239,6 @@ proxy-groups:
       - ZA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
-      - 🇨🇳 TW 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -276,7 +273,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇨🇳 TW 1|TG@BPXD666
+      - DIRECT
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -298,7 +295,6 @@ proxy-groups:
       - ZA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
-      - 🇨🇳 TW 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -313,7 +309,6 @@ proxy-groups:
       - ZA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
-      - 🇨🇳 TW 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
