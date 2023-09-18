@@ -197,16 +197,14 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: BH 1|TG@BPXD666, server: 23.247.137.71, port: 3306, type: trojan, password: d4e41ff772c7fd45, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
-  - {name: 🇨🇳 CN 1|TG@BPXD666, server: 18.163.249.175, port: 443, type: trojan, password: ZFYOpKqD8uEClpZ2ya83cyCDalwSOYz3F3eCxnBD4eSXNSR5R0aAATj7I3x69g, sni: golang.protocolbuffer.com, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE 1|TG@BPXD666, server: 51.38.99.96, port: 443, type: trojan, password: eadf99d1-a4ab-4574-8e43-1a1050675bd3, sni: sourceforge.net, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 1|TG@BPXD666, server: mt.servermeli.xyz, port: 2087, type: vmess, uuid: 1e404e80-6a84-467b-9fe9-8a27794ddc43, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mt.servermeli.xyz}}, udp: true}
-  - {name: 🇬🇧 GB 1|TG@BPXD666, server: 45.11.104.94, port: 3306, type: trojan, password: 3febb05ea76a940f, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
-  - {name: 🇬🇧 GB 2|TG@BPXD666, server: 51.38.71.175, port: 80, type: trojan, password: b640d791-ff83-4300-b509-c2a02f97f167, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 1|TG@BPXD666, server: 51.38.71.175, port: 80, type: trojan, password: b640d791-ff83-4300-b509-c2a02f97f167, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 2|TG@BPXD666, server: 45.11.104.94, port: 3306, type: trojan, password: 3febb05ea76a940f, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: 154.85.1.204, port: 54885, type: vmess, uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 2|TG@BPXD666, server: rtl.servermeli.xyz, port: 2087, type: vmess, uuid: 1e404e80-6a84-467b-9fe9-8a27794ddc43, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rtl.servermeli.xyz}}, udp: true}
   - {name: 🇺🇸 US 3|TG@BPXD666, server: mci.servermeli.xyz, port: 2087, type: vmess, uuid: 1e404e80-6a84-467b-9fe9-8a27794ddc43, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mci.servermeli.xyz}}, udp: true}
-  - {name: 🇺🇸 US 4|TG@BPXD666, server: cf.fovi.tk, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: cf.fovi.tk}}, udp: true}
-  - {name: 🇺🇸 US 5|TG@BPXD666, server: us2.mianfenyun012.eu.org, port: 8080, type: vmess, uuid: a8966719-aeaf-4886-d202-72f75f845b83, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jdbp606, headers: {Host: us2.mianfenyun012.eu.org}}, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: mt.servermeli.xyz, port: 2087, type: vmess, uuid: 1e404e80-6a84-467b-9fe9-8a27794ddc43, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mt.servermeli.xyz}}, udp: true}
+  - {name: 🇺🇸 US 5|TG@BPXD666, server: sg2.wyhkaa0.cf, port: 80, type: vmess, uuid: fc426675-5daa-46c0-d998-61f9f5323e3f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: sg2.wyhkaa0.cf}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -225,9 +223,7 @@ proxy-groups:
     type: select
     proxies:
       - BH 1|TG@BPXD666
-      - 🇨🇳 CN 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
@@ -242,9 +238,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - BH 1|TG@BPXD666
-      - 🇨🇳 CN 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
@@ -302,9 +296,7 @@ proxy-groups:
     type: select
     proxies:
       - BH 1|TG@BPXD666
-      - 🇨🇳 CN 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
@@ -319,9 +311,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - BH 1|TG@BPXD666
-      - 🇨🇳 CN 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
