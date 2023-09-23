@@ -37,20 +37,6 @@ proxies:
       host: tw22.tutu4.one
 - name: "\U0001F1FA\U0001F1F8 US 4 VMS"
   type: vmess
-  server: wnd.shabijichang.com
-  port: 80
-  cipher: auto
-  uuid: 53701585-591f-48a3-9515-8831ed0524ac
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: wnd.shabijichang.com
-- name: "\U0001F1FA\U0001F1F8 US 5 VMS"
-  type: vmess
   server: 172.67.99.73
   port: 80
   cipher: auto
@@ -71,7 +57,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 2 VMS"
   - "\U0001F1F9\U0001F1FC TW 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
-  - "\U0001F1FA\U0001F1F8 US 5 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -82,6 +67,5 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 2 VMS"
   - "\U0001F1F9\U0001F1FC TW 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
-  - "\U0001F1FA\U0001F1F8 US 5 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
