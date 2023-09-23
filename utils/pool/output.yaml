@@ -559,7 +559,7 @@ proxies:
   sni: nl01.lovehjq.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 48 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 48 VMS"
   type: vmess
   server: fhc.shabijichang.com
   port: 80
@@ -585,21 +585,7 @@ proxies:
     path: /tu
     headers:
       host: tw22.tutu4.one
-- name: "\U0001F1FA\U0001F1F3 UN 50 VMS"
-  type: vmess
-  server: wnd.shabijichang.com
-  port: 80
-  cipher: auto
-  uuid: 53701585-591f-48a3-9515-8831ed0524ac
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: wnd.shabijichang.com
-- name: "\U0001F1FA\U0001F1F8 US 51 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 50 VMS"
   type: vmess
   server: 172.67.99.73
   port: 80
@@ -664,10 +650,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 45 VMS"
   - "\U0001F1ED\U0001F1F0 HK 46 VMS"
   - "\U0001F1E8\U0001F1F3 CN 47 TJN"
-  - "\U0001F1FA\U0001F1F8 US 48 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 48 VMS"
   - "\U0001F1F9\U0001F1FC TW 49 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 50 VMS"
-  - "\U0001F1FA\U0001F1F8 US 51 VMS"
+  - "\U0001F1FA\U0001F1F8 US 50 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -721,9 +706,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 45 VMS"
   - "\U0001F1ED\U0001F1F0 HK 46 VMS"
   - "\U0001F1E8\U0001F1F3 CN 47 TJN"
-  - "\U0001F1FA\U0001F1F8 US 48 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 48 VMS"
   - "\U0001F1F9\U0001F1FC TW 49 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 50 VMS"
-  - "\U0001F1FA\U0001F1F8 US 51 VMS"
+  - "\U0001F1FA\U0001F1F8 US 50 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
