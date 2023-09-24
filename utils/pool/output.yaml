@@ -689,19 +689,7 @@ proxies:
   sni: 20-24-33-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 61 VMS"
-  type: vmess
-  server: fhc.shabijichang.com
-  port: 80
-  cipher: auto
-  uuid: 5e48a497-f4ae-4129-afd6-ba26d75b792a
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1F9\U0001F1FC TW 62 VMS"
+- name: "\U0001F1F9\U0001F1FC TW 61 VMS"
   type: vmess
   server: tw22.tutu4.one
   port: 443
@@ -715,6 +703,20 @@ proxies:
     path: /tu
     headers:
       host: tw22.tutu4.one
+- name: "\U0001F1FA\U0001F1F3 UN 62 VMS"
+  type: vmess
+  server: wnd.shabijichang.com
+  port: 80
+  cipher: auto
+  uuid: 53701585-591f-48a3-9515-8831ed0524ac
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: wnd.shabijichang.com
 - name: "\U0001F1FA\U0001F1F8 US 63 VMS"
   type: vmess
   server: 172.67.99.73
@@ -793,8 +795,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 58 VMS"
   - "\U0001F1F9\U0001F1FC TW 59 TJN"
   - "\U0001F1E8\U0001F1E6 CA 60 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 61 VMS"
-  - "\U0001F1F9\U0001F1FC TW 62 VMS"
+  - "\U0001F1F9\U0001F1FC TW 61 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 62 VMS"
   - "\U0001F1FA\U0001F1F8 US 63 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -862,8 +864,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 58 VMS"
   - "\U0001F1F9\U0001F1FC TW 59 TJN"
   - "\U0001F1E8\U0001F1E6 CA 60 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 61 VMS"
-  - "\U0001F1F9\U0001F1FC TW 62 VMS"
+  - "\U0001F1F9\U0001F1FC TW 61 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 62 VMS"
   - "\U0001F1FA\U0001F1F8 US 63 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
