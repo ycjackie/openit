@@ -606,20 +606,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 57 VMS"
-  type: vmess
-  server: www.speedtest.net
-  port: 80
-  cipher: auto
-  uuid: bf75108e-7bec-4fe0-8db9-3d4985dd3bd6
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: it1.xv2ray.net
 proxy-groups:
 - name: automatic
   type: url-test
@@ -680,7 +666,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 54 VMS"
   - "\U0001F1E8\U0001F1F3 CN 55 VMS"
   - "\U0001F1E8\U0001F1F3 CN 56 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 57 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -743,6 +728,5 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 54 VMS"
   - "\U0001F1E8\U0001F1F3 CN 55 VMS"
   - "\U0001F1E8\U0001F1F3 CN 56 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 57 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
