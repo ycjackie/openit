@@ -623,7 +623,19 @@ proxies:
   cipher: auto
   network: tcp
 - type: vmess
-  name: "\U0001F1E8\U0001F1F3 CN 53 VMS"
+  name: "\U0001F1FA\U0001F1F8 US 53 VMS"
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      host: jp.bpyjc.com
+  server: tunneltransfer.bpyjc.com
+  port: 2052
+  uuid: 4dc07574-4fc9-40db-864e-a2ca27852254
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: vmess
+  name: "\U0001F1E8\U0001F1F3 CN 54 VMS"
   server: 183.249.20.153
   port: 64003
   uuid: e433833f-77e3-32d6-9613-32320f530e5e
@@ -631,7 +643,7 @@ proxies:
   cipher: auto
   network: tcp
 - type: vmess
-  name: "\U0001F1E8\U0001F1F3 CN 54 VMS"
+  name: "\U0001F1E8\U0001F1F3 CN 55 VMS"
   server: zjxc.pmxu.link
   port: 44361
   uuid: 87cb41c3-67e3-36e2-ae08-71411af27b6b
@@ -639,13 +651,25 @@ proxies:
   cipher: auto
   network: tcp
 - type: vmess
-  name: "\U0001F1E8\U0001F1F3 CN 55 VMS"
+  name: "\U0001F1E8\U0001F1F3 CN 56 VMS"
   server: 120.226.50.94
   port: 53300
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: '64'
   cipher: auto
   network: tcp
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 57 VMS"
+  ws-opts:
+    path: /
+    headers:
+      host: it1.xv2ray.net
+  server: www.speedtest.net
+  port: 80
+  uuid: bf75108e-7bec-4fe0-8db9-3d4985dd3bd6
+  alterId: '0'
+  cipher: auto
+  network: ws
 proxy-groups:
 - name: automatic
   type: url-test
@@ -702,9 +726,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 50 VMS"
   - "\U0001F1FA\U0001F1F3 UN 51 VMS"
   - "\U0001F1E8\U0001F1F3 CN 52 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 53 VMS"
+  - "\U0001F1FA\U0001F1F8 US 53 VMS"
   - "\U0001F1E8\U0001F1F3 CN 54 VMS"
   - "\U0001F1E8\U0001F1F3 CN 55 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 56 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 57 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -763,8 +789,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 50 VMS"
   - "\U0001F1FA\U0001F1F3 UN 51 VMS"
   - "\U0001F1E8\U0001F1F3 CN 52 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 53 VMS"
+  - "\U0001F1FA\U0001F1F8 US 53 VMS"
   - "\U0001F1E8\U0001F1F3 CN 54 VMS"
   - "\U0001F1E8\U0001F1F3 CN 55 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 56 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 57 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
