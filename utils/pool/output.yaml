@@ -482,6 +482,74 @@ proxies:
   alterId: '0'
   cipher: auto
   network: ws
+- name: "\U0001F1E8\U0001F1F3 CN 47 VMS"
+  type: vmess
+  server: 183.249.20.151
+  port: 64003
+  cipher: auto
+  uuid: fa18fc1b-6160-3665-8345-6c6fcca4c521
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 48 VMS"
+  type: vmess
+  server: tunneltransfer.bpyjc.com
+  port: 2052
+  cipher: auto
+  uuid: 4dc07574-4fc9-40db-864e-a2ca27852254
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      host: jp.bpyjc.com
+- name: "\U0001F1E8\U0001F1F3 CN 49 VMS"
+  type: vmess
+  server: 183.249.20.153
+  port: 64003
+  cipher: auto
+  uuid: e433833f-77e3-32d6-9613-32320f530e5e
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 50 VMS"
+  type: vmess
+  server: zjxc.pmxu.link
+  port: 44361
+  cipher: auto
+  uuid: 87cb41c3-67e3-36e2-ae08-71411af27b6b
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 51 VMS"
+  type: vmess
+  server: 120.226.50.94
+  port: 53300
+  cipher: auto
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 52 VMS"
+  type: vmess
+  server: www.speedtest.net
+  port: 80
+  cipher: auto
+  uuid: bf75108e-7bec-4fe0-8db9-3d4985dd3bd6
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: it1.xv2ray.net
 proxy-groups:
 - name: automatic
   type: url-test
@@ -532,6 +600,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 44 VMS"
   - "\U0001F1FA\U0001F1F8 US 45 VMS"
   - "\U0001F1FA\U0001F1F3 UN 46 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 47 VMS"
+  - "\U0001F1FA\U0001F1F8 US 48 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 49 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 50 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 51 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 52 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -584,5 +658,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 44 VMS"
   - "\U0001F1FA\U0001F1F8 US 45 VMS"
   - "\U0001F1FA\U0001F1F3 UN 46 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 47 VMS"
+  - "\U0001F1FA\U0001F1F8 US 48 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 49 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 50 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 51 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 52 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
