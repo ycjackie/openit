@@ -621,13 +621,27 @@ proxies:
   sni: chaosujp.ccoo520.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 54 SSS"
+- name: "\U0001F1FA\U0001F1F3 UN 54 VMS"
+  type: vmess
+  server: speed.cloudflare.com
+  port: 8080
+  cipher: auto
+  uuid: cafbdf1c-5812-492f-92ac-330650c6ecf0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      host: eu1.vpn66.eu.org
+- name: "\U0001F1E8\U0001F1F3 CN 55 SSS"
   type: ss
   server: starspeed.tbh.iosds.com
   port: 25854
   password: 9f37ff25-99f3-4e3f-bd7b-a0ed6638246e
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F8 US 55 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 56 VMS"
   type: vmess
   server: yd1.992688.xyz
   port: 8880
@@ -641,13 +655,13 @@ proxies:
     path: /?ed=2048
     headers:
       host: vceu3.vpn66.eu.org
-- name: "\U0001F1E8\U0001F1F3 CN 56 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 57 SSS"
   type: ss
   server: starspeed.tbh.iosds.com
   port: 19290
   password: 9f37ff25-99f3-4e3f-bd7b-a0ed6638246e
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1ED\U0001F1F0 HK 57 VMS"
+- name: "\U0001F1ED\U0001F1F0 HK 58 VMS"
   type: vmess
   server: 156.245.8.248
   port: 41671
@@ -657,7 +671,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 58 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 59 VMS"
   type: vmess
   server: cf-lt.sharecentre.online
   port: 80
@@ -671,7 +685,7 @@ proxies:
     path: /ah2h31bk
     headers:
       host: buyvm4.ipad.monster
-- name: "\U0001F1FA\U0001F1F8 US 59 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 60 VMS"
   type: vmess
   server: fd.shabijichang.com
   port: 80
@@ -685,13 +699,13 @@ proxies:
     path: /
     headers:
       host: sdyg.shabijichang.com
-- name: "\U0001F1E8\U0001F1F3 CN 60 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 61 SSS"
   type: ss
   server: starspeed.tbh.iosds.com
   port: 26963
   password: 9f37ff25-99f3-4e3f-bd7b-a0ed6638246e
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F8 US 61 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 62 VMS"
   type: vmess
   server: 45.199.138.157
   port: 48855
@@ -701,19 +715,19 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 62 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 63 SSS"
   type: ss
   server: free.node.kk-proxy.pro
   port: 24962
   password: 6c766113-5ba2-4bf8-8a91-50de77ed2d8a
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 63 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 64 SSS"
   type: ss
   server: free.node.kk-proxy.pro
   port: 55928
   password: 6c766113-5ba2-4bf8-8a91-50de77ed2d8a
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F8 US 64 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 65 VMS"
   type: vmess
   server: yd1.992688.xyz
   port: 8080
@@ -727,7 +741,7 @@ proxies:
     path: /?ed=2048
     headers:
       host: eu2.vpn66.eu.org
-- name: "\U0001F1E8\U0001F1F3 CN 65 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 66 VMS"
   type: vmess
   server: 183.240.232.82
   port: 40158
@@ -737,7 +751,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 66 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 67 VMS"
   type: vmess
   server: mm3.shabijichang.com
   port: 80
@@ -808,19 +822,20 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 51 SSS"
   - "\U0001F1E8\U0001F1F3 CN 52 TJN"
   - "\U0001F1E8\U0001F1F3 CN 53 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 54 SSS"
-  - "\U0001F1FA\U0001F1F8 US 55 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 56 SSS"
-  - "\U0001F1ED\U0001F1F0 HK 57 VMS"
-  - "\U0001F1FA\U0001F1F8 US 58 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 54 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 55 SSS"
+  - "\U0001F1FA\U0001F1F8 US 56 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 57 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 58 VMS"
   - "\U0001F1FA\U0001F1F8 US 59 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 60 SSS"
-  - "\U0001F1FA\U0001F1F8 US 61 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 62 SSS"
+  - "\U0001F1FA\U0001F1F8 US 60 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 61 SSS"
+  - "\U0001F1FA\U0001F1F8 US 62 VMS"
   - "\U0001F1E8\U0001F1F3 CN 63 SSS"
-  - "\U0001F1FA\U0001F1F8 US 64 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 65 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 66 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 64 SSS"
+  - "\U0001F1FA\U0001F1F8 US 65 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 66 VMS"
+  - "\U0001F1FA\U0001F1F8 US 67 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -880,18 +895,19 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 51 SSS"
   - "\U0001F1E8\U0001F1F3 CN 52 TJN"
   - "\U0001F1E8\U0001F1F3 CN 53 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 54 SSS"
-  - "\U0001F1FA\U0001F1F8 US 55 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 56 SSS"
-  - "\U0001F1ED\U0001F1F0 HK 57 VMS"
-  - "\U0001F1FA\U0001F1F8 US 58 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 54 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 55 SSS"
+  - "\U0001F1FA\U0001F1F8 US 56 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 57 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 58 VMS"
   - "\U0001F1FA\U0001F1F8 US 59 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 60 SSS"
-  - "\U0001F1FA\U0001F1F8 US 61 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 62 SSS"
+  - "\U0001F1FA\U0001F1F8 US 60 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 61 SSS"
+  - "\U0001F1FA\U0001F1F8 US 62 VMS"
   - "\U0001F1E8\U0001F1F3 CN 63 SSS"
-  - "\U0001F1FA\U0001F1F8 US 64 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 65 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 66 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 64 SSS"
+  - "\U0001F1FA\U0001F1F8 US 65 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 66 VMS"
+  - "\U0001F1FA\U0001F1F8 US 67 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
