@@ -196,6 +196,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
+  - {name: BD 1|TG@BPXD666, server: vn2.4gspeed.me, port: 80, type: vmess, uuid: a05b6151-b432-487c-936a-534c20c60c20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /4gspeed.me, headers: {Host: vn2.4gspeed.me}}, udp: true}
   - {name: 🇭🇰 HK 1|TG@BPXD666, server: 156.245.8.248, port: 41671, type: vmess, uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: 142.4.126.34, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695993071029}, udp: true}
 proxy-groups:
@@ -215,6 +216,7 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - BD 1|TG@BPXD666
       - 🇭🇰 HK 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 💡 自动选择
@@ -223,6 +225,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - BD 1|TG@BPXD666
       - 🇭🇰 HK 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🇭🇰 香港节点
@@ -270,6 +273,7 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - BD 1|TG@BPXD666
       - 🇭🇰 HK 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🪜 故障转移
@@ -278,6 +282,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - BD 1|TG@BPXD666
       - 🇭🇰 HK 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 👉 国内网站
