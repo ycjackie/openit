@@ -200,10 +200,12 @@ proxies:
   - {name: 🇨🇳 TW 1|TG@BPXD666, server: 46caadb.f2.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /s/46caadb.fm.apple.com:60980, headers: {Host: 46caadb.f2.gladns.com}}, udp: true}
   - {name: 🇩🇪 DE 1|TG@BPXD666, server: 5.161.191.195, port: 2083, type: vmess, uuid: 1c5cd450-a5cc-4803-d0ef-1ea424cc4ba2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
   - {name: 🇬🇧 GB 1|TG@BPXD666, server: best.fakeopen.link, port: 2096, type: vmess, uuid: 12859d73-1c81-4909-e071-c1aacfeea221, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /us, headers: {Host: best.fakeopen.link}}, udp: true}
-  - {name: 🇬🇧 GB 2|TG@BPXD666, server: best.fakeopen.link, port: 2096, type: vmess, uuid: c5857811-fb4b-4dd0-bb92-8637743fba93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hax-vm, headers: {Host: best.fakeopen.link}}, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: 45.199.138.152, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1696598013851}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: 45.199.138.222, port: 30000, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1696251693048}, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: 45.199.138.191, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1696251522438}, udp: true}
+  - {name: 🇬🇧 GB 2|TG@BPXD666, server: best.fakeopen.link, port: 2096, type: vmess, uuid: c5857811-fb4b-4dd0-bb92-8637743fba93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dcibr-vm, headers: {Host: best.fakeopen.link}}, udp: true}
+  - {name: 🇭🇰 HK 1|TG@BPXD666, server: 103.48.169.166, port: 57754, type: vmess, uuid: a783230b-cd66-4492-9517-7f6cf569e1c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/vm?ed=2048"}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: sdyg2.shabijichang.com, port: 80, type: vmess, uuid: 53701585-591f-48a3-9515-8831ed0524ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sdyg2.shabijichang.com}}, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 45.199.138.152, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1696598013851}, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 45.199.138.222, port: 30000, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1696251693048}, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: 45.199.138.191, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1696251522438}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -226,9 +228,11 @@ proxy-groups:
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
+      - 🇭🇰 HK 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -240,16 +244,18 @@ proxy-groups:
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
+      - 🇭🇰 HK 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇭🇰 HK 1|TG@BPXD666
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -266,6 +272,7 @@ proxy-groups:
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -295,9 +302,11 @@ proxy-groups:
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
+      - 🇭🇰 HK 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -309,9 +318,11 @@ proxy-groups:
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
+      - 🇭🇰 HK 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
