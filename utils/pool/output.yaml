@@ -1,19 +1,5 @@
 proxies:
-- name: "\U0001F1F8\U0001F1EC SG 1 VMS"
-  type: vmess
-  server: direct-ca3.xn--pzypc.store
-  port: 80
-  cipher: auto
-  uuid: 92b87a58-eee6-4377-a438-aac96d95192f
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /akile?ed=2048
-    headers:
-      host: ca3.xn--pzypc.store
-- name: "\U0001F1F9\U0001F1FC TW 2 VMS"
+- name: "\U0001F1F9\U0001F1FC TW 1 VMS"
   type: vmess
   server: 46caadb.f2.gladns.com
   port: 3331
@@ -27,6 +13,20 @@ proxies:
     path: /s/46caadb.fm.apple.com:60980
     headers:
       host: 46caadb.f2.gladns.com
+- name: "\U0001F1F8\U0001F1EC SG 2 VMS"
+  type: vmess
+  server: direct-ca3.xn--pzypc.store
+  port: 80
+  cipher: auto
+  uuid: 92b87a58-eee6-4377-a438-aac96d95192f
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /akile?ed=2048
+    headers:
+      host: ca3.xn--pzypc.store
 - name: "\U0001F1FA\U0001F1F8 US 3 VMS"
   type: vmess
   server: 5.161.191.195
@@ -186,8 +186,8 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F8\U0001F1EC SG 1 VMS"
-  - "\U0001F1F9\U0001F1FC TW 2 VMS"
+  - "\U0001F1F9\U0001F1FC TW 1 VMS"
+  - "\U0001F1F8\U0001F1EC SG 2 VMS"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1E8\U0001F1F3 CN 4 TJN"
   - "\U0001F1EB\U0001F1F7 FR 5 TJN"
@@ -207,8 +207,8 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1F8\U0001F1EC SG 1 VMS"
-  - "\U0001F1F9\U0001F1FC TW 2 VMS"
+  - "\U0001F1F9\U0001F1FC TW 1 VMS"
+  - "\U0001F1F8\U0001F1EC SG 2 VMS"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1E8\U0001F1F3 CN 4 TJN"
   - "\U0001F1EB\U0001F1F7 FR 5 TJN"
