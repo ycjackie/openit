@@ -196,9 +196,16 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇩🇪 DE 1|TG@BPXD666, server: 5.161.191.195, port: 2083, type: vmess, uuid: 1c5cd450-a5cc-4803-d0ef-1ea424cc4ba2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 🇫🇷 FR 1|TG@BPXD666, server: 15.237.164.108, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: www.75409854.xyz, port: 443, type: vmess, uuid: 28dd6c26-05a5-4bba-8a5d-052b70ac13b2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1694429908748, headers: {Host: www.75409854.xyz}}, udp: true}
+  - {name: FI 1|TG@BPXD666, server: 95.216.216.255, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [internet.life.com.by]}}, udp: true}
+  - {name: IR 1|TG@BPXD666, server: 5.78.80.24, port: 80, type: vmess, uuid: 1c75afae-da2e-469f-b758-927f5b4b4cf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [a]}}, udp: true}
+  - {name: IR 2|TG@BPXD666, server: 5.78.105.4, port: 80, type: vmess, uuid: 6b4a53ce-6cbb-496c-ac18-705a50da2e6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [a]}}, udp: true}
+  - {name: IR 3|TG@BPXD666, server: 128.140.36.143, port: 80, type: vmess, uuid: c2eb60b5-f4b5-4488-ac02-842b01734c66, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [a]}}, udp: true}
+  - {name: IR 4|TG@BPXD666, server: 5.78.94.3, port: 80, type: vmess, uuid: afe0c142-10bc-4b84-812c-9b91cec030aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [a]}}, udp: true}
+  - {name: IR 5|TG@BPXD666, server: 128.140.14.190, port: 80, type: vmess, uuid: c6cf7ea3-e23e-404f-a1f3-0ba3c1d6bfd5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [a]}}, udp: true}
+  - {name: IR 6|TG@BPXD666, server: 128.140.103.90, port: 80, type: vmess, uuid: 4252c7fa-2248-4dd2-930d-46f6ca313e4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [internet.life.com.by]}}, udp: true}
+  - {name: 🇩🇪 DE 1|TG@BPXD666, server: 5.161.205.232, port: 80, type: vmess, uuid: 9e855123-ef25-4a0c-a7ee-8a64e5cc89af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [a]}}, udp: true}
+  - {name: 🇩🇪 DE 2|TG@BPXD666, server: 5.161.124.62, port: 80, type: vmess, uuid: 22d35615-ed42-4353-bb70-8024287e05fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [a]}}, udp: true}
+  - {name: 🇩🇪 DE 3|TG@BPXD666, server: 5.161.209.199, port: 80, type: vmess, uuid: ddaa9be4-597e-4440-97d2-1c2ced62ac50, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [internet.life.com.by]}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -216,18 +223,32 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - FI 1|TG@BPXD666
+      - IR 1|TG@BPXD666
+      - IR 2|TG@BPXD666
+      - IR 3|TG@BPXD666
+      - IR 4|TG@BPXD666
+      - IR 5|TG@BPXD666
+      - IR 6|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
-      - 🇺🇸 US 1|TG@BPXD666
+      - 🇩🇪 DE 2|TG@BPXD666
+      - 🇩🇪 DE 3|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - FI 1|TG@BPXD666
+      - IR 1|TG@BPXD666
+      - IR 2|TG@BPXD666
+      - IR 3|TG@BPXD666
+      - IR 4|TG@BPXD666
+      - IR 5|TG@BPXD666
+      - IR 6|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
-      - 🇺🇸 US 1|TG@BPXD666
+      - 🇩🇪 DE 2|TG@BPXD666
+      - 🇩🇪 DE 3|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -248,7 +269,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇺🇸 US 1|TG@BPXD666
+      - DIRECT
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -273,18 +294,32 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - FI 1|TG@BPXD666
+      - IR 1|TG@BPXD666
+      - IR 2|TG@BPXD666
+      - IR 3|TG@BPXD666
+      - IR 4|TG@BPXD666
+      - IR 5|TG@BPXD666
+      - IR 6|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
-      - 🇺🇸 US 1|TG@BPXD666
+      - 🇩🇪 DE 2|TG@BPXD666
+      - 🇩🇪 DE 3|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - FI 1|TG@BPXD666
+      - IR 1|TG@BPXD666
+      - IR 2|TG@BPXD666
+      - IR 3|TG@BPXD666
+      - IR 4|TG@BPXD666
+      - IR 5|TG@BPXD666
+      - IR 6|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
-      - 🇺🇸 US 1|TG@BPXD666
+      - 🇩🇪 DE 2|TG@BPXD666
+      - 🇩🇪 DE 3|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
