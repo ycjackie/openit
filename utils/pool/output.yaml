@@ -208,7 +208,7 @@ proxies:
     path: /315d825893fc34aca0231ab967157986
     headers:
       host: jxhoisldy718922.starnetcn.top
-- name: "\U0001F1FA\U0001F1F3 UN 17 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 17 VMS"
   type: vmess
   server: cf-lt.sharecentre.online
   port: 8080
@@ -510,20 +510,6 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F3 UN 42 VMS"
   type: vmess
-  server: 104.18.203.232
-  port: 80
-  cipher: auto
-  uuid: 6bf1b342-2bf0-4608-b288-8ee515e2d594
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: "/@hopev2ray\u060C@hopev2ray"
-    headers:
-      host: de1vm.cdn-03.live
-- name: "\U0001F1FA\U0001F1F8 US 43 VMS"
-  type: vmess
   server: fd.shabijichang.com
   port: 80
   cipher: auto
@@ -536,18 +522,32 @@ proxies:
     path: /
     headers:
       host: mrb.shabijichang.com
-- name: "\U0001F1E8\U0001F1F3 CN 44 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 43 SSS"
   type: ss
   server: us02.shawbrothersstudio.com
   port: 43642
   password: hg9h5KpMmJLli6W6Qjd2yi
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 45 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 44 SSS"
   type: ss
   server: ydyh.nanbei.info
   port: 26902
   password: cdb06941-b4e8-4aeb-8cd5-62c129edd075
   cipher: chacha20-ietf-poly1305
+- name: "\U0001F1EC\U0001F1E7 GB 45 VMS"
+  type: vmess
+  server: best.fakeopen.link
+  port: 2096
+  cipher: auto
+  uuid: 12859d73-1c81-4909-e071-c1aacfeea221
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /us
+    headers:
+      host: us2.fakeopen.link
 - name: "\U0001F1E8\U0001F1F3 CN 46 SSS"
   type: ss
   server: uk.shawbrothersstudio.com
@@ -608,7 +608,21 @@ proxies:
     path: /vm?ed=2048
     headers:
       host: ylsl.kxking.eu.org
-- name: "\U0001F1FA\U0001F1F8 US 51 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 51 VMS"
+  type: vmess
+  server: www.speedtest.net
+  port: 80
+  cipher: auto
+  uuid: 62515af2-1dd9-467b-9dd3-774abefb6a62
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: hu1.xv2ray.net
+- name: "\U0001F1FA\U0001F1F3 UN 52 VMS"
   type: vmess
   server: cf-lt.sharecentre.online
   port: 8080
@@ -622,13 +636,13 @@ proxies:
     path: /api/v3/download.getFile
     headers:
       host: ssrsub.v03.ssrsub.com
-- name: "\U0001F1E8\U0001F1F3 CN 52 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 53 SSS"
   type: ss
   server: ydyh.nanbei.info
   port: 26902
   password: cdb06941-b4e8-4aeb-8cd5-62c129edd075
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 53 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 54 SSS"
   type: ss
   server: uk.shawbrothersstudio.com
   port: 19923
@@ -654,7 +668,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 14 VMS"
   - "\U0001F1F8\U0001F1E8 SC 15 VMS"
   - "\U0001F1F0\U0001F1F7 KR 16 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 17 VMS"
+  - "\U0001F1FA\U0001F1F8 US 17 VMS"
   - "\U0001F1EC\U0001F1E7 GB 18 TJN"
   - "\U0001F1E8\U0001F1FF CZ 19 VMS"
   - "\U0001F1EB\U0001F1F7 FR 20 TJN"
@@ -680,17 +694,18 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 40 VMS"
   - "\U0001F1EB\U0001F1F7 FR 41 TJN"
   - "\U0001F1FA\U0001F1F3 UN 42 VMS"
-  - "\U0001F1FA\U0001F1F8 US 43 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 43 SSS"
   - "\U0001F1E8\U0001F1F3 CN 44 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 45 SSS"
+  - "\U0001F1EC\U0001F1E7 GB 45 VMS"
   - "\U0001F1E8\U0001F1F3 CN 46 SSS"
   - "\U0001F1FA\U0001F1F8 US 47 VMS"
   - "\U0001F1FA\U0001F1F8 US 48 VMS"
   - "\U0001F1FA\U0001F1F8 US 49 VMS"
   - "\U0001F1E8\U0001F1F3 CN 50 VMS"
-  - "\U0001F1FA\U0001F1F8 US 51 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 52 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 51 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 52 VMS"
   - "\U0001F1E8\U0001F1F3 CN 53 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 54 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -713,7 +728,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 14 VMS"
   - "\U0001F1F8\U0001F1E8 SC 15 VMS"
   - "\U0001F1F0\U0001F1F7 KR 16 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 17 VMS"
+  - "\U0001F1FA\U0001F1F8 US 17 VMS"
   - "\U0001F1EC\U0001F1E7 GB 18 TJN"
   - "\U0001F1E8\U0001F1FF CZ 19 VMS"
   - "\U0001F1EB\U0001F1F7 FR 20 TJN"
@@ -739,16 +754,17 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 40 VMS"
   - "\U0001F1EB\U0001F1F7 FR 41 TJN"
   - "\U0001F1FA\U0001F1F3 UN 42 VMS"
-  - "\U0001F1FA\U0001F1F8 US 43 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 43 SSS"
   - "\U0001F1E8\U0001F1F3 CN 44 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 45 SSS"
+  - "\U0001F1EC\U0001F1E7 GB 45 VMS"
   - "\U0001F1E8\U0001F1F3 CN 46 SSS"
   - "\U0001F1FA\U0001F1F8 US 47 VMS"
   - "\U0001F1FA\U0001F1F8 US 48 VMS"
   - "\U0001F1FA\U0001F1F8 US 49 VMS"
   - "\U0001F1E8\U0001F1F3 CN 50 VMS"
-  - "\U0001F1FA\U0001F1F8 US 51 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 52 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 51 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 52 VMS"
   - "\U0001F1E8\U0001F1F3 CN 53 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 54 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
