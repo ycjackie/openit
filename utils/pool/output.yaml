@@ -1,5 +1,11 @@
 proxies:
-- name: "\U0001F1ED\U0001F1F0 HK 1 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  type: ss
+  server: hk1.661855.xyz
+  port: 37333
+  password: 2a2f385f-c9d5-41f9-8e24-27be6e1ef2a4
+  cipher: aes-256-gcm
+- name: "\U0001F1ED\U0001F1F0 HK 2 VMS"
   type: vmess
   server: t.zhulida.cc
   port: 443
@@ -13,12 +19,6 @@ proxies:
     path: /c6d6b130f9?ed=2048
     headers:
       host: t.zhulida.cc
-- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  type: ss
-  server: hk1.661855.xyz
-  port: 37333
-  password: 2a2f385f-c9d5-41f9-8e24-27be6e1ef2a4
-  cipher: aes-256-gcm
 - name: "\U0001F1FA\U0001F1F3 UN 3 TJN"
   type: trojan
   server: 104.17.233.82
@@ -275,8 +275,8 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1ED\U0001F1F0 HK 1 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 TJN"
   - "\U0001F1FA\U0001F1F3 UN 4 TJN"
   - "\U0001F1EF\U0001F1F5 JP 5 TJN"
@@ -311,8 +311,8 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1ED\U0001F1F0 HK 1 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 TJN"
   - "\U0001F1FA\U0001F1F3 UN 4 TJN"
   - "\U0001F1EF\U0001F1F5 JP 5 TJN"
