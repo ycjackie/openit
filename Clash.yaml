@@ -196,7 +196,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇯🇵 JP 1|TG@BPXD666, server: t.zhulida.cc, port: 443, type: vmess, uuid: d0cab687-cc1b-494c-95c7-d4b0b069c76b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/c6d6b130f9?ed=2048", headers: {Host: t.zhulida.cc}}, udp: true}
+  - {name: 🇸🇬 SG, server: hk2.cf4589a1-71ec-429f-b46a-892af2259b8e.the-best-airport.com, port: 443, type: trojan, password: 63a7a8a8-dfa5-4e51-852d-446c8b245c54, sni: 144-22-163-118.nhost.00cdn.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -214,14 +214,14 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - 🇯🇵 JP 1|TG@BPXD666
+      - 🇸🇬 SG
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 JP 1|TG@BPXD666
+      - 🇸🇬 SG
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -235,7 +235,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 JP 1|TG@BPXD666
+      - DIRECT
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -256,7 +256,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇸🇬 SG
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -267,14 +267,14 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 🇯🇵 JP 1|TG@BPXD666
+      - DIRECT
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 JP 1|TG@BPXD666
+      - 🇸🇬 SG
   - name: 👉 国内网站
     type: select
     proxies:
