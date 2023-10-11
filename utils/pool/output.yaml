@@ -1,41 +1,5 @@
 proxies:
-- type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 1 VMS"
-  ws-opts:
-    path: /
-  server: 154.23.190.162
-  port: 443
-  uuid: b9984674-f771-4e67-a198-c7e60720ba2c
-  alterId: '0'
-  cipher: auto
-  network: ws
-- type: trojan
-  name: "\U0001F1E8\U0001F1E6 CA 2 TJN"
-  server: ca-trojan.bonds.id
-  port: 443
-  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
-  udp: true
-  skip-cert-verify: true
-- type: http
-  name: "\U0001F1E8\U0001F1F3 CN 3 HTT"
-  server: 124.15.12.24
-  port: 251
-  username: username
-  password: password
-  udp: true
-- type: socks5
-  name: "\U0001F1E8\U0001F1F3 CN 4 SK5"
-  server: 124.15.12.24
-  port: 2312
-  udp: true
-- type: socks5
-  name: "\U0001F1E6\U0001F1FA AU 5 SK5"
-  server: 1.2.3.4
-  port: 123
-  username: username
-  password: password
-  udp: true
-- name: "\U0001F1ED\U0001F1F0 HK 6 VMS"
+- name: "\U0001F1ED\U0001F1F0 HK 1 VMS"
   type: vmess
   server: t.zhulida.cc
   port: 443
@@ -49,12 +13,48 @@ proxies:
     path: /c6d6b130f9?ed=2048
     headers:
       host: t.zhulida.cc
-- name: "\U0001F1E8\U0001F1F3 CN 7 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
   type: ss
   server: hk1.661855.xyz
   port: 37333
   password: 2a2f385f-c9d5-41f9-8e24-27be6e1ef2a4
   cipher: aes-256-gcm
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 3 VMS"
+  ws-opts:
+    path: /
+  server: 154.23.190.162
+  port: 443
+  uuid: b9984674-f771-4e67-a198-c7e60720ba2c
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: trojan
+  name: "\U0001F1E8\U0001F1E6 CA 4 TJN"
+  server: ca-trojan.bonds.id
+  port: 443
+  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
+  udp: true
+  skip-cert-verify: true
+- type: http
+  name: "\U0001F1E8\U0001F1F3 CN 5 HTT"
+  server: 124.15.12.24
+  port: 251
+  username: username
+  password: password
+  udp: true
+- type: socks5
+  name: "\U0001F1E8\U0001F1F3 CN 6 SK5"
+  server: 124.15.12.24
+  port: 2312
+  udp: true
+- type: socks5
+  name: "\U0001F1E6\U0001F1FA AU 7 SK5"
+  server: 1.2.3.4
+  port: 123
+  username: username
+  password: password
+  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 8 VMS"
   type: vmess
   server: 80.251.214.235
@@ -352,7 +352,7 @@ proxies:
     path: /
     headers:
       host: se1.xv2ray.net
-- name: "\U0001F1FA\U0001F1F8 US 37 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 37 VMS"
   type: vmess
   server: fd.shabijichang.com
   port: 80
@@ -854,13 +854,13 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 2 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 3 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 4 SK5"
-  - "\U0001F1E6\U0001F1FA AU 5 SK5"
-  - "\U0001F1ED\U0001F1F0 HK 6 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 7 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 4 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 5 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 6 SK5"
+  - "\U0001F1E6\U0001F1FA AU 7 SK5"
   - "\U0001F1FA\U0001F1F8 US 8 VMS"
   - "\U0001F1EE\U0001F1EA IE 9 TJN"
   - "\U0001F1E8\U0001F1F3 CN 10 SSS"
@@ -890,7 +890,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 34 VMS"
   - "\U0001F1FA\U0001F1F8 US 35 VMS"
   - "\U0001F1FA\U0001F1F8 US 36 VMS"
-  - "\U0001F1FA\U0001F1F8 US 37 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 37 VMS"
   - "\U0001F1EE\U0001F1EA IE 38 TJN"
   - "\U0001F1EE\U0001F1EA IE 39 TJN"
   - "\U0001F1E8\U0001F1F3 CN 40 VMS"
@@ -945,13 +945,13 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 2 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 3 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 4 SK5"
-  - "\U0001F1E6\U0001F1FA AU 5 SK5"
-  - "\U0001F1ED\U0001F1F0 HK 6 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 7 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 4 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 5 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 6 SK5"
+  - "\U0001F1E6\U0001F1FA AU 7 SK5"
   - "\U0001F1FA\U0001F1F8 US 8 VMS"
   - "\U0001F1EE\U0001F1EA IE 9 TJN"
   - "\U0001F1E8\U0001F1F3 CN 10 SSS"
@@ -981,7 +981,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 34 VMS"
   - "\U0001F1FA\U0001F1F8 US 35 VMS"
   - "\U0001F1FA\U0001F1F8 US 36 VMS"
-  - "\U0001F1FA\U0001F1F8 US 37 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 37 VMS"
   - "\U0001F1EE\U0001F1EA IE 38 TJN"
   - "\U0001F1EE\U0001F1EA IE 39 TJN"
   - "\U0001F1E8\U0001F1F3 CN 40 VMS"
