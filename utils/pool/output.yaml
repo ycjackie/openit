@@ -32,7 +32,19 @@ proxies:
   port: 123
   username: username
   password: password
-- name: "\U0001F1F0\U0001F1F7 KR 6 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
+  type: vmess
+  server: 45.199.138.222
+  port: 30000
+  cipher: auto
+  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
+  alterId: 64
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /path/1696251693048
+- name: "\U0001F1F0\U0001F1F7 KR 7 VMS"
   type: vmess
   server: 130.162.154.209
   port: 443
@@ -46,18 +58,6 @@ proxies:
     path: /ophelia.mom:443/linkvws
     headers:
       host: cf.tonyluk.link
-- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
-  type: vmess
-  server: 45.199.138.222
-  port: 30000
-  cipher: auto
-  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
-  alterId: 64
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /path/1696251693048
 - name: "\U0001F1E8\U0001F1F3 CN 8 VMS"
   type: vmess
   server: 110.72.101.144
@@ -554,7 +554,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 56 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 56 VMS"
   type: vmess
   server: sfmomastore.com
   port: 80
@@ -818,20 +818,6 @@ proxies:
       host: m.facebook.net
 - name: "\U0001F1FA\U0001F1F3 UN 80 VMS"
   type: vmess
-  server: sfmomastore.com
-  port: 80
-  cipher: auto
-  uuid: 0580abe6-9aaf-40e2-ba33-0bc9f3b6ef2b
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: ee1.xv2ray.net
-- name: "\U0001F1FA\U0001F1F3 UN 81 VMS"
-  type: vmess
   server: uk1.cou.gay
   port: 443
   cipher: auto
@@ -842,7 +828,7 @@ proxies:
   network: ws
   ws-opts:
     path: /uk1?ed=2048
-- name: "\U0001F1FA\U0001F1F3 UN 82 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 81 VMS"
   type: vmess
   server: jnd1.531131.xyz
   port: 443
@@ -854,6 +840,18 @@ proxies:
   network: ws
   ws-opts:
     path: /jnd1?ed=2048
+- name: "\U0001F1FA\U0001F1F3 UN 82 VMS"
+  type: vmess
+  server: es1.531131.xyz
+  port: 443
+  cipher: auto
+  uuid: ef9914f8-c692-4f9f-aad2-08e0cb46eef9
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /es1?ed=2048
 - name: "\U0001F1E8\U0001F1F3 CN 83 VMS"
   type: vmess
   server: 110.72.101.144
@@ -1553,8 +1551,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 3 HTT"
   - "\U0001F1E8\U0001F1F3 CN 4 SK5"
   - "\U0001F1E6\U0001F1FA AU 5 SK5"
-  - "\U0001F1F0\U0001F1F7 KR 6 VMS"
-  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1F0\U0001F1F7 KR 7 VMS"
   - "\U0001F1E8\U0001F1F3 CN 8 VMS"
   - "\U0001F1E8\U0001F1F3 CN 9 VMS"
   - "\U0001F1E8\U0001F1F3 CN 10 VMS"
@@ -1603,7 +1601,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 53 VMS"
   - "\U0001F1E8\U0001F1F3 CN 54 VMS"
   - "\U0001F1E8\U0001F1F3 CN 55 VMS"
-  - "\U0001F1FA\U0001F1F8 US 56 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 56 VMS"
   - "\U0001F1E8\U0001F1F3 CN 57 TJN"
   - "\U0001F1E8\U0001F1F3 CN 58 TJN"
   - "\U0001F1E8\U0001F1F3 CN 59 TJN"
@@ -1628,7 +1626,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 78 SSS"
   - "\U0001F1FA\U0001F1F8 US 79 VMS"
   - "\U0001F1FA\U0001F1F3 UN 80 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 81 VMS"
+  - "\U0001F1FA\U0001F1F8 US 81 VMS"
   - "\U0001F1FA\U0001F1F3 UN 82 VMS"
   - "\U0001F1E8\U0001F1F3 CN 83 VMS"
   - "\U0001F1E8\U0001F1F3 CN 84 VMS"
@@ -1710,8 +1708,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 3 HTT"
   - "\U0001F1E8\U0001F1F3 CN 4 SK5"
   - "\U0001F1E6\U0001F1FA AU 5 SK5"
-  - "\U0001F1F0\U0001F1F7 KR 6 VMS"
-  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1F0\U0001F1F7 KR 7 VMS"
   - "\U0001F1E8\U0001F1F3 CN 8 VMS"
   - "\U0001F1E8\U0001F1F3 CN 9 VMS"
   - "\U0001F1E8\U0001F1F3 CN 10 VMS"
@@ -1760,7 +1758,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 53 VMS"
   - "\U0001F1E8\U0001F1F3 CN 54 VMS"
   - "\U0001F1E8\U0001F1F3 CN 55 VMS"
-  - "\U0001F1FA\U0001F1F8 US 56 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 56 VMS"
   - "\U0001F1E8\U0001F1F3 CN 57 TJN"
   - "\U0001F1E8\U0001F1F3 CN 58 TJN"
   - "\U0001F1E8\U0001F1F3 CN 59 TJN"
@@ -1785,7 +1783,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 78 SSS"
   - "\U0001F1FA\U0001F1F8 US 79 VMS"
   - "\U0001F1FA\U0001F1F3 UN 80 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 81 VMS"
+  - "\U0001F1FA\U0001F1F8 US 81 VMS"
   - "\U0001F1FA\U0001F1F3 UN 82 VMS"
   - "\U0001F1E8\U0001F1F3 CN 83 VMS"
   - "\U0001F1E8\U0001F1F3 CN 84 VMS"
