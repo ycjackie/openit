@@ -1438,13 +1438,23 @@ proxies:
   tls: true
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 149 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 149 VMS"
+  type: vmess
+  server: sunflw04.linkzoones.xyz
+  port: 30871
+  cipher: auto
+  uuid: fa16b4d7-04d5-39f0-99fd-12397b4d5564
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 150 SSS"
   type: ss
   server: hefei.chiguayun.cc
   port: 27118
   password: d376f270-1807-4522-9f92-b499658a2678
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 150 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 151 TJN"
   type: trojan
   server: hk.kunlun-ppg.com
   port: 10801
@@ -1453,13 +1463,13 @@ proxies:
   sni: alibaba-node.cn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 151 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 152 SSS"
   type: ss
   server: foshan.chiguayun.cc
   port: 27135
   password: d376f270-1807-4522-9f92-b499658a2678
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 152 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 153 VMS"
   type: vmess
   server: rhinoceros04.linkzoones.xyz
   port: 30887
@@ -1469,7 +1479,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 153 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 154 TJN"
   type: trojan
   server: hk.kunlun-ppg.com
   port: 10806
@@ -1478,7 +1488,7 @@ proxies:
   sni: alibaba-node.cn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 154 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 155 VMS"
   type: vmess
   server: wkbr01.linkzoones.xyz
   port: 30877
@@ -1488,7 +1498,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 155 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 156 VMS"
   type: vmess
   server: tuwlip04.linkzoones.xyz
   port: 30868
@@ -1498,23 +1508,23 @@ proxies:
   tls: true
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 156 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 157 VMS"
   type: vmess
-  server: wkbr04.linkzoones.xyz
-  port: 30877
+  server: pnth01.linkzoones.xyz
+  port: 30841
   cipher: auto
   uuid: fa16b4d7-04d5-39f0-99fd-12397b4d5564
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 157 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 158 SSS"
   type: ss
   server: hefei.chiguayun.cc
   port: 27140
   password: d376f270-1807-4522-9f92-b499658a2678
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1EB\U0001F1F7 FR 158 VMS"
+- name: "\U0001F1EB\U0001F1F7 FR 159 VMS"
   type: vmess
   server: hdfy1d1.cpi2hidd.eu.org
   port: 443
@@ -1527,19 +1537,19 @@ proxies:
   grpc-opts:
     grpc-service-name: /
     grpc-mode: gun
-- name: "\U0001F1E8\U0001F1F3 CN 159 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 160 SSS"
   type: ss
   server: hefei.chiguayun.cc
   port: 27133
   password: d376f270-1807-4522-9f92-b499658a2678
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 160 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 161 SSS"
   type: ss
   server: hefei.chiguayun.cc
   port: 27122
   password: d376f270-1807-4522-9f92-b499658a2678
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 161 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 162 SSS"
   type: ss
   server: foshan.chiguayun.cc
   port: 27121
@@ -1697,19 +1707,20 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 146 VMS"
   - "\U0001F1E8\U0001F1F3 CN 147 VMS"
   - "\U0001F1E8\U0001F1F3 CN 148 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 149 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 150 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 151 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 152 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 153 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 154 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 149 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 150 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 151 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 152 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 153 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 154 TJN"
   - "\U0001F1E8\U0001F1F3 CN 155 VMS"
   - "\U0001F1E8\U0001F1F3 CN 156 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 157 SSS"
-  - "\U0001F1EB\U0001F1F7 FR 158 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 159 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 157 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 158 SSS"
+  - "\U0001F1EB\U0001F1F7 FR 159 VMS"
   - "\U0001F1E8\U0001F1F3 CN 160 SSS"
   - "\U0001F1E8\U0001F1F3 CN 161 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 162 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1864,18 +1875,19 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 146 VMS"
   - "\U0001F1E8\U0001F1F3 CN 147 VMS"
   - "\U0001F1E8\U0001F1F3 CN 148 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 149 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 150 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 151 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 152 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 153 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 154 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 149 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 150 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 151 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 152 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 153 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 154 TJN"
   - "\U0001F1E8\U0001F1F3 CN 155 VMS"
   - "\U0001F1E8\U0001F1F3 CN 156 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 157 SSS"
-  - "\U0001F1EB\U0001F1F7 FR 158 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 159 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 157 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 158 SSS"
+  - "\U0001F1EB\U0001F1F7 FR 159 VMS"
   - "\U0001F1E8\U0001F1F3 CN 160 SSS"
   - "\U0001F1E8\U0001F1F3 CN 161 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 162 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
