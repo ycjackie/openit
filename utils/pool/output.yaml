@@ -1,104 +1,6 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1 VMS"
   type: vmess
-  server: 45.199.138.222
-  port: 30000
-  cipher: auto
-  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
-  alterId: 64
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /path/1696251693048
-- type: trojan
-  name: "\U0001F1EE\U0001F1EA IE 2 TJN"
-  server: 3.254.128.82
-  port: 22222
-  password: telegram-id-privatevpns
-  udp: true
-  skip-cert-verify: true
-  sni: trj.rollingnext.co.uk
-  network: tcp
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 3 TJN"
-  server: 132.145.208.20
-  port: 443
-  password: 9Mdw86d7Cz
-  udp: true
-  skip-cert-verify: true
-  sni: no.09.ijg.cc
-  network: tcp
-- type: trojan
-  name: "\U0001F1E9\U0001F1EA DE 4 TJN"
-  server: 3.79.77.105
-  port: 22222
-  password: telegram-id-directvpn
-  udp: true
-  skip-cert-verify: true
-  sni: trj.rollingnext.co.uk
-  network: tcp
-- type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
-  ws-opts:
-    path: /vmess
-    headers:
-      host: ie1.xv2ray.net
-  server: 104.18.40.89
-  port: 80
-  uuid: 58d7b6e3-2b74-4424-b459-8c3545652c9f
-  alterId: 0
-  cipher: auto
-  network: ws
-- type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
-  ws-opts:
-    path: "/@hopev2ray\u060C@hopev2ray"
-    headers:
-      host: de1vm.cdn-03.live
-  server: www.speedtest.net
-  port: 80
-  uuid: 6bf1b342-2bf0-4608-b288-8ee515e2d594
-  alterId: 0
-  cipher: auto
-  network: ws
-- type: trojan
-  name: "\U0001F1EF\U0001F1F5 JP 7 TJN"
-  server: bgpfororacc.20226899.xyz
-  port: 48007
-  password: ccbdc122-db63-4d56-b995-f3e27fcf4de9
-  udp: true
-  skip-cert-verify: true
-  network: tcp
-- type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 8 TJN"
-  server: sg2.downloadvip.cfd
-  port: 443
-  password: 35f59fa7-10ed-40da-a91c-ed5ab9ea13b9
-  udp: true
-  skip-cert-verify: true
-  sni: download.xn--mes358a9urctx.com
-  network: tcp
-- type: trojan
-  name: "\U0001F1E9\U0001F1EA DE 9 TJN"
-  server: 5.104.107.143
-  port: 443
-  password: 35f59fa7-10ed-40da-a91c-ed5ab9ea13b9
-  udp: true
-  skip-cert-verify: true
-  sni: de1.xn--mes358a9urctx.com
-  network: tcp
-- type: trojan
-  name: "\U0001F1EB\U0001F1F7 FR 10 TJN"
-  server: 13.36.185.126
-  port: 22222
-  password: telegram-id-privatevpns
-  udp: true
-  skip-cert-verify: true
-  sni: trj.rollingnext.co.uk
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 11 VMS"
-  type: vmess
   server: 154.23.190.162
   port: 443
   cipher: auto
@@ -107,30 +9,30 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: ws
-- name: "\U0001F1E8\U0001F1E6 CA 12 TJN"
+- name: "\U0001F1E8\U0001F1E6 CA 2 TJN"
   type: trojan
   server: ca-trojan.bonds.id
   port: 443
   udp: true
   password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 13 HTT"
+- name: "\U0001F1E8\U0001F1F3 CN 3 HTT"
   type: http
   server: 124.15.12.24
   port: 251
   username: username
   password: password
-- name: "\U0001F1E8\U0001F1F3 CN 14 SK5"
+- name: "\U0001F1E8\U0001F1F3 CN 4 SK5"
   type: socks5
   server: 124.15.12.24
   port: 2312
-- name: "\U0001F1E6\U0001F1FA AU 15 SK5"
+- name: "\U0001F1E6\U0001F1FA AU 5 SK5"
   type: socks5
   server: 1.2.3.4
   port: 123
   username: username
   password: password
-- name: "\U0001F1F0\U0001F1F7 KR 16 VMS"
+- name: "\U0001F1F0\U0001F1F7 KR 6 VMS"
   type: vmess
   server: 130.162.154.209
   port: 443
@@ -144,6 +46,104 @@ proxies:
     path: /ophelia.mom:443/linkvws
     headers:
       host: cf.tonyluk.link
+- type: trojan
+  name: "\U0001F1EE\U0001F1EA IE 7 TJN"
+  server: 3.254.128.82
+  port: 22222
+  password: telegram-id-privatevpns
+  udp: true
+  skip-cert-verify: true
+  sni: trj.rollingnext.co.uk
+  network: tcp
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 8 TJN"
+  server: 132.145.208.20
+  port: 443
+  password: 9Mdw86d7Cz
+  udp: true
+  skip-cert-verify: true
+  sni: no.09.ijg.cc
+  network: tcp
+- type: trojan
+  name: "\U0001F1E9\U0001F1EA DE 9 TJN"
+  server: 3.79.77.105
+  port: 22222
+  password: telegram-id-directvpn
+  udp: true
+  skip-cert-verify: true
+  sni: trj.rollingnext.co.uk
+  network: tcp
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 10 VMS"
+  ws-opts:
+    path: /vmess
+    headers:
+      host: ie1.xv2ray.net
+  server: 104.18.40.89
+  port: 80
+  uuid: 58d7b6e3-2b74-4424-b459-8c3545652c9f
+  alterId: 0
+  cipher: auto
+  network: ws
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 11 VMS"
+  ws-opts:
+    path: "/@hopev2ray\u060C@hopev2ray"
+    headers:
+      host: de1vm.cdn-03.live
+  server: www.speedtest.net
+  port: 80
+  uuid: 6bf1b342-2bf0-4608-b288-8ee515e2d594
+  alterId: 0
+  cipher: auto
+  network: ws
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 12 TJN"
+  server: bgpfororacc.20226899.xyz
+  port: 48007
+  password: ccbdc122-db63-4d56-b995-f3e27fcf4de9
+  udp: true
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1F8\U0001F1EC SG 13 TJN"
+  server: sg2.downloadvip.cfd
+  port: 443
+  password: 35f59fa7-10ed-40da-a91c-ed5ab9ea13b9
+  udp: true
+  skip-cert-verify: true
+  sni: download.xn--mes358a9urctx.com
+  network: tcp
+- type: trojan
+  name: "\U0001F1E9\U0001F1EA DE 14 TJN"
+  server: 5.104.107.143
+  port: 443
+  password: 35f59fa7-10ed-40da-a91c-ed5ab9ea13b9
+  udp: true
+  skip-cert-verify: true
+  sni: de1.xn--mes358a9urctx.com
+  network: tcp
+- type: trojan
+  name: "\U0001F1EB\U0001F1F7 FR 15 TJN"
+  server: 13.36.185.126
+  port: 22222
+  password: telegram-id-privatevpns
+  udp: true
+  skip-cert-verify: true
+  sni: trj.rollingnext.co.uk
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 16 VMS"
+  type: vmess
+  server: 45.199.138.222
+  port: 30000
+  cipher: auto
+  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
+  alterId: 64
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /path/1696251693048
 - name: "\U0001F1E8\U0001F1F3 CN 17 VMS"
   type: vmess
   server: 110.72.101.144
@@ -640,7 +640,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 65 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 65 VMS"
   type: vmess
   server: sfmomastore.com
   port: 80
@@ -902,7 +902,7 @@ proxies:
     path: /SHALANA
     headers:
       host: m.facebook.net
-- name: "\U0001F1FA\U0001F1F8 US 89 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 89 VMS"
   type: vmess
   server: uk1.cou.gay
   port: 443
@@ -926,19 +926,7 @@ proxies:
   network: ws
   ws-opts:
     path: /jnd1?ed=2048
-- name: "\U0001F1FA\U0001F1F3 UN 91 VMS"
-  type: vmess
-  server: es1.531131.xyz
-  port: 443
-  cipher: auto
-  uuid: ef9914f8-c692-4f9f-aad2-08e0cb46eef9
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /es1?ed=2048
-- name: "\U0001F1E8\U0001F1F3 CN 92 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 91 VMS"
   type: vmess
   server: 110.72.101.144
   port: 26061
@@ -948,7 +936,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 93 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 92 VMS"
   type: vmess
   server: 110.72.101.138
   port: 26062
@@ -958,9 +946,19 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 94 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 93 VMS"
   type: vmess
   server: 120.233.43.51
+  port: 26020
+  cipher: auto
+  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 94 VMS"
+  type: vmess
+  server: 120.233.43.31
   port: 26020
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
@@ -971,7 +969,7 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 95 VMS"
   type: vmess
   server: 120.233.43.31
-  port: 26020
+  port: 26021
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
   alterId: 0
@@ -980,8 +978,8 @@ proxies:
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 CN 96 VMS"
   type: vmess
-  server: 120.233.43.31
-  port: 26021
+  server: 110.72.101.145
+  port: 26013
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
   alterId: 0
@@ -991,16 +989,6 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 97 VMS"
   type: vmess
   server: 110.72.101.145
-  port: 26013
-  cipher: auto
-  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 98 VMS"
-  type: vmess
-  server: 110.72.101.145
   port: 26015
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
@@ -1008,7 +996,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 99 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 98 VMS"
   type: vmess
   server: 110.72.101.139
   port: 26059
@@ -1018,7 +1006,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 100 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 99 VMS"
   type: vmess
   server: 110.72.101.139
   port: 26014
@@ -1028,7 +1016,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 101 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 100 VMS"
   type: vmess
   server: 110.72.101.144
   port: 26062
@@ -1038,7 +1026,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 102 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 101 VMS"
   type: vmess
   server: 110.72.101.138
   port: 26013
@@ -1048,7 +1036,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 103 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 102 VMS"
   type: vmess
   server: 110.72.101.145
   port: 26010
@@ -1058,7 +1046,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 104 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 103 VMS"
   type: vmess
   server: 110.72.101.139
   port: 26013
@@ -1068,7 +1056,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 105 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 104 VMS"
   type: vmess
   server: 110.72.101.144
   port: 26011
@@ -1078,7 +1066,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 106 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 105 VMS"
   type: vmess
   server: 110.72.101.139
   port: 26012
@@ -1088,7 +1076,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 107 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 106 VMS"
   type: vmess
   server: 110.72.101.138
   port: 26014
@@ -1098,7 +1086,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 108 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 107 VMS"
   type: vmess
   server: 110.72.101.138
   port: 26072
@@ -1108,7 +1096,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 109 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 108 VMS"
   type: vmess
   server: 110.72.101.144
   port: 26073
@@ -1118,9 +1106,19 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 110 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 109 VMS"
   type: vmess
   server: 110.72.101.139
+  port: 26011
+  cipher: auto
+  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 110 VMS"
+  type: vmess
+  server: 110.72.101.138
   port: 26011
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
@@ -1131,16 +1129,6 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 111 VMS"
   type: vmess
   server: 110.72.101.138
-  port: 26011
-  cipher: auto
-  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 112 VMS"
-  type: vmess
-  server: 110.72.101.138
   port: 26012
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
@@ -1148,7 +1136,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 113 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 112 VMS"
   type: vmess
   server: 110.72.101.144
   port: 26072
@@ -1158,7 +1146,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 114 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 113 VMS"
   type: vmess
   server: 110.72.101.145
   port: 26073
@@ -1168,10 +1156,20 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 115 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 114 VMS"
   type: vmess
   server: 110.72.101.144
   port: 26075
+  cipher: auto
+  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 115 VMS"
+  type: vmess
+  server: 110.72.101.139
+  port: 26003
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
   alterId: 0
@@ -1181,16 +1179,6 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 116 VMS"
   type: vmess
   server: 110.72.101.139
-  port: 26003
-  cipher: auto
-  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 117 VMS"
-  type: vmess
-  server: 110.72.101.139
   port: 26075
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
@@ -1198,7 +1186,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 118 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 117 VMS"
   type: vmess
   server: 110.72.101.144
   port: 26060
@@ -1208,10 +1196,20 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 119 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 118 VMS"
   type: vmess
   server: 110.72.101.138
   port: 26003
+  cipher: auto
+  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 119 VMS"
+  type: vmess
+  server: 110.72.101.145
+  port: 26059
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
   alterId: 0
@@ -1221,16 +1219,6 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 120 VMS"
   type: vmess
   server: 110.72.101.145
-  port: 26059
-  cipher: auto
-  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 121 VMS"
-  type: vmess
-  server: 110.72.101.145
   port: 26060
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
@@ -1238,7 +1226,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 122 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 121 VMS"
   type: vmess
   server: 110.72.101.138
   port: 26009
@@ -1248,10 +1236,20 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 123 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 122 VMS"
   type: vmess
   server: 110.72.101.139
   port: 26073
+  cipher: auto
+  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 123 VMS"
+  type: vmess
+  server: 110.72.101.138
+  port: 26075
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
   alterId: 0
@@ -1261,7 +1259,7 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 124 VMS"
   type: vmess
   server: 110.72.101.138
-  port: 26075
+  port: 26074
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
   alterId: 0
@@ -1271,16 +1269,6 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 125 VMS"
   type: vmess
   server: 110.72.101.138
-  port: 26074
-  cipher: auto
-  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 126 VMS"
-  type: vmess
-  server: 110.72.101.138
   port: 26060
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
@@ -1288,7 +1276,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 127 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 126 VMS"
   type: vmess
   server: 110.72.101.139
   port: 26008
@@ -1298,7 +1286,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 128 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 127 VMS"
   type: vmess
   server: 110.72.101.138
   port: 26073
@@ -1308,7 +1296,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 129 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 128 VMS"
   type: vmess
   server: 110.72.101.138
   port: 26007
@@ -1318,7 +1306,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 130 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 129 VMS"
   type: vmess
   server: 110.72.101.144
   port: 26059
@@ -1328,7 +1316,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 131 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 130 VMS"
   type: vmess
   server: 110.72.101.139
   port: 26004
@@ -1338,10 +1326,20 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 132 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 131 VMS"
   type: vmess
   server: 110.72.101.139
   port: 26007
+  cipher: auto
+  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 132 VMS"
+  type: vmess
+  server: 110.72.101.138
+  port: 26006
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
   alterId: 0
@@ -1351,16 +1349,6 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 133 VMS"
   type: vmess
   server: 110.72.101.138
-  port: 26006
-  cipher: auto
-  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 134 VMS"
-  type: vmess
-  server: 110.72.101.138
   port: 26001
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
@@ -1368,7 +1356,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 135 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 134 VMS"
   type: vmess
   server: 110.72.101.144
   port: 26074
@@ -1378,9 +1366,19 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 136 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 135 VMS"
   type: vmess
   server: 110.72.101.139
+  port: 26001
+  cipher: auto
+  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 136 VMS"
+  type: vmess
+  server: 110.72.101.145
   port: 26001
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
@@ -1390,8 +1388,8 @@ proxies:
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 CN 137 VMS"
   type: vmess
-  server: 110.72.101.145
-  port: 26001
+  server: 110.72.101.138
+  port: 26004
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
   alterId: 0
@@ -1400,8 +1398,8 @@ proxies:
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 CN 138 VMS"
   type: vmess
-  server: 110.72.101.138
-  port: 26004
+  server: 110.72.101.144
+  port: 26002
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
   alterId: 0
@@ -1411,7 +1409,7 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 139 VMS"
   type: vmess
   server: 110.72.101.144
-  port: 26002
+  port: 26007
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
   alterId: 0
@@ -1421,16 +1419,6 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 140 VMS"
   type: vmess
   server: 110.72.101.144
-  port: 26007
-  cipher: auto
-  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 141 VMS"
-  type: vmess
-  server: 110.72.101.144
   port: 26009
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
@@ -1438,7 +1426,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 142 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 141 VMS"
   type: vmess
   server: 110.72.101.139
   port: 26062
@@ -1448,7 +1436,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 143 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 142 VMS"
   type: vmess
   server: 110.72.101.144
   port: 26001
@@ -1458,7 +1446,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 144 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 143 VMS"
   type: vmess
   server: 110.72.101.144
   port: 26003
@@ -1468,7 +1456,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 145 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 144 VMS"
   type: vmess
   server: 110.72.101.145
   port: 26002
@@ -1478,7 +1466,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 146 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 145 VMS"
   type: vmess
   server: 110.72.101.144
   port: 26004
@@ -1488,7 +1476,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 147 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 146 VMS"
   type: vmess
   server: 110.72.101.145
   port: 26007
@@ -1498,7 +1486,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 148 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 147 VMS"
   type: vmess
   server: 110.72.101.139
   port: 26072
@@ -1508,10 +1496,20 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 149 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 148 VMS"
   type: vmess
   server: 110.72.101.139
   port: 26006
+  cipher: auto
+  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 149 VMS"
+  type: vmess
+  server: 110.72.101.145
+  port: 26072
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
   alterId: 0
@@ -1521,7 +1519,7 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 150 VMS"
   type: vmess
   server: 110.72.101.145
-  port: 26072
+  port: 26004
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
   alterId: 0
@@ -1531,7 +1529,7 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 151 VMS"
   type: vmess
   server: 110.72.101.145
-  port: 26004
+  port: 26075
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
   alterId: 0
@@ -1541,16 +1539,6 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 152 VMS"
   type: vmess
   server: 110.72.101.145
-  port: 26075
-  cipher: auto
-  uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 153 VMS"
-  type: vmess
-  server: 110.72.101.145
   port: 26006
   cipher: auto
   uuid: 54eac280-1192-3bda-8812-7acfdec61cfd
@@ -1558,7 +1546,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 154 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 153 VMS"
   type: vmess
   server: 110.72.101.144
   port: 26006
@@ -1568,7 +1556,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 155 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 154 VMS"
   type: vmess
   server: 110.72.101.145
   port: 26009
@@ -1578,7 +1566,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 156 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 155 VMS"
   type: vmess
   server: 110.72.101.139
   port: 26002
@@ -1588,7 +1576,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 157 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 156 VMS"
   type: vmess
   server: 110.72.101.139
   port: 26009
@@ -1598,7 +1586,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 158 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 157 VMS"
   type: vmess
   server: 110.72.101.139
   port: 26074
@@ -1608,7 +1596,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 159 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 158 VMS"
   type: vmess
   server: 110.72.101.145
   port: 26003
@@ -1618,7 +1606,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 160 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 159 VMS"
   type: vmess
   server: 110.72.101.138
   port: 26002
@@ -1633,21 +1621,21 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1EE\U0001F1EA IE 2 TJN"
-  - "\U0001F1FA\U0001F1F8 US 3 TJN"
-  - "\U0001F1E9\U0001F1EA DE 4 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 7 TJN"
-  - "\U0001F1F8\U0001F1EC SG 8 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 2 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 3 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 4 SK5"
+  - "\U0001F1E6\U0001F1FA AU 5 SK5"
+  - "\U0001F1F0\U0001F1F7 KR 6 VMS"
+  - "\U0001F1EE\U0001F1EA IE 7 TJN"
+  - "\U0001F1FA\U0001F1F8 US 8 TJN"
   - "\U0001F1E9\U0001F1EA DE 9 TJN"
-  - "\U0001F1EB\U0001F1F7 FR 10 TJN"
-  - "\U0001F1FA\U0001F1F8 US 11 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 12 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 13 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 14 SK5"
-  - "\U0001F1E6\U0001F1FA AU 15 SK5"
-  - "\U0001F1F0\U0001F1F7 KR 16 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 11 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 12 TJN"
+  - "\U0001F1F8\U0001F1EC SG 13 TJN"
+  - "\U0001F1E9\U0001F1EA DE 14 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 15 TJN"
+  - "\U0001F1FA\U0001F1F8 US 16 VMS"
   - "\U0001F1E8\U0001F1F3 CN 17 VMS"
   - "\U0001F1E8\U0001F1F3 CN 18 VMS"
   - "\U0001F1E8\U0001F1F3 CN 19 VMS"
@@ -1696,7 +1684,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 62 VMS"
   - "\U0001F1E8\U0001F1F3 CN 63 VMS"
   - "\U0001F1E8\U0001F1F3 CN 64 VMS"
-  - "\U0001F1FA\U0001F1F8 US 65 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 65 VMS"
   - "\U0001F1E8\U0001F1F3 CN 66 TJN"
   - "\U0001F1E8\U0001F1F3 CN 67 TJN"
   - "\U0001F1E8\U0001F1F3 CN 68 TJN"
@@ -1720,9 +1708,9 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 86 TJN"
   - "\U0001F1E8\U0001F1F3 CN 87 SSS"
   - "\U0001F1FA\U0001F1F8 US 88 VMS"
-  - "\U0001F1FA\U0001F1F8 US 89 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 89 VMS"
   - "\U0001F1FA\U0001F1F8 US 90 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 91 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 91 VMS"
   - "\U0001F1E8\U0001F1F3 CN 92 VMS"
   - "\U0001F1E8\U0001F1F3 CN 93 VMS"
   - "\U0001F1E8\U0001F1F3 CN 94 VMS"
@@ -1791,7 +1779,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 157 VMS"
   - "\U0001F1E8\U0001F1F3 CN 158 VMS"
   - "\U0001F1E8\U0001F1F3 CN 159 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 160 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1799,21 +1786,21 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1EE\U0001F1EA IE 2 TJN"
-  - "\U0001F1FA\U0001F1F8 US 3 TJN"
-  - "\U0001F1E9\U0001F1EA DE 4 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 7 TJN"
-  - "\U0001F1F8\U0001F1EC SG 8 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 2 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 3 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 4 SK5"
+  - "\U0001F1E6\U0001F1FA AU 5 SK5"
+  - "\U0001F1F0\U0001F1F7 KR 6 VMS"
+  - "\U0001F1EE\U0001F1EA IE 7 TJN"
+  - "\U0001F1FA\U0001F1F8 US 8 TJN"
   - "\U0001F1E9\U0001F1EA DE 9 TJN"
-  - "\U0001F1EB\U0001F1F7 FR 10 TJN"
-  - "\U0001F1FA\U0001F1F8 US 11 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 12 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 13 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 14 SK5"
-  - "\U0001F1E6\U0001F1FA AU 15 SK5"
-  - "\U0001F1F0\U0001F1F7 KR 16 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 11 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 12 TJN"
+  - "\U0001F1F8\U0001F1EC SG 13 TJN"
+  - "\U0001F1E9\U0001F1EA DE 14 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 15 TJN"
+  - "\U0001F1FA\U0001F1F8 US 16 VMS"
   - "\U0001F1E8\U0001F1F3 CN 17 VMS"
   - "\U0001F1E8\U0001F1F3 CN 18 VMS"
   - "\U0001F1E8\U0001F1F3 CN 19 VMS"
@@ -1862,7 +1849,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 62 VMS"
   - "\U0001F1E8\U0001F1F3 CN 63 VMS"
   - "\U0001F1E8\U0001F1F3 CN 64 VMS"
-  - "\U0001F1FA\U0001F1F8 US 65 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 65 VMS"
   - "\U0001F1E8\U0001F1F3 CN 66 TJN"
   - "\U0001F1E8\U0001F1F3 CN 67 TJN"
   - "\U0001F1E8\U0001F1F3 CN 68 TJN"
@@ -1886,9 +1873,9 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 86 TJN"
   - "\U0001F1E8\U0001F1F3 CN 87 SSS"
   - "\U0001F1FA\U0001F1F8 US 88 VMS"
-  - "\U0001F1FA\U0001F1F8 US 89 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 89 VMS"
   - "\U0001F1FA\U0001F1F8 US 90 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 91 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 91 VMS"
   - "\U0001F1E8\U0001F1F3 CN 92 VMS"
   - "\U0001F1E8\U0001F1F3 CN 93 VMS"
   - "\U0001F1E8\U0001F1F3 CN 94 VMS"
@@ -1957,6 +1944,5 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 157 VMS"
   - "\U0001F1E8\U0001F1F3 CN 158 VMS"
   - "\U0001F1E8\U0001F1F3 CN 159 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 160 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
