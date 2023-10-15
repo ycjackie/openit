@@ -115,7 +115,21 @@ proxies:
   port: 32103
   password: e5df1918-ea0a-49eb-92b4-2b6a562b820d
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1F0\U0001F1F7 KR 15 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 15 VMS"
+  type: vmess
+  server: jd3.shabijichang.com
+  port: 80
+  cipher: auto
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: jd3.shabijichang.com
+- name: "\U0001F1F0\U0001F1F7 KR 16 VMS"
   type: vmess
   server: 130.162.154.209
   port: 443
@@ -129,7 +143,7 @@ proxies:
     path: /lax.asoul-diana.xyz:443/acetaffy
     headers:
       host: cf.tonyluk.link
-- name: "\U0001F1E8\U0001F1F3 CN 16 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 17 VMS"
   type: vmess
   server: 36.134.173.71
   port: 888
@@ -141,7 +155,7 @@ proxies:
   network: ws
   ws-opts:
     path: /TS/recharge/tzUrl.html
-- name: "\U0001F1E8\U0001F1F3 CN 17 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 18 TJN"
   type: trojan
   server: hk.kunlun-ppg.com
   port: 10806
@@ -150,18 +164,6 @@ proxies:
   sni: alibaba-node.cn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 18 VMS"
-  type: vmess
-  server: xn3.shabijichang.com
-  port: 80
-  cipher: auto
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
 - name: "\U0001F1E8\U0001F1F3 CN 19 TJN"
   type: trojan
   server: hk.kunlun-ppg.com
@@ -377,6 +379,20 @@ proxies:
   port: 41035
   password: 3525588ee14ea924
   cipher: chacha20-ietf-poly1305
+- name: "\U0001F1FA\U0001F1F8 US 44 VMS"
+  type: vmess
+  server: flkf2.shabijichang.com
+  port: 80
+  cipher: auto
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: flkf2.shabijichang.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -395,10 +411,10 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 12 TJN"
   - "\U0001F1E8\U0001F1F3 CN 13 SSS"
   - "\U0001F1E8\U0001F1F3 CN 14 SSS"
-  - "\U0001F1F0\U0001F1F7 KR 15 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 16 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 17 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 15 VMS"
+  - "\U0001F1F0\U0001F1F7 KR 16 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 17 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 18 TJN"
   - "\U0001F1E8\U0001F1F3 CN 19 TJN"
   - "\U0001F1FA\U0001F1F3 UN 20 VMS"
   - "\U0001F1E8\U0001F1F3 CN 21 VMS"
@@ -424,6 +440,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 41 VMS"
   - "\U0001F1E8\U0001F1F3 CN 42 VMS"
   - "\U0001F1E8\U0001F1F3 CN 43 SSS"
+  - "\U0001F1FA\U0001F1F8 US 44 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -444,10 +461,10 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 12 TJN"
   - "\U0001F1E8\U0001F1F3 CN 13 SSS"
   - "\U0001F1E8\U0001F1F3 CN 14 SSS"
-  - "\U0001F1F0\U0001F1F7 KR 15 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 16 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 17 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 15 VMS"
+  - "\U0001F1F0\U0001F1F7 KR 16 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 17 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 18 TJN"
   - "\U0001F1E8\U0001F1F3 CN 19 TJN"
   - "\U0001F1FA\U0001F1F3 UN 20 VMS"
   - "\U0001F1E8\U0001F1F3 CN 21 VMS"
@@ -473,5 +490,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 41 VMS"
   - "\U0001F1E8\U0001F1F3 CN 42 VMS"
   - "\U0001F1E8\U0001F1F3 CN 43 SSS"
+  - "\U0001F1FA\U0001F1F8 US 44 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
