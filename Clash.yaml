@@ -196,14 +196,15 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
+  - {name: 🇨🇳 CN 1|TG@BPXD666, server: a.baozinet.top, port: 25005, type: vmess, uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 1|TG@BPXD666, server: hinet1.downloadvip.cfd, port: 443, type: trojan, password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE 1|TG@BPXD666, server: 5.104.107.143, port: 443, type: trojan, password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a, sni: de1.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 1|TG@BPXD666, server: hk1.downloadvip.cfd, port: 443, type: trojan, password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 2|TG@BPXD666, server: jp1.downloadvip.cfd, port: 443, type: trojan, password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 1|TG@BPXD666, server: sg2.downloadvip.cfd, port: 443, type: trojan, password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 2|TG@BPXD666, server: sg4.421421.xyz, port: 20230, type: trojan, password: 7a10fed2-dab0-4b5a-a111-86c9e8065053, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 3|TG@BPXD666, server: 8.217.147.230, port: 8443, type: vmess, uuid: 701a0cda-32c5-4c63-9bea-9e8dcc4a8541, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/vm?ed=2048"}, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: brcf.duaaoped.xyz, port: 8443, type: vmess, uuid: 865897ad-8d07-4021-b7c3-d8eb4a29ee8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xtsmol, headers: {Host: brcf.duaaoped.xyz}}, udp: true}
+  - {name: 🇯🇵 JP 1|TG@BPXD666, server: jp1.downloadvip.cfd, port: 443, type: trojan, password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 1|TG@BPXD666, server: sg4.421421.xyz, port: 20230, type: trojan, password: 7a10fed2-dab0-4b5a-a111-86c9e8065053, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 2|TG@BPXD666, server: 8.217.147.230, port: 8443, type: vmess, uuid: 701a0cda-32c5-4c63-9bea-9e8dcc4a8541, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/vm?ed=2048"}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: hk1.downloadvip.cfd, port: 443, type: trojan, password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: sg2.downloadvip.cfd, port: 443, type: trojan, password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: brcf.duaaoped.xyz, port: 8443, type: vmess, uuid: 865897ad-8d07-4021-b7c3-d8eb4a29ee8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xtsmol, headers: {Host: brcf.duaaoped.xyz}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -221,28 +222,30 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
       - 🇸🇬 SG 2|TG@BPXD666
-      - 🇸🇬 SG 3|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
       - 🇸🇬 SG 2|TG@BPXD666
-      - 🇸🇬 SG 3|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -257,7 +260,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -265,6 +267,8 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -280,7 +284,6 @@ proxy-groups:
     proxies:
       - 🇸🇬 SG 1|TG@BPXD666
       - 🇸🇬 SG 2|TG@BPXD666
-      - 🇸🇬 SG 3|TG@BPXD666
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -291,28 +294,30 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
       - 🇸🇬 SG 2|TG@BPXD666
-      - 🇸🇬 SG 3|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇯🇵 JP 2|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
       - 🇸🇬 SG 2|TG@BPXD666
-      - 🇸🇬 SG 3|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
