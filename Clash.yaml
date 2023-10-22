@@ -196,8 +196,8 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
+  - {name: 🇨🇳 CN 1|TG@BPXD666, server: b.baozinet.top, port: 25004, type: vmess, uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇪🇸 ES 1|TG@BPXD666, server: 185.214.103.249, port: 8003, type: vmess, uuid: 26726b2c-a280-356a-a452-4be0bd46ec1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in}, udp: true}
-  - {name: 🇪🇸 ES 2|TG@BPXD666, server: 185.214.103.249, port: 8001, type: vmess, uuid: 26726b2c-a280-356a-a452-4be0bd46ec1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: 142.4.125.84, port: 59614, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -216,8 +216,8 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - 🇨🇳 CN 1|TG@BPXD666
       - 🇪🇸 ES 1|TG@BPXD666
-      - 🇪🇸 ES 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
@@ -225,8 +225,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 🇨🇳 CN 1|TG@BPXD666
       - 🇪🇸 ES 1|TG@BPXD666
-      - 🇪🇸 ES 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
@@ -273,8 +273,8 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - 🇨🇳 CN 1|TG@BPXD666
       - 🇪🇸 ES 1|TG@BPXD666
-      - 🇪🇸 ES 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
@@ -282,8 +282,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 🇨🇳 CN 1|TG@BPXD666
       - 🇪🇸 ES 1|TG@BPXD666
-      - 🇪🇸 ES 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 👉 国内网站
     type: select
