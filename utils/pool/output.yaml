@@ -1,5 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
   type: vmess
   server: hdlb2.shabijichang.com
   port: 80
@@ -15,6 +15,20 @@ proxies:
       host: hdlb2.shabijichang.com
 - name: "\U0001F1FA\U0001F1F8 US 2 VMS"
   type: vmess
+  server: mrb2.shabijichang.com
+  port: 80
+  cipher: auto
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: mrb2.shabijichang.com
+- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
+  type: vmess
   server: freeyx.cloudflare88.eu.org
   port: 2086
   cipher: auto
@@ -27,7 +41,7 @@ proxies:
     path: "/\u670D\u52A1\u56684\u5143\u6708\uFF0C\u8282\u70B92.5\u5143\u6708@natdcibot"
     headers:
       host: jd2kuai5yuan.cloudflare88.eu.org
-- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
   type: vmess
   server: asb2.shabijichang.com
   port: 80
@@ -41,20 +55,6 @@ proxies:
     path: /
     headers:
       host: asb2.shabijichang.com
-- name: "\U0001F1FA\U0001F1F8 US 4 VMS"
-  type: vmess
-  server: mm2.shabijichang.com
-  port: 80
-  cipher: auto
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: mm2.shabijichang.com
 - name: "\U0001F1FA\U0001F1F8 US 5 VMS"
   type: vmess
   server: 45.199.138.191
@@ -473,10 +473,10 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
-  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
   - "\U0001F1E8\U0001F1F3 CN 6 TJN"
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
@@ -520,10 +520,10 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
-  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
   - "\U0001F1E8\U0001F1F3 CN 6 TJN"
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
