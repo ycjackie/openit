@@ -198,8 +198,6 @@ dns:
 proxies:
   - {name: 🇨🇦 CA 1|TG@BPXD666, server: 108.181.10.17, port: 80, type: vmess, uuid: 474e8680-701f-11ee-b436-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /0vixdm74}, udp: true}
   - {name: 🇫🇷 FR 1|TG@BPXD666, server: 15.188.135.255, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 1|TG@BPXD666, server: 8.218.136.25, port: 8880, type: vmess, uuid: 701a0cda-32c5-4c63-9bea-9e8dcc4a8541, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/vm?ed=2048"}, udp: true}
-  - {name: 🇸🇬 SG 2|TG@BPXD666, server: 8.210.55.134, port: 8880, type: vmess, uuid: 701a0cda-32c5-4c63-9bea-9e8dcc4a8541, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/vm?ed=2048"}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: 142.4.125.84, port: 59614, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -220,8 +218,6 @@ proxy-groups:
     proxies:
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
-      - 🇸🇬 SG 1|TG@BPXD666
-      - 🇸🇬 SG 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
@@ -231,8 +227,6 @@ proxy-groups:
     proxies:
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
-      - 🇸🇬 SG 1|TG@BPXD666
-      - 🇸🇬 SG 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
@@ -268,8 +262,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇸🇬 SG 1|TG@BPXD666
-      - 🇸🇬 SG 2|TG@BPXD666
+      - DIRECT
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -282,8 +275,6 @@ proxy-groups:
     proxies:
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
-      - 🇸🇬 SG 1|TG@BPXD666
-      - 🇸🇬 SG 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
@@ -293,8 +284,6 @@ proxy-groups:
     proxies:
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇫🇷 FR 1|TG@BPXD666
-      - 🇸🇬 SG 1|TG@BPXD666
-      - 🇸🇬 SG 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 👉 国内网站
     type: select
