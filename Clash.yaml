@@ -199,6 +199,7 @@ proxies:
   - {name: 🇨🇦 CA 1|TG@BPXD666, server: 108.181.10.17, port: 80, type: vmess, uuid: 474e8680-701f-11ee-b436-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /0vixdm74}, udp: true}
   - {name: 🇯🇵 JP 1|TG@BPXD666, server: 3.113.215.86, port: 3306, type: trojan, password: dc2d9db59868ba6b, sni: n2.gladns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fgateway%2Fconnect", headers: {Host: n2.gladns.com}}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: 142.4.125.84, port: 59614, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 172.64.105.126, port: 2052, type: vmess, uuid: b63efdd5-bdb8-4eb4-f918-9846cd7321e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -219,6 +220,7 @@ proxy-groups:
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -228,6 +230,7 @@ proxy-groups:
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -249,6 +252,7 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -276,6 +280,7 @@ proxy-groups:
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -285,6 +290,7 @@ proxy-groups:
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
