@@ -502,9 +502,129 @@ proxies:
   tls: true
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 52 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 52 SSS"
+  type: ss
+  server: e.superjj.cc
+  port: 50001
+  password: c9328e3f-90b7-4273-abe2-8309462fd872
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 53 SSS"
+  type: ss
+  server: e.superjj.cc
+  port: 50011
+  password: b674d81b-5e9a-417d-8ce0-901ffacde887
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 54 SSS"
+  type: ss
+  server: e.superjj.cc
+  port: 50021
+  password: cfa4b795-6786-4389-9f36-ffafc587d535
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 55 SSS"
+  type: ss
+  server: e.superjj.cc
+  port: 50031
+  password: 31217fbe-6bc1-4476-9799-e0dbfb1ed713
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 56 SSS"
+  type: ss
+  server: hks03.bigpings.com
+  port: 23218
+  password: f42ab2fa-391b-4ce2-8b90-7720504f2632
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 57 SSS"
+  type: ss
+  server: e.superjj.cc
+  port: 50041
+  password: b674d81b-5e9a-417d-8ce0-901ffacde887
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 58 VMS"
   type: vmess
-  server: cc2.shabijichang.com
+  server: cm1-xg.go001.buzz
+  port: 19891
+  cipher: auto
+  uuid: 3d530091-7113-3df4-aab3-a53cec94e991
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 59 VMS"
+  type: vmess
+  server: 111.38.37.245
+  port: 50205
+  cipher: auto
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /debian
+- name: "\U0001F1E8\U0001F1F3 CN 60 SSS"
+  type: ss
+  server: foshan.chiguayun.cc
+  port: 27119
+  password: 9f7ceb7e-ea9b-488c-9d82-2e0cb2872d74
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1FA\U0001F1F8 US 61 TJN"
+  type: trojan
+  server: 13.58.195.124
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 62 TJN"
+  type: trojan
+  server: lbgd.bnnodeservice.com
+  port: 32010
+  udp: true
+  password: 0826a283-a7fa-4076-a85c-e053f649550c
+  sni: cert.bitbyte.one
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 63 SSS"
+  type: ss
+  server: hefei.chiguayun.cc
+  port: 27143
+  password: 9f7ceb7e-ea9b-488c-9d82-2e0cb2872d74
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 64 SSS"
+  type: ss
+  server: hk.shawbrothersstudio.com
+  port: 19921
+  password: r1Rivb0NOPyab8gI828uG7
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 65 SSS"
+  type: ss
+  server: hefei.chiguayun.cc
+  port: 27133
+  password: 9f7ceb7e-ea9b-488c-9d82-2e0cb2872d74
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1FA\U0001F1F3 UN 66 VMS"
+  type: vmess
+  server: www.speedtest.net
+  port: 80
+  cipher: auto
+  uuid: bf75108e-7bec-4fe0-8db9-3d4985dd3bd6
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: it1.xv2ray.net
+- name: "\U0001F1E8\U0001F1F3 CN 67 SSS"
+  type: ss
+  server: hefei.chiguayun.cc
+  port: 27108
+  password: 9f7ceb7e-ea9b-488c-9d82-2e0cb2872d74
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1FA\U0001F1F3 UN 68 VMS"
+  type: vmess
+  server: se5.shabijichang.com
   port: 80
   cipher: auto
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -569,7 +689,23 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 49 VMS"
   - "\U0001F1F5\U0001F1F0 PK 50 TJN"
   - "\U0001F1E8\U0001F1F3 CN 51 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 52 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 52 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 53 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 54 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 55 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 56 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 57 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 58 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 59 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 60 SSS"
+  - "\U0001F1FA\U0001F1F8 US 61 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 62 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 63 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 64 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 65 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 66 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 67 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 68 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -627,6 +763,22 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 49 VMS"
   - "\U0001F1F5\U0001F1F0 PK 50 TJN"
   - "\U0001F1E8\U0001F1F3 CN 51 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 52 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 52 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 53 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 54 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 55 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 56 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 57 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 58 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 59 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 60 SSS"
+  - "\U0001F1FA\U0001F1F8 US 61 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 62 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 63 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 64 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 65 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 66 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 67 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 68 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
