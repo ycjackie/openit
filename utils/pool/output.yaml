@@ -502,6 +502,18 @@ proxies:
   tls: true
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 52 VMS"
+  type: vmess
+  server: cc2.shabijichang.com
+  port: 80
+  cipher: auto
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: automatic
   type: url-test
@@ -557,6 +569,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 49 VMS"
   - "\U0001F1F5\U0001F1F0 PK 50 TJN"
   - "\U0001F1E8\U0001F1F3 CN 51 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 52 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -614,5 +627,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 49 VMS"
   - "\U0001F1F5\U0001F1F0 PK 50 TJN"
   - "\U0001F1E8\U0001F1F3 CN 51 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 52 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
