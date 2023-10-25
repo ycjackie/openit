@@ -230,7 +230,21 @@ proxies:
   sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 26 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 26 VMS"
+  type: vmess
+  server: jd2.shabijichang.com
+  port: 80
+  cipher: auto
+  uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: jd2.shabijichang.com
+- name: "\U0001F1FA\U0001F1F3 UN 27 VMS"
   type: vmess
   server: 206.168.190.219
   port: 2082
@@ -242,20 +256,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vmws
-- name: "\U0001F1FA\U0001F1F8 US 27 VMS"
-  type: vmess
-  server: mrb2.shabijichang.com
-  port: 80
-  cipher: auto
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: mrb2.shabijichang.com
 - name: "\U0001F1F8\U0001F1EC SG 28 TJN"
   type: trojan
   server: gsawssg2.aiopen.cfd
@@ -679,8 +679,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 23 VMS"
   - "\U0001F1FA\U0001F1F8 US 24 VMS"
   - "\U0001F1F5\U0001F1F0 PK 25 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 26 VMS"
-  - "\U0001F1FA\U0001F1F8 US 27 VMS"
+  - "\U0001F1FA\U0001F1F8 US 26 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 27 VMS"
   - "\U0001F1F8\U0001F1EC SG 28 TJN"
   - "\U0001F1E8\U0001F1F3 CN 29 VMS"
   - "\U0001F1E8\U0001F1F3 CN 30 VMS"
@@ -754,8 +754,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 23 VMS"
   - "\U0001F1FA\U0001F1F8 US 24 VMS"
   - "\U0001F1F5\U0001F1F0 PK 25 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 26 VMS"
-  - "\U0001F1FA\U0001F1F8 US 27 VMS"
+  - "\U0001F1FA\U0001F1F8 US 26 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 27 VMS"
   - "\U0001F1F8\U0001F1EC SG 28 TJN"
   - "\U0001F1E8\U0001F1F3 CN 29 VMS"
   - "\U0001F1E8\U0001F1F3 CN 30 VMS"
