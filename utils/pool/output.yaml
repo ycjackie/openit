@@ -1,34 +1,6 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1 VMS"
   type: vmess
-  server: 45.199.138.191
-  port: 30000
-  cipher: auto
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /path/1696251522438
-    headers:
-      host: www.42077230.xyz
-- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
-  type: vmess
-  server: mrb2.shabijichang.com
-  port: 80
-  cipher: auto
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: mrb2.shabijichang.com
-- name: "\U0001F1FA\U0001F1F3 UN 3 VMS"
-  type: vmess
   server: jd2.shabijichang.com
   port: 80
   cipher: auto
@@ -41,6 +13,32 @@ proxies:
     path: /
     headers:
       host: jd2.shabijichang.com
+- name: "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  type: vmess
+  server: 206.168.190.219
+  port: 2082
+  cipher: none
+  uuid: e31ca750-71f7-11ee-b920-1239d0255272
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmws
+- name: "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  type: vmess
+  server: sbl2.shabijichang.com
+  port: 80
+  cipher: auto
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: sbl2.shabijichang.com
 - type: vmess
   name: "\U0001F1FA\U0001F1F8 US 4 VMS"
   ws-opts:
@@ -77,18 +75,20 @@ proxies:
   username: username
   password: password
   udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 9 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 9 VMS"
   type: vmess
-  server: 206.168.190.219
-  port: 2082
-  cipher: none
-  uuid: e31ca750-71f7-11ee-b920-1239d0255272
-  alterId: 0
-  tls: false
+  server: 45.199.138.191
+  port: 30000
+  cipher: auto
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vmws
+    path: /path/1696251522438
+    headers:
+      host: www.42077230.xyz
 - name: "\U0001F1E8\U0001F1F3 CN 10 SSS"
   type: ss
   server: e.superjj.cc
@@ -693,14 +693,14 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1FA\U0001F1F8 US 2 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
   - "\U0001F1E8\U0001F1E6 CA 5 TJN"
   - "\U0001F1E8\U0001F1F3 CN 6 HTT"
   - "\U0001F1E8\U0001F1F3 CN 7 SK5"
   - "\U0001F1E6\U0001F1FA AU 8 SK5"
-  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
+  - "\U0001F1FA\U0001F1F8 US 9 VMS"
   - "\U0001F1E8\U0001F1F3 CN 10 SSS"
   - "\U0001F1E8\U0001F1F3 CN 11 SSS"
   - "\U0001F1E8\U0001F1F3 CN 12 SSS"
@@ -773,14 +773,14 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1FA\U0001F1F8 US 2 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
   - "\U0001F1E8\U0001F1E6 CA 5 TJN"
   - "\U0001F1E8\U0001F1F3 CN 6 HTT"
   - "\U0001F1E8\U0001F1F3 CN 7 SK5"
   - "\U0001F1E6\U0001F1FA AU 8 SK5"
-  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
+  - "\U0001F1FA\U0001F1F8 US 9 VMS"
   - "\U0001F1E8\U0001F1F3 CN 10 SSS"
   - "\U0001F1E8\U0001F1F3 CN 11 SSS"
   - "\U0001F1E8\U0001F1F3 CN 12 SSS"
