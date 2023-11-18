@@ -49,21 +49,7 @@ proxies:
     path: /path/143013092425
     headers:
       host: www.42088326.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
-  type: vmess
-  server: ld2.shabijichang.com
-  port: 80
-  cipher: auto
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: ld2.shabijichang.com
-- name: "\U0001F1E8\U0001F1F3 CN 6 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 5 VMS"
   type: vmess
   server: 112.29.94.23
   port: 49223
@@ -81,8 +67,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2 TJN"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1E7\U0001F1EA BE 4 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 6 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 5 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -93,7 +78,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2 TJN"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
   - "\U0001F1E7\U0001F1EA BE 4 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 6 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 5 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
