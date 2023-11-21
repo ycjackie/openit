@@ -196,8 +196,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇳 CN 1|TG@BPXD666, server: yd-02.paofunlink.com, port: 1081, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 🇨🇳 CN 2|TG@BPXD666, server: yd-05.paofunlink.com, port: 1083, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
+  - {name: 🇨🇳 CN 1|TG@BPXD666, server: yd-05.paofunlink.com, port: 1083, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -216,7 +215,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇨🇳 CN 1|TG@BPXD666
-      - 🇨🇳 CN 2|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -224,7 +222,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇨🇳 CN 1|TG@BPXD666
-      - 🇨🇳 CN 2|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -271,7 +268,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇨🇳 CN 1|TG@BPXD666
-      - 🇨🇳 CN 2|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -279,7 +275,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇨🇳 CN 1|TG@BPXD666
-      - 🇨🇳 CN 2|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
