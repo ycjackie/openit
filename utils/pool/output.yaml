@@ -74,7 +74,7 @@ proxies:
   network: ws
   ws-opts:
     path: linkvws
-- name: "\U0001F1ED\U0001F1F0 HK 8 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 8 TJN"
   type: trojan
   server: ca.liangyuandiancloud.com
   port: 443
@@ -113,20 +113,6 @@ proxies:
   network: ws
   ws-opts:
     path: /path/1698843555400
-- name: "\U0001F1FA\U0001F1F8 US 12 VMS"
-  type: vmess
-  server: mrb2.shabijichang.com
-  port: 80
-  cipher: auto
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: mrb2.shabijichang.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -138,11 +124,10 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 5 SSS"
   - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1EC\U0001F1E7 GB 7 VMS"
-  - "\U0001F1ED\U0001F1F0 HK 8 TJN"
+  - "\U0001F1FA\U0001F1F8 US 8 TJN"
   - "\U0001F1FA\U0001F1F8 US 9 TJN"
   - "\U0001F1E8\U0001F1F3 CN 10 SSR"
   - "\U0001F1F3\U0001F1F1 NL 11 VMS"
-  - "\U0001F1FA\U0001F1F8 US 12 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -156,10 +141,9 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 5 SSS"
   - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1EC\U0001F1E7 GB 7 VMS"
-  - "\U0001F1ED\U0001F1F0 HK 8 TJN"
+  - "\U0001F1FA\U0001F1F8 US 8 TJN"
   - "\U0001F1FA\U0001F1F8 US 9 TJN"
   - "\U0001F1E8\U0001F1F3 CN 10 SSR"
   - "\U0001F1F3\U0001F1F1 NL 11 VMS"
-  - "\U0001F1FA\U0001F1F8 US 12 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
