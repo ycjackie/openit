@@ -1,5 +1,25 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 1 SSR"
+  type: ssr
+  server: yd-05.paofunlink.com
+  port: 1083
+  password: bxsnucrgk6hfish
+  cipher: chacha20-ietf
+  obfs: plain
+  protocol: auth_aes128_sha1
+  obfs-param: TG@wangcai_1
+  protocol-param: 40575:fV3Nxq
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSR"
+  type: ssr
+  server: yd-02.paofunlink.com
+  port: 1081
+  password: bxsnucrgk6hfish
+  cipher: chacha20-ietf
+  obfs: plain
+  protocol: auth_aes128_sha1
+  obfs-param: TG@wangcai_1
+  protocol-param: 40575:fV3Nxq
+- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
   type: vmess
   server: 172.64.151.101
   port: 443
@@ -13,7 +33,7 @@ proxies:
     path: /
     headers:
       host: usa1.iranspeed.me
-- name: "\U0001F1FA\U0001F1F8 US 2 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 4 TJN"
   type: trojan
   server: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
   port: 443
@@ -22,13 +42,13 @@ proxies:
   sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 5 SSS"
   type: ss
   server: bjcu.xzyunjiasu.icu
   port: 33952
   password: 5c8b210a-2f00-4292-964b-05281c7ad5d1
   cipher: aes-256-gcm
-- name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
   type: vmess
   server: mm2.shabijichang.com
   port: 80
@@ -42,7 +62,7 @@ proxies:
     path: /
     headers:
       host: mm2.shabijichang.com
-- name: "\U0001F1EC\U0001F1E7 GB 5 VMS"
+- name: "\U0001F1EC\U0001F1E7 GB 7 VMS"
   type: vmess
   server: 172.99.190.109
   port: 443
@@ -54,7 +74,7 @@ proxies:
   network: ws
   ws-opts:
     path: linkvws
-- name: "\U0001F1FA\U0001F1F8 US 6 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 8 TJN"
   type: trojan
   server: ca.liangyuandiancloud.com
   port: 443
@@ -62,7 +82,7 @@ proxies:
   password: 4f2f34cc-d2e9-4ca8-a687-68efe5ad5959
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 7 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 9 TJN"
   type: trojan
   server: sg2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
   port: 443
@@ -71,7 +91,7 @@ proxies:
   sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 8 SSR"
+- name: "\U0001F1E8\U0001F1F3 CN 10 SSR"
   type: ssr
   server: yd-05.paofunlink.com
   port: 1083
@@ -81,7 +101,7 @@ proxies:
   protocol: auth_aes128_sha1
   obfs-param: TG@wangcai_1
   protocol-param: 40575:fV3Nxq
-- name: "\U0001F1F3\U0001F1F1 NL 9 VMS"
+- name: "\U0001F1F3\U0001F1F1 NL 11 VMS"
   type: vmess
   server: 154.85.1.130
   port: 30000
@@ -93,57 +113,53 @@ proxies:
   network: ws
   ws-opts:
     path: /path/1698843555400
-- name: "\U0001F1E8\U0001F1F3 CN 10 SSR"
-  type: ssr
-  server: yd-05.paofunlink.com
-  port: 1083
-  password: bxsnucrgk6hfish
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: TG@wangcai_1
-  protocol-param: 40575:fV3Nxq
-- name: "\U0001F1E8\U0001F1F3 CN 11 SSR"
-  type: ssr
-  server: yd-02.paofunlink.com
-  port: 1081
-  password: bxsnucrgk6hfish
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: TG@wangcai_1
-  protocol-param: 40575:fV3Nxq
+- name: "\U0001F1FA\U0001F1F3 UN 12 VMS"
+  type: vmess
+  server: mrb2.shabijichang.com
+  port: 80
+  cipher: auto
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: mrb2.shabijichang.com
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1FA\U0001F1F8 US 2 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 5 VMS"
-  - "\U0001F1FA\U0001F1F8 US 6 TJN"
-  - "\U0001F1FA\U0001F1F8 US 7 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 8 SSR"
-  - "\U0001F1F3\U0001F1F1 NL 9 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 1 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSR"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 5 SSS"
+  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 7 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 8 TJN"
+  - "\U0001F1FA\U0001F1F8 US 9 TJN"
   - "\U0001F1E8\U0001F1F3 CN 10 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 11 SSR"
+  - "\U0001F1F3\U0001F1F1 NL 11 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 12 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1FA\U0001F1F8 US 2 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 5 VMS"
-  - "\U0001F1FA\U0001F1F8 US 6 TJN"
-  - "\U0001F1FA\U0001F1F8 US 7 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 8 SSR"
-  - "\U0001F1F3\U0001F1F1 NL 9 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 1 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSR"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 5 SSS"
+  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 7 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 8 TJN"
+  - "\U0001F1FA\U0001F1F8 US 9 TJN"
   - "\U0001F1E8\U0001F1F3 CN 10 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 11 SSR"
+  - "\U0001F1F3\U0001F1F1 NL 11 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 12 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
