@@ -196,9 +196,8 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇳 CN 1|TG@BPXD666, server: host-004.crazyspeed.xyz, port: 30504, type: ss, cipher: chacha20-ietf-poly1305, password: ff21950f-e77d-4132-bbc1-d864b515251c, udp: true}
-  - {name: 🇨🇳 CN 2|TG@BPXD666, server: host-060.crazyspeed.xyz, port: 19008, type: ss, cipher: chacha20-ietf-poly1305, password: ff21950f-e77d-4132-bbc1-d864b515251c, udp: true}
-  - {name: 🇨🇳 CN 3|TG@BPXD666, server: host-008.crazyspeed.xyz, port: 30508, type: ss, cipher: chacha20-ietf-poly1305, password: ff21950f-e77d-4132-bbc1-d864b515251c, udp: true}
+  - {name: 🇨🇳 CN 1|TG@BPXD666, server: host-006.crazyspeed.xyz, port: 30506, type: ss, cipher: chacha20-ietf-poly1305, password: ff21950f-e77d-4132-bbc1-d864b515251c, udp: true}
+  - {name: 🇨🇳 CN 2|TG@BPXD666, server: host-046.crazyspeed.xyz, port: 34902, type: ss, cipher: chacha20-ietf-poly1305, password: ff21950f-e77d-4132-bbc1-d864b515251c, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -218,7 +217,6 @@ proxy-groups:
     proxies:
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
-      - 🇨🇳 CN 3|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -227,7 +225,6 @@ proxy-groups:
     proxies:
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
-      - 🇨🇳 CN 3|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -275,7 +272,6 @@ proxy-groups:
     proxies:
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
-      - 🇨🇳 CN 3|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -284,7 +280,6 @@ proxy-groups:
     proxies:
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
-      - 🇨🇳 CN 3|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
