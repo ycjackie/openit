@@ -1,5 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
   type: vmess
   server: upload.ir
   port: 80
@@ -63,25 +63,70 @@ proxies:
     path: /lonan
     headers:
       host: vdsus.1145114.me
+- name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  type: vmess
+  server: a.asghar-hamrah.store
+  port: 2087
+  cipher: auto
+  uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: /
+    grpc-mode: gun
+- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
+  type: vmess
+  server: snmxw.qkhbyf.tech
+  port: 2052
+  cipher: auto
+  uuid: 6da3e574-52f1-4690-a53b-2847ce756456
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /lonanhis
+    headers:
+      host: bx.qkhbyf.tech
+- name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
+  type: vmess
+  server: us-fsl.jikuai.xyz
+  port: 8443
+  cipher: auto
+  uuid: 3463f953-a603-4316-ac6d-642c8680d66e
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /user
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1EC\U0001F1E7 GB 4 TJN"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1EC\U0001F1E7 GB 4 TJN"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
