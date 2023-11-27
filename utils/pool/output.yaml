@@ -1,5 +1,46 @@
 proxies:
-- name: "\U0001F1EC\U0001F1E7 GB 1 VMS"
+- name: "\U0001F1EE\U0001F1F7 IR 1 VMS"
+  type: vmess
+  server: 158.58.188.21
+  port: 45357
+  cipher: auto
+  uuid: 4ca955a6-737c-4f31-aa15-e2919d6d704b
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+- name: "\U0001F1E9\U0001F1EA DE 2 TJN"
+  type: trojan
+  server: 5.104.107.143
+  port: 443
+  udp: true
+  password: d33df23a-8b9e-468e-bc33-dd3643008ced
+  sni: de1.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
+  type: vmess
+  server: fr-v2ray.freevmess.com
+  port: 8442
+  cipher: auto
+  uuid: 6773a666-5593-4c9f-aacd-52300b6a02d4
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: http
+- name: "\U0001F1FA\U0001F1F8 US 4 VMS"
+  type: vmess
+  server: us-fsl.jikuai.xyz
+  port: 8443
+  cipher: auto
+  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /user
+- name: "\U0001F1EC\U0001F1E7 GB 5 VMS"
   type: vmess
   server: 172.99.190.109
   port: 443
@@ -11,7 +52,7 @@ proxies:
   network: ws
   ws-opts:
     path: linkvws
-- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
   type: vmess
   server: mm3.shabijichang.com
   port: 80
@@ -25,47 +66,6 @@ proxies:
     path: /
     headers:
       host: mm3.shabijichang.com
-- name: "\U0001F1EE\U0001F1F7 IR 3 VMS"
-  type: vmess
-  server: 158.58.188.21
-  port: 45357
-  cipher: auto
-  uuid: 4ca955a6-737c-4f31-aa15-e2919d6d704b
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-- name: "\U0001F1E9\U0001F1EA DE 4 TJN"
-  type: trojan
-  server: 5.104.107.143
-  port: 443
-  udp: true
-  password: d33df23a-8b9e-468e-bc33-dd3643008ced
-  sni: de1.xn--mes358a9urctx.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5 VMS"
-  type: vmess
-  server: fr-v2ray.freevmess.com
-  port: 8442
-  cipher: auto
-  uuid: 6773a666-5593-4c9f-aacd-52300b6a02d4
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: http
-- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
-  type: vmess
-  server: us-fsl.jikuai.xyz
-  port: 8443
-  cipher: auto
-  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /user
 - name: "\U0001F1ED\U0001F1F0 HK 7 VMS"
   type: vmess
   server: 94.74.100.2
@@ -4758,11 +4758,11 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EC\U0001F1E7 GB 1 VMS"
-  - "\U0001F1FA\U0001F1F8 US 2 VMS"
-  - "\U0001F1EE\U0001F1F7 IR 3 VMS"
-  - "\U0001F1E9\U0001F1EA DE 4 TJN"
-  - "\U0001F1FA\U0001F1F8 US 5 VMS"
+  - "\U0001F1EE\U0001F1F7 IR 1 VMS"
+  - "\U0001F1E9\U0001F1EA DE 2 TJN"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 5 VMS"
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1ED\U0001F1F0 HK 7 VMS"
   - "\U0001F1ED\U0001F1F0 HK 8 VMS"
@@ -5270,11 +5270,11 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1E7 GB 1 VMS"
-  - "\U0001F1FA\U0001F1F8 US 2 VMS"
-  - "\U0001F1EE\U0001F1F7 IR 3 VMS"
-  - "\U0001F1E9\U0001F1EA DE 4 TJN"
-  - "\U0001F1FA\U0001F1F8 US 5 VMS"
+  - "\U0001F1EE\U0001F1F7 IR 1 VMS"
+  - "\U0001F1E9\U0001F1EA DE 2 TJN"
+  - "\U0001F1FA\U0001F1F8 US 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 5 VMS"
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1ED\U0001F1F0 HK 7 VMS"
   - "\U0001F1ED\U0001F1F0 HK 8 VMS"
