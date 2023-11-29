@@ -100,7 +100,7 @@ proxies:
     path: /aceamedv
     headers:
       host: v01.gutingting.com
-- name: "\U0001F1FA\U0001F1F3 UN 9 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 9 VMS"
   type: vmess
   server: ld2.shabijichang.com
   port: 80
@@ -156,7 +156,21 @@ proxies:
   password: e86e242e-b5d5-46ae-a410-3684f7d70ac2
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 14 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 14 VMS"
+  type: vmess
+  server: www.speedtest.net
+  port: 8080
+  cipher: auto
+  uuid: dfcdd618-cc97-4654-bbad-212050a916e7
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: gr-cl.whaleproject.tech
+- name: "\U0001F1FA\U0001F1F8 US 15 VMS"
   type: vmess
   server: ns1.v2-vip.fun
   port: 80
@@ -182,12 +196,13 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 6 TJN"
   - "\U0001F1FA\U0001F1F8 US 7 TJN"
   - "\U0001F1E8\U0001F1F3 CN 8 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
+  - "\U0001F1FA\U0001F1F8 US 9 VMS"
   - "\U0001F1E8\U0001F1F3 CN 10 VMS"
   - "\U0001F1FA\U0001F1F8 US 11 VMS"
   - "\U0001F1FA\U0001F1F8 US 12 VMS"
   - "\U0001F1E9\U0001F1EA DE 13 TJN"
-  - "\U0001F1FA\U0001F1F8 US 14 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 14 VMS"
+  - "\U0001F1FA\U0001F1F8 US 15 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -202,11 +217,12 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 6 TJN"
   - "\U0001F1FA\U0001F1F8 US 7 TJN"
   - "\U0001F1E8\U0001F1F3 CN 8 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
+  - "\U0001F1FA\U0001F1F8 US 9 VMS"
   - "\U0001F1E8\U0001F1F3 CN 10 VMS"
   - "\U0001F1FA\U0001F1F8 US 11 VMS"
   - "\U0001F1FA\U0001F1F8 US 12 VMS"
   - "\U0001F1E9\U0001F1EA DE 13 TJN"
-  - "\U0001F1FA\U0001F1F8 US 14 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 14 VMS"
+  - "\U0001F1FA\U0001F1F8 US 15 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
