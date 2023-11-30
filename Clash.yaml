@@ -197,11 +197,10 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: IR 1|TG@BPXD666, server: 91.107.145.222, port: 443, type: vmess, uuid: d20e38ef-1a4d-4009-a00d-2f0d44e3c65a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 🇨🇳 CN 1|TG@BPXD666, server: lbsh.bnnodeservice.com, port: 34014, type: trojan, password: c82b2e40-8a24-4a4a-85c7-e123ee0ff3d0, sni: cert.bitbyte.one, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE 1|TG@BPXD666, server: 5.161.127.110, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
   - {name: 🇷🇺 RU 1|TG@BPXD666, server: 193.203.203.88, port: 2082, type: vmess, uuid: 5f2d026e-1dbd-4bb0-aa61-b1bcc544ab2c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: 65.109.215.59, port: 31828, type: vmess, uuid: f8145dcc-528c-499d-9f9c-03b27a642464, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 2a683a54-f098-4d98-92fc-762b85d907b9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ns1.v2-vip.fun}}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 2a683a54-f098-4d98-92fc-762b85d907b9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ns1.v2-vip.fun}}, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 65.109.215.59, port: 31828, type: vmess, uuid: f8145dcc-528c-499d-9f9c-03b27a642464, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -220,7 +219,6 @@ proxy-groups:
     type: select
     proxies:
       - IR 1|TG@BPXD666
-      - 🇨🇳 CN 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
@@ -232,7 +230,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - IR 1|TG@BPXD666
-      - 🇨🇳 CN 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
@@ -284,7 +281,6 @@ proxy-groups:
     type: select
     proxies:
       - IR 1|TG@BPXD666
-      - 🇨🇳 CN 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
@@ -296,7 +292,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - IR 1|TG@BPXD666
-      - 🇨🇳 CN 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
