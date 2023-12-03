@@ -196,9 +196,14 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇩🇪 DE 1|TG@BPXD666, server: 213.202.216.14, port: 443, type: trojan, password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a, sni: downloadde.xn--mes358acgm99l.com, skip-cert-verify: true, udp: true}
+  - {name: IT 1|TG@BPXD666, server: go.gujuji.top, port: 8080, type: vmess, uuid: 7bb26f19-fbd1-4f37-b344-7ec1e489e49b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: go.gujuji.top}}, udp: true}
+  - {name: 🇨🇳 CN 1|TG@BPXD666, server: gtm.ktmwan.com, port: 27253, type: ss, cipher: chacha20-ietf-poly1305, password: db1708c1-6f40-4515-92a4-7e9bb3df187a, udp: true}
+  - {name: 🇨🇳 CN 2|TG@BPXD666, server: gtm.ktmwan.com, port: 27258, type: ss, cipher: chacha20-ietf-poly1305, password: db1708c1-6f40-4515-92a4-7e9bb3df187a, udp: true}
+  - {name: 🇩🇪 DE 1|TG@BPXD666, server: 3.121.187.77, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE 2|TG@BPXD666, server: 213.202.216.14, port: 443, type: trojan, password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a, sni: downloadde.xn--mes358acgm99l.com, skip-cert-verify: true, udp: true}
   - {name: 🇷🇺 RU 1|TG@BPXD666, server: de1-vmess.greenssh.xyz, port: 80, type: vmess, uuid: 12612b4e-e426-4b7c-84bd-4a02850abb1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de1-vmess.greenssh.xyz}}, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: us-02.jikuai.xyz, port: 2082, type: vmess, uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-02.jikuai.xyz}}, udp: true}
+  - {name: 🇸🇬 SG 1|TG@BPXD666, server: cm3.xn-w1yu8o.xyz, port: 80, type: vmess, uuid: e759eadc-8e71-47b0-874e-871e3d8dc31e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm3.xn-w1yu8o.xyz}}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 104.21.40.162, port: 443, type: vmess, uuid: d196ccc9-db42-475d-a7e4-7c27a6a326d1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
   - {name: 🇺🇸 US 2|TG@BPXD666, server: us-fsl.jikuai.xyz, port: 8443, type: vmess, uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /user, headers: {Host: us-fsl.jikuai.xyz}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -217,8 +222,13 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - IT 1|TG@BPXD666
+      - 🇨🇳 CN 1|TG@BPXD666
+      - 🇨🇳 CN 2|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
+      - 🇩🇪 DE 2|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
+      - 🇸🇬 SG 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
@@ -227,8 +237,13 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - IT 1|TG@BPXD666
+      - 🇨🇳 CN 1|TG@BPXD666
+      - 🇨🇳 CN 2|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
+      - 🇩🇪 DE 2|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
+      - 🇸🇬 SG 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
@@ -266,7 +281,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇸🇬 SG 1|TG@BPXD666
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -277,8 +292,13 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - IT 1|TG@BPXD666
+      - 🇨🇳 CN 1|TG@BPXD666
+      - 🇨🇳 CN 2|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
+      - 🇩🇪 DE 2|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
+      - 🇸🇬 SG 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
@@ -287,8 +307,13 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - IT 1|TG@BPXD666
+      - 🇨🇳 CN 1|TG@BPXD666
+      - 🇨🇳 CN 2|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
+      - 🇩🇪 DE 2|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
+      - 🇸🇬 SG 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
