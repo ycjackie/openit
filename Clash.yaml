@@ -196,6 +196,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
+  - {name: 🇯🇵 JP 1|TG@BPXD666, server: cfyx3.freeapp.buzz, port: 80, type: vmess, uuid: a5319baa-e846-43c7-91c2-d67a1e307c8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cfyx3.freeapp.buzz}}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: us-fsl.jikuai.xyz, port: 8443, type: vmess, uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /user, headers: {Host: us-fsl.jikuai.xyz}}, udp: true}
   - {name: 🇺🇸 US 2|TG@BPXD666, server: v15.583182.xyz, port: 2053, type: vmess, uuid: c5027ed5-33cd-42d5-9894-d5c6160b3987, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v15.583182.xyz}}, udp: true}
 proxy-groups:
@@ -215,6 +216,7 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
@@ -223,6 +225,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
@@ -238,7 +241,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇯🇵 JP 1|TG@BPXD666
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -271,6 +274,7 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
@@ -279,6 +283,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
