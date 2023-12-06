@@ -10,7 +10,7 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us3
-- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 2 VMS"
   type: vmess
   server: v2ray.ibgfw.top
   port: 2053
@@ -534,26 +534,12 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 45 VMS"
-  type: vmess
-  server: us-02.jikuai.xyz
-  port: 2082
-  cipher: auto
-  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: us-02.jikuai.xyz
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1 TJN"
-  - "\U0001F1FA\U0001F1F8 US 2 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
   - "\U0001F1EB\U0001F1F7 FR 3 VMS"
   - "\U0001F1F7\U0001F1FA RU 4 VMS"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
@@ -596,7 +582,6 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 42 VMS"
   - "\U0001F1FA\U0001F1F8 US 43 TJN"
   - "\U0001F1EB\U0001F1F7 FR 44 VMS"
-  - "\U0001F1FA\U0001F1F8 US 45 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -604,7 +589,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1 TJN"
-  - "\U0001F1FA\U0001F1F8 US 2 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
   - "\U0001F1EB\U0001F1F7 FR 3 VMS"
   - "\U0001F1F7\U0001F1FA RU 4 VMS"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
@@ -647,6 +632,5 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 42 VMS"
   - "\U0001F1FA\U0001F1F8 US 43 TJN"
   - "\U0001F1EB\U0001F1F7 FR 44 VMS"
-  - "\U0001F1FA\U0001F1F8 US 45 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
