@@ -128,7 +128,7 @@ proxies:
     path: /vmess
     headers:
       host: 103.113.68.233
-- name: "\U0001F1FA\U0001F1F3 UN 11 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 11 VMS"
   type: vmess
   server: fr-01.jikuai.xyz
   port: 2082
@@ -226,6 +226,20 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 19 VMS"
+  type: vmess
+  server: us-02.jikuai.xyz
+  port: 2082
+  cipher: auto
+  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: us-02.jikuai.xyz
 proxy-groups:
 - name: automatic
   type: url-test
@@ -240,7 +254,7 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EA SE 8 VMS"
   - "\U0001F1F7\U0001F1FA RU 9 VMS"
   - "\U0001F1EE\U0001F1F3 IN 10 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 11 VMS"
+  - "\U0001F1FA\U0001F1F8 US 11 VMS"
   - "\U0001F1F8\U0001F1F0 SK 12 VMS"
   - "\U0001F1FA\U0001F1F8 US 13 TJN"
   - "\U0001F1FA\U0001F1F8 US 14 VMS"
@@ -248,6 +262,7 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 16 VMS"
   - "\U0001F1FA\U0001F1F8 US 17 TJN"
   - "\U0001F1EB\U0001F1F7 FR 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -264,7 +279,7 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EA SE 8 VMS"
   - "\U0001F1F7\U0001F1FA RU 9 VMS"
   - "\U0001F1EE\U0001F1F3 IN 10 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 11 VMS"
+  - "\U0001F1FA\U0001F1F8 US 11 VMS"
   - "\U0001F1F8\U0001F1F0 SK 12 VMS"
   - "\U0001F1FA\U0001F1F8 US 13 TJN"
   - "\U0001F1FA\U0001F1F8 US 14 VMS"
@@ -272,5 +287,6 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 16 VMS"
   - "\U0001F1FA\U0001F1F8 US 17 TJN"
   - "\U0001F1EB\U0001F1F7 FR 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
