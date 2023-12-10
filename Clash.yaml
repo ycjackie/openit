@@ -199,10 +199,11 @@ proxies:
   - {name: BG 1|TG@BPXD666, server: 93.123.38.5, port: 443, type: vmess, uuid: 15eaa579-cf84-4792-8612-3f76fb1b6315, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@FORWARDV2RAY}, udp: true}
   - {name: CZ 1|TG@BPXD666, server: 92.223.74.20, port: 443, type: vmess, uuid: d6d76607-603b-450f-b156-b3367f1b4558, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@FORWARDV2RAY}, udp: true}
   - {name: LT 1|TG@BPXD666, server: 89.116.180.179, port: 443, type: trojan, password: d2698cf9-c47e-455c-8384-12e642cbba15, sni: p6us4.pqjc.buzz, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fpq%2Fus4", headers: {Host: p6us4.pqjc.buzz}}, udp: true}
+  - {name: LY 1|TG@BPXD666, server: 197.215.140.234, port: 443, type: vmess, uuid: d6d76607-603b-450f-b156-b3367f1b4558, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@FORWARDV2RAY}, udp: true}
+  - {name: 🇩🇪 DE 1|TG@BPXD666, server: 92.223.124.29, port: 443, type: vmess, uuid: 15eaa579-cf84-4792-8612-3f76fb1b6315, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@FORWARDV2RAY}, udp: true}
   - {name: 🇮🇳 IN 1|TG@BPXD666, server: 202.78.162.6, port: 443, type: vmess, uuid: 15eaa579-cf84-4792-8612-3f76fb1b6315, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@FORWARDV2RAY}, udp: true}
   - {name: 🇷🇺 RU 1|TG@BPXD666, server: 80.240.113.9, port: 443, type: vmess, uuid: 15eaa579-cf84-4792-8612-3f76fb1b6315, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@FORWARDV2RAY}, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: 167.68.5.183, port: 443, type: trojan, password: d2698cf9-c47e-455c-8384-12e642cbba15, sni: 6us3.pqjc.buzz, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fpq%2Fus3", headers: {Host: 6us3.pqjc.buzz}}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: 104.21.75.79, port: 80, type: vmess, uuid: 5c6f16ce-6a20-41e5-9274-06b4c45051b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 104.21.75.79, port: 80, type: vmess, uuid: 5c6f16ce-6a20-41e5-9274-06b4c45051b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -223,10 +224,11 @@ proxy-groups:
       - BG 1|TG@BPXD666
       - CZ 1|TG@BPXD666
       - LT 1|TG@BPXD666
+      - LY 1|TG@BPXD666
+      - 🇩🇪 DE 1|TG@BPXD666
       - 🇮🇳 IN 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -236,10 +238,11 @@ proxy-groups:
       - BG 1|TG@BPXD666
       - CZ 1|TG@BPXD666
       - LT 1|TG@BPXD666
+      - LY 1|TG@BPXD666
+      - 🇩🇪 DE 1|TG@BPXD666
       - 🇮🇳 IN 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -261,7 +264,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -289,10 +291,11 @@ proxy-groups:
       - BG 1|TG@BPXD666
       - CZ 1|TG@BPXD666
       - LT 1|TG@BPXD666
+      - LY 1|TG@BPXD666
+      - 🇩🇪 DE 1|TG@BPXD666
       - 🇮🇳 IN 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -302,10 +305,11 @@ proxy-groups:
       - BG 1|TG@BPXD666
       - CZ 1|TG@BPXD666
       - LT 1|TG@BPXD666
+      - LY 1|TG@BPXD666
+      - 🇩🇪 DE 1|TG@BPXD666
       - 🇮🇳 IN 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
