@@ -76,7 +76,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 10 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 10 VMS"
   type: vmess
   server: ld2.shabijichang.com
   port: 80
@@ -157,21 +157,7 @@ proxies:
   sni: frontend.kuangbiaoyun.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 17 VMS"
-  type: vmess
-  server: 104.21.75.246
-  port: 80
-  cipher: auto
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: sbl2.shabijichang.com
-- name: "\U0001F1FA\U0001F1F8 US 18 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 17 TJN"
   type: trojan
   server: 167.68.5.183
   port: 443
@@ -195,15 +181,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
   - "\U0001F1FA\U0001F1F8 US 8 TJN"
   - "\U0001F1E8\U0001F1E6 CA 9 VMS"
-  - "\U0001F1FA\U0001F1F8 US 10 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
   - "\U0001F1FA\U0001F1F3 UN 11 VMS"
   - "\U0001F1F7\U0001F1FA RU 12 VMS"
   - "\U0001F1FA\U0001F1F8 US 13 VMS"
   - "\U0001F1F7\U0001F1FA RU 14 VMS"
   - "\U0001F1FA\U0001F1F8 US 15 VMS"
   - "\U0001F1F0\U0001F1F7 KR 16 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 17 VMS"
-  - "\U0001F1FA\U0001F1F8 US 18 TJN"
+  - "\U0001F1FA\U0001F1F8 US 17 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -219,14 +204,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
   - "\U0001F1FA\U0001F1F8 US 8 TJN"
   - "\U0001F1E8\U0001F1E6 CA 9 VMS"
-  - "\U0001F1FA\U0001F1F8 US 10 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
   - "\U0001F1FA\U0001F1F3 UN 11 VMS"
   - "\U0001F1F7\U0001F1FA RU 12 VMS"
   - "\U0001F1FA\U0001F1F8 US 13 VMS"
   - "\U0001F1F7\U0001F1FA RU 14 VMS"
   - "\U0001F1FA\U0001F1F8 US 15 VMS"
   - "\U0001F1F0\U0001F1F7 KR 16 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 17 VMS"
-  - "\U0001F1FA\U0001F1F8 US 18 TJN"
+  - "\U0001F1FA\U0001F1F8 US 17 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
