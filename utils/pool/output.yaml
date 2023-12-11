@@ -32,7 +32,40 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1FF CZ 4 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 4 VMS"
+  type: vmess
+  server: 154.23.190.162
+  port: 443
+  cipher: auto
+  uuid: b9984674-f771-4e67-a198-c7e60720ba2c
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+- name: "\U0001F1E8\U0001F1E6 CA 5 TJN"
+  type: trojan
+  server: ca-trojan.bonds.id
+  port: 443
+  udp: true
+  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 6 HTT"
+  type: http
+  server: 124.15.12.24
+  port: 251
+  username: username
+  password: password
+- name: "\U0001F1E8\U0001F1F3 CN 7 SK5"
+  type: socks5
+  server: 124.15.12.24
+  port: 2312
+- name: "\U0001F1E6\U0001F1FA AU 8 SK5"
+  type: socks5
+  server: 1.2.3.4
+  port: 123
+  username: username
+  password: password
+- name: "\U0001F1E8\U0001F1FF CZ 9 VMS"
   type: vmess
   server: 92.223.74.20
   port: 443
@@ -46,7 +79,7 @@ proxies:
     path: /@FORWARDV2RAY
     headers:
       host: teletv.onthewifi.com
-- name: "\U0001F1F1\U0001F1FB LV 5 VMS"
+- name: "\U0001F1F1\U0001F1FB LV 10 VMS"
   type: vmess
   server: 93.123.38.5
   port: 443
@@ -60,7 +93,7 @@ proxies:
     path: /@FORWARDV2RAY
     headers:
       host: software.myftp.biz
-- name: "\U0001F1E9\U0001F1EA DE 6 VMS"
+- name: "\U0001F1E9\U0001F1EA DE 11 VMS"
   type: vmess
   server: 92.223.124.29
   port: 443
@@ -74,7 +107,7 @@ proxies:
     path: /@FORWARDV2RAY
     headers:
       host: software.myftp.biz
-- name: "\U0001F1FA\U0001F1F3 UN 7 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 12 VMS"
   type: vmess
   server: 104.21.75.79
   port: 80
@@ -88,7 +121,7 @@ proxies:
     path: /vmess
     headers:
       host: ee2-vmess.sshmax.xyz
-- name: "\U0001F1E8\U0001F1E6 CA 8 VMS"
+- name: "\U0001F1E8\U0001F1E6 CA 13 VMS"
   type: vmess
   server: 193.203.203.88
   port: 2082
@@ -98,7 +131,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: http
-- name: "\U0001F1FA\U0001F1F8 US 9 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 14 VMS"
   type: vmess
   server: 92.38.168.5
   port: 443
@@ -112,7 +145,7 @@ proxies:
     path: /@FORWARDV2RAY
     headers:
       host: teletv.onthewifi.com
-- name: "\U0001F1FA\U0001F1F8 US 10 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 15 VMS"
   type: vmess
   server: 92.38.170.8
   port: 443
@@ -126,7 +159,7 @@ proxies:
     path: /@FORWARDV2RAY
     headers:
       host: software.myftp.biz
-- name: "\U0001F1FA\U0001F1F8 US 11 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 16 TJN"
   type: trojan
   server: 89.116.180.179
   port: 443
@@ -137,7 +170,7 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us4
-- name: "\U0001F1F8\U0001F1EA SE 12 VMS"
+- name: "\U0001F1F8\U0001F1EA SE 17 VMS"
   type: vmess
   server: 80.240.113.8
   port: 443
@@ -151,7 +184,7 @@ proxies:
     path: /@FORWARDV2RAY
     headers:
       host: software.myftp.biz
-- name: "\U0001F1FA\U0001F1F8 US 13 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 18 VMS"
   type: vmess
   server: ns1.v2-vip.fun
   port: 80
@@ -165,7 +198,7 @@ proxies:
     path: /api/v3/download.getFile
     headers:
       host: ssrsub.v03.ssrsub.com
-- name: "\U0001F1FA\U0001F1F8 US 14 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 19 TJN"
   type: trojan
   server: 167.68.5.183
   port: 443
@@ -176,7 +209,7 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us3
-- name: "\U0001F1FA\U0001F1F3 UN 15 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 20 VMS"
   type: vmess
   server: us-02.jikuai.xyz
   port: 2082
@@ -190,7 +223,7 @@ proxies:
     path: /
     headers:
       host: us-02.jikuai.xyz
-- name: "\U0001F1F5\U0001F1F1 PL 16 VMS"
+- name: "\U0001F1F5\U0001F1F1 PL 21 VMS"
   type: vmess
   server: 92.223.92.26
   port: 443
@@ -204,7 +237,7 @@ proxies:
     path: /@FORWARDV2RAY
     headers:
       host: teletv.onthewifi.com
-- name: "\U0001F1FA\U0001F1F8 US 17 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 22 VMS"
   type: vmess
   server: 92.223.118.16
   port: 443
@@ -218,7 +251,7 @@ proxies:
     path: /@FORWARDV2RAY
     headers:
       host: software.myftp.biz
-- name: "\U0001F1F1\U0001F1FA LU 18 VMS"
+- name: "\U0001F1F1\U0001F1FA LU 23 VMS"
   type: vmess
   server: 202.78.162.6
   port: 443
@@ -232,7 +265,7 @@ proxies:
     path: /@FORWARDV2RAY
     headers:
       host: software.myftp.biz
-- name: "\U0001F1E8\U0001F1E6 CA 19 VMS"
+- name: "\U0001F1E8\U0001F1E6 CA 24 VMS"
   type: vmess
   server: 142.171.229.164
   port: 13469
@@ -242,7 +275,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EA SE 20 VMS"
+- name: "\U0001F1F8\U0001F1EA SE 25 VMS"
   type: vmess
   server: 80.240.113.9
   port: 443
@@ -256,7 +289,7 @@ proxies:
     path: /@FORWARDV2RAY
     headers:
       host: teletv.onthewifi.com
-- name: "\U0001F1F1\U0001F1FA LU 21 VMS"
+- name: "\U0001F1F1\U0001F1FA LU 26 VMS"
   type: vmess
   server: 107.189.29.193
   port: 21280
@@ -266,7 +299,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 22 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 27 VMS"
   type: vmess
   server: 157.254.231.45
   port: 38461
@@ -276,7 +309,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 23 VMS"
+- name: "\U0001F1F7\U0001F1FA RU 28 VMS"
   type: vmess
   server: 46.29.166.124
   port: 47412
@@ -286,7 +319,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 24 VMS"
+- name: "\U0001F1EC\U0001F1E7 GB 29 VMS"
   type: vmess
   server: 185.76.48.122
   port: 443
@@ -300,7 +333,7 @@ proxies:
     path: /@FORWARDV2RAY
     headers:
       host: teletv.onthewifi.com
-- name: "\U0001F1FA\U0001F1F8 US 25 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 30 VMS"
   type: vmess
   server: cf-lt.sharecentre.online
   port: 80
@@ -314,7 +347,7 @@ proxies:
     path: /api/v3/download.getFile
     headers:
       host: ssrsub.v005.ssrsub.com
-- name: "\U0001F1F1\U0001F1FE LY 26 VMS"
+- name: "\U0001F1F1\U0001F1FE LY 31 VMS"
   type: vmess
   server: 197.215.140.234
   port: 443
@@ -328,7 +361,7 @@ proxies:
     path: /@FORWARDV2RAY
     headers:
       host: teletv.onthewifi.com
-- name: "\U0001F1FA\U0001F1F8 US 27 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 32 TJN"
   type: trojan
   server: us1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
   port: 443
@@ -337,7 +370,7 @@ proxies:
   sni: 206.237.5.220
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 28 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 33 VMS"
   type: vmess
   server: moon.chanell.mci.v-x4ssd.space
   port: 8080
@@ -351,39 +384,6 @@ proxies:
     path: /
     headers:
       host: moon.chanell.mci.v-x4ssd.space
-- name: "\U0001F1FA\U0001F1F8 US 29 VMS"
-  type: vmess
-  server: 154.23.190.162
-  port: 443
-  cipher: auto
-  uuid: b9984674-f771-4e67-a198-c7e60720ba2c
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-- name: "\U0001F1E8\U0001F1E6 CA 30 TJN"
-  type: trojan
-  server: ca-trojan.bonds.id
-  port: 443
-  udp: true
-  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 31 HTT"
-  type: http
-  server: 124.15.12.24
-  port: 251
-  username: username
-  password: password
-- name: "\U0001F1E8\U0001F1F3 CN 32 SK5"
-  type: socks5
-  server: 124.15.12.24
-  port: 2312
-- name: "\U0001F1E6\U0001F1FA AU 33 SK5"
-  type: socks5
-  server: 1.2.3.4
-  port: 123
-  username: username
-  password: password
 proxy-groups:
 - name: automatic
   type: url-test
@@ -391,36 +391,36 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 1 VMS"
   - "\U0001F1ED\U0001F1F0 HK 2 TJN"
   - "\U0001F1F9\U0001F1FC TW 3 VMS"
-  - "\U0001F1E8\U0001F1FF CZ 4 VMS"
-  - "\U0001F1F1\U0001F1FB LV 5 VMS"
-  - "\U0001F1E9\U0001F1EA DE 6 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 7 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 8 VMS"
-  - "\U0001F1FA\U0001F1F8 US 9 VMS"
-  - "\U0001F1FA\U0001F1F8 US 10 VMS"
-  - "\U0001F1FA\U0001F1F8 US 11 TJN"
-  - "\U0001F1F8\U0001F1EA SE 12 VMS"
-  - "\U0001F1FA\U0001F1F8 US 13 VMS"
-  - "\U0001F1FA\U0001F1F8 US 14 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 15 VMS"
-  - "\U0001F1F5\U0001F1F1 PL 16 VMS"
-  - "\U0001F1FA\U0001F1F8 US 17 VMS"
-  - "\U0001F1F1\U0001F1FA LU 18 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 19 VMS"
-  - "\U0001F1F8\U0001F1EA SE 20 VMS"
-  - "\U0001F1F1\U0001F1FA LU 21 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 5 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 6 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 7 SK5"
+  - "\U0001F1E6\U0001F1FA AU 8 SK5"
+  - "\U0001F1E8\U0001F1FF CZ 9 VMS"
+  - "\U0001F1F1\U0001F1FB LV 10 VMS"
+  - "\U0001F1E9\U0001F1EA DE 11 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 12 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 13 VMS"
+  - "\U0001F1FA\U0001F1F8 US 14 VMS"
+  - "\U0001F1FA\U0001F1F8 US 15 VMS"
+  - "\U0001F1FA\U0001F1F8 US 16 TJN"
+  - "\U0001F1F8\U0001F1EA SE 17 VMS"
+  - "\U0001F1FA\U0001F1F8 US 18 VMS"
+  - "\U0001F1FA\U0001F1F8 US 19 TJN"
+  - "\U0001F1FA\U0001F1F8 US 20 VMS"
+  - "\U0001F1F5\U0001F1F1 PL 21 VMS"
   - "\U0001F1FA\U0001F1F8 US 22 VMS"
-  - "\U0001F1F7\U0001F1FA RU 23 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 24 VMS"
-  - "\U0001F1FA\U0001F1F8 US 25 VMS"
-  - "\U0001F1F1\U0001F1FE LY 26 VMS"
-  - "\U0001F1FA\U0001F1F8 US 27 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 28 VMS"
-  - "\U0001F1FA\U0001F1F8 US 29 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 30 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 31 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 32 SK5"
-  - "\U0001F1E6\U0001F1FA AU 33 SK5"
+  - "\U0001F1F1\U0001F1FA LU 23 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 24 VMS"
+  - "\U0001F1F8\U0001F1EA SE 25 VMS"
+  - "\U0001F1F1\U0001F1FA LU 26 VMS"
+  - "\U0001F1FA\U0001F1F8 US 27 VMS"
+  - "\U0001F1F7\U0001F1FA RU 28 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 29 VMS"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1F1\U0001F1FE LY 31 VMS"
+  - "\U0001F1FA\U0001F1F8 US 32 TJN"
+  - "\U0001F1FA\U0001F1F8 US 33 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -430,35 +430,35 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 1 VMS"
   - "\U0001F1ED\U0001F1F0 HK 2 TJN"
   - "\U0001F1F9\U0001F1FC TW 3 VMS"
-  - "\U0001F1E8\U0001F1FF CZ 4 VMS"
-  - "\U0001F1F1\U0001F1FB LV 5 VMS"
-  - "\U0001F1E9\U0001F1EA DE 6 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 7 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 8 VMS"
-  - "\U0001F1FA\U0001F1F8 US 9 VMS"
-  - "\U0001F1FA\U0001F1F8 US 10 VMS"
-  - "\U0001F1FA\U0001F1F8 US 11 TJN"
-  - "\U0001F1F8\U0001F1EA SE 12 VMS"
-  - "\U0001F1FA\U0001F1F8 US 13 VMS"
-  - "\U0001F1FA\U0001F1F8 US 14 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 15 VMS"
-  - "\U0001F1F5\U0001F1F1 PL 16 VMS"
-  - "\U0001F1FA\U0001F1F8 US 17 VMS"
-  - "\U0001F1F1\U0001F1FA LU 18 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 19 VMS"
-  - "\U0001F1F8\U0001F1EA SE 20 VMS"
-  - "\U0001F1F1\U0001F1FA LU 21 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 5 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 6 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 7 SK5"
+  - "\U0001F1E6\U0001F1FA AU 8 SK5"
+  - "\U0001F1E8\U0001F1FF CZ 9 VMS"
+  - "\U0001F1F1\U0001F1FB LV 10 VMS"
+  - "\U0001F1E9\U0001F1EA DE 11 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 12 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 13 VMS"
+  - "\U0001F1FA\U0001F1F8 US 14 VMS"
+  - "\U0001F1FA\U0001F1F8 US 15 VMS"
+  - "\U0001F1FA\U0001F1F8 US 16 TJN"
+  - "\U0001F1F8\U0001F1EA SE 17 VMS"
+  - "\U0001F1FA\U0001F1F8 US 18 VMS"
+  - "\U0001F1FA\U0001F1F8 US 19 TJN"
+  - "\U0001F1FA\U0001F1F8 US 20 VMS"
+  - "\U0001F1F5\U0001F1F1 PL 21 VMS"
   - "\U0001F1FA\U0001F1F8 US 22 VMS"
-  - "\U0001F1F7\U0001F1FA RU 23 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 24 VMS"
-  - "\U0001F1FA\U0001F1F8 US 25 VMS"
-  - "\U0001F1F1\U0001F1FE LY 26 VMS"
-  - "\U0001F1FA\U0001F1F8 US 27 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 28 VMS"
-  - "\U0001F1FA\U0001F1F8 US 29 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 30 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 31 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 32 SK5"
-  - "\U0001F1E6\U0001F1FA AU 33 SK5"
+  - "\U0001F1F1\U0001F1FA LU 23 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 24 VMS"
+  - "\U0001F1F8\U0001F1EA SE 25 VMS"
+  - "\U0001F1F1\U0001F1FA LU 26 VMS"
+  - "\U0001F1FA\U0001F1F8 US 27 VMS"
+  - "\U0001F1F7\U0001F1FA RU 28 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 29 VMS"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1F1\U0001F1FE LY 31 VMS"
+  - "\U0001F1FA\U0001F1F8 US 32 TJN"
+  - "\U0001F1FA\U0001F1F8 US 33 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
