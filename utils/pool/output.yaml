@@ -1,5 +1,15 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 1 VMS"
+  type: vmess
+  server: 34.92.50.99
+  port: 7890
+  cipher: auto
+  uuid: 1d62f647-48de-469a-aef3-4b458394177d
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2 TJN"
   type: trojan
   server: 89.116.180.179
   port: 443
@@ -10,29 +20,19 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us4
-- name: "\U0001F1ED\U0001F1F0 HK 2 VMS"
-  type: vmess
-  server: 34.92.50.99
-  port: 7890
-  cipher: auto
-  uuid: 1d62f647-48de-469a-aef3-4b458394177d
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 2 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 2 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
