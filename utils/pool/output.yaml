@@ -1,15 +1,5 @@
 proxies:
-- name: "\U0001F1ED\U0001F1F0 HK 1 VMS"
-  type: vmess
-  server: 34.92.50.99
-  port: 7890
-  cipher: auto
-  uuid: 1d62f647-48de-469a-aef3-4b458394177d
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
   type: vmess
   server: 94.131.14.177
   port: 80
@@ -21,7 +11,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess
-- name: "\U0001F1E8\U0001F1E6 CA 3 TJN"
+- name: "\U0001F1E8\U0001F1E6 CA 2 TJN"
   type: trojan
   server: 172.105.5.158
   port: 443
@@ -30,7 +20,7 @@ proxies:
   sni: ddragon.leagueoflegends.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 4 VMS"
+- name: "\U0001F1E9\U0001F1EA DE 3 VMS"
   type: vmess
   server: 3.71.86.206
   port: 30498
@@ -40,7 +30,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: http
-- name: "\U0001F1FA\U0001F1F8 US 5 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 4 VMS"
   type: vmess
   server: ld2.shabijichang.com
   port: 80
@@ -54,7 +44,7 @@ proxies:
     path: /
     headers:
       host: ld2.shabijichang.com
-- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
   type: vmess
   server: www.wto.org
   port: 443
@@ -68,7 +58,7 @@ proxies:
     path: 539d1f3c-619c-4180-9603-d23e2b4db62f-vm
     headers:
       host: copies-bandwidth-harold-tops.trycloudflare.com
-- name: "\U0001F1FA\U0001F1F8 US 7 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 6 TJN"
   type: trojan
   server: 167.68.5.183
   port: 443
@@ -79,6 +69,16 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us3
+- name: "\U0001F1ED\U0001F1F0 HK 7 VMS"
+  type: vmess
+  server: 34.92.50.99
+  port: 7890
+  cipher: auto
+  uuid: 1d62f647-48de-469a-aef3-4b458394177d
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 8 TJN"
   type: trojan
   server: 89.116.180.179
@@ -145,7 +145,7 @@ proxies:
   sni: 206.237.5.220
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 15 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 15 VMS"
   type: vmess
   server: fuqiang.misaeng.top
   port: 443
@@ -161,13 +161,13 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1ED\U0001F1F0 HK 1 VMS"
-  - "\U0001F1FA\U0001F1F8 US 2 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 3 TJN"
-  - "\U0001F1E9\U0001F1EA DE 4 VMS"
-  - "\U0001F1FA\U0001F1F8 US 5 VMS"
-  - "\U0001F1FA\U0001F1F8 US 6 VMS"
-  - "\U0001F1FA\U0001F1F8 US 7 TJN"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 2 TJN"
+  - "\U0001F1E9\U0001F1EA DE 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  - "\U0001F1FA\U0001F1F8 US 6 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 7 VMS"
   - "\U0001F1FA\U0001F1F8 US 8 TJN"
   - "\U0001F1E8\U0001F1F3 CN 9 TJN"
   - "\U0001F1EB\U0001F1F7 FR 10 TJN"
@@ -175,20 +175,20 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 12 TJN"
   - "\U0001F1E8\U0001F1E6 CA 13 TJN"
   - "\U0001F1FA\U0001F1F8 US 14 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 15 VMS"
+  - "\U0001F1FA\U0001F1F8 US 15 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1ED\U0001F1F0 HK 1 VMS"
-  - "\U0001F1FA\U0001F1F8 US 2 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 3 TJN"
-  - "\U0001F1E9\U0001F1EA DE 4 VMS"
-  - "\U0001F1FA\U0001F1F8 US 5 VMS"
-  - "\U0001F1FA\U0001F1F8 US 6 VMS"
-  - "\U0001F1FA\U0001F1F8 US 7 TJN"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 2 TJN"
+  - "\U0001F1E9\U0001F1EA DE 3 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  - "\U0001F1FA\U0001F1F8 US 6 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 7 VMS"
   - "\U0001F1FA\U0001F1F8 US 8 TJN"
   - "\U0001F1E8\U0001F1F3 CN 9 TJN"
   - "\U0001F1EB\U0001F1F7 FR 10 TJN"
@@ -196,6 +196,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 12 TJN"
   - "\U0001F1E8\U0001F1E6 CA 13 TJN"
   - "\U0001F1FA\U0001F1F8 US 14 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 15 VMS"
+  - "\U0001F1FA\U0001F1F8 US 15 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
