@@ -1,13 +1,207 @@
-proxies: []
+proxies:
+- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
+  type: vmess
+  server: cloud.dragonrzm.sbs
+  port: 8080
+  cipher: auto
+  uuid: ce0d5151-7734-4189-b6ae-eb58e9af5603
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: cloud.dragonrzm.sbs
+- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
+  type: vmess
+  server: ns1.v2-vip.fun
+  port: 80
+  cipher: auto
+  uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v3/download.getFile
+    headers:
+      host: ssrsub.v03.ssrsub.com
+- name: "\U0001F1E8\U0001F1F3 CN 3 TJN"
+  type: trojan
+  server: other.kunlun-ppg.com
+  port: 10850
+  udp: true
+  password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
+  sni: alibaba-node.cn
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 4 TJN"
+  type: trojan
+  server: 167.68.5.183
+  port: 443
+  udp: true
+  password: d2698cf9-c47e-455c-8384-12e642cbba15
+  sni: 6us3.pqjc.buzz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pq/us3
+- name: "\U0001F1E9\U0001F1EA DE 5 VMS"
+  type: vmess
+  server: 80.71.157.199
+  port: 443
+  cipher: auto
+  uuid: a88ba483-d935-4cb8-a425-a8a9a468409b
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: http
+- name: "\U0001F1E8\U0001F1F3 CN 6 TJN"
+  type: trojan
+  server: other.kunlun-ppg.com
+  port: 10848
+  udp: true
+  password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
+  sni: alibaba-node.cn
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 7 TJN"
+  type: trojan
+  server: 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=@apt_mahdi
+  port: 8443
+  udp: true
+  password: 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=
+  sni: ams-trojan-grpc.carfin.tech
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: '@apt_mahdi'
+- name: "\U0001F1E8\U0001F1E6 CA 8 TJN"
+  type: trojan
+  server: frontend.kuangbiaoyun.com
+  port: 40007
+  udp: true
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 9 TJN"
+  type: trojan
+  server: other.kunlun-ppg.com
+  port: 10838
+  udp: true
+  password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
+  sni: alibaba-node.cn
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 10 TJN"
+  type: trojan
+  server: 65.20.102.54
+  port: 443
+  udp: true
+  password: 4fc77152e665415b9986d5b9b8f43601
+  sni: www.gpt123.one
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 11 TJN"
+  type: trojan
+  server: other.kunlun-ppg.com
+  port: 10845
+  udp: true
+  password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
+  sni: alibaba-node.cn
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 12 TJN"
+  type: trojan
+  server: 89.116.180.179
+  port: 443
+  udp: true
+  password: d2698cf9-c47e-455c-8384-12e642cbba15
+  sni: p6us4.pqjc.buzz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pq/us4
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 13 VMS"
+  ws-opts:
+    path: /
+  server: 154.23.190.162
+  port: 443
+  uuid: b9984674-f771-4e67-a198-c7e60720ba2c
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: trojan
+  name: "\U0001F1E8\U0001F1E6 CA 14 TJN"
+  server: ca-trojan.bonds.id
+  port: 443
+  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
+  udp: true
+  skip-cert-verify: true
+- type: http
+  name: "\U0001F1E8\U0001F1F3 CN 15 HTT"
+  server: 124.15.12.24
+  port: 251
+  username: username
+  password: password
+  udp: true
+- type: socks5
+  name: "\U0001F1E8\U0001F1F3 CN 16 SK5"
+  server: 124.15.12.24
+  port: 2312
+  udp: true
+- type: socks5
+  name: "\U0001F1E6\U0001F1FA AU 17 SK5"
+  server: 1.2.3.4
+  port: 123
+  username: username
+  password: password
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 3 TJN"
+  - "\U0001F1FA\U0001F1F8 US 4 TJN"
+  - "\U0001F1E9\U0001F1EA DE 5 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 6 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 7 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 8 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 9 TJN"
+  - "\U0001F1FA\U0001F1F8 US 10 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 11 TJN"
+  - "\U0001F1FA\U0001F1F8 US 12 TJN"
+  - "\U0001F1FA\U0001F1F8 US 13 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 14 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 15 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 16 SK5"
+  - "\U0001F1E6\U0001F1FA AU 17 SK5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 3 TJN"
+  - "\U0001F1FA\U0001F1F8 US 4 TJN"
+  - "\U0001F1E9\U0001F1EA DE 5 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 6 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 7 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 8 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 9 TJN"
+  - "\U0001F1FA\U0001F1F8 US 10 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 11 TJN"
+  - "\U0001F1FA\U0001F1F8 US 12 TJN"
+  - "\U0001F1FA\U0001F1F8 US 13 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 14 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 15 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 16 SK5"
+  - "\U0001F1E6\U0001F1FA AU 17 SK5"
 rules:
 - "MATCH,\U0001F310 Proxy"
