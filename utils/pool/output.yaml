@@ -1,13 +1,105 @@
-proxies: []
+proxies:
+- name: "\U0001F1E8\U0001F1F3 CN 1 VMS"
+  type: vmess
+  server: yes.cnmjcn.net
+  port: 16648
+  cipher: auto
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+- name: "\U0001F1E8\U0001F1F3 CN 2 VMS"
+  type: vmess
+  server: m.cnmjcn.com
+  port: 16648
+  cipher: auto
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+- name: "\U0001F1E8\U0001F1F3 CN 3 VMS"
+  type: vmess
+  server: t.cnmjcn.cyou
+  port: 16648
+  cipher: auto
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+- name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  type: vmess
+  server: 104.19.154.92
+  port: 2087
+  cipher: auto
+  uuid: 8fada9c0-c348-4465-aade-ff0311454178
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /kqlqqv
+    headers:
+      host: pAnel159.moOkomeILz.homes
+- name: "\U0001F1FA\U0001F1F3 UN 5 TJN"
+  type: trojan
+  server: 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=@apt_mahdi
+  port: 8443
+  udp: true
+  password: 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=
+  sni: ams-trojan-grpc.carfin.tech
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: '@apt_mahdi'
+- name: "\U0001F1FA\U0001F1F3 UN 6 TJN"
+  type: trojan
+  server: amini2.ddns.net
+  port: 2096
+  udp: true
+  password: biwe49r2Tv
+  sni: Qoakq.mookomeilz.homes
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /mskqq
+    headers:
+      host: pANeL159.moOkoMEilz.homeshttp/1.1
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E8\U0001F1F3 CN 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 3 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 6 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E8\U0001F1F3 CN 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 3 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 6 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
