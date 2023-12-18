@@ -198,6 +198,7 @@ dns:
 proxies:
   - {name: LT 1|TG@BPXD666, server: 89.116.180.158, port: 443, type: trojan, password: 45a8d20d-9a78-4be4-a74a-ab3b9e84e34e, sni: 3us2.pqjc.buzz, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fpq%2Fus2", headers: {Host: 3us2.pqjc.buzz}}, udp: true}
   - {name: LT 2|TG@BPXD666, server: 89.116.180.179, port: 443, type: trojan, password: 45a8d20d-9a78-4be4-a74a-ab3b9e84e34e, sni: p6us4.pqjc.buzz, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fpq%2Fus4", headers: {Host: p6us4.pqjc.buzz}}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: us01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, sni: us01.trojanyyds.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -217,6 +218,7 @@ proxy-groups:
     proxies:
       - LT 1|TG@BPXD666
       - LT 2|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -225,6 +227,7 @@ proxy-groups:
     proxies:
       - LT 1|TG@BPXD666
       - LT 2|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -245,7 +248,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -272,6 +275,7 @@ proxy-groups:
     proxies:
       - LT 1|TG@BPXD666
       - LT 2|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -280,6 +284,7 @@ proxy-groups:
     proxies:
       - LT 1|TG@BPXD666
       - LT 2|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
