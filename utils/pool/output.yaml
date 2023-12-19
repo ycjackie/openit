@@ -1,5 +1,32 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
+- name: "\U0001F1EC\U0001F1EE GI 1 TJN"
+  type: trojan
+  server: gbs.pptv-tv.store
+  port: 17728
+  udp: true
+  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSR"
+  type: ssr
+  server: cm01.newcome.xyz
+  port: 7703
+  password: jFa4F1
+  cipher: chacha20-ietf
+  obfs: plain
+  protocol: auth_aes128_sha1
+  obfs-param: 511df45641.microsoft.com
+  protocol-param: 45641:1119_jE165t
+  group: "Update-\u4E8C\u7237"
+- name: "\U0001F1E9\U0001F1EA DE 3 TJN"
+  type: trojan
+  server: 5.104.107.143
+  port: 443
+  udp: true
+  password: 6befeeb3-702b-4948-9028-f9e072f2da98
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
   type: vmess
   server: 162.159.192.244
   port: 443
@@ -13,7 +40,7 @@ proxies:
     path: /673ba378-840f-4928-81f2-203148d07350
     headers:
       host: cowochtmtrkers.turbo021.link
-- name: "\U0001F1EC\U0001F1E7 GB 2 VMS"
+- name: "\U0001F1EC\U0001F1E7 GB 5 VMS"
   type: vmess
   server: 172.99.190.109
   port: 443
@@ -23,7 +50,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   network: ws
-- name: "\U0001F1E8\U0001F1F3 CN 3 SSR"
+- name: "\U0001F1E8\U0001F1F3 CN 6 SSR"
   type: ssr
   server: cm01.newcome.xyz
   port: 7706
@@ -34,54 +61,27 @@ proxies:
   obfs-param: 511df45641.microsoft.com
   protocol-param: 45641:1119_jE165t
   group: "Update-\u4E8C\u7237"
-- name: "\U0001F1EC\U0001F1EE GI 4 TJN"
-  type: trojan
-  server: gbs.pptv-tv.store
-  port: 17728
-  udp: true
-  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 5 SSR"
-  type: ssr
-  server: cm01.newcome.xyz
-  port: 7703
-  password: jFa4F1
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: 511df45641.microsoft.com
-  protocol-param: 45641:1119_jE165t
-  group: "Update-\u4E8C\u7237"
-- name: "\U0001F1E9\U0001F1EA DE 6 TJN"
-  type: trojan
-  server: 5.104.107.143
-  port: 443
-  udp: true
-  password: 6befeeb3-702b-4948-9028-f9e072f2da98
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 2 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 3 SSR"
-  - "\U0001F1EC\U0001F1EE GI 4 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 5 SSR"
-  - "\U0001F1E9\U0001F1EA DE 6 TJN"
+  - "\U0001F1EC\U0001F1EE GI 1 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSR"
+  - "\U0001F1E9\U0001F1EA DE 3 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 5 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 6 SSR"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 2 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 3 SSR"
-  - "\U0001F1EC\U0001F1EE GI 4 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 5 SSR"
-  - "\U0001F1E9\U0001F1EA DE 6 TJN"
+  - "\U0001F1EC\U0001F1EE GI 1 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSR"
+  - "\U0001F1E9\U0001F1EA DE 3 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 5 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 6 SSR"
 rules:
 - "MATCH,\U0001F310 Proxy"
