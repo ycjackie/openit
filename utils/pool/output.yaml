@@ -182,21 +182,7 @@ proxies:
   obfs-param: 511df45641.microsoft.com
   protocol-param: 45641:1119_jE165t
   group: "Update-\u4E8C\u7237"
-- name: "\U0001F1FA\U0001F1F8 US 17 VMS"
-  type: vmess
-  server: sbl2.shabijichang.com
-  port: 80
-  cipher: auto
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: sbl2.shabijichang.com
-- name: "\U0001F1E8\U0001F1F3 CN 18 SSR"
+- name: "\U0001F1E8\U0001F1F3 CN 17 SSR"
   type: ssr
   server: cm01.newcome.xyz
   port: 7706
@@ -207,7 +193,7 @@ proxies:
   obfs-param: 511df45641.microsoft.com
   protocol-param: 45641:1119_jE165t
   group: "Update-\u4E8C\u7237"
-- name: "\U0001F1E8\U0001F1F3 CN 19 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 18 VMS"
   type: vmess
   server: cu.awslcn.info
   port: 25284
@@ -221,6 +207,17 @@ proxies:
     path: /
     headers:
       host: cu.awslcn.info
+- name: "\U0001F1E8\U0001F1F3 CN 19 SSR"
+  type: ssr
+  server: cm01.newcome.xyz
+  port: 7703
+  password: jFa4F1
+  cipher: chacha20-ietf
+  obfs: plain
+  protocol: auth_aes128_sha1
+  obfs-param: 511df45641.microsoft.com
+  protocol-param: 45641:1119_jE165t
+  group: "Update-\u4E8C\u7237"
 - name: "\U0001F1FA\U0001F1F3 UN 20 VMS"
   type: vmess
   server: 162.159.192.244
@@ -235,18 +232,7 @@ proxies:
     path: /673ba378-840f-4928-81f2-203148d07350
     headers:
       host: cowochtmtrkers.turbo021.link
-- name: "\U0001F1E8\U0001F1F3 CN 21 SSR"
-  type: ssr
-  server: cm01.newcome.xyz
-  port: 7706
-  password: jFa4F1
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: 511df45641.microsoft.com
-  protocol-param: 45641:1119_jE165t
-  group: "Update-\u4E8C\u7237"
-- name: "\U0001F1E8\U0001F1F3 CN 22 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 21 VMS"
   type: vmess
   server: us1.awslcn.info
   port: 25239
@@ -260,7 +246,7 @@ proxies:
     path: /
     headers:
       host: us1.awslcn.info
-- name: "\U0001F1FA\U0001F1F3 UN 23 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 22 VMS"
   type: vmess
   server: 104.18.212.188
   port: 8080
@@ -294,13 +280,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1E6 UA 14 VMS"
   - "\U0001F1FA\U0001F1F8 US 15 TJN"
   - "\U0001F1E8\U0001F1F3 CN 16 SSR"
-  - "\U0001F1FA\U0001F1F8 US 17 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 18 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 19 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 17 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 18 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 19 SSR"
   - "\U0001F1FA\U0001F1F3 UN 20 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 21 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 22 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 21 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 22 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -323,12 +308,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1E6 UA 14 VMS"
   - "\U0001F1FA\U0001F1F8 US 15 TJN"
   - "\U0001F1E8\U0001F1F3 CN 16 SSR"
-  - "\U0001F1FA\U0001F1F8 US 17 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 18 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 19 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 17 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 18 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 19 SSR"
   - "\U0001F1FA\U0001F1F3 UN 20 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 21 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 22 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 21 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 22 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
