@@ -196,10 +196,11 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: IE 1|TG@BPXD666, server: 34.252.27.138, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 1|TG@BPXD666, server: cm01.newcome.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
-  - {name: 🇨🇳 CN 2|TG@BPXD666, server: cm01.newcome.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
-  - {name: 🇳🇱 NL 1|TG@BPXD666, server: 46.182.107.15, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1702215223320}, udp: true}
+  - {name: IE 1|TG@BPXD666, server: 34.248.5.222, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
+  - {name: UA 1|TG@BPXD666, server: gbs.pptv-tv.store, port: 17728, type: trojan, password: 299a6171-b4ce-403a-8157-c3dad55ef3a2, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 1|TG@BPXD666, server: cm01.newcome.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
+  - {name: 🇨🇳 CN 2|TG@BPXD666, server: cm01.newcome.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
+  - {name: 🇬🇧 GB 1|TG@BPXD666, server: 18.130.96.112, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
   - {name: 🇷🇺 RU 1|TG@BPXD666, server: 45.87.153.246, port: 6199, type: ss, cipher: chacha20-ietf-poly1305, password: f7EI0dGWQM42T8gwN9CZIj, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: cf.network383.online, port: 2096, type: trojan, password: ZjzcW3LXeJ, sni: amsb.network383.online, skip-cert-verify: true, network: ws, ws-opts: {path: "%2F%40apt_mahdi", headers: {Host: amsb.network383.online}}, udp: true}
 proxy-groups:
@@ -220,9 +221,10 @@ proxy-groups:
     type: select
     proxies:
       - IE 1|TG@BPXD666
+      - UA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 💡 自动选择
@@ -232,9 +234,10 @@ proxy-groups:
     tolerance: 50
     proxies:
       - IE 1|TG@BPXD666
+      - UA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🇭🇰 香港节点
@@ -283,9 +286,10 @@ proxy-groups:
     type: select
     proxies:
       - IE 1|TG@BPXD666
+      - UA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🪜 故障转移
@@ -295,9 +299,10 @@ proxy-groups:
     tolerance: 50
     proxies:
       - IE 1|TG@BPXD666
+      - UA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 CN 2|TG@BPXD666
-      - 🇳🇱 NL 1|TG@BPXD666
+      - 🇬🇧 GB 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 👉 国内网站
