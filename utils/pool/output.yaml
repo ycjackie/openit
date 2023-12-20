@@ -1,13 +1,59 @@
-proxies: []
+proxies:
+- name: "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  type: ss
+  server: 45.87.153.246
+  port: 6199
+  password: f7EI0dGWQM42T8gwN9CZIj
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1ED\U0001F1F0 HK 2 TJN"
+  type: trojan
+  server: us01.trojanyyds.xyz
+  port: 443
+  udp: true
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: us01.trojanyyds.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 3 VMS"
+  type: vmess
+  server: cu.awslcn.info
+  port: 25284
+  cipher: auto
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: cu.awslcn.info
+- name: "\U0001F1EC\U0001F1E7 GB 4 TJN"
+  type: trojan
+  server: 35.178.236.184
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: false
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 2 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 3 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 4 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 2 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 3 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 4 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
