@@ -196,15 +196,13 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: UA 1|TG@BPXD666, server: gbs.pptv-tv.store, port: 17728, type: trojan, password: 299a6171-b4ce-403a-8157-c3dad55ef3a2, skip-cert-verify: true, udp: true}
-  - {name: UA 2|TG@BPXD666, server: 193.238.153.14, port: 8443, type: vmess, uuid: 159693e0-5146-482d-9e46-8c4f2fc865b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: UA 1|TG@BPXD666, server: 193.238.153.14, port: 8443, type: vmess, uuid: 159693e0-5146-482d-9e46-8c4f2fc865b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇨🇦 CA 1|TG@BPXD666, server: 142.171.202.130, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1702650992491}, udp: true}
-  - {name: 🇨🇳 CN 1|TG@BPXD666, server: cm01.newcome.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
-  - {name: 🇨🇳 CN 2|TG@BPXD666, server: cm01.newcome.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
+  - {name: 🇨🇳 CN 1|TG@BPXD666, server: cm01.newcome.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:1119_jE165t, obfs-param: 511df45641.microsoft.com, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: t5.583181.xyz, port: 1272, type: trojan, password: f5a24f98-589c-42c4-aa92-3e37993af700, sni: t5.583181.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 2|TG@BPXD666, server: 18.116.0.58, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: 45.58.153.25, port: 30000, type: vmess, uuid: 4242f9e0-6b7e-4257-9e93-7ad38015c46a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1702961716738}, udp: true}
-  - {name: 🇺🇸 US 4|TG@BPXD666, server: 172.99.190.109, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 172.99.190.109, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: 45.58.153.25, port: 30000, type: vmess, uuid: 4242f9e0-6b7e-4257-9e93-7ad38015c46a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1702961716738}, udp: true}
   - {name: 🇺🇸 US 5|TG@BPXD666, server: us01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, sni: us01.trojanyyds.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -224,10 +222,8 @@ proxy-groups:
     type: select
     proxies:
       - UA 1|TG@BPXD666
-      - UA 2|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
-      - 🇨🇳 CN 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -240,10 +236,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - UA 1|TG@BPXD666
-      - UA 2|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
-      - 🇨🇳 CN 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -299,10 +293,8 @@ proxy-groups:
     type: select
     proxies:
       - UA 1|TG@BPXD666
-      - UA 2|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
-      - 🇨🇳 CN 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
@@ -315,10 +307,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - UA 1|TG@BPXD666
-      - UA 2|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇨🇳 CN 1|TG@BPXD666
-      - 🇨🇳 CN 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
