@@ -111,7 +111,16 @@ proxies:
   sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 11 VMS"
+- name: "\U0001F1EF\U0001F1F5 JP 11 TJN"
+  type: trojan
+  server: us01.trojanyyds.xyz
+  port: 443
+  udp: true
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: us01.trojanyyds.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 12 VMS"
   type: vmess
   server: m.cnmjcn.com
   port: 16648
@@ -125,7 +134,7 @@ proxies:
     path: /
     headers:
       host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-- name: "\U0001F1E8\U0001F1F3 CN 12 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 13 VMS"
   type: vmess
   server: us2.awslcn.info
   port: 25257
@@ -139,7 +148,7 @@ proxies:
     path: /
     headers:
       host: us2.awslcn.info
-- name: "\U0001F1E8\U0001F1F3 CN 13 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 14 VMS"
   type: vmess
   server: t.cnmjcn.cyou
   port: 16648
@@ -153,7 +162,7 @@ proxies:
     path: /
     headers:
       host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-- name: "\U0001F1E8\U0001F1F3 CN 14 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 15 VMS"
   type: vmess
   server: cu.awslcn.info
   port: 25284
@@ -167,7 +176,7 @@ proxies:
     path: /
     headers:
       host: cu.awslcn.info
-- name: "\U0001F1E8\U0001F1F3 CN 15 SSR"
+- name: "\U0001F1E8\U0001F1F3 CN 16 SSR"
   type: ssr
   server: cm01.newcome.xyz
   port: 7701
@@ -192,11 +201,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 8 TJN"
   - "\U0001F1EF\U0001F1F5 JP 9 TJN"
   - "\U0001F1FA\U0001F1F8 US 10 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 11 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 11 TJN"
   - "\U0001F1E8\U0001F1F3 CN 12 VMS"
   - "\U0001F1E8\U0001F1F3 CN 13 VMS"
   - "\U0001F1E8\U0001F1F3 CN 14 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 15 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 15 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 16 SSR"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -213,10 +223,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 8 TJN"
   - "\U0001F1EF\U0001F1F5 JP 9 TJN"
   - "\U0001F1FA\U0001F1F8 US 10 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 11 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 11 TJN"
   - "\U0001F1E8\U0001F1F3 CN 12 VMS"
   - "\U0001F1E8\U0001F1F3 CN 13 VMS"
   - "\U0001F1E8\U0001F1F3 CN 14 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 15 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 15 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 16 SSR"
 rules:
 - "MATCH,\U0001F310 Proxy"
