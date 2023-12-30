@@ -198,6 +198,7 @@ dns:
 proxies:
   - {name: 🇬🇧 GB 1|TG@BPXD666, server: 18.openiisee.monster, port: 443, type: vmess, uuid: 112ede46-9880-3721-864b-b3ea0dac5cd2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dkmfjfkmd239wq20, headers: {Host: 18.openiisee.monster}}, udp: true}
   - {name: 🇷🇺 RU 1|TG@BPXD666, server: 89.221.224.94, port: 80, type: trojan, password: 28c79056-ccfd-4cc1-93d4-c337cc782e65, sni: is2-t.sshmax.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: cdn-13.cdn2cdn.com, port: 2083, type: trojan, password: qG9K8AGnn9XH5jUqeFu96g, sni: cdn13.cdn2cdn.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2F", headers: {Host: cdn13.cdn2cdn.com}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -217,6 +218,7 @@ proxy-groups:
     proxies:
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -225,6 +227,7 @@ proxy-groups:
     proxies:
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -245,7 +248,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -272,6 +275,7 @@ proxy-groups:
     proxies:
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -280,6 +284,7 @@ proxy-groups:
     proxies:
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
