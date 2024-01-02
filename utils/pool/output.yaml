@@ -36,7 +36,7 @@ proxies:
     path: /vmess
     headers:
       host: 89.221.224.12
-- name: "\U0001F1EF\U0001F1F5 JP 4 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 4 TJN"
   type: trojan
   server: us01.trojanyyds.xyz
   port: 443
@@ -317,7 +317,21 @@ proxies:
   password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 28 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 28 VMS"
+  type: vmess
+  server: 21.namesilo123.top
+  port: 8880
+  cipher: auto
+  uuid: 40e71b6a-00cf-437d-8232-4e83e6437286
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: uspp.sanfen002.top
+- name: "\U0001F1F7\U0001F1FA RU 29 TJN"
   type: trojan
   server: els_trojanone.yunjisuan.cf
   port: 14866
@@ -326,7 +340,7 @@ proxies:
   sni: els_trojanone.yunjisuan.cf
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 29 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 30 VMS"
   type: vmess
   server: 144.202.84.47
   port: 57848
@@ -336,7 +350,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 30 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 31 VMS"
   type: vmess
   server: www.visa.com
   port: 2082
@@ -357,7 +371,7 @@ proxy-groups:
   - "\U0001F1F7\U0001F1FA RU 1 TJN"
   - "\U0001F1E8\U0001F1F3 CN 2 VMS"
   - "\U0001F1F7\U0001F1FA RU 3 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 4 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 4 TJN"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
   - "\U0001F1E8\U0001F1E6 CA 6 TJN"
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
@@ -381,9 +395,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 25 VMS"
   - "\U0001F1E8\U0001F1F3 CN 26 VMS"
   - "\U0001F1EC\U0001F1EE GI 27 TJN"
-  - "\U0001F1F7\U0001F1FA RU 28 TJN"
-  - "\U0001F1FA\U0001F1F8 US 29 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 30 VMS"
+  - "\U0001F1FA\U0001F1F8 US 28 VMS"
+  - "\U0001F1F7\U0001F1FA RU 29 TJN"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 31 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -393,7 +408,7 @@ proxy-groups:
   - "\U0001F1F7\U0001F1FA RU 1 TJN"
   - "\U0001F1E8\U0001F1F3 CN 2 VMS"
   - "\U0001F1F7\U0001F1FA RU 3 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 4 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 4 TJN"
   - "\U0001F1FA\U0001F1F8 US 5 VMS"
   - "\U0001F1E8\U0001F1E6 CA 6 TJN"
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
@@ -417,8 +432,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 25 VMS"
   - "\U0001F1E8\U0001F1F3 CN 26 VMS"
   - "\U0001F1EC\U0001F1EE GI 27 TJN"
-  - "\U0001F1F7\U0001F1FA RU 28 TJN"
-  - "\U0001F1FA\U0001F1F8 US 29 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 30 VMS"
+  - "\U0001F1FA\U0001F1F8 US 28 VMS"
+  - "\U0001F1F7\U0001F1FA RU 29 TJN"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 31 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
