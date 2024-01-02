@@ -196,16 +196,13 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇷🇺 RU 1|TG@BPXD666, server: 89.221.224.94, port: 80, type: trojan, password: 28c79056-ccfd-4cc1-93d4-c337cc782e65, sni: is2-t.sshmax.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇺 RU 2|TG@BPXD666, server: 89.221.224.12, port: 80, type: vmess, uuid: c692f74a-9314-48ea-92e2-c4179e0dacbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: 68.183.159.199, port: 2092, type: vmess, uuid: 038e2714-5cbf-4812-fcfb-8726665c63b6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /telegram:@hkaa0}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: 192.46.223.61, port: 443, type: trojan, password: fe62cb68-6891-4e96-8fb9-e39f0ee53b7e, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: 45.58.153.25, port: 30000, type: vmess, uuid: 4242f9e0-6b7e-4257-9e93-7ad38015c46a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1702961716738}, udp: true}
-  - {name: 🇺🇸 US 4|TG@BPXD666, server: 45.58.153.24, port: 30000, type: vmess, uuid: 4242f9e0-6b7e-4257-9e93-7ad38015c46a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1702392255355}, udp: true}
-  - {name: 🇺🇸 US 5|TG@BPXD666, server: 38.180.33.136, port: 50104, type: vmess, uuid: 790f6802-7535-4109-de6d-15f676d5e3f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 6|TG@BPXD666, server: 21.namesilo123.top, port: 8880, type: vmess, uuid: 40e71b6a-00cf-437d-8232-4e83e6437286, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 21.namesilo123.top}}, udp: true}
-  - {name: 🇺🇸 US 7|TG@BPXD666, server: 144.202.84.47, port: 57848, type: vmess, uuid: e48643e7-0462-4055-f796-6ca6aa9f946d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 8|TG@BPXD666, server: 132.145.132.227, port: 37121, type: vmess, uuid: 93845b50-26f6-4203-f5ad-4d231d4e8f45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: UA 1|TG@BPXD666, server: gbs.pptv-tv.store, port: 17728, type: trojan, password: 299a6171-b4ce-403a-8157-c3dad55ef3a2, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 RU 1|TG@BPXD666, server: 89.221.224.12, port: 80, type: vmess, uuid: c692f74a-9314-48ea-92e2-c4179e0dacbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 🇷🇺 RU 2|TG@BPXD666, server: 89.221.224.94, port: 80, type: trojan, password: 28c79056-ccfd-4cc1-93d4-c337cc782e65, sni: is2-t.sshmax.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 192.46.223.61, port: 443, type: trojan, password: fe62cb68-6891-4e96-8fb9-e39f0ee53b7e, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 45.58.153.25, port: 30000, type: vmess, uuid: 4242f9e0-6b7e-4257-9e93-7ad38015c46a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1702961716738}, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 45.58.153.24, port: 30000, type: vmess, uuid: 4242f9e0-6b7e-4257-9e93-7ad38015c46a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1702392255355}, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: us01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -223,32 +220,26 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - UA 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇷🇺 RU 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
-      - 🇺🇸 US 7|TG@BPXD666
-      - 🇺🇸 US 8|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - UA 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇷🇺 RU 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
-      - 🇺🇸 US 7|TG@BPXD666
-      - 🇺🇸 US 8|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -273,10 +264,6 @@ proxy-groups:
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
-      - 🇺🇸 US 7|TG@BPXD666
-      - 🇺🇸 US 8|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -301,32 +288,26 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - UA 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇷🇺 RU 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
-      - 🇺🇸 US 7|TG@BPXD666
-      - 🇺🇸 US 8|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - UA 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇷🇺 RU 2|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
-      - 🇺🇸 US 7|TG@BPXD666
-      - 🇺🇸 US 8|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
