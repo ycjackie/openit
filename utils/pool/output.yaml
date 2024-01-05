@@ -12,16 +12,6 @@ proxies:
 - name: "\U0001F1ED\U0001F1F0 HK 2 VMS"
   type: vmess
   server: 34.92.50.99
-  port: 26389
-  cipher: auto
-  uuid: 3415f6ed-0880-43bb-85aa-d6c064cc968c
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 3 VMS"
-  type: vmess
-  server: 34.92.50.99
   port: 31535
   cipher: auto
   uuid: f23d62d4-f8da-4347-8cee-762804ecf677
@@ -29,6 +19,16 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: kcp
+- name: "\U0001F1ED\U0001F1F0 HK 3 VMS"
+  type: vmess
+  server: 34.92.50.99
+  port: 26389
+  cipher: auto
+  uuid: 3415f6ed-0880-43bb-85aa-d6c064cc968c
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
