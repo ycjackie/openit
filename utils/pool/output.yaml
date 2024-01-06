@@ -2,6 +2,16 @@ proxies:
 - name: "\U0001F1ED\U0001F1F0 HK 1 VMS"
   type: vmess
   server: 34.92.50.99
+  port: 31535
+  cipher: auto
+  uuid: f23d62d4-f8da-4347-8cee-762804ecf677
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: kcp
+- name: "\U0001F1ED\U0001F1F0 HK 2 VMS"
+  type: vmess
+  server: 34.92.50.99
   port: 64563
   cipher: auto
   uuid: 0eda82b0-d613-49e2-ac22-8ceafb0ec914
@@ -9,7 +19,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 2 VMS"
+- name: "\U0001F1ED\U0001F1F0 HK 3 VMS"
   type: vmess
   server: 34.92.50.99
   port: 26389
@@ -19,16 +29,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 3 VMS"
-  type: vmess
-  server: 34.92.50.99
-  port: 31535
-  cipher: auto
-  uuid: f23d62d4-f8da-4347-8cee-762804ecf677
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: kcp
 - name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
   type: vmess
   server: 162.159.142.202
@@ -201,18 +201,18 @@ proxies:
       host: els_cdnone.yunjisuan.cf
 - name: "\U0001F1FA\U0001F1F3 UN 17 VMS"
   type: vmess
-  server: a8.bcbot.in
-  port: 8880
+  server: 104.19.154.92
+  port: 2083
   cipher: auto
-  uuid: 79593a58-ed7e-4901-c3c7-8a993af4ab1c
+  uuid: 9e9b80f1-5555-4f7d-a209-d23b9d9dc047
   alterId: 0
-  tls: false
+  tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /snsk
     headers:
-      host: a8.bcbot.in
+      host: PAneljadid.mookoMEilz.homes
 - name: "\U0001F1FA\U0001F1F8 US 18 VMS"
   type: vmess
   server: 45.58.153.24
