@@ -1,5 +1,15 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1 SSS"
+- name: "\U0001F1ED\U0001F1F0 HK 1 VMS"
+  type: vmess
+  server: 34.92.50.99
+  port: 64563
+  cipher: auto
+  uuid: 0eda82b0-d613-49e2-ac22-8ceafb0ec914
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
   type: ss
   server: 874b20d.b9.gladns.com
   port: 2377
@@ -10,7 +20,7 @@ proxies:
   plugin-opts:
     mode: tls
     host: 874b20d.dl.nintendo.it:48331
-- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
   type: ss
   server: 874b20d.f1.gladns.com
   port: 2377
@@ -21,7 +31,7 @@ proxies:
   plugin-opts:
     mode: tls
     host: 874b20d.dl.nintendo.net.net:48331
-- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 4 SSS"
   type: ss
   server: 874b20d.f2.gladns.com
   port: 2377
@@ -32,7 +42,7 @@ proxies:
   plugin-opts:
     mode: tls
     host: 874b20d.dl.fastly.net.net:48331
-- name: "\U0001F1E8\U0001F1F3 CN 4 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 5 SSS"
   type: ss
   server: 874b20d.f3.gladns.com
   port: 2377
@@ -43,27 +53,7 @@ proxies:
   plugin-opts:
     mode: tls
     host: 874b20d.dl.microsoft.lv.net:48331
-- name: "\U0001F1ED\U0001F1F0 HK 5 VMS"
-  type: vmess
-  server: 34.92.50.99
-  port: 64563
-  cipher: auto
-  uuid: 0eda82b0-d613-49e2-ac22-8ceafb0ec914
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1ED\U0001F1F0 HK 6 VMS"
-  type: vmess
-  server: 34.92.50.99
-  port: 26389
-  cipher: auto
-  uuid: 3415f6ed-0880-43bb-85aa-d6c064cc968c
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 7 VMS"
   type: vmess
   server: 34.92.50.99
   port: 31535
@@ -73,6 +63,16 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: kcp
+- name: "\U0001F1ED\U0001F1F0 HK 7 VMS"
+  type: vmess
+  server: 34.92.50.99
+  port: 26389
+  cipher: auto
+  uuid: 3415f6ed-0880-43bb-85aa-d6c064cc968c
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
   type: vmess
   server: 162.159.142.202
@@ -173,7 +173,7 @@ proxies:
     path: /
     headers:
       host: mgtow_cdn.yunjisuan.cf
-- name: "\U0001F1FA\U0001F1F8 US 16 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 16 VMS"
   type: vmess
   server: a4.bcbot.in
   port: 8880
@@ -189,20 +189,6 @@ proxies:
       host: a4.bcbot.in
 - name: "\U0001F1FA\U0001F1F3 UN 17 VMS"
   type: vmess
-  server: a5.bcbot.in
-  port: 8880
-  cipher: auto
-  uuid: dc98db61-0ee2-4b55-855f-f62414f997d1
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: a5.bcbot.in
-- name: "\U0001F1FA\U0001F1F3 UN 18 VMS"
-  type: vmess
   server: 2bbiozh7wbc.servecounterstrike.com
   port: 2083
   cipher: auto
@@ -215,7 +201,7 @@ proxies:
     path: /snsk
     headers:
       host: PAneljadid.mookoMEilz.homes
-- name: "\U0001F1FA\U0001F1F3 UN 19 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 18 VMS"
   type: vmess
   server: 162.159.142.204
   port: 80
@@ -229,7 +215,7 @@ proxies:
     path: /
     headers:
       host: us3.889611.com
-- name: "\U0001F1EF\U0001F1F5 JP 20 VMS"
+- name: "\U0001F1EF\U0001F1F5 JP 19 VMS"
   type: vmess
   server: 47.245.2.84
   port: 2082
@@ -243,7 +229,7 @@ proxies:
     path: /
     headers:
       host: els_cdnone.yunjisuan.cf
-- name: "\U0001F1FA\U0001F1F3 UN 21 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 20 VMS"
   type: vmess
   server: www.glassdoor.com
   port: 2082
@@ -257,21 +243,7 @@ proxies:
     path: /
     headers:
       host: els_cdnone.yunjisuan.cf
-- name: "\U0001F1FA\U0001F1F3 UN 22 VMS"
-  type: vmess
-  server: 104.19.154.92
-  port: 2083
-  cipher: auto
-  uuid: 9e9b80f1-5555-4f7d-a209-d23b9d9dc047
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /snsk
-    headers:
-      host: PAneljadid.mookoMEilz.homes
-- name: "\U0001F1FA\U0001F1F8 US 23 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 21 VMS"
   type: vmess
   server: 45.58.153.24
   port: 30000
@@ -285,7 +257,7 @@ proxies:
     path: /path/1702392255355
     headers:
       host: www.77935707.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 24 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 22 VMS"
   type: vmess
   server: 162.159.200.6
   port: 80
@@ -299,7 +271,7 @@ proxies:
     path: /
     headers:
       host: er3.889611.com
-- name: "\U0001F1FA\U0001F1F8 US 25 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 23 TJN"
   type: trojan
   server: 15.204.9.172
   port: 443
@@ -308,7 +280,7 @@ proxies:
   sni: www.yahoo.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 26 VMS"
+- name: "\U0001F1F7\U0001F1FA RU 24 VMS"
   type: vmess
   server: 45.144.2.113
   port: 80
@@ -322,7 +294,7 @@ proxies:
     path: /
     headers:
       host: www.apple.com
-- name: "\U0001F1FA\U0001F1F3 UN 27 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 25 VMS"
   type: vmess
   server: 104.17.171.34
   port: 80
@@ -336,7 +308,7 @@ proxies:
     path: /
     headers:
       host: ccs.hostmjj.com
-- name: "\U0001F1FA\U0001F1F3 UN 28 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 26 VMS"
   type: vmess
   server: whatismyipaddress.com
   port: 2052
@@ -350,7 +322,7 @@ proxies:
     path: /
     headers:
       host: mgtow_cdn.yunjisuan.cf
-- name: "\U0001F1FA\U0001F1F3 UN 29 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 27 VMS"
   type: vmess
   server: cf-lt.sharecentre.online
   port: 80
@@ -364,7 +336,7 @@ proxies:
     path: /api/v3/download.getFile
     headers:
       host: ssrsub.v03.ssrsub.com
-- name: "\U0001F1FA\U0001F1F8 US 30 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 28 VMS"
   type: vmess
   server: web.parspack.com
   port: 80
@@ -378,17 +350,7 @@ proxies:
     path: /
     headers:
       host: zUlA9.eSmAIlkORea.sHop
-- name: "\U0001F1E8\U0001F1F3 CN 31 SSS"
-  type: ss
-  server: 874b20d.f1.gladns.com
-  port: 2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  cipher: chacha20-ietf-poly1305
-  plugin: obfs
-  plugin-opts:
-    mode: tls
-    host: 874b20d.dl.microsoft.io.net:48331
-- name: "\U0001F1E8\U0001F1F3 CN 32 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 29 SSS"
   type: ss
   server: 874b20d.f2.gladns.com
   port: 2377
@@ -398,15 +360,25 @@ proxies:
   plugin-opts:
     mode: tls
     host: 874b20d.dl.microsoft.eu.net:48331
+- name: "\U0001F1E8\U0001F1F3 CN 30 SSS"
+  type: ss
+  server: 874b20d.f3.gladns.com
+  port: 2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  cipher: chacha20-ietf-poly1305
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: 874b20d.dl.mozilla.net.net:48331
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 1 VMS"
   - "\U0001F1E8\U0001F1F3 CN 2 SSS"
   - "\U0001F1E8\U0001F1F3 CN 3 SSS"
   - "\U0001F1E8\U0001F1F3 CN 4 SSS"
-  - "\U0001F1ED\U0001F1F0 HK 5 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 5 SSS"
   - "\U0001F1ED\U0001F1F0 HK 6 VMS"
   - "\U0001F1ED\U0001F1F0 HK 7 VMS"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
@@ -417,34 +389,32 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 13 VMS"
   - "\U0001F1FA\U0001F1F3 UN 14 VMS"
   - "\U0001F1FA\U0001F1F3 UN 15 VMS"
-  - "\U0001F1FA\U0001F1F8 US 16 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 16 VMS"
   - "\U0001F1FA\U0001F1F3 UN 17 VMS"
   - "\U0001F1FA\U0001F1F3 UN 18 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 20 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 21 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 19 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 20 VMS"
+  - "\U0001F1FA\U0001F1F8 US 21 VMS"
   - "\U0001F1FA\U0001F1F3 UN 22 VMS"
-  - "\U0001F1FA\U0001F1F8 US 23 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 24 VMS"
-  - "\U0001F1FA\U0001F1F8 US 25 TJN"
-  - "\U0001F1F7\U0001F1FA RU 26 VMS"
+  - "\U0001F1FA\U0001F1F8 US 23 TJN"
+  - "\U0001F1F7\U0001F1FA RU 24 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 25 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 26 VMS"
   - "\U0001F1FA\U0001F1F3 UN 27 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 28 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 29 VMS"
-  - "\U0001F1FA\U0001F1F8 US 30 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 31 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 32 SSS"
+  - "\U0001F1FA\U0001F1F8 US 28 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 29 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 30 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 1 VMS"
   - "\U0001F1E8\U0001F1F3 CN 2 SSS"
   - "\U0001F1E8\U0001F1F3 CN 3 SSS"
   - "\U0001F1E8\U0001F1F3 CN 4 SSS"
-  - "\U0001F1ED\U0001F1F0 HK 5 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 5 SSS"
   - "\U0001F1ED\U0001F1F0 HK 6 VMS"
   - "\U0001F1ED\U0001F1F0 HK 7 VMS"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
@@ -455,22 +425,20 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 13 VMS"
   - "\U0001F1FA\U0001F1F3 UN 14 VMS"
   - "\U0001F1FA\U0001F1F3 UN 15 VMS"
-  - "\U0001F1FA\U0001F1F8 US 16 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 16 VMS"
   - "\U0001F1FA\U0001F1F3 UN 17 VMS"
   - "\U0001F1FA\U0001F1F3 UN 18 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 20 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 21 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 19 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 20 VMS"
+  - "\U0001F1FA\U0001F1F8 US 21 VMS"
   - "\U0001F1FA\U0001F1F3 UN 22 VMS"
-  - "\U0001F1FA\U0001F1F8 US 23 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 24 VMS"
-  - "\U0001F1FA\U0001F1F8 US 25 TJN"
-  - "\U0001F1F7\U0001F1FA RU 26 VMS"
+  - "\U0001F1FA\U0001F1F8 US 23 TJN"
+  - "\U0001F1F7\U0001F1FA RU 24 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 25 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 26 VMS"
   - "\U0001F1FA\U0001F1F3 UN 27 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 28 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 29 VMS"
-  - "\U0001F1FA\U0001F1F8 US 30 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 31 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 32 SSS"
+  - "\U0001F1FA\U0001F1F8 US 28 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 29 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 30 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
