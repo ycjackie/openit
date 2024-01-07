@@ -196,8 +196,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇸🇬 SG 1|TG@BPXD666, server: 54.255.176.223, port: 14569, type: trojan, password: Ja0Cpbu9CjTS, sni: www.myethblog.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 2|TG@BPXD666, server: 13.229.182.117, port: 14565, type: trojan, password: mgUWMstPIgyC, sni: www.myethblog.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG, server: 54.255.176.223, port: 14569, type: trojan, password: Ja0Cpbu9CjTS, sni: www.myethblog.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -215,16 +214,14 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - 🇸🇬 SG 1|TG@BPXD666
-      - 🇸🇬 SG 2|TG@BPXD666
+      - 🇸🇬 SG
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 SG 1|TG@BPXD666
-      - 🇸🇬 SG 2|TG@BPXD666
+      - 🇸🇬 SG
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -259,8 +256,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇸🇬 SG 1|TG@BPXD666
-      - 🇸🇬 SG 2|TG@BPXD666
+      - 🇸🇬 SG
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -271,16 +267,14 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 🇸🇬 SG 1|TG@BPXD666
-      - 🇸🇬 SG 2|TG@BPXD666
+      - DIRECT
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 SG 1|TG@BPXD666
-      - 🇸🇬 SG 2|TG@BPXD666
+      - 🇸🇬 SG
   - name: 👉 国内网站
     type: select
     proxies:
