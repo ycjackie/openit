@@ -196,6 +196,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
+  - {name: IQ 1|TG@BPXD666, server: 130.193.166.2, port: 443, type: vmess, uuid: 7682b778-b64b-408b-8fb2-61d7c7fc43e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
   - {name: 🇨🇦 CA 1|TG@BPXD666, server: 142.171.237.214, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/221312281009}, udp: true}
   - {name: 🇩🇪 DE 1|TG@BPXD666, server: 54.38.156.210, port: 443, type: trojan, password: 8464b1a0-a993-11ee-8944-1239d0255272, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: a3.bcbot.in, port: 8880, type: vmess, uuid: ce9aadc8-8c6e-4867-d247-9a84b469ac27, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a3.bcbot.in}}, udp: true}
@@ -217,6 +218,7 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - IQ 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
@@ -227,6 +229,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - IQ 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
@@ -277,6 +280,7 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - IQ 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
@@ -287,6 +291,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - IQ 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
       - 🇩🇪 DE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
