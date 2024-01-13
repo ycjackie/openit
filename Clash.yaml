@@ -197,10 +197,8 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: IQ 1|TG@BPXD666, server: 130.193.166.2, port: 443, type: vmess, uuid: 7682b778-b64b-408b-8fb2-61d7c7fc43e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
-  - {name: LY 1|TG@BPXD666, server: 197.215.140.234, port: 80, type: vmess, uuid: b82493e3-07b4-4cf2-b585-965575cfeb32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
   - {name: 🇨🇦 CA 1|TG@BPXD666, server: 142.171.237.214, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/221312281009}, udp: true}
-  - {name: 🇩🇪 DE 1|TG@BPXD666, server: 54.38.156.210, port: 443, type: trojan, password: 8464b1a0-a993-11ee-8944-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: glasco.fx-trader.shop, port: 80, type: vmess, uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: glasco.fx-trader.shop}}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 104.17.184.241, port: 80, type: vmess, uuid: bf3d038a-93a2-4e24-886c-6bc64e3c3a90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -219,9 +217,7 @@ proxy-groups:
     type: select
     proxies:
       - IQ 1|TG@BPXD666
-      - LY 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇩🇪 DE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
@@ -230,9 +226,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - IQ 1|TG@BPXD666
-      - LY 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇩🇪 DE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
@@ -280,9 +274,7 @@ proxy-groups:
     type: select
     proxies:
       - IQ 1|TG@BPXD666
-      - LY 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇩🇪 DE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
@@ -291,9 +283,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - IQ 1|TG@BPXD666
-      - LY 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇩🇪 DE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 👉 国内网站
     type: select
