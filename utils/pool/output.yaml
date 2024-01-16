@@ -19,7 +19,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mahanvip.mahantu.top
-- name: "\U0001F1FA\U0001F1F3 UN 3 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 3 TJN"
   type: trojan
   server: cdn-16.cdn2cdn.com
   port: 2083
@@ -176,13 +176,24 @@ proxies:
     path: /@forwardv2ray
     headers:
       host: irisoft.servecounterstrike.com
+- name: "\U0001F1FA\U0001F1F3 UN 17 TJN"
+  type: trojan
+  server: cdn-16.cdn2cdn.com
+  port: 2083
+  udp: true
+  password: gviRoLVUKA5kBX2M0gJSvg
+  sni: cdn16.cdn2cdn.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1F3 CN 1 TJN"
   - "\U0001F1FA\U0001F1F3 UN 2 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 3 TJN"
+  - "\U0001F1FA\U0001F1F8 US 3 TJN"
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1E8\U0001F1F3 CN 5 TJN"
   - "\U0001F1E8\U0001F1F3 CN 6 TJN"
@@ -196,6 +207,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 14 VMS"
   - "\U0001F1FA\U0001F1F3 UN 15 VMS"
   - "\U0001F1F5\U0001F1F8 PS 16 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 17 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -204,7 +216,7 @@ proxy-groups:
   - automatic
   - "\U0001F1E8\U0001F1F3 CN 1 TJN"
   - "\U0001F1FA\U0001F1F3 UN 2 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 3 TJN"
+  - "\U0001F1FA\U0001F1F8 US 3 TJN"
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1E8\U0001F1F3 CN 5 TJN"
   - "\U0001F1E8\U0001F1F3 CN 6 TJN"
@@ -218,5 +230,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 14 VMS"
   - "\U0001F1FA\U0001F1F3 UN 15 VMS"
   - "\U0001F1F5\U0001F1F8 PS 16 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 17 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
