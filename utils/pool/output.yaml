@@ -99,6 +99,83 @@ proxies:
     path: /yfjc/kus2
     headers:
       host: k5us2.yfjc.sbs
+- name: "\U0001F1E8\U0001F1F3 CN 9 TJN"
+  type: trojan
+  server: xibaozi.19890604.day
+  port: 10845
+  udp: true
+  password: a34db467-5757-4a39-bfed-d89a6501973e
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 10 VMS"
+  type: vmess
+  server: hamrahaval.asan3a.shop
+  port: 8080
+  cipher: auto
+  uuid: d72227c8-3ce1-4f24-a9fb-36fcd918f96f
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: asan3.azad2.tech
+- name: "\U0001F1E8\U0001F1F3 CN 11 TJN"
+  type: trojan
+  server: xibaozi.19890604.day
+  port: 10837
+  udp: true
+  password: a34db467-5757-4a39-bfed-d89a6501973e
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 12 TJN"
+  type: trojan
+  server: xibaozi.19890604.day
+  port: 10850
+  udp: true
+  password: a34db467-5757-4a39-bfed-d89a6501973e
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 13 TJN"
+  type: trojan
+  server: xibaozi.19890604.day
+  port: 10846
+  udp: true
+  password: a34db467-5757-4a39-bfed-d89a6501973e
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 14 TJN"
+  type: trojan
+  server: xibaozi.19890604.day
+  port: 10838
+  udp: true
+  password: a34db467-5757-4a39-bfed-d89a6501973e
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 15 TJN"
+  type: trojan
+  server: xibaozi.19890604.day
+  port: 10847
+  udp: true
+  password: a34db467-5757-4a39-bfed-d89a6501973e
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 16 TJN"
+  type: trojan
+  server: xibaozi.19890604.day
+  port: 10848
+  udp: true
+  password: a34db467-5757-4a39-bfed-d89a6501973e
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -111,6 +188,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 6 TJN"
   - "\U0001F1FA\U0001F1F3 UN 7 TJN"
   - "\U0001F1E6\U0001F1FA AU 8 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 9 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 11 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 12 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 13 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 14 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 15 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 16 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -125,5 +210,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 6 TJN"
   - "\U0001F1FA\U0001F1F3 UN 7 TJN"
   - "\U0001F1E6\U0001F1FA AU 8 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 9 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 11 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 12 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 13 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 14 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 15 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 16 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
