@@ -1,5 +1,48 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 1 TJN"
+  type: trojan
+  server: 172.67.204.84
+  port: 443
+  udp: true
+  password: Nu5EqwcJ2OCuvKAcSQeGdg
+  sni: cdn-22.gsmxreality.com
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 443trojan
+- name: "\U0001F1FA\U0001F1F3 UN 2 TJN"
+  type: trojan
+  server: 104.21.69.44
+  port: 443
+  udp: true
+  password: Nu5EqwcJ2OCuvKAcSQeGdg
+  sni: cdn-22.gsmxreality.com
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 443trojan
+- name: "\U0001F1FA\U0001F1F8 US 3 TJN"
+  type: trojan
+  server: us01.333210.xyz
+  port: 40000
+  udp: true
+  password: 892e4ff3-f8bb-42ac-9bd5-e103f235fc78
+  sni: 400567.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FF\U0001F1E6 ZA 4 VMS"
+  type: vmess
+  server: 129.151.164.152
+  port: 55600
+  cipher: auto
+  uuid: e30f8588-2555-48b8-c354-c8e63f57232d
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
   type: vmess
   server: 08dfde51-8c5d-4160-8732-0745507cfd5b.cloudflare-gateway.com
   port: 443
@@ -13,7 +56,7 @@ proxies:
     path: /glweidf.sbs/linkws
     headers:
       host: mikasa.erenyeager.cloudns.biz
-- name: "\U0001F1E8\U0001F1F3 CN 2 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 6 TJN"
   type: trojan
   server: xibaozi.19890604.day
   port: 10837
@@ -22,7 +65,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 3 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 7 TJN"
   type: trojan
   server: xibaozi.19890604.day
   port: 10845
@@ -31,7 +74,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 4 VMS"
+- name: "\U0001F1EC\U0001F1E7 GB 8 VMS"
   type: vmess
   server: 172.99.190.109
   port: 443
@@ -43,74 +86,31 @@ proxies:
   network: ws
   ws-opts:
     path: linkvws
-- name: "\U0001F1FA\U0001F1F8 US 5 TJN"
-  type: trojan
-  server: 172.67.204.84
-  port: 443
-  udp: true
-  password: Nu5EqwcJ2OCuvKAcSQeGdg
-  sni: cdn-22.gsmxreality.com
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 443trojan
-- name: "\U0001F1FA\U0001F1F3 UN 6 TJN"
-  type: trojan
-  server: 104.21.69.44
-  port: 443
-  udp: true
-  password: Nu5EqwcJ2OCuvKAcSQeGdg
-  sni: cdn-22.gsmxreality.com
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 443trojan
-- name: "\U0001F1FA\U0001F1F8 US 7 TJN"
-  type: trojan
-  server: us01.333210.xyz
-  port: 40000
-  udp: true
-  password: 892e4ff3-f8bb-42ac-9bd5-e103f235fc78
-  sni: 400567.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FF\U0001F1E6 ZA 8 VMS"
-  type: vmess
-  server: 129.151.164.152
-  port: 55600
-  cipher: auto
-  uuid: e30f8588-2555-48b8-c354-c8e63f57232d
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 2 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 3 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 4 VMS"
-  - "\U0001F1FA\U0001F1F8 US 5 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 6 TJN"
-  - "\U0001F1FA\U0001F1F8 US 7 TJN"
-  - "\U0001F1FF\U0001F1E6 ZA 8 VMS"
+  - "\U0001F1FA\U0001F1F8 US 1 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 2 TJN"
+  - "\U0001F1FA\U0001F1F8 US 3 TJN"
+  - "\U0001F1FF\U0001F1E6 ZA 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 6 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 7 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 8 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 2 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 3 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 4 VMS"
-  - "\U0001F1FA\U0001F1F8 US 5 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 6 TJN"
-  - "\U0001F1FA\U0001F1F8 US 7 TJN"
-  - "\U0001F1FF\U0001F1E6 ZA 8 VMS"
+  - "\U0001F1FA\U0001F1F8 US 1 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 2 TJN"
+  - "\U0001F1FA\U0001F1F8 US 3 TJN"
+  - "\U0001F1FF\U0001F1E6 ZA 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 6 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 7 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 8 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
