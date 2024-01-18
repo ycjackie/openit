@@ -1,5 +1,49 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  type: vmess
+  server: 08dfde51-8c5d-4160-8732-0745507cfd5b.cloudflare-gateway.com
+  port: 443
+  cipher: auto
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /glweidf.sbs/linkws
+    headers:
+      host: mikasa.erenyeager.cloudns.biz
+- name: "\U0001F1E8\U0001F1F3 CN 2 TJN"
+  type: trojan
+  server: xibaozi.19890604.day
+  port: 10837
+  udp: true
+  password: 66c899df-785c-4290-9c10-74a62b3ddd2b
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 3 TJN"
+  type: trojan
+  server: xibaozi.19890604.day
+  port: 10845
+  udp: true
+  password: 66c899df-785c-4290-9c10-74a62b3ddd2b
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EC\U0001F1E7 GB 4 VMS"
+  type: vmess
+  server: 172.99.190.109
+  port: 443
+  cipher: auto
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+- name: "\U0001F1FA\U0001F1F8 US 5 TJN"
   type: trojan
   server: 172.67.204.84
   port: 443
@@ -10,7 +54,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
-- name: "\U0001F1FA\U0001F1F3 UN 2 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 6 TJN"
   type: trojan
   server: 104.21.69.44
   port: 443
@@ -21,7 +65,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
-- name: "\U0001F1FA\U0001F1F8 US 3 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 7 TJN"
   type: trojan
   server: us01.333210.xyz
   port: 40000
@@ -30,7 +74,7 @@ proxies:
   sni: 400567.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FF\U0001F1E6 ZA 4 VMS"
+- name: "\U0001F1FF\U0001F1E6 ZA 8 VMS"
   type: vmess
   server: 129.151.164.152
   port: 55600
@@ -46,19 +90,27 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 2 TJN"
-  - "\U0001F1FA\U0001F1F8 US 3 TJN"
-  - "\U0001F1FF\U0001F1E6 ZA 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 3 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 4 VMS"
+  - "\U0001F1FA\U0001F1F8 US 5 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 6 TJN"
+  - "\U0001F1FA\U0001F1F8 US 7 TJN"
+  - "\U0001F1FF\U0001F1E6 ZA 8 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 2 TJN"
-  - "\U0001F1FA\U0001F1F8 US 3 TJN"
-  - "\U0001F1FF\U0001F1E6 ZA 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 3 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 4 VMS"
+  - "\U0001F1FA\U0001F1F8 US 5 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 6 TJN"
+  - "\U0001F1FA\U0001F1F8 US 7 TJN"
+  - "\U0001F1FF\U0001F1E6 ZA 8 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
