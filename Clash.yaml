@@ -196,7 +196,21 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: UA 1|TG@BPXD666, server: 95.164.69.27, port: 80, type: vmess, uuid: cd4a6d0d-4b26-4ee1-8a42-c2878b5c3b2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: BG 1|TG@BPXD666, server: 93.123.11.11, port: 443, type: vmess, uuid: b85520c4-e377-4806-bc12-5be674fc4061, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
+  - {name: BR 1|TG@BPXD666, server: 170.238.234.217, port: 80, type: vmess, uuid: b82493e3-07b4-4cf2-b585-965575cfeb32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
+  - {name: BT 1|TG@BPXD666, server: 118.103.136.245, port: 80, type: vmess, uuid: f21bcdb6-5dc6-4c4b-9a34-3b185f6747c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
+  - {name: IQ 1|TG@BPXD666, server: 185.194.11.74, port: 80, type: vmess, uuid: f5c137d1-ca89-42c0-b604-db39aef60a73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
+  - {name: RO 1|TG@BPXD666, server: 94.176.183.7, port: 80, type: vmess, uuid: 66fef53b-1b57-466d-89a4-bd99b90f6473, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
+  - {name: 🇩🇪 DE 1|TG@BPXD666, server: 92.223.124.36, port: 443, type: vmess, uuid: 29205f25-691a-4c09-87f6-bb917511b434, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
+  - {name: 🇩🇪 DE 2|TG@BPXD666, server: 92.223.124.48, port: 80, type: vmess, uuid: f21bcdb6-5dc6-4c4b-9a34-3b185f6747c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
+  - {name: 🇭🇰 HK 1|TG@BPXD666, server: 92.223.76.25, port: 80, type: vmess, uuid: f21bcdb6-5dc6-4c4b-9a34-3b185f6747c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
+  - {name: 🇯🇵 JP 1|TG@BPXD666, server: 92.223.63.27, port: 443, type: vmess, uuid: b82493e3-07b4-4cf2-b585-965575cfeb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
+  - {name: 🇯🇵 JP 2|TG@BPXD666, server: 92.223.63.24, port: 443, type: vmess, uuid: 7682b778-b64b-408b-8fb2-61d7c7fc43e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
+  - {name: 🇷🇺 RU 1|TG@BPXD666, server: 79.133.108.14, port: 443, type: vmess, uuid: 35944ff5-236b-4433-9bed-313213d564b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
+  - {name: 🇷🇺 RU 2|TG@BPXD666, server: 80.240.113.13, port: 80, type: vmess, uuid: 66fef53b-1b57-466d-89a4-bd99b90f6473, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
+  - {name: 🇷🇺 RU 3|TG@BPXD666, server: 95.85.92.7, port: 80, type: vmess, uuid: f21bcdb6-5dc6-4c4b-9a34-3b185f6747c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 172.99.190.109, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 104.17.25.1, port: 80, type: vmess, uuid: d6664518-c8e1-42cf-f2c1-d33dcc01a8a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -214,35 +228,65 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - UA 1|TG@BPXD666
+      - BG 1|TG@BPXD666
+      - BR 1|TG@BPXD666
+      - BT 1|TG@BPXD666
+      - IQ 1|TG@BPXD666
+      - RO 1|TG@BPXD666
+      - 🇩🇪 DE 1|TG@BPXD666
+      - 🇩🇪 DE 2|TG@BPXD666
+      - 🇭🇰 HK 1|TG@BPXD666
+      - 🇯🇵 JP 1|TG@BPXD666
+      - 🇯🇵 JP 2|TG@BPXD666
+      - 🇷🇺 RU 1|TG@BPXD666
+      - 🇷🇺 RU 2|TG@BPXD666
+      - 🇷🇺 RU 3|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - UA 1|TG@BPXD666
+      - BG 1|TG@BPXD666
+      - BR 1|TG@BPXD666
+      - BT 1|TG@BPXD666
+      - IQ 1|TG@BPXD666
+      - RO 1|TG@BPXD666
+      - 🇩🇪 DE 1|TG@BPXD666
+      - 🇩🇪 DE 2|TG@BPXD666
+      - 🇭🇰 HK 1|TG@BPXD666
+      - 🇯🇵 JP 1|TG@BPXD666
+      - 🇯🇵 JP 2|TG@BPXD666
+      - 🇷🇺 RU 1|TG@BPXD666
+      - 🇷🇺 RU 2|TG@BPXD666
+      - 🇷🇺 RU 3|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇭🇰 HK 1|TG@BPXD666
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇯🇵 JP 1|TG@BPXD666
+      - 🇯🇵 JP 2|TG@BPXD666
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -267,14 +311,42 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - UA 1|TG@BPXD666
+      - BG 1|TG@BPXD666
+      - BR 1|TG@BPXD666
+      - BT 1|TG@BPXD666
+      - IQ 1|TG@BPXD666
+      - RO 1|TG@BPXD666
+      - 🇩🇪 DE 1|TG@BPXD666
+      - 🇩🇪 DE 2|TG@BPXD666
+      - 🇭🇰 HK 1|TG@BPXD666
+      - 🇯🇵 JP 1|TG@BPXD666
+      - 🇯🇵 JP 2|TG@BPXD666
+      - 🇷🇺 RU 1|TG@BPXD666
+      - 🇷🇺 RU 2|TG@BPXD666
+      - 🇷🇺 RU 3|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - UA 1|TG@BPXD666
+      - BG 1|TG@BPXD666
+      - BR 1|TG@BPXD666
+      - BT 1|TG@BPXD666
+      - IQ 1|TG@BPXD666
+      - RO 1|TG@BPXD666
+      - 🇩🇪 DE 1|TG@BPXD666
+      - 🇩🇪 DE 2|TG@BPXD666
+      - 🇭🇰 HK 1|TG@BPXD666
+      - 🇯🇵 JP 1|TG@BPXD666
+      - 🇯🇵 JP 2|TG@BPXD666
+      - 🇷🇺 RU 1|TG@BPXD666
+      - 🇷🇺 RU 2|TG@BPXD666
+      - 🇷🇺 RU 3|TG@BPXD666
+      - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
