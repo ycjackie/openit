@@ -197,9 +197,7 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: SE 1|TG@BPXD666, server: ec2-13-49-127-111.eu-north-1.compute.amazonaws.com, port: 443, type: trojan, password: f63c1106-be09-4479-b214-aef555f9fc44, sni: north-1.compute.seatech.ir, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE 1|TG@BPXD666, server: 18.196.211.152, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: 172.99.190.109, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: 104.21.69.44, port: 443, type: trojan, password: Z0WkxNpiSVEFa9fCO4K8LQ, sni: cdn2.gsmvp.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -218,9 +216,7 @@ proxy-groups:
     type: select
     proxies:
       - SE 1|TG@BPXD666
-      - 🇩🇪 DE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -228,9 +224,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - SE 1|TG@BPXD666
-      - 🇩🇪 DE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -252,7 +246,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -278,9 +271,7 @@ proxy-groups:
     type: select
     proxies:
       - SE 1|TG@BPXD666
-      - 🇩🇪 DE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -288,9 +279,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - SE 1|TG@BPXD666
-      - 🇩🇪 DE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
