@@ -101,6 +101,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1FA\U0001F1F8 US 10 VMS"
   type: vmess
+  server: www.coldstone.club
+  port: 8080
+  cipher: auto
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: www.coldstone.club
+- name: "\U0001F1FA\U0001F1F8 US 11 VMS"
+  type: vmess
   server: cold-dawn-9246.fly.dev
   port: 443
   cipher: auto
@@ -113,7 +127,7 @@ proxies:
     path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
     headers:
       host: cold-dawn-9246.fly.dev
-- name: "\U0001F1EE\U0001F1F6 IQ 11 VMS"
+- name: "\U0001F1EE\U0001F1F6 IQ 12 VMS"
   type: vmess
   server: 130.193.166.2
   port: 443
@@ -127,7 +141,7 @@ proxies:
     path: /@forwardv2ray
     headers:
       host: soft8989.redirectme.net
-- name: "\U0001F1EE\U0001F1EA IE 12 TJN"
+- name: "\U0001F1EE\U0001F1EA IE 13 TJN"
   type: trojan
   server: 52.214.208.44
   port: 22222
@@ -136,7 +150,7 @@ proxies:
   sni: trojan.miwan.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 13 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 14 VMS"
   type: vmess
   server: www.crispyrainbow.biz
   port: 8080
@@ -150,7 +164,7 @@ proxies:
     path: /
     headers:
       host: www.crispyrainbow.biz
-- name: "\U0001F1EC\U0001F1EE GI 14 VMS"
+- name: "\U0001F1EC\U0001F1EE GI 15 VMS"
   type: vmess
   server: 95.164.8.106
   port: 80
@@ -164,7 +178,7 @@ proxies:
     path: /vmess
     headers:
       host: ee2-vmess.sshmax.xyz
-- name: "\U0001F1E9\U0001F1EA DE 15 TJN"
+- name: "\U0001F1E9\U0001F1EA DE 16 TJN"
   type: trojan
   server: 5.104.108.120
   port: 443
@@ -173,7 +187,7 @@ proxies:
   sni: 20-24-33-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1E6 UA 16 VMS"
+- name: "\U0001F1FA\U0001F1E6 UA 17 VMS"
   type: vmess
   server: 185.158.211.186
   port: 80
@@ -187,7 +201,7 @@ proxies:
     path: /@forwardv2ray
     headers:
       host: softiri.serveirc.com
-- name: "\U0001F1F0\U0001F1F7 KR 17 TJN"
+- name: "\U0001F1F0\U0001F1F7 KR 18 TJN"
   type: trojan
   server: 103.214.68.57
   port: 10003
@@ -196,7 +210,7 @@ proxies:
   sni: yes998.chickenkiller.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 18 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 19 VMS"
   type: vmess
   server: 104.17.184.241
   port: 2095
@@ -210,7 +224,7 @@ proxies:
     path: /
     headers:
       host: mgone_cdn.yunjisuan.cf
-- name: "\U0001F1E8\U0001F1F3 CN 19 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 20 TJN"
   type: trojan
   server: cn22.firewoodzz.com
   port: 35008
@@ -219,7 +233,7 @@ proxies:
   sni: updates.sub-nthu.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 20 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 21 VMS"
   type: vmess
   server: 158.101.7.8
   port: 80
@@ -231,7 +245,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: "\U0001F1F3\U0001F1F1 NL 21 VMS"
+- name: "\U0001F1F3\U0001F1F1 NL 22 VMS"
   type: vmess
   server: 91.242.229.69
   port: 2086
@@ -245,7 +259,7 @@ proxies:
     path: /vmess
     headers:
       host: nl1.xv2ray.net
-- name: "\U0001F1EB\U0001F1F7 FR 22 TJN"
+- name: "\U0001F1EB\U0001F1F7 FR 23 TJN"
   type: trojan
   server: 35.181.194.132
   port: 22222
@@ -254,7 +268,7 @@ proxies:
   sni: trojan.miwan.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 23 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 24 VMS"
   type: vmess
   server: s1c.v2.v001sss.xyz
   port: 2082
@@ -268,7 +282,7 @@ proxies:
     path: /
     headers:
       host: s1c.v2.v001sss.xyz
-- name: "\U0001F1E9\U0001F1EA DE 24 TJN"
+- name: "\U0001F1E9\U0001F1EA DE 25 TJN"
   type: trojan
   server: 5.104.108.109
   port: 443
@@ -291,20 +305,21 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 8 TJN"
   - "\U0001F1E8\U0001F1F3 CN 9 SSS"
   - "\U0001F1FA\U0001F1F8 US 10 VMS"
-  - "\U0001F1EE\U0001F1F6 IQ 11 VMS"
-  - "\U0001F1EE\U0001F1EA IE 12 TJN"
-  - "\U0001F1FA\U0001F1F8 US 13 VMS"
-  - "\U0001F1EC\U0001F1EE GI 14 VMS"
-  - "\U0001F1E9\U0001F1EA DE 15 TJN"
-  - "\U0001F1FA\U0001F1E6 UA 16 VMS"
-  - "\U0001F1F0\U0001F1F7 KR 17 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 18 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 19 TJN"
-  - "\U0001F1FA\U0001F1F8 US 20 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 21 VMS"
-  - "\U0001F1EB\U0001F1F7 FR 22 TJN"
-  - "\U0001F1FA\U0001F1F8 US 23 VMS"
-  - "\U0001F1E9\U0001F1EA DE 24 TJN"
+  - "\U0001F1FA\U0001F1F8 US 11 VMS"
+  - "\U0001F1EE\U0001F1F6 IQ 12 VMS"
+  - "\U0001F1EE\U0001F1EA IE 13 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 14 VMS"
+  - "\U0001F1EC\U0001F1EE GI 15 VMS"
+  - "\U0001F1E9\U0001F1EA DE 16 TJN"
+  - "\U0001F1FA\U0001F1E6 UA 17 VMS"
+  - "\U0001F1F0\U0001F1F7 KR 18 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 20 TJN"
+  - "\U0001F1FA\U0001F1F8 US 21 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 22 VMS"
+  - "\U0001F1EB\U0001F1F7 FR 23 TJN"
+  - "\U0001F1FA\U0001F1F8 US 24 VMS"
+  - "\U0001F1E9\U0001F1EA DE 25 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -321,19 +336,20 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 8 TJN"
   - "\U0001F1E8\U0001F1F3 CN 9 SSS"
   - "\U0001F1FA\U0001F1F8 US 10 VMS"
-  - "\U0001F1EE\U0001F1F6 IQ 11 VMS"
-  - "\U0001F1EE\U0001F1EA IE 12 TJN"
-  - "\U0001F1FA\U0001F1F8 US 13 VMS"
-  - "\U0001F1EC\U0001F1EE GI 14 VMS"
-  - "\U0001F1E9\U0001F1EA DE 15 TJN"
-  - "\U0001F1FA\U0001F1E6 UA 16 VMS"
-  - "\U0001F1F0\U0001F1F7 KR 17 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 18 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 19 TJN"
-  - "\U0001F1FA\U0001F1F8 US 20 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 21 VMS"
-  - "\U0001F1EB\U0001F1F7 FR 22 TJN"
-  - "\U0001F1FA\U0001F1F8 US 23 VMS"
-  - "\U0001F1E9\U0001F1EA DE 24 TJN"
+  - "\U0001F1FA\U0001F1F8 US 11 VMS"
+  - "\U0001F1EE\U0001F1F6 IQ 12 VMS"
+  - "\U0001F1EE\U0001F1EA IE 13 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 14 VMS"
+  - "\U0001F1EC\U0001F1EE GI 15 VMS"
+  - "\U0001F1E9\U0001F1EA DE 16 TJN"
+  - "\U0001F1FA\U0001F1E6 UA 17 VMS"
+  - "\U0001F1F0\U0001F1F7 KR 18 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 20 TJN"
+  - "\U0001F1FA\U0001F1F8 US 21 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 22 VMS"
+  - "\U0001F1EB\U0001F1F7 FR 23 TJN"
+  - "\U0001F1FA\U0001F1F8 US 24 VMS"
+  - "\U0001F1E9\U0001F1EA DE 25 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
