@@ -1,9 +1,5 @@
 proxies:
-- name: "\U0001F1EC\U0001F1E7 GB 1 HTT"
-  type: http
-  server: uk-mc-03.scarcehost.uk
-  port: 5917
-- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
   type: vmess
   server: 173.245.58.51
   port: 443
@@ -17,7 +13,7 @@ proxies:
     path: /fdczvws
     headers:
       host: godofwar2020.colocrossing.sbs
-- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
   type: vmess
   server: 172.67.217.144
   port: 80
@@ -31,7 +27,7 @@ proxies:
     path: /
     headers:
       host: lv1.xv2ray.net
-- name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
   type: vmess
   server: www.coldstone.club
   port: 8080
@@ -45,6 +41,10 @@ proxies:
     path: /
     headers:
       host: www.coldstone.club
+- name: "\U0001F1EC\U0001F1E7 GB 4 HTT"
+  type: http
+  server: uk-mc-03.scarcehost.uk
+  port: 5917
 - name: "\U0001F1E8\U0001F1F3 CN 5 TJN"
   type: trojan
   server: xibaozi.19890604.day
@@ -99,7 +99,7 @@ proxies:
   port: 21003
   password: cfa17a0d-5e7d-4871-976e-f116e0818123
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F8 US 10 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 10 VMS"
   type: vmess
   server: www.coldstone.club
   port: 8080
@@ -150,7 +150,7 @@ proxies:
   sni: trojan.miwan.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 14 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 14 VMS"
   type: vmess
   server: www.crispyrainbow.biz
   port: 8080
@@ -295,20 +295,20 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EC\U0001F1E7 GB 1 HTT"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 4 HTT"
   - "\U0001F1E8\U0001F1F3 CN 5 TJN"
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
   - "\U0001F1FA\U0001F1F8 US 8 TJN"
   - "\U0001F1E8\U0001F1F3 CN 9 SSS"
-  - "\U0001F1FA\U0001F1F8 US 10 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
   - "\U0001F1FA\U0001F1F8 US 11 VMS"
   - "\U0001F1EE\U0001F1F6 IQ 12 VMS"
   - "\U0001F1EE\U0001F1EA IE 13 TJN"
-  - "\U0001F1FA\U0001F1F8 US 14 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 14 VMS"
   - "\U0001F1EC\U0001F1EE GI 15 VMS"
   - "\U0001F1E9\U0001F1EA DE 16 TJN"
   - "\U0001F1FA\U0001F1E6 UA 17 VMS"
@@ -326,20 +326,20 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1E7 GB 1 HTT"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 4 HTT"
   - "\U0001F1E8\U0001F1F3 CN 5 TJN"
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
   - "\U0001F1FA\U0001F1F8 US 8 TJN"
   - "\U0001F1E8\U0001F1F3 CN 9 SSS"
-  - "\U0001F1FA\U0001F1F8 US 10 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
   - "\U0001F1FA\U0001F1F8 US 11 VMS"
   - "\U0001F1EE\U0001F1F6 IQ 12 VMS"
   - "\U0001F1EE\U0001F1EA IE 13 TJN"
-  - "\U0001F1FA\U0001F1F8 US 14 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 14 VMS"
   - "\U0001F1EC\U0001F1EE GI 15 VMS"
   - "\U0001F1E9\U0001F1EA DE 16 TJN"
   - "\U0001F1FA\U0001F1E6 UA 17 VMS"
