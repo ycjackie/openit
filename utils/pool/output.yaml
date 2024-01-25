@@ -1,63 +1,5 @@
 proxies:
-- name: "\U0001F1EC\U0001F1E7 GB 1 HTT"
-  type: http
-  server: uk-mc-03.scarcehost.uk
-  port: 5917
-- name: "\U0001F1E8\U0001F1F3 CN 2 TJN"
-  type: trojan
-  server: xibaozi.19890604.day
-  port: 10848
-  udp: true
-  password: 3e5d1046-5807-4b79-8397-31a006f546d1
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
-  type: vmess
-  server: 104.31.16.104
-  port: 8080
-  cipher: auto
-  uuid: 3a6752b4-8353-4172-85b1-32202116714d
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: asan3.azad1.tech
-- name: "\U0001F1FA\U0001F1F8 US 4 VMS"
-  type: vmess
-  server: pt2-vmess.sshmax.xyz
-  port: 80
-  cipher: auto
-  uuid: 099b5b7a-9d71-43cd-80e3-b8fbe1cc2695
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      host: pt2-vmess.sshmax.xyz
-- name: "\U0001F1FA\U0001F1F8 US 5 TJN"
-  type: trojan
-  server: 89.116.161.133
-  port: 443
-  udp: true
-  password: 56e1f11c-1217-46ab-b127-6afbc23bafba
-  sni: p1us1.pqjc.buzz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pq/us1
-- name: "\U0001F1E8\U0001F1F3 CN 6 SSS"
-  type: ss
-  server: service.ouluyun9803.com
-  port: 21003
-  password: cfa17a0d-5e7d-4871-976e-f116e0818123
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
   type: vmess
   server: 173.245.58.51
   port: 443
@@ -71,35 +13,7 @@ proxies:
     path: /fdczvws
     headers:
       host: godofwar2020.colocrossing.sbs
-- name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
-  type: vmess
-  server: www.coldstone.club
-  port: 8080
-  cipher: auto
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: www.coldstone.club
-- name: "\U0001F1FA\U0001F1F8 US 9 VMS"
-  type: vmess
-  server: cold-dawn-9246.fly.dev
-  port: 443
-  cipher: auto
-  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
-    headers:
-      host: cold-dawn-9246.fly.dev
-- name: "\U0001F1FA\U0001F1F8 US 10 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
   type: vmess
   server: 172.67.217.144
   port: 80
@@ -113,6 +27,92 @@ proxies:
     path: /
     headers:
       host: lv1.xv2ray.net
+- name: "\U0001F1FA\U0001F1F8 US 3 VMS"
+  type: vmess
+  server: www.coldstone.club
+  port: 8080
+  cipher: auto
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: www.coldstone.club
+- name: "\U0001F1EC\U0001F1E7 GB 4 HTT"
+  type: http
+  server: uk-mc-03.scarcehost.uk
+  port: 5917
+- name: "\U0001F1E8\U0001F1F3 CN 5 TJN"
+  type: trojan
+  server: xibaozi.19890604.day
+  port: 10848
+  udp: true
+  password: 3e5d1046-5807-4b79-8397-31a006f546d1
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
+  type: vmess
+  server: 104.31.16.104
+  port: 8080
+  cipher: auto
+  uuid: 3a6752b4-8353-4172-85b1-32202116714d
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: asan3.azad1.tech
+- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
+  type: vmess
+  server: pt2-vmess.sshmax.xyz
+  port: 80
+  cipher: auto
+  uuid: 099b5b7a-9d71-43cd-80e3-b8fbe1cc2695
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      host: pt2-vmess.sshmax.xyz
+- name: "\U0001F1FA\U0001F1F8 US 8 TJN"
+  type: trojan
+  server: 89.116.161.133
+  port: 443
+  udp: true
+  password: 56e1f11c-1217-46ab-b127-6afbc23bafba
+  sni: p1us1.pqjc.buzz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pq/us1
+- name: "\U0001F1E8\U0001F1F3 CN 9 SSS"
+  type: ss
+  server: service.ouluyun9803.com
+  port: 21003
+  password: cfa17a0d-5e7d-4871-976e-f116e0818123
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1FA\U0001F1F8 US 10 VMS"
+  type: vmess
+  server: cold-dawn-9246.fly.dev
+  port: 443
+  cipher: auto
+  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
+    headers:
+      host: cold-dawn-9246.fly.dev
 - name: "\U0001F1EE\U0001F1F6 IQ 11 VMS"
   type: vmess
   server: 130.193.166.2
@@ -281,15 +281,15 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EC\U0001F1E7 GB 1 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 2 TJN"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
-  - "\U0001F1FA\U0001F1F8 US 4 VMS"
-  - "\U0001F1FA\U0001F1F8 US 5 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 6 SSS"
+  - "\U0001F1EC\U0001F1E7 GB 4 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 5 TJN"
+  - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
-  - "\U0001F1FA\U0001F1F8 US 9 VMS"
+  - "\U0001F1FA\U0001F1F8 US 8 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 9 SSS"
   - "\U0001F1FA\U0001F1F8 US 10 VMS"
   - "\U0001F1EE\U0001F1F6 IQ 11 VMS"
   - "\U0001F1EE\U0001F1EA IE 12 TJN"
@@ -311,15 +311,15 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1E7 GB 1 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 2 TJN"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F8 US 3 VMS"
-  - "\U0001F1FA\U0001F1F8 US 4 VMS"
-  - "\U0001F1FA\U0001F1F8 US 5 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 6 SSS"
+  - "\U0001F1EC\U0001F1E7 GB 4 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 5 TJN"
+  - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1FA\U0001F1F8 US 7 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
-  - "\U0001F1FA\U0001F1F8 US 9 VMS"
+  - "\U0001F1FA\U0001F1F8 US 8 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 9 SSS"
   - "\U0001F1FA\U0001F1F8 US 10 VMS"
   - "\U0001F1EE\U0001F1F6 IQ 11 VMS"
   - "\U0001F1EE\U0001F1EA IE 12 TJN"
