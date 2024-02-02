@@ -1,13 +1,19 @@
-proxies: []
+proxies:
+- name: "\U0001F1FA\U0001F1F3 UN 1 SK5"
+  type: socks5
+  server: 127.0.0.1
+  port: 1080
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1FA\U0001F1F3 UN 1 SK5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1FA\U0001F1F3 UN 1 SK5"
 rules:
 - "MATCH,\U0001F310 Proxy"
