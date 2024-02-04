@@ -1,5 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
   type: vmess
   server: server32.beheshtbaneh.com
   port: 8880
@@ -101,7 +101,7 @@ proxies:
     path: /
     headers:
       host: www.blueberrywindow.online
-- name: "\U0001F1FA\U0001F1F3 UN 9 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 9 VMS"
   type: vmess
   server: www.crispyrainbow.biz
   port: 8080
@@ -115,12 +115,12 @@ proxies:
     path: /
     headers:
       host: www.crispyrainbow.biz
-- name: "\U0001F1FA\U0001F1F8 US 10 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 10 VMS"
   type: vmess
-  server: 172.67.212.114
-  port: 8080
+  server: server31.beheshtbaneh.com
+  port: 8880
   cipher: auto
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -128,7 +128,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      host: www.crispyrainbow.biz
+      host: server31.beheshtbaneh.com
 - name: "\U0001F1FA\U0001F1F3 UN 11 VMS"
   type: vmess
   server: 104.19.87.19
@@ -152,7 +152,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 13 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 13 VMS"
   type: vmess
   server: cfcdn1.sanfencdn9.com
   port: 2052
@@ -263,12 +263,12 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 23 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 23 VMS"
   type: vmess
-  server: server3.beheshtbaneh.com
-  port: 8880
+  server: 104.21.23.176
+  port: 8080
   cipher: auto
-  uuid: e305fc57-6153-4650-8c52-9a36865a199d
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -276,7 +276,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      host: server3.beheshtbaneh.com
+      host: www.crispyrainbow.biz
 - name: "\U0001F1FA\U0001F1F3 UN 24 VMS"
   type: vmess
   server: 104.20.231.30
@@ -412,11 +412,25 @@ proxies:
   port: 123
   username: username
   password: password
+- name: "\U0001F1FA\U0001F1F3 UN 37 VMS"
+  type: vmess
+  server: www.darkroom.lol
+  port: 8080
+  cipher: auto
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: www.darkroom.lol
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1FA\U0001F1F3 UN 2 VMS"
   - "\U0001F1E8\U0001F1F3 CN 3 TJN"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
@@ -424,11 +438,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1E8\U0001F1F3 CN 7 TJN"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
-  - "\U0001F1FA\U0001F1F8 US 10 VMS"
+  - "\U0001F1FA\U0001F1F8 US 9 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
   - "\U0001F1FA\U0001F1F3 UN 11 VMS"
   - "\U0001F1E8\U0001F1F3 CN 12 TJN"
-  - "\U0001F1FA\U0001F1F8 US 13 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 13 VMS"
   - "\U0001F1FA\U0001F1F8 US 14 VMS"
   - "\U0001F1FA\U0001F1F3 UN 15 VMS"
   - "\U0001F1FA\U0001F1F8 US 16 VMS"
@@ -438,7 +452,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 20 VMS"
   - "\U0001F1E8\U0001F1F3 CN 21 TJN"
   - "\U0001F1E8\U0001F1F3 CN 22 TJN"
-  - "\U0001F1FA\U0001F1F8 US 23 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
   - "\U0001F1FA\U0001F1F3 UN 24 VMS"
   - "\U0001F1FA\U0001F1F3 UN 25 VMS"
   - "\U0001F1F2\U0001F1FD MX 26 VMS"
@@ -452,13 +466,14 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 34 HTT"
   - "\U0001F1E8\U0001F1F3 CN 35 SK5"
   - "\U0001F1E6\U0001F1FA AU 36 SK5"
+  - "\U0001F1FA\U0001F1F3 UN 37 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1FA\U0001F1F3 UN 2 VMS"
   - "\U0001F1E8\U0001F1F3 CN 3 TJN"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
@@ -466,11 +481,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1E8\U0001F1F3 CN 7 TJN"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
-  - "\U0001F1FA\U0001F1F8 US 10 VMS"
+  - "\U0001F1FA\U0001F1F8 US 9 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
   - "\U0001F1FA\U0001F1F3 UN 11 VMS"
   - "\U0001F1E8\U0001F1F3 CN 12 TJN"
-  - "\U0001F1FA\U0001F1F8 US 13 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 13 VMS"
   - "\U0001F1FA\U0001F1F8 US 14 VMS"
   - "\U0001F1FA\U0001F1F3 UN 15 VMS"
   - "\U0001F1FA\U0001F1F8 US 16 VMS"
@@ -480,7 +495,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 20 VMS"
   - "\U0001F1E8\U0001F1F3 CN 21 TJN"
   - "\U0001F1E8\U0001F1F3 CN 22 TJN"
-  - "\U0001F1FA\U0001F1F8 US 23 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
   - "\U0001F1FA\U0001F1F3 UN 24 VMS"
   - "\U0001F1FA\U0001F1F3 UN 25 VMS"
   - "\U0001F1F2\U0001F1FD MX 26 VMS"
@@ -494,5 +509,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 34 HTT"
   - "\U0001F1E8\U0001F1F3 CN 35 SK5"
   - "\U0001F1E6\U0001F1FA AU 36 SK5"
+  - "\U0001F1FA\U0001F1F3 UN 37 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
