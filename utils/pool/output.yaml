@@ -1,5 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
   type: vmess
   server: www.crispyrainbow.biz
   port: 8080
@@ -81,7 +81,21 @@ proxies:
   network: http
 - name: "\U0001F1FA\U0001F1F3 UN 7 VMS"
   type: vmess
-  server: www.crispyrainbow.biz
+  server: server32.beheshtbaneh.com
+  port: 8880
+  cipher: auto
+  uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: server32.beheshtbaneh.com
+- name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
+  type: vmess
+  server: www.crispyrainbow.online
   port: 8080
   cipher: auto
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
@@ -92,8 +106,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      host: www.crispyrainbow.biz
-- name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
+      host: www.crispyrainbow.online
+- name: "\U0001F1FA\U0001F1F3 UN 9 VMS"
   type: vmess
   server: cfcdn1.sanfencdn9.com
   port: 2052
@@ -107,7 +121,7 @@ proxies:
     path: /video/QXjZG5u4F2
     headers:
       host: us3AJ8biuQx.fzbqfrse.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 9 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 10 VMS"
   type: vmess
   server: 104.17.19.122
   port: 2052
@@ -121,11 +135,25 @@ proxies:
     path: /video/QXjZG5u4F2
     headers:
       host: us3AJ8biuQx.fzbqfrse.xyz
+- name: "\U0001F1FA\U0001F1F8 US 11 VMS"
+  type: vmess
+  server: 172.67.212.114
+  port: 8080
+  cipher: auto
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: www.crispyrainbow.biz
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
@@ -134,13 +162,15 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 7 VMS"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   - "\U0001F1FA\U0001F1F3 UN 9 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
+  - "\U0001F1FA\U0001F1F8 US 11 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
@@ -149,5 +179,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 7 VMS"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   - "\U0001F1FA\U0001F1F3 UN 9 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
+  - "\U0001F1FA\U0001F1F8 US 11 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
