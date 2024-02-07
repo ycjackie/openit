@@ -1,5 +1,9 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 1 HTT"
+  type: http
+  server: 104.168.244.47
+  port: 12580
+- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
   type: vmess
   server: www.crispyrainbow.biz
   port: 8080
@@ -13,7 +17,7 @@ proxies:
     path: /
     headers:
       host: www.crispyrainbow.biz
-- name: "\U0001F1FA\U0001F1F3 UN 2 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 3 VMS"
   type: vmess
   server: for-irancell.outline-vpn.cloud
   port: 80
@@ -27,7 +31,7 @@ proxies:
     path: /
     headers:
       host: my1.tooters.ir
-- name: "\U0001F1FA\U0001F1F3 UN 3 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 4 VMS"
   type: vmess
   server: server26.beheshtbaneh.com
   port: 8880
@@ -41,7 +45,7 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
   type: vmess
   server: 104.21.94.99
   port: 8080
@@ -55,26 +59,12 @@ proxies:
     path: /
     headers:
       host: www.blueberrywindow.online
-- name: "\U0001F1E8\U0001F1F3 CN 5 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 6 SSS"
   type: ss
   server: service.ouluyun9803.com
   port: 20003
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F8 US 6 VMS"
-  type: vmess
-  server: server20.beheshtbaneh.com
-  port: 8880
-  cipher: auto
-  uuid: 7ee41eb4-0594-4e2d-92a7-5dd3ee513692
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: server20.beheshtbaneh.com
 - name: "\U0001F1FA\U0001F1F3 UN 7 VMS"
   type: vmess
   server: www.darkroom.lol
@@ -213,7 +203,21 @@ proxies:
       host: jnl1.jsjc.sbs
 - name: "\U0001F1FA\U0001F1F3 UN 17 VMS"
   type: vmess
-  server: www.crispyrainbow.online
+  server: 104.21.82.183
+  port: 8880
+  cipher: auto
+  uuid: 7ee41eb4-0594-4e2d-92a7-5dd3ee513692
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: server20.beheshtbaneh.com
+- name: "\U0001F1FA\U0001F1F8 US 18 VMS"
+  type: vmess
+  server: www.blueberrywindow.online
   port: 8080
   cipher: auto
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
@@ -224,21 +228,17 @@ proxies:
   ws-opts:
     path: /
     headers:
-      host: www.crispyrainbow.online
-- name: "\U0001F1FA\U0001F1F8 US 18 HTT"
-  type: http
-  server: 104.168.244.47
-  port: 12580
+      host: www.blueberrywindow.online
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  - "\U0001F1FA\U0001F1F8 US 1 HTT"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 5 SSS"
-  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 6 SSS"
   - "\U0001F1FA\U0001F1F3 UN 7 VMS"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   - "\U0001F1FA\U0001F1F8 US 9 VMS"
@@ -250,19 +250,19 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 15 TJN"
   - "\U0001F1FA\U0001F1F3 UN 16 TJN"
   - "\U0001F1FA\U0001F1F3 UN 17 VMS"
-  - "\U0001F1FA\U0001F1F8 US 18 HTT"
+  - "\U0001F1FA\U0001F1F8 US 18 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  - "\U0001F1FA\U0001F1F8 US 1 HTT"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 5 SSS"
-  - "\U0001F1FA\U0001F1F8 US 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 6 SSS"
   - "\U0001F1FA\U0001F1F3 UN 7 VMS"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   - "\U0001F1FA\U0001F1F8 US 9 VMS"
@@ -274,6 +274,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 15 TJN"
   - "\U0001F1FA\U0001F1F3 UN 16 TJN"
   - "\U0001F1FA\U0001F1F3 UN 17 VMS"
-  - "\U0001F1FA\U0001F1F8 US 18 HTT"
+  - "\U0001F1FA\U0001F1F8 US 18 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
