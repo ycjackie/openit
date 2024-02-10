@@ -268,7 +268,21 @@ proxies:
     path: /
     headers:
       host: www.blueberrywindow.online
-- name: "\U0001F1E9\U0001F1EA DE 23 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 23 VMS"
+  type: vmess
+  server: 172.67.180.248
+  port: 8080
+  cipher: auto
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: www.nahck.site
+- name: "\U0001F1E9\U0001F1EA DE 24 VMS"
   type: vmess
   server: 5.75.190.50
   port: 3389
@@ -304,7 +318,8 @@ proxy-groups:
   - "\U0001F1EE\U0001F1EA IE 20 TJN"
   - "\U0001F1EC\U0001F1E7 GB 21 VMS"
   - "\U0001F1FA\U0001F1F8 US 22 VMS"
-  - "\U0001F1E9\U0001F1EA DE 23 VMS"
+  - "\U0001F1FA\U0001F1F8 US 23 VMS"
+  - "\U0001F1E9\U0001F1EA DE 24 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -333,6 +348,7 @@ proxy-groups:
   - "\U0001F1EE\U0001F1EA IE 20 TJN"
   - "\U0001F1EC\U0001F1E7 GB 21 VMS"
   - "\U0001F1FA\U0001F1F8 US 22 VMS"
-  - "\U0001F1E9\U0001F1EA DE 23 VMS"
+  - "\U0001F1FA\U0001F1F8 US 23 VMS"
+  - "\U0001F1E9\U0001F1EA DE 24 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
