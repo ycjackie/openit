@@ -1,68 +1,5 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1 TJN"
-  type: trojan
-  server: xijinping.19890604.day
-  port: 10816
-  udp: true
-  password: 427a5ae2-6b2c-40ce-ab7a-e914eda118c8
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 2 TJN"
-  type: trojan
-  server: xijinping.19890604.day
-  port: 10811
-  udp: true
-  password: 427a5ae2-6b2c-40ce-ab7a-e914eda118c8
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 3 TJN"
-  type: trojan
-  server: tiananmen.19890604.day
-  port: 10806
-  udp: true
-  password: 427a5ae2-6b2c-40ce-ab7a-e914eda118c8
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 4 TJN"
-  type: trojan
-  server: tiananmen.19890604.day
-  port: 10807
-  udp: true
-  password: 427a5ae2-6b2c-40ce-ab7a-e914eda118c8
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 5 TJN"
-  type: trojan
-  server: tiananmen.19890604.day
-  port: 10808
-  udp: true
-  password: 427a5ae2-6b2c-40ce-ab7a-e914eda118c8
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 6 TJN"
-  type: trojan
-  server: tiananmen.19890604.day
-  port: 10809
-  udp: true
-  password: 427a5ae2-6b2c-40ce-ab7a-e914eda118c8
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 7 TJN"
-  type: trojan
-  server: tiananmen.19890604.day
-  port: 10810
-  udp: true
-  password: 427a5ae2-6b2c-40ce-ab7a-e914eda118c8
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 8 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
   type: vmess
   server: 154.23.190.162
   port: 443
@@ -72,6 +9,69 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: ws
+- name: "\U0001F1E8\U0001F1F3 CN 2 TJN"
+  type: trojan
+  server: xijinping.19890604.day
+  port: 10816
+  udp: true
+  password: 427a5ae2-6b2c-40ce-ab7a-e914eda118c8
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 3 TJN"
+  type: trojan
+  server: xijinping.19890604.day
+  port: 10811
+  udp: true
+  password: 427a5ae2-6b2c-40ce-ab7a-e914eda118c8
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 4 TJN"
+  type: trojan
+  server: tiananmen.19890604.day
+  port: 10806
+  udp: true
+  password: 427a5ae2-6b2c-40ce-ab7a-e914eda118c8
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 5 TJN"
+  type: trojan
+  server: tiananmen.19890604.day
+  port: 10807
+  udp: true
+  password: 427a5ae2-6b2c-40ce-ab7a-e914eda118c8
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 6 TJN"
+  type: trojan
+  server: tiananmen.19890604.day
+  port: 10808
+  udp: true
+  password: 427a5ae2-6b2c-40ce-ab7a-e914eda118c8
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 7 TJN"
+  type: trojan
+  server: tiananmen.19890604.day
+  port: 10809
+  udp: true
+  password: 427a5ae2-6b2c-40ce-ab7a-e914eda118c8
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 8 TJN"
+  type: trojan
+  server: tiananmen.19890604.day
+  port: 10810
+  udp: true
+  password: 427a5ae2-6b2c-40ce-ab7a-e914eda118c8
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1E8\U0001F1E6 CA 9 VMS"
   type: vmess
   server: tg-dns68.shift.cloudns.org
@@ -139,7 +139,7 @@ proxies:
     path: /video/GQ2qE5Us9g
     headers:
       host: tw1bQiWSE4x.fzbqfrse.xyz
-- name: "\U0001F1FA\U0001F1F8 US 14 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 14 VMS"
   type: vmess
   server: www.velvetmountain.xyz
   port: 8080
@@ -356,7 +356,21 @@ proxies:
     path: /
     headers:
       host: www.nahck.site
-- name: "\U0001F1EF\U0001F1F5 JP 30 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 30 VMS"
+  type: vmess
+  server: 172.67.180.248
+  port: 8080
+  cipher: auto
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: www.nahck.site
+- name: "\U0001F1EF\U0001F1F5 JP 31 VMS"
   type: vmess
   server: 138.2.6.15
   port: 80
@@ -370,7 +384,7 @@ proxies:
     path: /
     headers:
       host: my1.tooters.ir
-- name: "\U0001F1FA\U0001F1F8 US 31 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 32 TJN"
   type: trojan
   server: 89.116.180.179
   port: 443
@@ -381,7 +395,7 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us4
-- name: "\U0001F1EF\U0001F1F5 JP 32 VMS"
+- name: "\U0001F1EF\U0001F1F5 JP 33 VMS"
   type: vmess
   server: 43.153.181.217
   port: 80
@@ -395,7 +409,7 @@ proxies:
     path: /
     headers:
       host: my1.tooters.ir
-- name: "\U0001F1FA\U0001F1F3 UN 33 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 34 VMS"
   type: vmess
   server: for-irancell.outline-vpn.cloud
   port: 80
@@ -409,7 +423,7 @@ proxies:
     path: /
     headers:
       host: my1.tooters.ir
-- name: "\U0001F1FA\U0001F1F3 UN 34 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 35 TJN"
   type: trojan
   server: 104.19.155.92
   port: 443
@@ -422,7 +436,7 @@ proxies:
     path: /u5ht27KSp8j3Z2QIPbkyFm3I
     headers:
       host: sshhiddifyc1.cpionline.cchttp/1.1
-- name: "\U0001F1E8\U0001F1E6 CA 35 TJN"
+- name: "\U0001F1E8\U0001F1E6 CA 36 TJN"
   type: trojan
   server: 15.157.8.36
   port: 22222
@@ -431,7 +445,7 @@ proxies:
   sni: trojan.miwan.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 36 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 37 VMS"
   type: vmess
   server: 104.21.28.62
   port: 443
@@ -445,7 +459,7 @@ proxies:
     path: /vmess
     headers:
       host: pt1-vmess.sshmax.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 37 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 38 VMS"
   type: vmess
   server: 104.20.231.30
   port: 80
@@ -459,7 +473,7 @@ proxies:
     path: /
     headers:
       host: my1.tooters.ir
-- name: "\U0001F1EF\U0001F1F5 JP 38 VMS"
+- name: "\U0001F1EF\U0001F1F5 JP 39 VMS"
   type: vmess
   server: 131.186.63.127
   port: 80
@@ -473,7 +487,7 @@ proxies:
     path: /
     headers:
       host: my1.tooters.ir
-- name: "\U0001F1FA\U0001F1F8 US 39 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 40 TJN"
   type: trojan
   server: 172.67.143.221
   port: 443
@@ -484,7 +498,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: a47af5e1-0ae6-4e98-85b5-0e3c32dda445___bf4e49304c8193d16c7551b1f84aee3a
-- name: "\U0001F1FA\U0001F1F3 UN 40 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 41 TJN"
   type: trojan
   server: 104.19.171.3
   port: 443
@@ -497,7 +511,7 @@ proxies:
     path: 6b777a91
     headers:
       host: sherasheba.com
-- name: "\U0001F1FA\U0001F1F3 UN 41 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 42 VMS"
   type: vmess
   server: www.velvetmountain.shop
   port: 8080
@@ -511,7 +525,7 @@ proxies:
     path: /
     headers:
       host: www.velvetmountain.shop
-- name: "\U0001F1FA\U0001F1F8 US 42 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 43 VMS"
   type: vmess
   server: 144.126.145.219
   port: 80
@@ -525,7 +539,7 @@ proxies:
     path: /v118-fccxmxm35
     headers:
       host: internet.life.com.by
-- name: "\U0001F1FA\U0001F1F8 US 43 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 44 TJN"
   type: trojan
   server: 172.67.204.84
   port: 443
@@ -536,7 +550,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
-- name: "\U0001F1EF\U0001F1F5 JP 44 VMS"
+- name: "\U0001F1EF\U0001F1F5 JP 45 VMS"
   type: vmess
   server: 150.230.197.156
   port: 80
@@ -550,7 +564,7 @@ proxies:
     path: /
     headers:
       host: my1.tooters.ir
-- name: "\U0001F1EF\U0001F1F5 JP 45 VMS"
+- name: "\U0001F1EF\U0001F1F5 JP 46 VMS"
   type: vmess
   server: 150.230.205.56
   port: 80
@@ -564,7 +578,7 @@ proxies:
     path: /
     headers:
       host: my1.tooters.ir
-- name: "\U0001F1E8\U0001F1E6 CA 46 TJN"
+- name: "\U0001F1E8\U0001F1E6 CA 47 TJN"
   type: trojan
   server: 3.99.74.203
   port: 22222
@@ -573,7 +587,7 @@ proxies:
   sni: trojan.miwan.co.uk
   skip-cert-verify: false
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 47 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 48 VMS"
   type: vmess
   server: 104.24.208.37
   port: 80
@@ -587,7 +601,7 @@ proxies:
     path: /
     headers:
       host: my1.tooters.ir
-- name: "\U0001F1EF\U0001F1F5 JP 48 VMS"
+- name: "\U0001F1EF\U0001F1F5 JP 49 VMS"
   type: vmess
   server: 141.147.181.148
   port: 80
@@ -605,20 +619,20 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1 TJN"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1E8\U0001F1F3 CN 2 TJN"
   - "\U0001F1E8\U0001F1F3 CN 3 TJN"
   - "\U0001F1E8\U0001F1F3 CN 4 TJN"
   - "\U0001F1E8\U0001F1F3 CN 5 TJN"
   - "\U0001F1E8\U0001F1F3 CN 6 TJN"
   - "\U0001F1E8\U0001F1F3 CN 7 TJN"
-  - "\U0001F1FA\U0001F1F8 US 8 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 8 TJN"
   - "\U0001F1E8\U0001F1E6 CA 9 VMS"
   - "\U0001F1FA\U0001F1F3 UN 10 VMS"
   - "\U0001F1FA\U0001F1F3 UN 11 VMS"
   - "\U0001F1FA\U0001F1F3 UN 12 TJN"
   - "\U0001F1FA\U0001F1F3 UN 13 VMS"
-  - "\U0001F1FA\U0001F1F8 US 14 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 14 VMS"
   - "\U0001F1FA\U0001F1F3 UN 15 TJN"
   - "\U0001F1FA\U0001F1F3 UN 16 VMS"
   - "\U0001F1FA\U0001F1F8 US 17 TJN"
@@ -634,45 +648,46 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 27 VMS"
   - "\U0001F1FF\U0001F1E6 ZA 28 VMS"
   - "\U0001F1FA\U0001F1F3 UN 29 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 30 VMS"
-  - "\U0001F1FA\U0001F1F8 US 31 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 32 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 33 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 34 TJN"
-  - "\U0001F1E8\U0001F1E6 CA 35 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 36 VMS"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 31 VMS"
+  - "\U0001F1FA\U0001F1F8 US 32 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 33 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 34 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 35 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 36 TJN"
   - "\U0001F1FA\U0001F1F3 UN 37 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 38 VMS"
-  - "\U0001F1FA\U0001F1F8 US 39 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 40 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 41 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 38 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 39 VMS"
+  - "\U0001F1FA\U0001F1F8 US 40 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 41 TJN"
   - "\U0001F1FA\U0001F1F8 US 42 VMS"
-  - "\U0001F1FA\U0001F1F8 US 43 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 44 VMS"
+  - "\U0001F1FA\U0001F1F8 US 43 VMS"
+  - "\U0001F1FA\U0001F1F8 US 44 TJN"
   - "\U0001F1EF\U0001F1F5 JP 45 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 46 TJN"
-  - "\U0001F1FA\U0001F1F8 US 47 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 48 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 46 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 47 TJN"
+  - "\U0001F1FA\U0001F1F8 US 48 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 49 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1 TJN"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1E8\U0001F1F3 CN 2 TJN"
   - "\U0001F1E8\U0001F1F3 CN 3 TJN"
   - "\U0001F1E8\U0001F1F3 CN 4 TJN"
   - "\U0001F1E8\U0001F1F3 CN 5 TJN"
   - "\U0001F1E8\U0001F1F3 CN 6 TJN"
   - "\U0001F1E8\U0001F1F3 CN 7 TJN"
-  - "\U0001F1FA\U0001F1F8 US 8 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 8 TJN"
   - "\U0001F1E8\U0001F1E6 CA 9 VMS"
   - "\U0001F1FA\U0001F1F3 UN 10 VMS"
   - "\U0001F1FA\U0001F1F3 UN 11 VMS"
   - "\U0001F1FA\U0001F1F3 UN 12 TJN"
   - "\U0001F1FA\U0001F1F3 UN 13 VMS"
-  - "\U0001F1FA\U0001F1F8 US 14 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 14 VMS"
   - "\U0001F1FA\U0001F1F3 UN 15 TJN"
   - "\U0001F1FA\U0001F1F3 UN 16 VMS"
   - "\U0001F1FA\U0001F1F8 US 17 TJN"
@@ -688,24 +703,25 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 27 VMS"
   - "\U0001F1FF\U0001F1E6 ZA 28 VMS"
   - "\U0001F1FA\U0001F1F3 UN 29 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 30 VMS"
-  - "\U0001F1FA\U0001F1F8 US 31 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 32 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 33 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 34 TJN"
-  - "\U0001F1E8\U0001F1E6 CA 35 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 36 VMS"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 31 VMS"
+  - "\U0001F1FA\U0001F1F8 US 32 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 33 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 34 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 35 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 36 TJN"
   - "\U0001F1FA\U0001F1F3 UN 37 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 38 VMS"
-  - "\U0001F1FA\U0001F1F8 US 39 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 40 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 41 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 38 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 39 VMS"
+  - "\U0001F1FA\U0001F1F8 US 40 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 41 TJN"
   - "\U0001F1FA\U0001F1F8 US 42 VMS"
-  - "\U0001F1FA\U0001F1F8 US 43 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 44 VMS"
+  - "\U0001F1FA\U0001F1F8 US 43 VMS"
+  - "\U0001F1FA\U0001F1F8 US 44 TJN"
   - "\U0001F1EF\U0001F1F5 JP 45 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 46 TJN"
-  - "\U0001F1FA\U0001F1F8 US 47 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 48 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 46 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 47 TJN"
+  - "\U0001F1FA\U0001F1F8 US 48 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 49 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
