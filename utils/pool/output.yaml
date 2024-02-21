@@ -508,21 +508,7 @@ proxies:
     path: /index
     headers:
       host: www.baidu.com
-- name: "\U0001F1FA\U0001F1F8 US 41 VMS"
-  type: vmess
-  server: ingress-i2.iivvppnn.info
-  port: 38106
-  cipher: auto
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
-  alterId: 1
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      host: www.ivpnpro.net
-- name: "\U0001F1E8\U0001F1F3 CN 42 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 41 VMS"
   type: vmess
   server: 120.233.7.221
   port: 18001
@@ -532,19 +518,19 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 42 SSS"
+  type: ss
+  server: 14.29.124.174
+  port: 11002
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
 - name: "\U0001F1E8\U0001F1F3 CN 43 SSS"
   type: ss
   server: 14.29.124.174
   port: 11002
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
-- name: "\U0001F1E8\U0001F1F3 CN 44 SSS"
-  type: ss
-  server: 14.29.124.174
-  port: 11002
-  password: QazEdcTgb159@$*
-  cipher: aes-128-cfb
-- name: "\U0001F1FA\U0001F1F8 US 45 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 44 TJN"
   type: trojan
   server: mlxy-zf.jiashumao.net
   port: 27171
@@ -553,7 +539,7 @@ proxies:
   sni: mlxy.jiashumao.net
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 46 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 45 TJN"
   type: trojan
   server: hnyd.52147.top
   port: 30120
@@ -562,10 +548,19 @@ proxies:
   sni: huayun.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 47 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 46 TJN"
   type: trojan
   server: 164.70.68.67
   port: 28000
+  udp: true
+  password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
+  sni: huayun.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 47 TJN"
+  type: trojan
+  server: hnyd.52147.top
+  port: 30120
   udp: true
   password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
   sni: huayun.xyz
@@ -617,15 +612,6 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 53 TJN"
   type: trojan
-  server: gzyd2.52147.top
-  port: 30120
-  udp: true
-  password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
-  sni: huayun.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 54 TJN"
-  type: trojan
   server: szdx-anhb.jiashumao.net
   port: 22481
   udp: true
@@ -633,7 +619,7 @@ proxies:
   sni: ahbn.jiashumao.net
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 55 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 54 TJN"
   type: trojan
   server: yn-zf.jiashumao.net
   port: 40375
@@ -642,7 +628,7 @@ proxies:
   sni: yn.jiashumao.net
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 56 TJN"
+- name: "\U0001F1FB\U0001F1F3 VN 55 TJN"
   type: trojan
   server: 103.173.255.228
   port: 28000
@@ -651,7 +637,7 @@ proxies:
   sni: huayun.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 57 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 56 TJN"
   type: trojan
   server: sxdx-nf.jiashumao.net
   port: 35401
@@ -660,7 +646,7 @@ proxies:
   sni: nf.jiashumao.net
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 58 TJN"
+- name: "\U0001F1FB\U0001F1F3 VN 57 TJN"
   type: trojan
   server: 103.173.255.228
   port: 28443
@@ -669,7 +655,7 @@ proxies:
   sni: huayun.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 59 TJN"
+- name: "\U0001F1FB\U0001F1F3 VN 58 TJN"
   type: trojan
   server: 103.173.255.127
   port: 28000
@@ -678,7 +664,7 @@ proxies:
   sni: huayun.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 60 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 59 TJN"
   type: trojan
   server: jpa-zf.jiashumao.net
   port: 29881
@@ -687,7 +673,7 @@ proxies:
   sni: jpa.jiashumao.net
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 61 TJN"
+- name: "\U0001F1FB\U0001F1F3 VN 60 TJN"
   type: trojan
   server: 103.173.255.21
   port: 28000
@@ -696,7 +682,7 @@ proxies:
   sni: huayun.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 62 TJN"
+- name: "\U0001F1FB\U0001F1F3 VN 61 TJN"
   type: trojan
   server: 103.173.255.234
   port: 28000
@@ -749,13 +735,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 38 VMS"
   - "\U0001F1FA\U0001F1F3 UN 39 VMS"
   - "\U0001F1E6\U0001F1FA AU 40 VMS"
-  - "\U0001F1FA\U0001F1F8 US 41 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 42 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 41 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 42 SSS"
   - "\U0001F1E8\U0001F1F3 CN 43 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 44 SSS"
+  - "\U0001F1FA\U0001F1F8 US 44 TJN"
   - "\U0001F1FA\U0001F1F8 US 45 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 46 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 47 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 46 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 47 TJN"
   - "\U0001F1FA\U0001F1F8 US 48 TJN"
   - "\U0001F1EF\U0001F1F5 JP 49 TJN"
   - "\U0001F1FA\U0001F1F8 US 50 TJN"
@@ -763,14 +749,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 52 TJN"
   - "\U0001F1FA\U0001F1F8 US 53 TJN"
   - "\U0001F1FA\U0001F1F8 US 54 TJN"
-  - "\U0001F1FA\U0001F1F8 US 55 TJN"
-  - "\U0001F1FB\U0001F1F3 VN 56 TJN"
-  - "\U0001F1FA\U0001F1F8 US 57 TJN"
+  - "\U0001F1FB\U0001F1F3 VN 55 TJN"
+  - "\U0001F1FA\U0001F1F8 US 56 TJN"
+  - "\U0001F1FB\U0001F1F3 VN 57 TJN"
   - "\U0001F1FB\U0001F1F3 VN 58 TJN"
-  - "\U0001F1FB\U0001F1F3 VN 59 TJN"
-  - "\U0001F1FA\U0001F1F8 US 60 TJN"
+  - "\U0001F1FA\U0001F1F8 US 59 TJN"
+  - "\U0001F1FB\U0001F1F3 VN 60 TJN"
   - "\U0001F1FB\U0001F1F3 VN 61 TJN"
-  - "\U0001F1FB\U0001F1F3 VN 62 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -817,13 +802,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 38 VMS"
   - "\U0001F1FA\U0001F1F3 UN 39 VMS"
   - "\U0001F1E6\U0001F1FA AU 40 VMS"
-  - "\U0001F1FA\U0001F1F8 US 41 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 42 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 41 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 42 SSS"
   - "\U0001F1E8\U0001F1F3 CN 43 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 44 SSS"
+  - "\U0001F1FA\U0001F1F8 US 44 TJN"
   - "\U0001F1FA\U0001F1F8 US 45 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 46 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 47 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 46 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 47 TJN"
   - "\U0001F1FA\U0001F1F8 US 48 TJN"
   - "\U0001F1EF\U0001F1F5 JP 49 TJN"
   - "\U0001F1FA\U0001F1F8 US 50 TJN"
@@ -831,13 +816,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 52 TJN"
   - "\U0001F1FA\U0001F1F8 US 53 TJN"
   - "\U0001F1FA\U0001F1F8 US 54 TJN"
-  - "\U0001F1FA\U0001F1F8 US 55 TJN"
-  - "\U0001F1FB\U0001F1F3 VN 56 TJN"
-  - "\U0001F1FA\U0001F1F8 US 57 TJN"
+  - "\U0001F1FB\U0001F1F3 VN 55 TJN"
+  - "\U0001F1FA\U0001F1F8 US 56 TJN"
+  - "\U0001F1FB\U0001F1F3 VN 57 TJN"
   - "\U0001F1FB\U0001F1F3 VN 58 TJN"
-  - "\U0001F1FB\U0001F1F3 VN 59 TJN"
-  - "\U0001F1FA\U0001F1F8 US 60 TJN"
+  - "\U0001F1FA\U0001F1F8 US 59 TJN"
+  - "\U0001F1FB\U0001F1F3 VN 60 TJN"
   - "\U0001F1FB\U0001F1F3 VN 61 TJN"
-  - "\U0001F1FB\U0001F1F3 VN 62 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
