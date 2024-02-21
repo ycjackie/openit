@@ -1,13 +1,139 @@
-proxies: []
+proxies:
+- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  type: vmess
+  server: cfcdn1.sanfencdn9.com
+  port: 2052
+  cipher: auto
+  uuid: 9a557d02-12ff-4da8-8669-1824cfdefe1f
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/6VBhAkCtV4/
+- name: "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  type: vmess
+  server: cfcdn1.sanfencdn9.com
+  port: 2082
+  cipher: auto
+  uuid: 9a557d02-12ff-4da8-8669-1824cfdefe1f
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/CuTy87zAzV/
+- name: "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  type: vmess
+  server: cfcdn1.sanfencdn9.com
+  port: 8080
+  cipher: auto
+  uuid: 9a557d02-12ff-4da8-8669-1824cfdefe1f
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/f8ZKTGaGoC/
+- name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  type: vmess
+  server: cfcdn1.sanfencdn9.com
+  port: 8880
+  cipher: auto
+  uuid: 9a557d02-12ff-4da8-8669-1824cfdefe1f
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/bYdJ7Vc2We
+- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  type: vmess
+  server: cfcdn1.sanfencdn9.com
+  port: 2086
+  cipher: auto
+  uuid: 9a557d02-12ff-4da8-8669-1824cfdefe1f
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/Z7qdcrAGRw
+- name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  type: vmess
+  server: cfcdn1.sanfencdn9.com
+  port: 2095
+  cipher: auto
+  uuid: 9a557d02-12ff-4da8-8669-1824cfdefe1f
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/qYZue4zaWS
+- name: "\U0001F1FA\U0001F1F3 UN 7 VMS"
+  type: vmess
+  server: cfcdn2.sanfencdn9.com
+  port: 2052
+  cipher: auto
+  uuid: 9a557d02-12ff-4da8-8669-1824cfdefe1f
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/c9efxRCi
+- name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
+  type: vmess
+  server: cfcdn3.sanfencdn9.com
+  port: 80
+  cipher: auto
+  uuid: 9a557d02-12ff-4da8-8669-1824cfdefe1f
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/P7EExoE2
+- name: "\U0001F1FA\U0001F1F3 UN 9 VMS"
+  type: vmess
+  server: cfcdn3.sanfencdn9.com
+  port: 2052
+  cipher: auto
+  uuid: 9a557d02-12ff-4da8-8669-1824cfdefe1f
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/9TfVEyku
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 7 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 7 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
