@@ -196,11 +196,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇯🇵 JP 1|TG@BPXD666, server: 43.201.45.10, port: 16812, type: trojan, password: YMeP0457unyx, sni: www.myethblog.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: 54.174.146.222, port: 16816, type: trojan, password: HU34JJWj1oHR, sni: www.myethblog.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: 3.137.174.9, port: 16811, type: trojan, password: 1crmgnSwj5RY, sni: www.myethblog.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: xray.cheeshon.cyou, port: 19344, type: vmess, uuid: ac9dd407-d053-4c67-e44e-31d6a5833ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ac9dd407, headers: {Host: xray.cheeshon.cyou}}, udp: true}
-  - {name: 🇺🇸 US 4|TG@BPXD666, server: 52.13.48.44, port: 16809, type: trojan, password: NfKmA7bqzskg, sni: www.myethblog.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: xray.cheeshon.cyou, port: 19344, type: vmess, uuid: ac9dd407-d053-4c67-e44e-31d6a5833ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ac9dd407, headers: {Host: xray.cheeshon.cyou}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -218,22 +214,14 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -247,7 +235,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 JP 1|TG@BPXD666
+      - DIRECT
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -255,9 +243,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -282,22 +267,14 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 JP 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
