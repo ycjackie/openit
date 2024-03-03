@@ -55,7 +55,7 @@ proxies:
     path: /ac9dd407
     headers:
       host: xray.cheeshon.cyou
-- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 5 VMS"
   type: vmess
   server: yh1.freeh1.xyz
   port: 8080
@@ -178,6 +178,20 @@ proxies:
     path: /video/bYdJ7Vc2We
     headers:
       host: us6gzxQRrE4.fzbqfrse.xyz
+- name: "\U0001F1FA\U0001F1F3 UN 14 VMS"
+  type: vmess
+  server: s1c.v2.v001sss.xyz
+  port: 2082
+  cipher: auto
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: s1c.v2.v001sss.xyz
 proxy-groups:
 - name: automatic
   type: url-test
@@ -186,7 +200,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  - "\U0001F1FA\U0001F1F8 US 5 VMS"
   - "\U0001F1E8\U0001F1E6 CA 6 VMS"
   - "\U0001F1E6\U0001F1EA AE 7 VMS"
   - "\U0001F1E8\U0001F1E6 CA 8 VMS"
@@ -195,6 +209,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 11 TJN"
   - "\U0001F1F3\U0001F1F1 NL 12 VMS"
   - "\U0001F1FA\U0001F1F3 UN 13 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 14 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -205,7 +220,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  - "\U0001F1FA\U0001F1F8 US 5 VMS"
   - "\U0001F1E8\U0001F1E6 CA 6 VMS"
   - "\U0001F1E6\U0001F1EA AE 7 VMS"
   - "\U0001F1E8\U0001F1E6 CA 8 VMS"
@@ -214,5 +229,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 11 TJN"
   - "\U0001F1F3\U0001F1F1 NL 12 VMS"
   - "\U0001F1FA\U0001F1F3 UN 13 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 14 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
