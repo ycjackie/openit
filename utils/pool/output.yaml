@@ -1,13 +1,180 @@
-proxies: []
+proxies:
+- name: "\U0001F1E8\U0001F1E6 CA 1 VMS"
+  type: vmess
+  server: 23.227.38.23
+  port: 8080
+  cipher: auto
+  uuid: 80b48bc6-1faa-41f5-91f8-0bce015a8bea
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 80b48bc6-1faa-41f5-91f8-0bce015a8bea-vm
+    headers:
+      host: uh-lawyers-instruments-kernel.trycloudflare.com
+- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
+  type: vmess
+  server: yh1.dtku41.xyz
+  port: 8080
+  cipher: auto
+  uuid: 8df7d5fa-cecb-4816-a943-be94929543f9
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 8df7d5fa-cecb-4816-a943-be94929543f9-vm
+    headers:
+      host: widescreen-instruction-breakdown-postage.trycloudflare.com
+- name: "\U0001F1E8\U0001F1E6 CA 3 TJN"
+  type: trojan
+  server: 23.227.38.11
+  port: 443
+  udp: true
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /argox-tr
+- name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  type: vmess
+  server: 104.21.69.44
+  port: 80
+  cipher: auto
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: a.prapt4.ir
+- name: "\U0001F1EE\U0001F1EA IE 5 VMS"
+  type: vmess
+  server: 54.217.45.184
+  port: 49837
+  cipher: auto
+  uuid: dcd200f1-b26f-415e-8643-e6a9cb7a1981
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: "\U0001F1E8\U0001F1E6 CA 6 VMS"
+  type: vmess
+  server: 23.227.39.45
+  port: 8080
+  cipher: auto
+  uuid: 8df7d5fa-cecb-4816-a943-be94929543f9
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 8df7d5fa-cecb-4816-a943-be94929543f9-vm
+    headers:
+      host: widescreen-instruction-breakdown-postage.trycloudflare.com
+- name: "\U0001F1EE\U0001F1EA IE 7 VMS"
+  type: vmess
+  server: 54.217.45.184
+  port: 10681
+  cipher: auto
+  uuid: 5c799848-322d-42db-ab8b-a489ab3cba1c
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1E6 CA 8 VMS"
+  type: vmess
+  server: 23.227.39.24
+  port: 8080
+  cipher: auto
+  uuid: e62899a7-438c-40ef-96d6-259cb26d6fdd
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: e62899a7-438c-40ef-96d6-259cb26d6fdd-vm
+    headers:
+      host: per-essex-patterns-bowling.trycloudflare.com
+- name: "\U0001F1F3\U0001F1F1 NL 9 VMS"
+  type: vmess
+  server: 188.114.96.113
+  port: 80
+  cipher: auto
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: a.prapt4.ir
+- name: "\U0001F1E6\U0001F1EA AE 10 VMS"
+  type: vmess
+  server: 94.140.0.110
+  port: 8880
+  cipher: auto
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: food.zhaal.ir
+- name: "\U0001F1FA\U0001F1F3 UN 11 VMS"
+  type: vmess
+  server: fbi.gov
+  port: 8080
+  cipher: auto
+  uuid: 693da022-8e1f-4dab-b3ac-556321989f17
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 693da022-8e1f-4dab-b3ac-556321989f17-vm
+    headers:
+      host: nest-emily-healing-h.trycloudflare.com
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E8\U0001F1E6 CA 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 3 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1EE\U0001F1EA IE 5 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 6 VMS"
+  - "\U0001F1EE\U0001F1EA IE 7 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 8 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 9 VMS"
+  - "\U0001F1E6\U0001F1EA AE 10 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 11 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E8\U0001F1E6 CA 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 3 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1EE\U0001F1EA IE 5 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 6 VMS"
+  - "\U0001F1EE\U0001F1EA IE 7 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 8 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 9 VMS"
+  - "\U0001F1E6\U0001F1EA AE 10 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 11 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
