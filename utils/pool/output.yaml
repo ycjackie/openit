@@ -1,13 +1,21 @@
-proxies: []
+proxies:
+- name: "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  type: ss
+  server: hk.1.thap.xyz
+  port: 44606
+  password: 06a4d7d1-8169-4bd1-9726-d68d5c2fe92a
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
