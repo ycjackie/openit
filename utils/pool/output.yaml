@@ -1,5 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
   type: vmess
   server: yh1.freeh1.xyz
   port: 8080
@@ -255,11 +255,25 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
     headers:
       host: pcs-referenced-camera-concerns.trycloudflare.com
+- name: "\U0001F1FA\U0001F1F8 US 20 VMS"
+  type: vmess
+  server: yh2.dtku41.xyz
+  port: 8080
+  cipher: auto
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
+    headers:
+      host: per-essex-patterns-bowling.trycloudflare.com
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
   - "\U0001F1E8\U0001F1E6 CA 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
@@ -278,13 +292,14 @@ proxy-groups:
   - "\U0001F1E6\U0001F1EA AE 17 VMS"
   - "\U0001F1E8\U0001F1E6 CA 18 VMS"
   - "\U0001F1FA\U0001F1F3 UN 19 VMS"
+  - "\U0001F1FA\U0001F1F8 US 20 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
   - "\U0001F1E8\U0001F1E6 CA 2 VMS"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
@@ -303,5 +318,6 @@ proxy-groups:
   - "\U0001F1E6\U0001F1EA AE 17 VMS"
   - "\U0001F1E8\U0001F1E6 CA 18 VMS"
   - "\U0001F1FA\U0001F1F3 UN 19 VMS"
+  - "\U0001F1FA\U0001F1F8 US 20 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
