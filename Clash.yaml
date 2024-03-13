@@ -197,8 +197,7 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: 🇫🇷 FR 1|TG@BPXD666, server: 94.140.0.110, port: 8880, type: vmess, uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: 172.67.204.84, port: 443, type: trojan, password: qj1Dz1CJmFQRhWr1SP80aA, sni: cdn-21.gsmxreality.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: s1c.v2.v001sss.xyz, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 20.255.223.60, port: 36801, type: vmess, uuid: c0ad0b4b-5372-3ab8-9d43-5f8022a0f1ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -218,7 +217,6 @@ proxy-groups:
     proxies:
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -227,7 +225,6 @@ proxy-groups:
     proxies:
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -249,7 +246,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -276,7 +272,6 @@ proxy-groups:
     proxies:
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -285,7 +280,6 @@ proxy-groups:
     proxies:
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
