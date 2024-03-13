@@ -196,7 +196,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇦 CA 1|TG@BPXD666, server: 23.227.38.23, port: 8080, type: vmess, uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm}, udp: true}
+  - {name: 🇫🇷 FR 1|TG@BPXD666, server: 94.140.0.110, port: 8880, type: vmess, uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -214,14 +214,14 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - 🇨🇦 CA 1|TG@BPXD666
+      - 🇫🇷 FR 1|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇦 CA 1|TG@BPXD666
+      - 🇫🇷 FR 1|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -267,14 +267,14 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 🇨🇦 CA 1|TG@BPXD666
+      - 🇫🇷 FR 1|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇦 CA 1|TG@BPXD666
+      - 🇫🇷 FR 1|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
