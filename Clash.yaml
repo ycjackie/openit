@@ -196,7 +196,8 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: www.speedtest.net, port: 2087, type: vmess, uuid: 1a066ded-15cf-47c5-99b8-da006adf55d4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: 04.tehranonlineshop.com, grpc-opts: {grpc-service-name: string}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: www.speedtest.net, port: 2087, type: vmess, uuid: 1a066ded-15cf-47c5-99b8-da006adf55d4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: 02.tehranonlineshop.com, grpc-opts: {grpc-service-name: string}, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: www.speedtest.net, port: 2087, type: vmess, uuid: 1a066ded-15cf-47c5-99b8-da006adf55d4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: 04.tehranonlineshop.com, grpc-opts: {grpc-service-name: string}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -215,6 +216,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -222,6 +224,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -243,6 +246,7 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -268,6 +272,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -275,6 +280,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
