@@ -141,6 +141,36 @@ proxies:
     path: /api/v3/download.getFile
     headers:
       host: ssrsub.v03.ssrsub.com
+- name: "\U0001F1FA\U0001F1F8 US 12 VMS"
+  type: vmess
+  server: 47.76.35.246
+  port: 24101
+  cipher: auto
+  uuid: 2fbf5c4d-4748-4064-d02e-af9e5c6be060
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: "\U0001F1F5\U0001F1F0 PK 13 VMS"
+  type: vmess
+  server: 50.114.157.61
+  port: 80
+  cipher: auto
+  uuid: 5ed4d00e-25a5-4f8a-a56e-c0aa23dfdffd
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /stream
+    headers:
+      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 proxy-groups:
 - name: automatic
   type: url-test
@@ -156,6 +186,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 9 VMS"
   - "\U0001F1E8\U0001F1E6 CA 10 VMS"
   - "\U0001F1FA\U0001F1F8 US 11 VMS"
+  - "\U0001F1FA\U0001F1F8 US 12 VMS"
+  - "\U0001F1F5\U0001F1F0 PK 13 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -173,5 +205,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 9 VMS"
   - "\U0001F1E8\U0001F1E6 CA 10 VMS"
   - "\U0001F1FA\U0001F1F8 US 11 VMS"
+  - "\U0001F1FA\U0001F1F8 US 12 VMS"
+  - "\U0001F1F5\U0001F1F0 PK 13 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
