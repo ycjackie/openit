@@ -71,6 +71,58 @@ proxies:
   port: 24883
   password: 9xJYMv
   cipher: aes-256-cfb
+- name: "\U0001F1FA\U0001F1F3 UN 13 HTT"
+  type: http
+  server: 127.0.0.1
+  port: 7890
+- name: "\U0001F1E8\U0001F1F3 CN 14 VMS"
+  type: vmess
+  server: sui.forlive.live
+  port: 27506
+  cipher: auto
+  uuid: 2642df7e-42bd-4325-95a6-758f631f98b2
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: "\U0001F1E8\U0001F1F3 CN 15 VMS"
+  type: vmess
+  server: sui.forlive.live
+  port: 15757
+  cipher: auto
+  uuid: 2642df7e-42bd-4325-95a6-758f631f98b2
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: "\U0001F1E8\U0001F1F3 CN 16 VMS"
+  type: vmess
+  server: sui.forlive.live
+  port: 19446
+  cipher: auto
+  uuid: 2642df7e-42bd-4325-95a6-758f631f98b2
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: "\U0001F1E8\U0001F1F3 CN 17 VMS"
+  type: vmess
+  server: sui.forlive.live
+  port: 19700
+  cipher: auto
+  uuid: 2642df7e-42bd-4325-95a6-758f631f98b2
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: automatic
   type: url-test
@@ -87,6 +139,11 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 10 SSS"
   - "\U0001F1E8\U0001F1F3 CN 11 SSS"
   - "\U0001F1E8\U0001F1F3 CN 12 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 13 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 14 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 15 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 16 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 17 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -105,5 +162,10 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 10 SSS"
   - "\U0001F1E8\U0001F1F3 CN 11 SSS"
   - "\U0001F1E8\U0001F1F3 CN 12 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 13 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 14 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 15 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 16 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 17 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
