@@ -90,7 +90,7 @@ proxies:
   network: ws
   ws-opts:
     path: /argox-tr
-- name: "\U0001F1FA\U0001F1F8 US 8 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
   type: vmess
   server: mahilu.site
   port: 2052
@@ -104,21 +104,7 @@ proxies:
     path: /
     headers:
       host: mahilu.site
-- name: "\U0001F1FA\U0001F1F3 UN 9 VMS"
-  type: vmess
-  server: 104.21.82.39
-  port: 2052
-  cipher: auto
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: mahilu.site
-- name: "\U0001F1F1\U0001F1FA LU 10 VMS"
+- name: "\U0001F1F1\U0001F1FA LU 9 VMS"
   type: vmess
   server: 78.111.102.232
   port: 3389
@@ -128,7 +114,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: http
-- name: "\U0001F1FA\U0001F1F8 US 11 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 10 VMS"
   type: vmess
   server: 104.26.4.57
   port: 2095
@@ -142,6 +128,20 @@ proxies:
     path: /api/v3/download.getFile
     headers:
       host: ssrsub.v03.ssrsub.com
+- name: "\U0001F1FA\U0001F1F8 US 11 VMS"
+  type: vmess
+  server: 172.67.152.170
+  port: 2052
+  cipher: auto
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: mahilu.site
 - name: "\U0001F1FA\U0001F1F3 UN 12 HTT"
   type: http
   server: 127.0.0.1
@@ -266,7 +266,7 @@ proxies:
   port: 24883
   password: 9xJYMv
   cipher: aes-256-cfb
-- name: "\U0001F1FA\U0001F1F3 UN 29 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 29 VMS"
   type: vmess
   server: us65.netfilx.live
   port: 80
@@ -292,9 +292,9 @@ proxy-groups:
   - "\U0001F1E6\U0001F1EA AE 5 VMS"
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1E8\U0001F1E6 CA 7 TJN"
-  - "\U0001F1FA\U0001F1F8 US 8 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
-  - "\U0001F1F1\U0001F1FA LU 10 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
+  - "\U0001F1F1\U0001F1FA LU 9 VMS"
+  - "\U0001F1FA\U0001F1F8 US 10 VMS"
   - "\U0001F1FA\U0001F1F8 US 11 VMS"
   - "\U0001F1FA\U0001F1F3 UN 12 HTT"
   - "\U0001F1E8\U0001F1F3 CN 13 VMS"
@@ -313,7 +313,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 26 SSS"
   - "\U0001F1E8\U0001F1F3 CN 27 SSS"
   - "\U0001F1E8\U0001F1F3 CN 28 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 29 VMS"
+  - "\U0001F1FA\U0001F1F8 US 29 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -327,9 +327,9 @@ proxy-groups:
   - "\U0001F1E6\U0001F1EA AE 5 VMS"
   - "\U0001F1FA\U0001F1F8 US 6 VMS"
   - "\U0001F1E8\U0001F1E6 CA 7 TJN"
-  - "\U0001F1FA\U0001F1F8 US 8 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
-  - "\U0001F1F1\U0001F1FA LU 10 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
+  - "\U0001F1F1\U0001F1FA LU 9 VMS"
+  - "\U0001F1FA\U0001F1F8 US 10 VMS"
   - "\U0001F1FA\U0001F1F8 US 11 VMS"
   - "\U0001F1FA\U0001F1F3 UN 12 HTT"
   - "\U0001F1E8\U0001F1F3 CN 13 VMS"
@@ -348,6 +348,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 26 SSS"
   - "\U0001F1E8\U0001F1F3 CN 27 SSS"
   - "\U0001F1E8\U0001F1F3 CN 28 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 29 VMS"
+  - "\U0001F1FA\U0001F1F8 US 29 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
