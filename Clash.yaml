@@ -199,7 +199,6 @@ proxies:
   - {name: RO 1|TG@BPXD666, server: 45.82.31.164, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
   - {name: TR 1|TG@BPXD666, server: 78.111.102.232, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
   - {name: 🇨🇦 CA 1|TG@BPXD666, server: 23.227.38.11, port: 443, type: trojan, password: b17fa17d-13a0-4e8a-a398-8e549ea8b208, sni: syndication-statutes-wanted-logo.trycloudflare.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fargox-tr", headers: {Host: syndication-statutes-wanted-logo.trycloudflare.com}}, udp: true}
-  - {name: 🇫🇷 FR 1|TG@BPXD666, server: 94.140.0.110, port: 8880, type: vmess, uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: mahilu.site, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mahilu.site}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -221,7 +220,6 @@ proxy-groups:
       - RO 1|TG@BPXD666
       - TR 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
@@ -232,7 +230,6 @@ proxy-groups:
       - RO 1|TG@BPXD666
       - TR 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
@@ -282,7 +279,6 @@ proxy-groups:
       - RO 1|TG@BPXD666
       - TR 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
@@ -293,7 +289,6 @@ proxy-groups:
       - RO 1|TG@BPXD666
       - TR 1|TG@BPXD666
       - 🇨🇦 CA 1|TG@BPXD666
-      - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 👉 国内网站
     type: select
