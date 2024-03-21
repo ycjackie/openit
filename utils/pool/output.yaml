@@ -1,13 +1,109 @@
-proxies: []
+proxies:
+- name: "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  type: ss
+  server: au01.kkp.wtf
+  port: 24883
+  password: 9xJYMv
+  cipher: aes-256-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  type: ss
+  server: ca01.kkp.wtf
+  port: 24883
+  password: 9xJYMv
+  cipher: aes-256-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
+  type: ss
+  server: fr08.kkp.wtf
+  port: 24883
+  password: 9xJYMv
+  cipher: aes-256-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 4 SSS"
+  type: ss
+  server: ge02.kkp.wtf
+  port: 24883
+  password: 9xJYMv
+  cipher: aes-256-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 5 SSS"
+  type: ss
+  server: hk01.kkp.wtf
+  port: 24883
+  password: 9xJYMv
+  cipher: aes-256-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 6 SSS"
+  type: ss
+  server: in01.kkp.wtf
+  port: 24883
+  password: 9xJYMv
+  cipher: aes-256-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 7 SSS"
+  type: ss
+  server: jp19.kkp.wtf
+  port: 24883
+  password: 9xJYMv
+  cipher: aes-256-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 8 SSS"
+  type: ss
+  server: ru03.kkp.wtf
+  port: 24883
+  password: 9xJYMv
+  cipher: aes-256-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 9 SSS"
+  type: ss
+  server: sgp01.kkp.wtf
+  port: 24883
+  password: 9xJYMv
+  cipher: aes-256-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 10 SSS"
+  type: ss
+  server: kr01.kkp.wtf
+  port: 24883
+  password: 9xJYMv
+  cipher: aes-256-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 11 SSS"
+  type: ss
+  server: tw17.kkp.wtf
+  port: 24883
+  password: 9xJYMv
+  cipher: aes-256-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 12 SSS"
+  type: ss
+  server: uk01.kkp.wtf
+  port: 24883
+  password: 9xJYMv
+  cipher: aes-256-cfb
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 4 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 5 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 6 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 7 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 8 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 9 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 10 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 11 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 12 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 4 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 5 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 6 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 7 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 8 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 9 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 10 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 11 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 12 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
