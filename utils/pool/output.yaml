@@ -1,13 +1,89 @@
-proxies: []
+proxies:
+- name: "\U0001F1FA\U0001F1F3 UN 1 HTT"
+  type: http
+  server: 127.0.0.1
+  port: 7890
+- name: "\U0001F1E8\U0001F1F3 CN 2 VMS"
+  type: vmess
+  server: sui.forlive.live
+  port: 27506
+  cipher: auto
+  uuid: 8c3ab3aa-ec03-4fb0-8c7d-0e69ae497253
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: "\U0001F1E8\U0001F1F3 CN 3 VMS"
+  type: vmess
+  server: sui.forlive.live
+  port: 15757
+  cipher: auto
+  uuid: 8c3ab3aa-ec03-4fb0-8c7d-0e69ae497253
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: "\U0001F1E8\U0001F1F3 CN 4 VMS"
+  type: vmess
+  server: sui.forlive.live
+  port: 19446
+  cipher: auto
+  uuid: 8c3ab3aa-ec03-4fb0-8c7d-0e69ae497253
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: "\U0001F1E8\U0001F1F3 CN 5 VMS"
+  type: vmess
+  server: sui.forlive.live
+  port: 19700
+  cipher: auto
+  uuid: 8c3ab3aa-ec03-4fb0-8c7d-0e69ae497253
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: "\U0001F1E8\U0001F1F3 CN 6 VMS"
+  type: vmess
+  server: sui.forlive.live
+  port: 16569
+  cipher: auto
+  uuid: 8c3ab3aa-ec03-4fb0-8c7d-0e69ae497253
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1FA\U0001F1F3 UN 1 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 2 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 3 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 4 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 5 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 6 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1FA\U0001F1F3 UN 1 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 2 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 3 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 4 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 5 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 6 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
