@@ -203,7 +203,6 @@ proxies:
   - {name: 🇨🇳 TW 2|TG@BPXD666, server: b13.ntbq.dynu.net, port: 9489, type: trojan, password: 5425aa49-ec9d-4df3-aaad-878270e78635, sni: b13.ntbq.dynu.net, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 3|TG@BPXD666, server: b24.ntbq.dynu.net, port: 3271, type: trojan, password: 5425aa49-ec9d-4df3-aaad-878270e78635, sni: b24.ntbq.dynu.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: oe6wc-g01.jp05-6786-vm0.entry.fr0307a.art, port: 46482, type: vmess, uuid: b52da429-91a0-3834-a4e0-0ed299ba8121, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: t45a7-g03.jp02-9a99-vm0.entry.fr0307a.art, port: 11775, type: vmess, uuid: b37b7415-1608-3fcd-aa25-d9cc4aae5ded, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -228,7 +227,6 @@ proxy-groups:
       - 🇨🇳 TW 2|TG@BPXD666
       - 🇨🇳 TW 3|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -242,7 +240,6 @@ proxy-groups:
       - 🇨🇳 TW 2|TG@BPXD666
       - 🇨🇳 TW 3|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -264,7 +261,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -298,7 +294,6 @@ proxy-groups:
       - 🇨🇳 TW 2|TG@BPXD666
       - 🇨🇳 TW 3|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -312,7 +307,6 @@ proxy-groups:
       - 🇨🇳 TW 2|TG@BPXD666
       - 🇨🇳 TW 3|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
-      - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
