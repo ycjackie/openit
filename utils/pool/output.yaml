@@ -1,13 +1,43 @@
-proxies: []
+proxies:
+- name: "\U0001F1F8\U0001F1EC SG 1 TJN"
+  type: trojan
+  server: 110.239.96.111
+  port: 10000
+  udp: true
+  password: 9d1bb718-f429-40eb-9373-3e6d588ff78c
+  sni: www.baidu.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 2 TJN"
+  type: trojan
+  server: 110.239.96.111
+  port: 9011
+  udp: true
+  password: 9d1bb718-f429-40eb-9373-3e6d588ff78c
+  sni: www.baidu.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
+  type: ss
+  server: 211.99.102.183
+  port: 15006
+  password: f9nawu1Umf2xWKGVsDuTu
+  cipher: aes-128-gcm
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1F8\U0001F1EC SG 1 TJN"
+  - "\U0001F1F8\U0001F1EC SG 2 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1F8\U0001F1EC SG 1 TJN"
+  - "\U0001F1F8\U0001F1EC SG 2 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
