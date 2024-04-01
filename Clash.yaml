@@ -198,10 +198,10 @@ dns:
 proxies:
   - {name: UA 1|TG@BPXD666, server: 95.164.33.62, port: 443, type: trojan, password: 0b1371aa-649d-41dc-9126-338c87936500, sni: sourceforge.net, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fwebsocket", headers: {Host: sourceforge.net}}, udp: true}
   - {name: 🇨🇦 CA 1|TG@BPXD666, server: 23.227.38.11, port: 443, type: trojan, password: b17fa17d-13a0-4e8a-a398-8e549ea8b208, sni: syndication-statutes-wanted-logo.trycloudflare.com, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fargox-tr", headers: {Host: syndication-statutes-wanted-logo.trycloudflare.com}}, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: hms04.xmivideo.cfd, port: 443, type: vmess, uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: hms04.xmivideo.cfd}}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: 38.147.160.101, port: 28241, type: vmess, uuid: adf0d7fc-6c13-4cff-e02a-e130cf562c6f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: russia.com, port: 80, type: vmess, uuid: bd8c41a8-7598-4c28-9965-522545e14892, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: russia.com}}, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: hms04.xmivideo.cfd, port: 443, type: vmess, uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: hms04.xmivideo.cfd}}, udp: true}
   - {name: 🇺🇸 US 3|TG@BPXD666, server: 38.147.160.101, port: 41384, type: vmess, uuid: ab6643ec-5172-4a7b-b0e0-f2767bae83aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 4|TG@BPXD666, server: russia.com, port: 80, type: vmess, uuid: bd8c41a8-7598-4c28-9965-522545e14892, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: russia.com}}, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: 38.147.160.101, port: 28241, type: vmess, uuid: adf0d7fc-6c13-4cff-e02a-e130cf562c6f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
