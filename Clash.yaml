@@ -197,6 +197,7 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: RW 1|TG@BPXD666, server: 174.136.205.46, port: 39027, type: vmess, uuid: 26419143-8a06-43ab-d58c-bea7b7da8203, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 1|TG@BPXD666, server: beromo.youxinye.com, port: 26002, type: ss, cipher: aes-128-gcm, password: c44758e2-67a4-40b2-bbc8-4ca97861ea47, udp: true}
   - {name: 🇨🇳 TW 1|TG@BPXD666, server: tw1g.xn--vhq70hxyat50h6wk.com, port: 80, type: vmess, uuid: ae1e5588-79c2-44a9-a2c8-a8e4b645fcce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tw1g.xn--vhq70hxyat50h6wk.com}}, udp: true}
   - {name: 🇨🇳 TW 2|TG@BPXD666, server: tw1g.xn--vhq70hxyat50h6wk.com, port: 443, type: vmess, uuid: ae1e5588-79c2-44a9-a2c8-a8e4b645fcce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tw1g.xn--vhq70hxyat50h6wk.com}}, udp: true}
   - {name: 🇯🇵 JP 1|TG@BPXD666, server: hk5g.xn--vhq70hxyat50h6wk.com, port: 443, type: vmess, uuid: ae1e5588-79c2-44a9-a2c8-a8e4b645fcce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk5g.xn--vhq70hxyat50h6wk.com}}, udp: true}
@@ -221,6 +222,7 @@ proxy-groups:
     type: select
     proxies:
       - RW 1|TG@BPXD666
+      - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇨🇳 TW 2|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
@@ -234,6 +236,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - RW 1|TG@BPXD666
+      - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇨🇳 TW 2|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
@@ -288,6 +291,7 @@ proxy-groups:
     type: select
     proxies:
       - RW 1|TG@BPXD666
+      - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇨🇳 TW 2|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
@@ -301,6 +305,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - RW 1|TG@BPXD666
+      - 🇨🇳 CN 1|TG@BPXD666
       - 🇨🇳 TW 1|TG@BPXD666
       - 🇨🇳 TW 2|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
