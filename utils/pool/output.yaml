@@ -1,13 +1,88 @@
-proxies: []
+proxies:
+- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  type: vmess
+  server: speed.cloudflare.com
+  port: 443
+  cipher: auto
+  uuid: e89244f7-3636-4752-88ee-683387e76c91
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      host: tr2-vmess.sshmax.xyz
+- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
+  type: vmess
+  server: tr2-vless.sshmax.xyz
+  port: 443
+  cipher: auto
+  uuid: e89244f7-3636-4752-88ee-683387e76c91
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      host: tr2-vmess.sshmax.xyz
+- name: "\U0001F1FA\U0001F1E6 UA 3 TJN"
+  type: trojan
+  server: tr1.trojanvpn.de
+  port: 2053
+  udp: true
+  password: 2997d686-d910-441b-a15c-c8d11c366025
+  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 4 VMS"
+  type: vmess
+  server: tr2-vless.sshmax.xyz
+  port: 2096
+  cipher: auto
+  uuid: 1f462ed1-e07b-48e1-a8e8-1b62f8080e54
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      host: tr2-vmess.sshmax.xyz
+- name: "\U0001F1FA\U0001F1F8 US 5 VMS"
+  type: vmess
+  server: tr2-vless.sshmax.xyz
+  port: 8443
+  cipher: auto
+  uuid: e89244f7-3636-4752-88ee-683387e76c91
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      host: tr2-vmess.sshmax.xyz
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
+  - "\U0001F1FA\U0001F1E6 UA 3 TJN"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1FA\U0001F1F8 US 5 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
+  - "\U0001F1FA\U0001F1E6 UA 3 TJN"
+  - "\U0001F1FA\U0001F1F8 US 4 VMS"
+  - "\U0001F1FA\U0001F1F8 US 5 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
