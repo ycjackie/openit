@@ -196,10 +196,10 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇩🇪 DE 1|TG@BPXD666, server: dir01.netorigins2u.site, port: 36201, type: trojan, password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610, sni: sg01.abpilot.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE 2|TG@BPXD666, server: dir01.netorigins2u.site, port: 36501, type: trojan, password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610, sni: us01.abpilot.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE 3|TG@BPXD666, server: dir01.netorigins2u.site, port: 36116, type: trojan, password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610, sni: jp01.abpilot.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE 4|TG@BPXD666, server: dir01.netorigins2u.site, port: 36864, type: trojan, password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610, sni: hu01.abpilot.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 1|TG@BPXD666, server: dir01.netorigins2u.site, port: 36201, type: trojan, password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610, sni: sg01.abpilot.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 2|TG@BPXD666, server: dir01.netorigins2u.site, port: 36116, type: trojan, password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610, sni: jp01.abpilot.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 3|TG@BPXD666, server: dir01.netorigins2u.site, port: 36501, type: trojan, password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610, sni: us01.abpilot.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 4|TG@BPXD666, server: dir01.netorigins2u.site, port: 36864, type: trojan, password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610, sni: hu01.abpilot.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -217,20 +217,20 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - 🇩🇪 DE 1|TG@BPXD666
-      - 🇩🇪 DE 2|TG@BPXD666
-      - 🇩🇪 DE 3|TG@BPXD666
-      - 🇩🇪 DE 4|TG@BPXD666
+      - 🇰🇷 KR 1|TG@BPXD666
+      - 🇰🇷 KR 2|TG@BPXD666
+      - 🇰🇷 KR 3|TG@BPXD666
+      - 🇰🇷 KR 4|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇩🇪 DE 1|TG@BPXD666
-      - 🇩🇪 DE 2|TG@BPXD666
-      - 🇩🇪 DE 3|TG@BPXD666
-      - 🇩🇪 DE 4|TG@BPXD666
+      - 🇰🇷 KR 1|TG@BPXD666
+      - 🇰🇷 KR 2|TG@BPXD666
+      - 🇰🇷 KR 3|TG@BPXD666
+      - 🇰🇷 KR 4|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -272,24 +272,27 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇰🇷 KR 1|TG@BPXD666
+      - 🇰🇷 KR 2|TG@BPXD666
+      - 🇰🇷 KR 3|TG@BPXD666
+      - 🇰🇷 KR 4|TG@BPXD666
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 🇩🇪 DE 1|TG@BPXD666
-      - 🇩🇪 DE 2|TG@BPXD666
-      - 🇩🇪 DE 3|TG@BPXD666
-      - 🇩🇪 DE 4|TG@BPXD666
+      - 🇰🇷 KR 1|TG@BPXD666
+      - 🇰🇷 KR 2|TG@BPXD666
+      - 🇰🇷 KR 3|TG@BPXD666
+      - 🇰🇷 KR 4|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇩🇪 DE 1|TG@BPXD666
-      - 🇩🇪 DE 2|TG@BPXD666
-      - 🇩🇪 DE 3|TG@BPXD666
-      - 🇩🇪 DE 4|TG@BPXD666
+      - 🇰🇷 KR 1|TG@BPXD666
+      - 🇰🇷 KR 2|TG@BPXD666
+      - 🇰🇷 KR 3|TG@BPXD666
+      - 🇰🇷 KR 4|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
