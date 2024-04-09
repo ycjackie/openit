@@ -1,5 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
   type: vmess
   server: tu.mahilu.site
   port: 2095
@@ -150,7 +150,21 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 15 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 15 VMS"
+  type: vmess
+  server: s1c.v2.v001sss.xyz
+  port: 2082
+  cipher: auto
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: s1c.v2.v001sss.xyz
+- name: "\U0001F1FA\U0001F1F8 US 16 TJN"
   type: trojan
   server: us03.freeflyingcloud.xyz
   port: 30018
@@ -159,7 +173,7 @@ proxies:
   sni: us03.freeflyingcloud.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 16 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 17 TJN"
   type: trojan
   server: 172.67.204.84
   port: 443
@@ -174,7 +188,7 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1F7\U0001F1FA RU 3 TJN"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
@@ -188,15 +202,16 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 12 TJN"
   - "\U0001F1F7\U0001F1FA RU 13 TJN"
   - "\U0001F1FA\U0001F1F8 US 14 VMS"
-  - "\U0001F1FA\U0001F1F8 US 15 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 15 VMS"
   - "\U0001F1FA\U0001F1F8 US 16 TJN"
+  - "\U0001F1FA\U0001F1F8 US 17 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1F7\U0001F1FA RU 3 TJN"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
@@ -210,7 +225,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 12 TJN"
   - "\U0001F1F7\U0001F1FA RU 13 TJN"
   - "\U0001F1FA\U0001F1F8 US 14 VMS"
-  - "\U0001F1FA\U0001F1F8 US 15 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 15 VMS"
   - "\U0001F1FA\U0001F1F8 US 16 TJN"
+  - "\U0001F1FA\U0001F1F8 US 17 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
