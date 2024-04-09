@@ -1,5 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
   type: vmess
   server: tu.mahilu.site
   port: 2095
@@ -13,7 +13,7 @@ proxies:
     path: /
     headers:
       host: tu.mahilu.site
-- name: "\U0001F1FA\U0001F1F3 UN 2 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 2 VMS"
   type: vmess
   server: cdn.vds-server.ir
   port: 8880
@@ -152,10 +152,10 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F3 UN 15 VMS"
   type: vmess
-  server: s1c.v2.v001sss.xyz
-  port: 2082
+  server: mizban.arzonhost.ir
+  port: 2086
   cipher: auto
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -163,7 +163,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      host: s1c.v2.v001sss.xyz
+      host: mizban.arzonhost.ir
 - name: "\U0001F1FA\U0001F1F8 US 16 TJN"
   type: trojan
   server: us03.freeflyingcloud.xyz
@@ -188,8 +188,8 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1F7\U0001F1FA RU 3 TJN"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
   - "\U0001F1E8\U0001F1F3 CN 5 TJN"
@@ -211,8 +211,8 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 2 VMS"
   - "\U0001F1F7\U0001F1FA RU 3 TJN"
   - "\U0001F1FA\U0001F1F8 US 4 VMS"
   - "\U0001F1E8\U0001F1F3 CN 5 TJN"
