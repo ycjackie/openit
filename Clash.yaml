@@ -196,7 +196,10 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: tu.mahilu.site, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tu.mahilu.site}}, udp: true}
+  - {name: RW 1|TG@BPXD666, server: 23.142.200.175, port: 443, type: trojan, password: 27876_t7d7f4e3f, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 1|TG@BPXD666, server: 94.140.0.110, port: 8880, type: vmess, uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 172.67.204.84, port: 443, type: trojan, password: qj1Dz1CJmFQRhWr1SP80aA, sni: cdn-21.gsmxreality.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: mizban.arzonhost.ir, port: 2086, type: vmess, uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mizban.arzonhost.ir}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -214,14 +217,20 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - RW 1|TG@BPXD666
+      - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - RW 1|TG@BPXD666
+      - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -243,6 +252,7 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -267,14 +277,20 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - RW 1|TG@BPXD666
+      - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - RW 1|TG@BPXD666
+      - 🇫🇷 FR 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
