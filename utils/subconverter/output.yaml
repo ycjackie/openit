@@ -1,0 +1,29 @@
+proxies:
+- name: "\U0001F1E8\U0001F1E6 CA 1 VMS"
+  type: vmess
+  server: sg3.abcvpn.icu
+  port: 443
+  cipher: auto
+  uuid: ab551289-c2a9-4a07-8384-70fd3aec6696
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /mnqpvws
+    headers:
+      host: sg3.abcvpn.icu
+proxy-groups:
+- name: automatic
+  type: url-test
+  proxies:
+  - "\U0001F1E8\U0001F1E6 CA 1 VMS"
+  url: https://www.google.com/favicon.ico
+  interval: 300
+- name: "\U0001F310 Proxy"
+  type: select
+  proxies:
+  - automatic
+  - "\U0001F1E8\U0001F1E6 CA 1 VMS"
+rules:
+- "MATCH,\U0001F310 Proxy"
