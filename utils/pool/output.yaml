@@ -1,5 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
   type: vmess
   server: us219.netfilx.live
   port: 80
@@ -88,7 +88,7 @@ proxies:
   password: 27876_t7d7f4e3f
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 8 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
   type: vmess
   server: cdn.vds-server.ir
   port: 8880
@@ -215,7 +215,7 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: "\U0001F1FA\U0001F1F8 US 18 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 18 VMS"
   type: vmess
   server: yh7.dtku41.xyz
   port: 8080
@@ -287,21 +287,7 @@ proxies:
     path: /
     headers:
       host: admin.arzonhost.ir
-- name: "\U0001F1FA\U0001F1F3 UN 24 VMS"
-  type: vmess
-  server: 104.21.19.202
-  port: 8880
-  cipher: auto
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: cdn.vds-server.ir
-- name: "\U0001F1EE\U0001F1F9 IT 25 TJN"
+- name: "\U0001F1EC\U0001F1E7 GB 24 TJN"
   type: trojan
   server: it01.freeflyingcloud.xyz
   port: 48102
@@ -310,7 +296,7 @@ proxies:
   sni: it01.freeflyingcloud.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 26 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 25 VMS"
   type: vmess
   server: 104.20.26.40
   port: 8080
@@ -324,18 +310,32 @@ proxies:
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
     headers:
       host: fantastic-doe-bids-ended.trycloudflare.com
+- name: "\U0001F1FA\U0001F1F8 US 26 VMS"
+  type: vmess
+  server: 172.67.188.156
+  port: 8880
+  cipher: auto
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: cdn.vds-server.ir
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 TJN"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1FA\U0001F1F3 UN 5 VMS"
   - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1FA\U0001F1F3 UN 7 TJN"
-  - "\U0001F1FA\U0001F1F8 US 8 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   - "\U0001F1F7\U0001F1FA RU 9 VMS"
   - "\U0001F1F3\U0001F1F1 NL 10 VMS"
   - "\U0001F1FA\U0001F1F3 UN 11 VMS"
@@ -345,29 +345,29 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 15 VMS"
   - "\U0001F1EC\U0001F1E7 GB 16 TJN"
   - "\U0001F1E8\U0001F1E6 CA 17 VMS"
-  - "\U0001F1FA\U0001F1F8 US 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 18 VMS"
   - "\U0001F1F0\U0001F1F7 KR 19 TJN"
   - "\U0001F1FA\U0001F1F3 UN 20 VMS"
   - "\U0001F1EC\U0001F1EE GI 21 VMS"
   - "\U0001F1FA\U0001F1F3 UN 22 VMS"
   - "\U0001F1FA\U0001F1F8 US 23 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 24 VMS"
-  - "\U0001F1EE\U0001F1F9 IT 25 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 26 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 24 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 25 VMS"
+  - "\U0001F1FA\U0001F1F8 US 26 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1FA\U0001F1F8 US 2 TJN"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1FA\U0001F1F3 UN 5 VMS"
   - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1FA\U0001F1F3 UN 7 TJN"
-  - "\U0001F1FA\U0001F1F8 US 8 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   - "\U0001F1F7\U0001F1FA RU 9 VMS"
   - "\U0001F1F3\U0001F1F1 NL 10 VMS"
   - "\U0001F1FA\U0001F1F3 UN 11 VMS"
@@ -377,14 +377,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 15 VMS"
   - "\U0001F1EC\U0001F1E7 GB 16 TJN"
   - "\U0001F1E8\U0001F1E6 CA 17 VMS"
-  - "\U0001F1FA\U0001F1F8 US 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 18 VMS"
   - "\U0001F1F0\U0001F1F7 KR 19 TJN"
   - "\U0001F1FA\U0001F1F3 UN 20 VMS"
   - "\U0001F1EC\U0001F1EE GI 21 VMS"
   - "\U0001F1FA\U0001F1F3 UN 22 VMS"
   - "\U0001F1FA\U0001F1F8 US 23 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 24 VMS"
-  - "\U0001F1EE\U0001F1F9 IT 25 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 26 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 24 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 25 VMS"
+  - "\U0001F1FA\U0001F1F8 US 26 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
