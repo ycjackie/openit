@@ -9,36 +9,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 2 VMS"
-  type: vmess
-  server: dntls01.4ghatde.com
-  port: 443
-  cipher: auto
-  uuid: 37f45886-18bd-4dcf-8166-3a513335eead
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  servername: m.appsflyer.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: dntls01.4ghatde.com
-    grpc-mode: gun
-- name: "\U0001F1FA\U0001F1F3 UN 3 VMS"
-  type: vmess
-  server: dn1.4ghatde.com
-  port: 80
-  cipher: auto
-  uuid: 37f45886-18bd-4dcf-8166-3a513335eead
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /4ghatde.com
-    headers:
-      host: m.appsflyer.com
-- name: "\U0001F1ED\U0001F1F0 HK 4 VMS"
+- name: "\U0001F1ED\U0001F1F0 HK 2 VMS"
   type: vmess
   server: 47.243.162.49
   port: 80
@@ -53,7 +24,7 @@ proxies:
     path: "/TG@dns68\u516C\u76CA\u8282\u70B9"
     headers:
       host: mix.tgdns68.vps666.onflashdrive.app
-- name: "\U0001F1ED\U0001F1F0 HK 5 VMS"
+- name: "\U0001F1ED\U0001F1F0 HK 3 VMS"
   type: vmess
   server: 8.210.9.129
   port: 80
@@ -68,7 +39,7 @@ proxies:
     path: "/TG@dns68\u516C\u76CA\u8282\u70B9"
     headers:
       host: mix.tgdns68.vps666.onflashdrive.app
-- name: "\U0001F1ED\U0001F1F0 HK 6 VMS"
+- name: "\U0001F1ED\U0001F1F0 HK 4 VMS"
   type: vmess
   server: 8.217.85.14
   port: 80
@@ -83,7 +54,7 @@ proxies:
     path: "/TG@dns68\u514D\u8D39\u8282\u70B9"
     headers:
       host: tg.dns68.9669.link
-- name: "\U0001F1FA\U0001F1F3 UN 7 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
   type: vmess
   server: 162.159.58.74
   port: 80
@@ -98,16 +69,45 @@ proxies:
     path: "/TG@dns68\u514D\u8D39\u8282\u70B9"
     headers:
       host: tg.dns68.9669.link
+- name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  type: vmess
+  server: dntls01.4ghatde.com
+  port: 443
+  cipher: auto
+  uuid: 37f45886-18bd-4dcf-8166-3a513335eead
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  servername: m.appsflyer.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: dntls01.4ghatde.com
+    grpc-mode: gun
+- name: "\U0001F1FA\U0001F1F3 UN 7 VMS"
+  type: vmess
+  server: dn1.4ghatde.com
+  port: 80
+  cipher: auto
+  uuid: 37f45886-18bd-4dcf-8166-3a513335eead
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /4ghatde.com
+    headers:
+      host: m.appsflyer.com
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F3 UN 1 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 2 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 3 VMS"
   - "\U0001F1ED\U0001F1F0 HK 4 VMS"
-  - "\U0001F1ED\U0001F1F0 HK 5 VMS"
-  - "\U0001F1ED\U0001F1F0 HK 6 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1FA\U0001F1F3 UN 7 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -116,11 +116,11 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F3 UN 1 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 2 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 3 VMS"
   - "\U0001F1ED\U0001F1F0 HK 4 VMS"
-  - "\U0001F1ED\U0001F1F0 HK 5 VMS"
-  - "\U0001F1ED\U0001F1F0 HK 6 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1FA\U0001F1F3 UN 7 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
