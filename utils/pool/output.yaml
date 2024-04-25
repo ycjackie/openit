@@ -1,5 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 1 VMS"
   type: vmess
   server: fcdn.flha.ru
   port: 2095
@@ -65,6 +65,20 @@ proxies:
       host: tg.dns68.9669.link
 - name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
   type: vmess
+  server: 104.21.23.231
+  port: 2095
+  cipher: auto
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: fcdn.flha.ru
+- name: "\U0001F1FA\U0001F1F3 UN 7 VMS"
+  type: vmess
   server: 104.19.250.15
   port: 2052
   cipher: auto
@@ -77,20 +91,6 @@ proxies:
     path: /
     headers:
       host: helanv6cf.inekokkk.top
-- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
-  type: vmess
-  server: 172.67.214.33
-  port: 2095
-  cipher: auto
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: fcdn.flha.ru
 - name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
   type: vmess
   server: cfcdn1.sanfencdn9.com
@@ -105,31 +105,47 @@ proxies:
     path: /video/qYZue4zaWS
     headers:
       host: us82pRzxDMb.fzbqfrse.xyz
+- name: "\U0001F1FA\U0001F1F3 UN 9 VMS"
+  type: vmess
+  server: 104.18.19.191
+  port: 2052
+  cipher: auto
+  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: helanv6cf.inekokkk.top
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1E8\U0001F1F3 CN 2 TJN"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1FA\U0001F1F3 UN 5 VMS"
   - "\U0001F1FA\U0001F1F3 UN 6 VMS"
-  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 7 VMS"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F8 US 1 VMS"
   - "\U0001F1E8\U0001F1F3 CN 2 TJN"
   - "\U0001F1FA\U0001F1F3 UN 3 VMS"
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1FA\U0001F1F3 UN 5 VMS"
   - "\U0001F1FA\U0001F1F3 UN 6 VMS"
-  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 7 VMS"
   - "\U0001F1FA\U0001F1F3 UN 8 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
