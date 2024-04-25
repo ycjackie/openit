@@ -1,13 +1,135 @@
-proxies: []
+proxies:
+- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  type: vmess
+  server: fcdn.flha.ru
+  port: 2095
+  cipher: auto
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: fcdn.flha.ru
+- name: "\U0001F1E8\U0001F1F3 CN 2 TJN"
+  type: trojan
+  server: 120.233.204.80
+  port: 14755
+  udp: true
+  password: BZjkHMao
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  type: vmess
+  server: cfcdn1.sanfencdn9.com
+  port: 2052
+  cipher: auto
+  uuid: a595e9ba-b641-480f-8597-323612357ba5
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/GQ2qE5Us9g
+    headers:
+      host: tw1bQiWSE4x.fzbqfrse.xyz
+- name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  type: vmess
+  server: 104.18.36.119
+  port: 2052
+  cipher: auto
+  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: helanv6cf.inekokkk.top
+- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  type: vmess
+  server: 162.159.58.74
+  port: 80
+  cipher: auto
+  uuid: 1a363dc9-698c-49d2-e00d-c43005f64c40
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/TG@dns68\u514D\u8D39\u8282\u70B9"
+    headers:
+      host: tg.dns68.9669.link
+- name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  type: vmess
+  server: 104.19.250.15
+  port: 2052
+  cipher: auto
+  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: helanv6cf.inekokkk.top
+- name: "\U0001F1FA\U0001F1F8 US 7 VMS"
+  type: vmess
+  server: 172.67.214.33
+  port: 2095
+  cipher: auto
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: fcdn.flha.ru
+- name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
+  type: vmess
+  server: cfcdn1.sanfencdn9.com
+  port: 2095
+  cipher: auto
+  uuid: a595e9ba-b641-480f-8597-323612357ba5
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/qYZue4zaWS
+    headers:
+      host: us82pRzxDMb.fzbqfrse.xyz
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 2 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 5 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 6 VMS"
+  - "\U0001F1FA\U0001F1F8 US 7 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
