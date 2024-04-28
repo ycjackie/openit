@@ -1,13 +1,93 @@
-proxies: []
+proxies:
+- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  type: vmess
+  server: 104.18.36.119
+  port: 2052
+  cipher: auto
+  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: helanv6cf.inekokkk.top
+- name: "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  type: vmess
+  server: 104.16.60.8
+  port: 2095
+  cipher: auto
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /obdii.cfd/linkws
+    headers:
+      host: icy-tooth-3d05.plzthsmdnss-7d8ly.workers.dev
+- name: "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  type: vmess
+  server: 104.21.23.231
+  port: 2095
+  cipher: auto
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: fcdn.flha.ru
+- name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  type: vmess
+  server: speed.cloudflare.com
+  port: 80
+  cipher: auto
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hms02.fxiaomi.sbs/link
+    headers:
+      host: range-shape-b3fuegu.bananok182.workers.dev
+- name: "\U0001F1FA\U0001F1F8 US 5 VMS"
+  type: vmess
+  server: 172.67.214.33
+  port: 2095
+  cipher: auto
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: fcdn.flha.ru
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1FA\U0001F1F8 US 5 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 2 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 3 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 4 VMS"
+  - "\U0001F1FA\U0001F1F8 US 5 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
