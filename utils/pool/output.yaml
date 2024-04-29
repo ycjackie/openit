@@ -104,6 +104,29 @@ proxies:
     path: /websocket
     headers:
       host: se1.trojanvpn.de
+- name: "\U0001F1EE\U0001F1EA IE 9 TJN"
+  type: trojan
+  server: 52.209.230.191
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 10 VMS"
+  type: vmess
+  server: yh9.dtku41.xyz
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: hang-broke-john-neither.trycloudflare.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -116,6 +139,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1FA\U0001F1F3 UN 7 VMS"
   - "\U0001F1FA\U0001F1F8 US 8 TJN"
+  - "\U0001F1EE\U0001F1EA IE 9 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -130,5 +155,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1FA\U0001F1F3 UN 7 VMS"
   - "\U0001F1FA\U0001F1F8 US 8 TJN"
+  - "\U0001F1EE\U0001F1EA IE 9 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
