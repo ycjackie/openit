@@ -196,6 +196,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
+  - {name: IE 1|TG@BPXD666, server: 52.209.230.191, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
   - {name: UA 1|TG@BPXD666, server: 95.164.33.62, port: 443, type: trojan, password: 0b1371aa-649d-41dc-9126-338c87936500, sni: sourceforge.net, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fwebsocket", headers: {Host: sourceforge.net}}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: 8c7b39d2-eb80-48d4-9471-76bddc5273c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video/GQ2qE5Us9g, headers: {Host: cfcdn1.sanfencdn9.com}}, udp: true}
 proxy-groups:
@@ -215,6 +216,7 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - IE 1|TG@BPXD666
       - UA 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 💡 自动选择
@@ -223,6 +225,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - IE 1|TG@BPXD666
       - UA 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🇭🇰 香港节点
@@ -270,6 +273,7 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - IE 1|TG@BPXD666
       - UA 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 🪜 故障转移
@@ -278,6 +282,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - IE 1|TG@BPXD666
       - UA 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
   - name: 👉 国内网站
