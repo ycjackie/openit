@@ -1,36 +1,5 @@
 proxies:
-- name: "\U0001F1EE\U0001F1EA IE 1 TJN"
-  type: trojan
-  server: 52.209.230.191
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 2 VMS"
-  type: vmess
-  server: yh9.dtku41.xyz
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: hang-broke-john-neither.trycloudflare.com
-- name: "\U0001F1E8\U0001F1F3 CN 3 TJN"
-  type: trojan
-  server: 36.138.99.56
-  port: 40316
-  udp: true
-  password: MyYoZhfX
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 1 VMS"
   type: vmess
   server: 104.19.250.15
   port: 2052
@@ -44,7 +13,7 @@ proxies:
     path: /
     headers:
       host: helanv6cf.inekokkk.top
-- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 2 VMS"
   type: vmess
   server: cfcdn1.sanfencdn9.com
   port: 2052
@@ -58,7 +27,15 @@ proxies:
     path: /video/GQ2qE5Us9g
     headers:
       host: tw1bQiWSE4x.fzbqfrse.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 3 TJN"
+  type: trojan
+  server: 36.138.99.56
+  port: 40316
+  udp: true
+  password: MyYoZhfX
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 4 VMS"
   type: vmess
   server: 104.16.60.8
   port: 2095
@@ -72,7 +49,7 @@ proxies:
     path: /obdii.cfd/linkws
     headers:
       host: icy-tooth-3d05.plzthsmdnss-7d8ly.workers.dev
-- name: "\U0001F1FA\U0001F1F3 UN 7 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 5 VMS"
   type: vmess
   server: 104.18.25.92
   port: 2052
@@ -86,7 +63,7 @@ proxies:
     path: /afrhms16v.bestxray.buzz/linkws
     headers:
       host: mysan2.jaquay22.workers.dev
-- name: "\U0001F1FA\U0001F1F3 UN 8 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 6 VMS"
   type: vmess
   server: speed.cloudflare.com
   port: 80
@@ -100,7 +77,7 @@ proxies:
     path: /glweidf.cfd/linkws
     headers:
       host: freevpn878.hamidimorteza680.workers.dev
-- name: "\U0001F1FA\U0001F1F3 UN 9 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 7 VMS"
   type: vmess
   server: lol.ps
   port: 2052
@@ -114,7 +91,7 @@ proxies:
     path: /afrhms16v.bestxray.buzz/linkws
     headers:
       host: mysan2.jaquay22.workers.dev
-- name: "\U0001F1FA\U0001F1F8 US 10 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 8 TJN"
   type: trojan
   server: 95.164.33.62
   port: 443
@@ -127,35 +104,58 @@ proxies:
     path: /websocket
     headers:
       host: se1.trojanvpn.de
+- name: "\U0001F1EE\U0001F1EA IE 9 TJN"
+  type: trojan
+  server: 52.209.230.191
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 10 VMS"
+  type: vmess
+  server: yh9.dtku41.xyz
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: hang-broke-john-neither.trycloudflare.com
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EE\U0001F1EA IE 1 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
   - "\U0001F1FA\U0001F1F3 UN 2 VMS"
   - "\U0001F1E8\U0001F1F3 CN 3 TJN"
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1FA\U0001F1F3 UN 5 VMS"
   - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1FA\U0001F1F3 UN 7 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
-  - "\U0001F1FA\U0001F1F8 US 10 TJN"
+  - "\U0001F1FA\U0001F1F8 US 8 TJN"
+  - "\U0001F1EE\U0001F1EA IE 9 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EE\U0001F1EA IE 1 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 1 VMS"
   - "\U0001F1FA\U0001F1F3 UN 2 VMS"
   - "\U0001F1E8\U0001F1F3 CN 3 TJN"
   - "\U0001F1FA\U0001F1F3 UN 4 VMS"
   - "\U0001F1FA\U0001F1F3 UN 5 VMS"
   - "\U0001F1FA\U0001F1F3 UN 6 VMS"
   - "\U0001F1FA\U0001F1F3 UN 7 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 8 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 9 VMS"
-  - "\U0001F1FA\U0001F1F8 US 10 TJN"
+  - "\U0001F1FA\U0001F1F8 US 8 TJN"
+  - "\U0001F1EE\U0001F1EA IE 9 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 10 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
