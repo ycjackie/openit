@@ -196,8 +196,18 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: UA 1|TG@BPXD666, server: 95.164.33.62, port: 443, type: trojan, password: 0b1371aa-649d-41dc-9126-338c87936500, sni: sourceforge.net, skip-cert-verify: true, network: ws, ws-opts: {path: "%2Fwebsocket", headers: {Host: sourceforge.net}}, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: 8c7b39d2-eb80-48d4-9471-76bddc5273c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video/GQ2qE5Us9g, headers: {Host: cfcdn1.sanfencdn9.com}}, udp: true}
+  - {name: 🇺🇸 US 10|TG@BPXD666, server: 104.16.42.28, port: 2082, type: vmess, uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/ws?ed=2048"}, udp: true}
+  - {name: 🇺🇸 US 11|TG@BPXD666, server: 104.16.42.197, port: 2082, type: vmess, uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/ws?ed=2048"}, udp: true}
+  - {name: 🇺🇸 US 12|TG@BPXD666, server: 104.16.43.172, port: 2082, type: vmess, uuid: 753443e5-052c-4476-9cfa-3f434ff2f986, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/ws?ed=2048"}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 104.21.8.157, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: 8c7b39d2-eb80-48d4-9471-76bddc5273c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video/GQ2qE5Us9g, headers: {Host: cfcdn1.sanfencdn9.com}}, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: 104.19.45.178, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 5|TG@BPXD666, server: 104.16.42.12, port: 2082, type: vmess, uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/ws?ed=2048"}, udp: true}
+  - {name: 🇺🇸 US 6|TG@BPXD666, server: 104.19.45.50, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 7|TG@BPXD666, server: 104.16.42.25, port: 2082, type: vmess, uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/ws?ed=2048"}, udp: true}
+  - {name: 🇺🇸 US 8|TG@BPXD666, server: 104.16.42.110, port: 2082, type: vmess, uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/ws?ed=2048"}, udp: true}
+  - {name: 🇺🇸 US 9|TG@BPXD666, server: 104.19.45.230, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -215,16 +225,36 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - UA 1|TG@BPXD666
+      - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 12|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
+      - 🇺🇸 US 9|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - UA 1|TG@BPXD666
+      - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 12|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
+      - 🇺🇸 US 9|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -245,7 +275,18 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
+      - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 12|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
+      - 🇺🇸 US 9|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -270,16 +311,36 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - UA 1|TG@BPXD666
+      - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 12|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
+      - 🇺🇸 US 9|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - UA 1|TG@BPXD666
+      - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 12|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
+      - 🇺🇸 US 2|TG@BPXD666
+      - 🇺🇸 US 3|TG@BPXD666
+      - 🇺🇸 US 4|TG@BPXD666
+      - 🇺🇸 US 5|TG@BPXD666
+      - 🇺🇸 US 6|TG@BPXD666
+      - 🇺🇸 US 7|TG@BPXD666
+      - 🇺🇸 US 8|TG@BPXD666
+      - 🇺🇸 US 9|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
