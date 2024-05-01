@@ -198,12 +198,10 @@ dns:
 proxies:
   - {name: IT 1|TG@BPXD666, server: 188.114.97.53, port: 443, type: vmess, uuid: 8c929251-406f-4b32-9173-07ccd242cb58, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
   - {name: 🇭🇰 HK 1|TG@BPXD666, server: chjs.lydurlclub.top, port: 443, type: trojan, password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1|TG@BPXD666, server: 6cc36ab3-sb9ts0-sdlngq-1n7jq.uk.tcpbbr.net, port: 80, type: vmess, uuid: 85bce006-4885-11ee-8792-f23c9164ca5d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 6cc36ab3-sb9ts0-sdlngq-1n7jq.uk.tcpbbr.net}}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: 8c7b39d2-eb80-48d4-9471-76bddc5273c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video/6VBhAkCtV4/, headers: {Host: cfcdn1.sanfencdn9.com}}, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: 172.67.172.219, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 4|TG@BPXD666, server: 172.67.199.185, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 5|TG@BPXD666, server: 172.67.185.64, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 6|TG@BPXD666, server: 104.16.43.175, port: 2082, type: vmess, uuid: 753443e5-052c-4476-9cfa-3f434ff2f986, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/ws?ed=2048"}, udp: true}
+  - {name: 🇺🇸 US 1|TG@BPXD666, server: 172.67.199.185, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 172.67.185.64, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 3|TG@BPXD666, server: 6cc36ab3-sb9ts0-sdlngq-1n7jq.uk.tcpbbr.net, port: 80, type: vmess, uuid: 85bce006-4885-11ee-8792-f23c9164ca5d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 6cc36ab3-sb9ts0-sdlngq-1n7jq.uk.tcpbbr.net}}, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: 172.67.172.219, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -227,8 +225,6 @@ proxy-groups:
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -241,8 +237,6 @@ proxy-groups:
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -267,8 +261,6 @@ proxy-groups:
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -299,8 +291,6 @@ proxy-groups:
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -313,8 +303,6 @@ proxy-groups:
       - 🇺🇸 US 2|TG@BPXD666
       - 🇺🇸 US 3|TG@BPXD666
       - 🇺🇸 US 4|TG@BPXD666
-      - 🇺🇸 US 5|TG@BPXD666
-      - 🇺🇸 US 6|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
