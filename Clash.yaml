@@ -200,8 +200,6 @@ proxies:
   - {name: SE 1|TG@BPXD666, server: zzz.nikili1236vip.top, port: 17542, type: vmess, uuid: 51ea7cdf-2278-4a13-b2e4-632cda111110, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /50ab5b, headers: {Host: zzz.nikili1236vip.top}}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: 104.21.30.254, port: 443, type: vmess, uuid: 6d9911b0-4e14-44fb-8883-52d14f550cca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
   - {name: 🇺🇸 US 2|TG@BPXD666, server: ip.sb, port: 2086, type: vmess, uuid: 9d38f641-e4a7-4c01-919f-43dae64472a8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: 9d38f641-e4a7-4c01-919f-43dae64472a8-vm, headers: {Host: ip.sb}}, udp: true}
-  - {name: 🇺🇸 US 3|TG@BPXD666, server: 172.67.199.185, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 4|TG@BPXD666, server: 172.67.185.64, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -223,8 +221,6 @@ proxy-groups:
       - SE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -235,8 +231,6 @@ proxy-groups:
       - SE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -259,8 +253,6 @@ proxy-groups:
     proxies:
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -289,8 +281,6 @@ proxy-groups:
       - SE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -301,8 +291,6 @@ proxy-groups:
       - SE 1|TG@BPXD666
       - 🇺🇸 US 1|TG@BPXD666
       - 🇺🇸 US 2|TG@BPXD666
-      - 🇺🇸 US 3|TG@BPXD666
-      - 🇺🇸 US 4|TG@BPXD666
   - name: 👉 国内网站
     type: select
     proxies:
