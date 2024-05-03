@@ -196,9 +196,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: IT 1|TG@BPXD666, server: 188.114.97.7, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
-  - {name: IT 2|TG@BPXD666, server: 188.114.97.3, port: 443, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
-  - {name: LT 1|TG@BPXD666, server: 91.149.236.44, port: 26639, type: vmess, uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8/}, udp: true}
+  - {name: IT 1|TG@BPXD666, server: 188.114.97.3, port: 443, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
   - {name: LV 1|TG@BPXD666, server: ua-full.privateip.net, port: 443, type: trojan, password: 6fd1efa0-b559-48ce-81f9-56d1765f5ab5, skip-cert-verify: true, udp: true}
   - {name: NO 1|TG@BPXD666, server: 146.59.17.58, port: 12960, type: vmess, uuid: 48a86563-63c5-4218-e887-d752f801ae82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: NO 2|TG@BPXD666, server: us-full.privateip.net, port: 443, type: vmess, uuid: c036e15b-338a-4e72-a0c2-3ec23a7daefc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /RACEVPN, headers: {Host: us-full.privateip.net}}, udp: true}
@@ -208,13 +206,13 @@ proxies:
   - {name: UA 11|TG@BPXD666, server: be2-vmess.sshmax.xyz, port: 80, type: vmess, uuid: f302ad18-94da-4682-a330-24dc7c863703, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: be2-vmess.sshmax.xyz}}, udp: true}
   - {name: UA 1|TG@BPXD666, server: 95.164.44.203, port: 80, type: vmess, uuid: 6f0cca5e-cf21-4279-871e-ca26d9c955a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
   - {name: UA 2|TG@BPXD666, server: nl2-full.privateip.net, port: 443, type: trojan, password: 6e28f704-29a0-4c86-b25b-dd090603c741, skip-cert-verify: true, udp: true}
-  - {name: UA 3|TG@BPXD666, server: it-full.privateip.net, port: 443, type: trojan, password: 70eb38a6-673c-4877-bceb-dbe6369fa210, skip-cert-verify: true, udp: true}
-  - {name: UA 4|TG@BPXD666, server: 94.131.97.10, port: 80, type: vmess, uuid: 13c4fa1d-c558-4cd0-8108-c1f64cd399ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: UA 5|TG@BPXD666, server: 95.164.8.106, port: 80, type: vmess, uuid: c1ebe8c7-bdd9-4aca-a2f7-01bea79279b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: UA 6|TG@BPXD666, server: de2-full.privateip.net, port: 443, type: trojan, password: dcf0fcec-3800-4f42-9b78-1323f6a4a004, skip-cert-verify: true, udp: true}
-  - {name: UA 7|TG@BPXD666, server: tr-full.privateip.net, port: 443, type: trojan, password: 4e0f0b6d-8164-4b4b-99be-1f7ad19c7600, skip-cert-verify: true, udp: true}
-  - {name: UA 8|TG@BPXD666, server: 94.131.98.90, port: 80, type: vmess, uuid: 0814badf-f3fc-4f15-b400-4ae8cdce610e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: UA 9|TG@BPXD666, server: kz-full.privateip.net, port: 443, type: vmess, uuid: fc5348ee-1fb4-4050-af65-bba3580df5fd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /RACEVPN, headers: {Host: kz-full.privateip.net}}, udp: true}
+  - {name: UA 3|TG@BPXD666, server: kz-full.privateip.net, port: 443, type: vmess, uuid: fc5348ee-1fb4-4050-af65-bba3580df5fd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /RACEVPN, headers: {Host: kz-full.privateip.net}}, udp: true}
+  - {name: UA 4|TG@BPXD666, server: it-full.privateip.net, port: 443, type: trojan, password: 70eb38a6-673c-4877-bceb-dbe6369fa210, skip-cert-verify: true, udp: true}
+  - {name: UA 5|TG@BPXD666, server: 94.131.97.10, port: 80, type: vmess, uuid: 13c4fa1d-c558-4cd0-8108-c1f64cd399ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: UA 6|TG@BPXD666, server: 95.164.8.106, port: 80, type: vmess, uuid: c1ebe8c7-bdd9-4aca-a2f7-01bea79279b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: UA 7|TG@BPXD666, server: 94.131.98.90, port: 80, type: vmess, uuid: 0814badf-f3fc-4f15-b400-4ae8cdce610e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: UA 8|TG@BPXD666, server: de2-full.privateip.net, port: 443, type: trojan, password: dcf0fcec-3800-4f42-9b78-1323f6a4a004, skip-cert-verify: true, udp: true}
+  - {name: UA 9|TG@BPXD666, server: tr-full.privateip.net, port: 443, type: trojan, password: 4e0f0b6d-8164-4b4b-99be-1f7ad19c7600, skip-cert-verify: true, udp: true}
   - {name: 🇨🇦 CA 1|TG@BPXD666, server: 198.57.27.212, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE 1|TG@BPXD666, server: 5.75.202.76, port: 39523, type: vmess, uuid: e7e75749-9a57-4471-a9a7-5472be0a0cda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE 2|TG@BPXD666, server: 5.75.202.76, port: 46377, type: vmess, uuid: 0db30fb2-f972-4096-be43-9c01c2796150, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -224,109 +222,147 @@ proxies:
   - {name: 🇫🇷 FR 1|TG@BPXD666, server: 54.38.212.91, port: 80, type: vmess, uuid: 9e660680-e7bb-4725-f1c9-84d1fdbbf5c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048"}, udp: true}
   - {name: 🇬🇧 GB 1|TG@BPXD666, server: 217.160.45.31, port: 8880, type: vmess, uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇬🇧 GB 2|TG@BPXD666, server: 213.35.113.150, port: 80, type: vmess, uuid: eaf5e01b-f27d-44cf-94ae-87196143eef9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇭🇰 HK 1|TG@BPXD666, server: hrgdvpn.flycdnedc55.vip, port: 80, type: vmess, uuid: 00a1da14-d55f-5f75-e346-79b985e1a723, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /opt/video/images, headers: {Host: hrgdvpn.flycdnedc55.vip}}, udp: true}
   - {name: 🇯🇵 JP 1|TG@BPXD666, server: 103.35.188.226, port: 80, type: vmess, uuid: 098e7cdd-03b4-435d-8c41-ea608fa637c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 🇰🇷 KR 1|TG@BPXD666, server: awskr1.072659.xyz, port: 80, type: vmess, uuid: c21712a5-24f5-41b5-8700-55f1835d0490, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: awskr1.072659.xyz}}, udp: true}
+  - {name: 🇯🇵 JP 2|TG@BPXD666, server: 183.181.36.194, port: 41597, type: vmess, uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇳🇱 NL 1|TG@BPXD666, server: 95.179.128.114, port: 80, type: vmess, uuid: a6292090-afe1-4640-97a7-4f1d1d877cf1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /Av8czorIlYicU6D349brWUw6a}, udp: true}
-  - {name: 🇷🇺 RU 1|TG@BPXD666, server: ca-full.privateip.net, port: 443, type: vmess, uuid: 8da41d0a-0454-4ced-a7e2-4de2a3dcc525, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /RACEVPN, headers: {Host: ca-full.privateip.net}}, udp: true}
-  - {name: 🇷🇺 RU 2|TG@BPXD666, server: 46.29.166.237, port: 47555, type: vmess, uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 RU 1|TG@BPXD666, server: 46.29.166.237, port: 47555, type: vmess, uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 RU 2|TG@BPXD666, server: ca-full.privateip.net, port: 443, type: vmess, uuid: 8da41d0a-0454-4ced-a7e2-4de2a3dcc525, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /RACEVPN, headers: {Host: ca-full.privateip.net}}, udp: true}
   - {name: 🇷🇺 RU 3|TG@BPXD666, server: 45.87.155.70, port: 80, type: vmess, uuid: 88c0a1fb-fc4d-4eab-85c7-4dd84407e9a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 🇷🇺 RU 4|TG@BPXD666, server: 185.148.104.118, port: 443, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hms02.fxiaomi.sbs/link}, udp: true}
+  - {name: 🇷🇺 RU 4|TG@BPXD666, server: nl-full.privateip.net, port: 443, type: trojan, password: d2b376a2-c9b7-42be-8f52-26c0987f2884, skip-cert-verify: true, udp: true}
   - {name: 🇷🇺 RU 5|TG@BPXD666, server: 45.87.155.70, port: 8880, type: vmess, uuid: 88c0a1fb-fc4d-4eab-85c7-4dd84407e9a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 🇷🇺 RU 6|TG@BPXD666, server: nl-full.privateip.net, port: 443, type: trojan, password: d2b376a2-c9b7-42be-8f52-26c0987f2884, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 RU 6|TG@BPXD666, server: 185.148.104.118, port: 443, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hms02.fxiaomi.sbs/link}, udp: true}
   - {name: 🇷🇺 RU 7|TG@BPXD666, server: de1-vmess.greenssh.xyz, port: 80, type: vmess, uuid: 12612b4e-e426-4b7c-84bd-4a02850abb1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de1-vmess.greenssh.xyz}}, udp: true}
   - {name: 🇷🇺 RU 8|TG@BPXD666, server: hk-full.privateip.net, port: 443, type: vmess, uuid: f2c48b2f-c581-4d7d-846e-8bd97d93bd65, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /RACEVPN, headers: {Host: hk-full.privateip.net}}, udp: true}
   - {name: 🇸🇬 SG 1|TG@BPXD666, server: 128.199.161.230, port: 99, type: vmess, uuid: befd085a-91f7-4608-bc45-f40c1ac2f4b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray}, udp: true}
-  - {name: 🇺🇸 US 10|TG@BPXD666, server: 172.67.229.36, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
-  - {name: 🇺🇸 US 11|TG@BPXD666, server: w.outline-vpn.cloud, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: w.outline-vpn.cloud}}, udp: true}
-  - {name: 🇺🇸 US 12|TG@BPXD666, server: 107.174.96.19, port: 45034, type: vmess, uuid: 9ec680fc-988f-4e9b-a6da-ca257e418160, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /9ec680fc}, udp: true}
-  - {name: 🇺🇸 US 13|TG@BPXD666, server: slime-rhinestone-spy.glitch.me, port: 80, type: vmess, uuid: 1d5fb496-19fb-48fb-9880-a147326dee62, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /1d5fb496-19fb-48fb-9880-a147326dee62-vmess, headers: {Host: slime-rhinestone-spy.glitch.me}}, udp: true}
-  - {name: 🇺🇸 US 14|TG@BPXD666, server: 172.67.175.56, port: 443, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
-  - {name: 🇺🇸 US 15|TG@BPXD666, server: upload.ir, port: 443, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: upload.ir}}, udp: true}
-  - {name: 🇺🇸 US 16|TG@BPXD666, server: 172.67.161.77, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
-  - {name: 🇺🇸 US 17|TG@BPXD666, server: hms08.gwdef.sbs, port: 443, type: vmess, uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: hms08.gwdef.sbs}}, udp: true}
-  - {name: 🇺🇸 US 18|TG@BPXD666, server: 172.67.229.35, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
-  - {name: 🇺🇸 US 19|TG@BPXD666, server: 172.67.193.36, port: 80, type: vmess, uuid: 92da030f-e7be-40dd-b18a-dc830327c0c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 🇺🇸 US 100|TG@BPXD666, server: sg-full.privateip.net, port: 443, type: trojan, password: 9e21d1ce-7bcf-4733-bc02-f47b1bbc76c4, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 101|TG@BPXD666, server: 144.202.59.26, port: 57061, type: vmess, uuid: e90a1709-fd94-44d3-f809-8849837cc2d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 102|TG@BPXD666, server: 104.249.173.159, port: 40118, type: vmess, uuid: b89f5af7-e478-4b45-f1d5-1a5481acc15b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 103|TG@BPXD666, server: 104.19.45.119, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 104|TG@BPXD666, server: 104.19.45.240, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 105|TG@BPXD666, server: 104.19.45.106, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 106|TG@BPXD666, server: 45.76.7.99, port: 15927, type: vmess, uuid: 23856d50-3293-4111-d6aa-4c19d53c7c02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 107|TG@BPXD666, server: 104.19.49.6, port: 443, type: vmess, uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 108|TG@BPXD666, server: 45.77.220.6, port: 31867, type: vmess, uuid: 8e7ee8ac-09fd-41cd-a531-d8b022894b4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 109|TG@BPXD666, server: 104.19.49.5, port: 443, type: vmess, uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 10|TG@BPXD666, server: 104.19.45.75, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 110|TG@BPXD666, server: 45.77.218.99, port: 12810, type: vmess, uuid: 469daa04-235a-47be-fdf8-41a9a72f8be2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 111|TG@BPXD666, server: 45.77.220.169, port: 41207, type: vmess, uuid: dbbd0899-e302-4ad9-e224-c4aa258fb766, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 112|TG@BPXD666, server: 140.82.8.218, port: 25087, type: vmess, uuid: 3e3a4f91-160c-4967-c2d7-5aebf6faf0c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 113|TG@BPXD666, server: 104.207.132.39, port: 13523, type: vmess, uuid: ce7674fe-05f2-4b33-bb4c-4e3b7f0e6ea7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 114|TG@BPXD666, server: 207.148.31.167, port: 30587, type: vmess, uuid: 55219214-9f2d-4914-fbaf-b1b444c85b0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 115|TG@BPXD666, server: 149.28.228.215, port: 22195, type: vmess, uuid: f865bc43-b129-443e-d00a-7d303b25c4a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 116|TG@BPXD666, server: 45.77.146.58, port: 22131, type: vmess, uuid: ad42d586-dcd1-4629-d49b-a6f2d821ad39, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 117|TG@BPXD666, server: 66.135.3.168, port: 44990, type: vmess, uuid: 88623615-0713-497a-9233-755a33cc7080, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 118|TG@BPXD666, server: 104.207.133.131, port: 39729, type: vmess, uuid: 70d5375a-d4c2-4cdd-fd69-4f75572e0bcc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 119|TG@BPXD666, server: 149.28.49.174, port: 24663, type: vmess, uuid: 04bf314e-e40a-4d05-9faa-0a6baded2a22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 11|TG@BPXD666, server: 104.19.45.176, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 120|TG@BPXD666, server: 149.28.58.129, port: 45617, type: vmess, uuid: 59c95ca3-babe-466a-9a5b-4761e575caf8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 121|TG@BPXD666, server: 104.21.28.62, port: 443, type: vmess, uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: 🇺🇸 US 122|TG@BPXD666, server: 205.164.28.228, port: 60222, type: vmess, uuid: 84134d90-e4fe-4a86-c8d6-4d7bedb3c333, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 🇺🇸 US 123|TG@BPXD666, server: 104.19.49.9, port: 443, type: vmess, uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 124|TG@BPXD666, server: 104.21.4.6, port: 443, type: vmess, uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: 🇺🇸 US 125|TG@BPXD666, server: 104.21.44.106, port: 443, type: vmess, uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: 🇺🇸 US 126|TG@BPXD666, server: 45.77.105.178, port: 27287, type: vmess, uuid: 5079441f-c2cb-4abf-f7f4-2dd3fe77c03c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 127|TG@BPXD666, server: 149.28.226.202, port: 37985, type: vmess, uuid: a36d5f0e-f529-4c83-9279-f4c4ce557031, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 128|TG@BPXD666, server: 162.251.62.115, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 129|TG@BPXD666, server: 172.67.131.108, port: 443, type: vmess, uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: 🇺🇸 US 12|TG@BPXD666, server: 104.19.45.13, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 13|TG@BPXD666, server: 104.19.45.249, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 14|TG@BPXD666, server: 104.19.45.50, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 15|TG@BPXD666, server: 107.175.37.186, port: 80, type: vmess, uuid: dccb5580-de8d-4aca-a9a5-f986da33faa6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 16|TG@BPXD666, server: 172.67.229.38, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
+  - {name: 🇺🇸 US 17|TG@BPXD666, server: 172.67.229.33, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
+  - {name: 🇺🇸 US 18|TG@BPXD666, server: 104.168.50.21, port: 60222, type: vmess, uuid: 84134d90-e4fe-4a86-c8d6-4d7bedb3c333, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 🇺🇸 US 19|TG@BPXD666, server: 172.67.229.34, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
   - {name: 🇺🇸 US 1|TG@BPXD666, server: www.wakaka0818.com, port: 443, type: vmess, uuid: 902baa40-0dfc-4739-dcc4-38986115a81d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path, headers: {Host: www.wakaka0818.com}}, udp: true}
-  - {name: 🇺🇸 US 20|TG@BPXD666, server: 172.67.71.160, port: 443, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
-  - {name: 🇺🇸 US 21|TG@BPXD666, server: 172.67.229.19, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
-  - {name: 🇺🇸 US 22|TG@BPXD666, server: 172.67.229.39, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
-  - {name: 🇺🇸 US 23|TG@BPXD666, server: 38.46.0.206, port: 45979, type: vmess, uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test}, udp: true}
-  - {name: 🇺🇸 US 24|TG@BPXD666, server: 172.67.196.112, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
-  - {name: 🇺🇸 US 25|TG@BPXD666, server: 107.174.96.19, port: 45979, type: vmess, uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test}, udp: true}
-  - {name: 🇺🇸 US 26|TG@BPXD666, server: 172.67.229.25, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
-  - {name: 🇺🇸 US 27|TG@BPXD666, server: speed.cloudflare.com, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /XSjeg73o6ZdsheahCb5JG, headers: {Host: speed.cloudflare.com}}, udp: true}
-  - {name: 🇺🇸 US 28|TG@BPXD666, server: uk-full.privateip.net, port: 443, type: trojan, password: 466cb726-333d-44aa-924f-1f7977e44dbb, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 29|TG@BPXD666, server: 38.180.98.215, port: 8080, type: vmess, uuid: 773ac60d-36d7-45b5-c99e-a0e3903e2e3a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 2|TG@BPXD666, server: hk.wish.ml, port: 2052, type: vmess, uuid: 543f15f1-96a8-4205-b4a2-1a1ae6766c12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk.wish.ml}}, udp: true}
-  - {name: 🇺🇸 US 30|TG@BPXD666, server: 23.94.104.164, port: 60222, type: vmess, uuid: 84134d90-e4fe-4a86-c8d6-4d7bedb3c333, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 🇺🇸 US 31|TG@BPXD666, server: 147.185.161.125, port: 443, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ivideos.sbs/linkws}, udp: true}
-  - {name: 🇺🇸 US 32|TG@BPXD666, server: 205.164.28.228, port: 29655, type: vmess, uuid: bdd7d510-f28f-4d76-c236-11336fa0386e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bdd7d510}, udp: true}
-  - {name: 🇺🇸 US 33|TG@BPXD666, server: jiasu.fanmengdas.top, port: 40723, type: vmess, uuid: 9dbdebfe-a557-4c3f-8445-aa3a170ff0af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 34|TG@BPXD666, server: fr-a.yuji2022.eu.org, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /9sTFt5L554kPVWmuJ2k8baS4bEY83PZ66xb4twoBBtsiMPK2b, headers: {Host: fr-a.yuji2022.eu.org}}, udp: true}
-  - {name: 🇺🇸 US 35|TG@BPXD666, server: best-charm-pediatrician.glitch.me, port: 443, type: vmess, uuid: 1d5fb496-19fb-48fb-9880-a147326dee62, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1d5fb496-19fb-48fb-9880-a147326dee62-vmess, headers: {Host: best-charm-pediatrician.glitch.me}}, udp: true}
-  - {name: 🇺🇸 US 36|TG@BPXD666, server: 104.21.25.98, port: 80, type: vmess, uuid: e2e25aa2-aab9-486c-9ab4-495bcbcea4d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 🇺🇸 US 37|TG@BPXD666, server: db01.iepl1.me, port: 8880, type: vmess, uuid: 97b317b9-6abe-4f52-ab69-7bbc40883e86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /CAT, headers: {Host: db01.iepl1.me}}, udp: true}
-  - {name: 🇺🇸 US 38|TG@BPXD666, server: 192.3.128.88, port: 80, type: vmess, uuid: 3c443a9c-62d2-4719-f9fe-92417715c87b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bb}, udp: true}
-  - {name: 🇺🇸 US 39|TG@BPXD666, server: 152.69.197.74, port: 12345, type: vmess, uuid: b8a6bf58-485a-4046-b386-b3661bf65eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bb}, udp: true}
+  - {name: 🇺🇸 US 20|TG@BPXD666, server: 104.19.45.95, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 21|TG@BPXD666, server: 104.19.45.53, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 22|TG@BPXD666, server: 104.19.45.139, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 23|TG@BPXD666, server: 172.67.229.36, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
+  - {name: 🇺🇸 US 24|TG@BPXD666, server: slime-rhinestone-spy.glitch.me, port: 80, type: vmess, uuid: 1d5fb496-19fb-48fb-9880-a147326dee62, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /1d5fb496-19fb-48fb-9880-a147326dee62-vmess, headers: {Host: slime-rhinestone-spy.glitch.me}}, udp: true}
+  - {name: 🇺🇸 US 25|TG@BPXD666, server: w.outline-vpn.cloud, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: w.outline-vpn.cloud}}, udp: true}
+  - {name: 🇺🇸 US 26|TG@BPXD666, server: 172.67.229.35, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
+  - {name: 🇺🇸 US 27|TG@BPXD666, server: 172.67.229.19, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
+  - {name: 🇺🇸 US 28|TG@BPXD666, server: 172.67.175.56, port: 443, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: 🇺🇸 US 29|TG@BPXD666, server: 172.67.229.25, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
+  - {name: 🇺🇸 US 2|TG@BPXD666, server: 104.19.250.15, port: 2052, type: vmess, uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 30|TG@BPXD666, server: 172.67.229.39, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
+  - {name: 🇺🇸 US 31|TG@BPXD666, server: 172.67.71.160, port: 443, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: 🇺🇸 US 32|TG@BPXD666, server: upload.ir, port: 443, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: upload.ir}}, udp: true}
+  - {name: 🇺🇸 US 33|TG@BPXD666, server: hms08.gwdef.sbs, port: 443, type: vmess, uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: hms08.gwdef.sbs}}, udp: true}
+  - {name: 🇺🇸 US 34|TG@BPXD666, server: 107.174.96.19, port: 45034, type: vmess, uuid: 9ec680fc-988f-4e9b-a6da-ca257e418160, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /9ec680fc}, udp: true}
+  - {name: 🇺🇸 US 35|TG@BPXD666, server: 172.67.193.36, port: 80, type: vmess, uuid: 92da030f-e7be-40dd-b18a-dc830327c0c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 🇺🇸 US 36|TG@BPXD666, server: 38.46.0.206, port: 45979, type: vmess, uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test}, udp: true}
+  - {name: 🇺🇸 US 37|TG@BPXD666, server: 104.19.45.54, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 38|TG@BPXD666, server: 104.19.45.121, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 39|TG@BPXD666, server: 104.19.45.86, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇺🇸 US 3|TG@BPXD666, server: 104.18.19.191, port: 2052, type: vmess, uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 40|TG@BPXD666, server: upload.ir, port: 80, type: vmess, uuid: 06c2b568-b7df-4e80-9031-c83569397db4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: upload.ir}}, udp: true}
-  - {name: 🇺🇸 US 41|TG@BPXD666, server: 94.131.14.177, port: 80, type: vmess, uuid: ea2928cb-f9cc-4747-ab60-d23abe3ba1e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 🇺🇸 US 42|TG@BPXD666, server: zula.ir, port: 80, type: vmess, uuid: c9e99213-170b-458a-b45b-79454ac7cf4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: zula.ir}}, udp: true}
-  - {name: 🇺🇸 US 43|TG@BPXD666, server: 47.242.22.171, port: 28681, type: vmess, uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 44|TG@BPXD666, server: 104.21.8.157, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 45|TG@BPXD666, server: 38.75.137.27, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 46|TG@BPXD666, server: de01.iepl1.me, port: 8880, type: vmess, uuid: 97b317b9-6abe-4f52-ab69-7bbc40883e86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /CAT, headers: {Host: de01.iepl1.me}}, udp: true}
-  - {name: 🇺🇸 US 47|TG@BPXD666, server: hms04.xmivideo.cfd, port: 443, type: vmess, uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: hms04.xmivideo.cfd}}, udp: true}
-  - {name: 🇺🇸 US 48|TG@BPXD666, server: 75.102.51.61, port: 12732, type: vmess, uuid: 191ba971-0f63-402e-bbc9-9e9eb2604b0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 49|TG@BPXD666, server: 207.246.102.64, port: 21636, type: vmess, uuid: 53d57cfb-189f-4a9f-b620-a3ca168b7ac1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 4|TG@BPXD666, server: 104.19.250.15, port: 2052, type: vmess, uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 50|TG@BPXD666, server: 167.179.111.237, port: 14935, type: vmess, uuid: e961894f-8e90-472f-98d3-09402e4be453, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 51|TG@BPXD666, server: 94.131.8.32, port: 80, type: vmess, uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 🇺🇸 US 52|TG@BPXD666, server: 172.252.193.222, port: 42358, type: vmess, uuid: 4494a26e-6c20-447e-8535-54c9cbd89423, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 53|TG@BPXD666, server: 129.146.247.135, port: 42598, type: vmess, uuid: 1773b226-0bdb-43c5-87d8-270d26211dda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 54|TG@BPXD666, server: 152.67.218.38, port: 443, type: vmess, uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 55|TG@BPXD666, server: 172.67.164.164, port: 443, type: vmess, uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
-  - {name: 🇺🇸 US 56|TG@BPXD666, server: 104.21.15.212, port: 443, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
-  - {name: 🇺🇸 US 57|TG@BPXD666, server: 129.146.46.181, port: 52408, type: vmess, uuid: a797ff7b-8161-40a6-d577-1b2c213b3885, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 58|TG@BPXD666, server: 207.148.10.248, port: 47918, type: vmess, uuid: 232aeb1e-7d67-4a91-9379-4da1f4917691, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 59|TG@BPXD666, server: sg-full.privateip.net, port: 443, type: trojan, password: 9e21d1ce-7bcf-4733-bc02-f47b1bbc76c4, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 5|TG@BPXD666, server: 107.175.37.186, port: 80, type: vmess, uuid: dccb5580-de8d-4aca-a9a5-f986da33faa6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 60|TG@BPXD666, server: bolder-metal-comma.glitch.me, port: 443, type: vmess, uuid: 83a5c82d-a047-418e-9ad9-6ce8c5aaba59, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /83a5c82d-a047-418e-9ad9-6ce8c5aaba59-vmess, headers: {Host: bolder-metal-comma.glitch.me}}, udp: true}
-  - {name: 🇺🇸 US 61|TG@BPXD666, server: 104.207.143.93, port: 43938, type: vmess, uuid: edfa4166-7eab-4fb8-b323-7882463e2ae0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 62|TG@BPXD666, server: 172.67.207.26, port: 443, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
-  - {name: 🇺🇸 US 63|TG@BPXD666, server: 172.67.166.192, port: 80, type: vmess, uuid: cd1db809-2de0-409c-aef5-861e95eff53e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 🇺🇸 US 64|TG@BPXD666, server: 104.19.49.6, port: 443, type: vmess, uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 65|TG@BPXD666, server: 104.19.49.5, port: 443, type: vmess, uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 66|TG@BPXD666, server: 207.148.8.155, port: 37814, type: vmess, uuid: 5998e8aa-67ad-4167-ecf2-7e767926e8b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 67|TG@BPXD666, server: 104.21.83.108, port: 443, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /link}, udp: true}
-  - {name: 🇺🇸 US 68|TG@BPXD666, server: 144.202.59.26, port: 57061, type: vmess, uuid: e90a1709-fd94-44d3-f809-8849837cc2d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 69|TG@BPXD666, server: 104.21.28.62, port: 443, type: vmess, uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
-  - {name: 🇺🇸 US 6|TG@BPXD666, server: 172.67.229.38, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
-  - {name: 🇺🇸 US 70|TG@BPXD666, server: 45.76.7.99, port: 15927, type: vmess, uuid: 23856d50-3293-4111-d6aa-4c19d53c7c02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 71|TG@BPXD666, server: 104.21.4.6, port: 443, type: vmess, uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
-  - {name: 🇺🇸 US 72|TG@BPXD666, server: 45.77.220.6, port: 31867, type: vmess, uuid: 8e7ee8ac-09fd-41cd-a531-d8b022894b4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 73|TG@BPXD666, server: 45.77.218.99, port: 12810, type: vmess, uuid: 469daa04-235a-47be-fdf8-41a9a72f8be2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 74|TG@BPXD666, server: 45.77.220.169, port: 41207, type: vmess, uuid: dbbd0899-e302-4ad9-e224-c4aa258fb766, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 75|TG@BPXD666, server: 104.207.132.39, port: 13523, type: vmess, uuid: ce7674fe-05f2-4b33-bb4c-4e3b7f0e6ea7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 76|TG@BPXD666, server: 140.82.8.218, port: 25087, type: vmess, uuid: 3e3a4f91-160c-4967-c2d7-5aebf6faf0c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 77|TG@BPXD666, server: 207.148.31.167, port: 30587, type: vmess, uuid: 55219214-9f2d-4914-fbaf-b1b444c85b0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 78|TG@BPXD666, server: 149.28.228.215, port: 22195, type: vmess, uuid: f865bc43-b129-443e-d00a-7d303b25c4a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 79|TG@BPXD666, server: 104.249.173.159, port: 40118, type: vmess, uuid: b89f5af7-e478-4b45-f1d5-1a5481acc15b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 7|TG@BPXD666, server: 172.67.229.33, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
-  - {name: 🇺🇸 US 80|TG@BPXD666, server: 45.77.146.58, port: 22131, type: vmess, uuid: ad42d586-dcd1-4629-d49b-a6f2d821ad39, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 81|TG@BPXD666, server: 66.135.3.168, port: 44990, type: vmess, uuid: 88623615-0713-497a-9233-755a33cc7080, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 82|TG@BPXD666, server: 104.207.133.131, port: 39729, type: vmess, uuid: 70d5375a-d4c2-4cdd-fd69-4f75572e0bcc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 83|TG@BPXD666, server: 149.28.49.174, port: 24663, type: vmess, uuid: 04bf314e-e40a-4d05-9faa-0a6baded2a22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 84|TG@BPXD666, server: 172.67.131.108, port: 443, type: vmess, uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
-  - {name: 🇺🇸 US 85|TG@BPXD666, server: 149.28.58.129, port: 45617, type: vmess, uuid: 59c95ca3-babe-466a-9a5b-4761e575caf8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 86|TG@BPXD666, server: 45.77.105.178, port: 27287, type: vmess, uuid: 5079441f-c2cb-4abf-f7f4-2dd3fe77c03c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 87|TG@BPXD666, server: 149.28.226.202, port: 37985, type: vmess, uuid: a36d5f0e-f529-4c83-9279-f4c4ce557031, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 88|TG@BPXD666, server: 162.251.62.115, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 89|TG@BPXD666, server: 205.164.28.228, port: 60222, type: vmess, uuid: 84134d90-e4fe-4a86-c8d6-4d7bedb3c333, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 🇺🇸 US 8|TG@BPXD666, server: 104.168.50.21, port: 60222, type: vmess, uuid: 84134d90-e4fe-4a86-c8d6-4d7bedb3c333, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 🇺🇸 US 90|TG@BPXD666, server: 104.19.49.9, port: 443, type: vmess, uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 9|TG@BPXD666, server: 172.67.229.34, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
+  - {name: 🇺🇸 US 40|TG@BPXD666, server: 104.19.45.78, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 41|TG@BPXD666, server: 104.19.45.149, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 42|TG@BPXD666, server: 104.19.45.211, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 43|TG@BPXD666, server: 104.19.45.115, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 44|TG@BPXD666, server: 104.19.45.14, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 45|TG@BPXD666, server: 104.19.45.188, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 46|TG@BPXD666, server: 23.94.104.164, port: 60222, type: vmess, uuid: 84134d90-e4fe-4a86-c8d6-4d7bedb3c333, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 🇺🇸 US 47|TG@BPXD666, server: 38.180.98.215, port: 8080, type: vmess, uuid: 773ac60d-36d7-45b5-c99e-a0e3903e2e3a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 48|TG@BPXD666, server: uk-full.privateip.net, port: 443, type: trojan, password: 466cb726-333d-44aa-924f-1f7977e44dbb, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 49|TG@BPXD666, server: 104.21.80.53, port: 2053, type: vmess, uuid: 3ce0722e-1e03-4b05-9875-d7592b6c9f1c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qin20}, udp: true}
+  - {name: 🇺🇸 US 4|TG@BPXD666, server: awskr1.072659.xyz, port: 80, type: vmess, uuid: c21712a5-24f5-41b5-8700-55f1835d0490, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: awskr1.072659.xyz}}, udp: true}
+  - {name: 🇺🇸 US 50|TG@BPXD666, server: 104.19.45.218, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 51|TG@BPXD666, server: 107.174.96.19, port: 45979, type: vmess, uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test}, udp: true}
+  - {name: 🇺🇸 US 52|TG@BPXD666, server: 104.19.45.212, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 53|TG@BPXD666, server: 104.19.45.168, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 54|TG@BPXD666, server: 147.185.161.125, port: 443, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ivideos.sbs/linkws}, udp: true}
+  - {name: 🇺🇸 US 55|TG@BPXD666, server: 104.19.45.181, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 56|TG@BPXD666, server: 104.19.45.237, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 57|TG@BPXD666, server: 104.19.45.189, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 58|TG@BPXD666, server: 104.19.45.58, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 59|TG@BPXD666, server: 104.19.45.220, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 5|TG@BPXD666, server: 104.19.45.47, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 60|TG@BPXD666, server: speed.cloudflare.com, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /XSjeg73o6ZdsheahCb5JG, headers: {Host: speed.cloudflare.com}}, udp: true}
+  - {name: 🇺🇸 US 61|TG@BPXD666, server: 205.164.28.228, port: 29655, type: vmess, uuid: bdd7d510-f28f-4d76-c236-11336fa0386e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bdd7d510}, udp: true}
+  - {name: 🇺🇸 US 62|TG@BPXD666, server: 104.19.45.161, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 63|TG@BPXD666, server: 104.19.45.88, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 64|TG@BPXD666, server: fr-a.yuji2022.eu.org, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /9sTFt5L554kPVWmuJ2k8baS4bEY83PZ66xb4twoBBtsiMPK2b, headers: {Host: fr-a.yuji2022.eu.org}}, udp: true}
+  - {name: 🇺🇸 US 65|TG@BPXD666, server: jiasu.fanmengdas.top, port: 40723, type: vmess, uuid: 9dbdebfe-a557-4c3f-8445-aa3a170ff0af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 66|TG@BPXD666, server: 104.19.45.29, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 67|TG@BPXD666, server: 152.69.197.74, port: 12345, type: vmess, uuid: b8a6bf58-485a-4046-b386-b3661bf65eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bb}, udp: true}
+  - {name: 🇺🇸 US 68|TG@BPXD666, server: 104.21.8.157, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 69|TG@BPXD666, server: db01.iepl1.me, port: 8880, type: vmess, uuid: 97b317b9-6abe-4f52-ab69-7bbc40883e86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /CAT, headers: {Host: db01.iepl1.me}}, udp: true}
+  - {name: 🇺🇸 US 6|TG@BPXD666, server: 104.19.45.70, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 70|TG@BPXD666, server: best-charm-pediatrician.glitch.me, port: 443, type: vmess, uuid: 1d5fb496-19fb-48fb-9880-a147326dee62, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1d5fb496-19fb-48fb-9880-a147326dee62-vmess, headers: {Host: best-charm-pediatrician.glitch.me}}, udp: true}
+  - {name: 🇺🇸 US 71|TG@BPXD666, server: 104.19.40.158, port: 8880, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /d/65dd503.TG.WangCai2.WangCai_8:107690}, udp: true}
+  - {name: 🇺🇸 US 72|TG@BPXD666, server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 73|TG@BPXD666, server: upload.ir, port: 80, type: vmess, uuid: 06c2b568-b7df-4e80-9031-c83569397db4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: upload.ir}}, udp: true}
+  - {name: 🇺🇸 US 74|TG@BPXD666, server: 104.21.25.98, port: 80, type: vmess, uuid: e2e25aa2-aab9-486c-9ab4-495bcbcea4d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 🇺🇸 US 75|TG@BPXD666, server: 104.19.45.158, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 76|TG@BPXD666, server: 192.3.128.88, port: 80, type: vmess, uuid: 3c443a9c-62d2-4719-f9fe-92417715c87b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bb}, udp: true}
+  - {name: 🇺🇸 US 77|TG@BPXD666, server: 104.19.45.148, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 78|TG@BPXD666, server: 104.19.45.154, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 79|TG@BPXD666, server: 104.19.45.172, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 7|TG@BPXD666, server: 104.19.45.250, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 80|TG@BPXD666, server: 94.131.14.177, port: 80, type: vmess, uuid: ea2928cb-f9cc-4747-ab60-d23abe3ba1e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 🇺🇸 US 81|TG@BPXD666, server: 38.75.137.27, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 82|TG@BPXD666, server: 47.242.22.171, port: 28681, type: vmess, uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 83|TG@BPXD666, server: hms04.xmivideo.cfd, port: 443, type: vmess, uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: hms04.xmivideo.cfd}}, udp: true}
+  - {name: 🇺🇸 US 84|TG@BPXD666, server: zula.ir, port: 80, type: vmess, uuid: c9e99213-170b-458a-b45b-79454ac7cf4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: zula.ir}}, udp: true}
+  - {name: 🇺🇸 US 85|TG@BPXD666, server: 207.246.102.64, port: 21636, type: vmess, uuid: 53d57cfb-189f-4a9f-b620-a3ca168b7ac1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 86|TG@BPXD666, server: 75.102.51.61, port: 12732, type: vmess, uuid: 191ba971-0f63-402e-bbc9-9e9eb2604b0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 87|TG@BPXD666, server: 94.131.8.32, port: 80, type: vmess, uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 🇺🇸 US 88|TG@BPXD666, server: 172.252.193.222, port: 42358, type: vmess, uuid: 4494a26e-6c20-447e-8535-54c9cbd89423, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 89|TG@BPXD666, server: 129.146.247.135, port: 42598, type: vmess, uuid: 1773b226-0bdb-43c5-87d8-270d26211dda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 8|TG@BPXD666, server: 104.19.45.8, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 90|TG@BPXD666, server: 207.148.10.248, port: 47918, type: vmess, uuid: 232aeb1e-7d67-4a91-9379-4da1f4917691, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 91|TG@BPXD666, server: ying.iepl1.me, port: 2082, type: vmess, uuid: 860e601f-d15d-480f-9679-078fd50b7326, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/ws?ed=2048", headers: {Host: ying.iepl1.me}}, udp: true}
+  - {name: 🇺🇸 US 92|TG@BPXD666, server: 104.207.143.93, port: 43938, type: vmess, uuid: edfa4166-7eab-4fb8-b323-7882463e2ae0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 93|TG@BPXD666, server: 129.146.46.181, port: 52408, type: vmess, uuid: a797ff7b-8161-40a6-d577-1b2c213b3885, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 94|TG@BPXD666, server: 172.67.164.164, port: 443, type: vmess, uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: 🇺🇸 US 95|TG@BPXD666, server: 152.67.218.38, port: 443, type: vmess, uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 96|TG@BPXD666, server: hms07.xfixedfloat.cfd, port: 443, type: vmess, uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: hms07.xfixedfloat.cfd}}, udp: true}
+  - {name: 🇺🇸 US 97|TG@BPXD666, server: 207.148.8.155, port: 37814, type: vmess, uuid: 5998e8aa-67ad-4167-ecf2-7e767926e8b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 98|TG@BPXD666, server: 172.67.166.192, port: 80, type: vmess, uuid: cd1db809-2de0-409c-aef5-861e95eff53e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 🇺🇸 US 99|TG@BPXD666, server: 104.21.83.108, port: 443, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /link}, udp: true}
+  - {name: 🇺🇸 US 9|TG@BPXD666, server: 104.19.45.213, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -345,8 +381,6 @@ proxy-groups:
     type: select
     proxies:
       - IT 1|TG@BPXD666
-      - IT 2|TG@BPXD666
-      - LT 1|TG@BPXD666
       - LV 1|TG@BPXD666
       - NO 1|TG@BPXD666
       - NO 2|TG@BPXD666
@@ -372,9 +406,8 @@ proxy-groups:
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
-      - 🇭🇰 HK 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇰🇷 KR 1|TG@BPXD666
+      - 🇯🇵 JP 2|TG@BPXD666
       - 🇳🇱 NL 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇷🇺 RU 2|TG@BPXD666
@@ -385,8 +418,38 @@ proxy-groups:
       - 🇷🇺 RU 7|TG@BPXD666
       - 🇷🇺 RU 8|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
+      - 🇺🇸 US 100|TG@BPXD666
+      - 🇺🇸 US 101|TG@BPXD666
+      - 🇺🇸 US 102|TG@BPXD666
+      - 🇺🇸 US 103|TG@BPXD666
+      - 🇺🇸 US 104|TG@BPXD666
+      - 🇺🇸 US 105|TG@BPXD666
+      - 🇺🇸 US 106|TG@BPXD666
+      - 🇺🇸 US 107|TG@BPXD666
+      - 🇺🇸 US 108|TG@BPXD666
+      - 🇺🇸 US 109|TG@BPXD666
       - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 110|TG@BPXD666
+      - 🇺🇸 US 111|TG@BPXD666
+      - 🇺🇸 US 112|TG@BPXD666
+      - 🇺🇸 US 113|TG@BPXD666
+      - 🇺🇸 US 114|TG@BPXD666
+      - 🇺🇸 US 115|TG@BPXD666
+      - 🇺🇸 US 116|TG@BPXD666
+      - 🇺🇸 US 117|TG@BPXD666
+      - 🇺🇸 US 118|TG@BPXD666
+      - 🇺🇸 US 119|TG@BPXD666
       - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 120|TG@BPXD666
+      - 🇺🇸 US 121|TG@BPXD666
+      - 🇺🇸 US 122|TG@BPXD666
+      - 🇺🇸 US 123|TG@BPXD666
+      - 🇺🇸 US 124|TG@BPXD666
+      - 🇺🇸 US 125|TG@BPXD666
+      - 🇺🇸 US 126|TG@BPXD666
+      - 🇺🇸 US 127|TG@BPXD666
+      - 🇺🇸 US 128|TG@BPXD666
+      - 🇺🇸 US 129|TG@BPXD666
       - 🇺🇸 US 12|TG@BPXD666
       - 🇺🇸 US 13|TG@BPXD666
       - 🇺🇸 US 14|TG@BPXD666
@@ -474,6 +537,15 @@ proxy-groups:
       - 🇺🇸 US 89|TG@BPXD666
       - 🇺🇸 US 8|TG@BPXD666
       - 🇺🇸 US 90|TG@BPXD666
+      - 🇺🇸 US 91|TG@BPXD666
+      - 🇺🇸 US 92|TG@BPXD666
+      - 🇺🇸 US 93|TG@BPXD666
+      - 🇺🇸 US 94|TG@BPXD666
+      - 🇺🇸 US 95|TG@BPXD666
+      - 🇺🇸 US 96|TG@BPXD666
+      - 🇺🇸 US 97|TG@BPXD666
+      - 🇺🇸 US 98|TG@BPXD666
+      - 🇺🇸 US 99|TG@BPXD666
       - 🇺🇸 US 9|TG@BPXD666
   - name: 💡 自动选择
     type: url-test
@@ -482,8 +554,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - IT 1|TG@BPXD666
-      - IT 2|TG@BPXD666
-      - LT 1|TG@BPXD666
       - LV 1|TG@BPXD666
       - NO 1|TG@BPXD666
       - NO 2|TG@BPXD666
@@ -509,9 +579,8 @@ proxy-groups:
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
-      - 🇭🇰 HK 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇰🇷 KR 1|TG@BPXD666
+      - 🇯🇵 JP 2|TG@BPXD666
       - 🇳🇱 NL 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇷🇺 RU 2|TG@BPXD666
@@ -522,8 +591,38 @@ proxy-groups:
       - 🇷🇺 RU 7|TG@BPXD666
       - 🇷🇺 RU 8|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
+      - 🇺🇸 US 100|TG@BPXD666
+      - 🇺🇸 US 101|TG@BPXD666
+      - 🇺🇸 US 102|TG@BPXD666
+      - 🇺🇸 US 103|TG@BPXD666
+      - 🇺🇸 US 104|TG@BPXD666
+      - 🇺🇸 US 105|TG@BPXD666
+      - 🇺🇸 US 106|TG@BPXD666
+      - 🇺🇸 US 107|TG@BPXD666
+      - 🇺🇸 US 108|TG@BPXD666
+      - 🇺🇸 US 109|TG@BPXD666
       - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 110|TG@BPXD666
+      - 🇺🇸 US 111|TG@BPXD666
+      - 🇺🇸 US 112|TG@BPXD666
+      - 🇺🇸 US 113|TG@BPXD666
+      - 🇺🇸 US 114|TG@BPXD666
+      - 🇺🇸 US 115|TG@BPXD666
+      - 🇺🇸 US 116|TG@BPXD666
+      - 🇺🇸 US 117|TG@BPXD666
+      - 🇺🇸 US 118|TG@BPXD666
+      - 🇺🇸 US 119|TG@BPXD666
       - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 120|TG@BPXD666
+      - 🇺🇸 US 121|TG@BPXD666
+      - 🇺🇸 US 122|TG@BPXD666
+      - 🇺🇸 US 123|TG@BPXD666
+      - 🇺🇸 US 124|TG@BPXD666
+      - 🇺🇸 US 125|TG@BPXD666
+      - 🇺🇸 US 126|TG@BPXD666
+      - 🇺🇸 US 127|TG@BPXD666
+      - 🇺🇸 US 128|TG@BPXD666
+      - 🇺🇸 US 129|TG@BPXD666
       - 🇺🇸 US 12|TG@BPXD666
       - 🇺🇸 US 13|TG@BPXD666
       - 🇺🇸 US 14|TG@BPXD666
@@ -611,6 +710,15 @@ proxy-groups:
       - 🇺🇸 US 89|TG@BPXD666
       - 🇺🇸 US 8|TG@BPXD666
       - 🇺🇸 US 90|TG@BPXD666
+      - 🇺🇸 US 91|TG@BPXD666
+      - 🇺🇸 US 92|TG@BPXD666
+      - 🇺🇸 US 93|TG@BPXD666
+      - 🇺🇸 US 94|TG@BPXD666
+      - 🇺🇸 US 95|TG@BPXD666
+      - 🇺🇸 US 96|TG@BPXD666
+      - 🇺🇸 US 97|TG@BPXD666
+      - 🇺🇸 US 98|TG@BPXD666
+      - 🇺🇸 US 99|TG@BPXD666
       - 🇺🇸 US 9|TG@BPXD666
   - name: 🇭🇰 香港节点
     type: url-test
@@ -618,7 +726,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇭🇰 HK 1|TG@BPXD666
+      - DIRECT
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -626,14 +734,45 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇯🇵 JP 1|TG@BPXD666
+      - 🇯🇵 JP 2|TG@BPXD666
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
+      - 🇺🇸 US 100|TG@BPXD666
+      - 🇺🇸 US 101|TG@BPXD666
+      - 🇺🇸 US 102|TG@BPXD666
+      - 🇺🇸 US 103|TG@BPXD666
+      - 🇺🇸 US 104|TG@BPXD666
+      - 🇺🇸 US 105|TG@BPXD666
+      - 🇺🇸 US 106|TG@BPXD666
+      - 🇺🇸 US 107|TG@BPXD666
+      - 🇺🇸 US 108|TG@BPXD666
+      - 🇺🇸 US 109|TG@BPXD666
       - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 110|TG@BPXD666
+      - 🇺🇸 US 111|TG@BPXD666
+      - 🇺🇸 US 112|TG@BPXD666
+      - 🇺🇸 US 113|TG@BPXD666
+      - 🇺🇸 US 114|TG@BPXD666
+      - 🇺🇸 US 115|TG@BPXD666
+      - 🇺🇸 US 116|TG@BPXD666
+      - 🇺🇸 US 117|TG@BPXD666
+      - 🇺🇸 US 118|TG@BPXD666
+      - 🇺🇸 US 119|TG@BPXD666
       - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 120|TG@BPXD666
+      - 🇺🇸 US 121|TG@BPXD666
+      - 🇺🇸 US 122|TG@BPXD666
+      - 🇺🇸 US 123|TG@BPXD666
+      - 🇺🇸 US 124|TG@BPXD666
+      - 🇺🇸 US 125|TG@BPXD666
+      - 🇺🇸 US 126|TG@BPXD666
+      - 🇺🇸 US 127|TG@BPXD666
+      - 🇺🇸 US 128|TG@BPXD666
+      - 🇺🇸 US 129|TG@BPXD666
       - 🇺🇸 US 12|TG@BPXD666
       - 🇺🇸 US 13|TG@BPXD666
       - 🇺🇸 US 14|TG@BPXD666
@@ -721,6 +860,15 @@ proxy-groups:
       - 🇺🇸 US 89|TG@BPXD666
       - 🇺🇸 US 8|TG@BPXD666
       - 🇺🇸 US 90|TG@BPXD666
+      - 🇺🇸 US 91|TG@BPXD666
+      - 🇺🇸 US 92|TG@BPXD666
+      - 🇺🇸 US 93|TG@BPXD666
+      - 🇺🇸 US 94|TG@BPXD666
+      - 🇺🇸 US 95|TG@BPXD666
+      - 🇺🇸 US 96|TG@BPXD666
+      - 🇺🇸 US 97|TG@BPXD666
+      - 🇺🇸 US 98|TG@BPXD666
+      - 🇺🇸 US 99|TG@BPXD666
       - 🇺🇸 US 9|TG@BPXD666
   - name: 🇹🇼 台湾节点
     type: url-test
@@ -742,13 +890,11 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇰🇷 KR 1|TG@BPXD666
+      - DIRECT
   - name: 🌍 其他地区
     type: select
     proxies:
       - IT 1|TG@BPXD666
-      - IT 2|TG@BPXD666
-      - LT 1|TG@BPXD666
       - LV 1|TG@BPXD666
       - NO 1|TG@BPXD666
       - NO 2|TG@BPXD666
@@ -774,9 +920,8 @@ proxy-groups:
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
-      - 🇭🇰 HK 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇰🇷 KR 1|TG@BPXD666
+      - 🇯🇵 JP 2|TG@BPXD666
       - 🇳🇱 NL 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇷🇺 RU 2|TG@BPXD666
@@ -787,8 +932,38 @@ proxy-groups:
       - 🇷🇺 RU 7|TG@BPXD666
       - 🇷🇺 RU 8|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
+      - 🇺🇸 US 100|TG@BPXD666
+      - 🇺🇸 US 101|TG@BPXD666
+      - 🇺🇸 US 102|TG@BPXD666
+      - 🇺🇸 US 103|TG@BPXD666
+      - 🇺🇸 US 104|TG@BPXD666
+      - 🇺🇸 US 105|TG@BPXD666
+      - 🇺🇸 US 106|TG@BPXD666
+      - 🇺🇸 US 107|TG@BPXD666
+      - 🇺🇸 US 108|TG@BPXD666
+      - 🇺🇸 US 109|TG@BPXD666
       - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 110|TG@BPXD666
+      - 🇺🇸 US 111|TG@BPXD666
+      - 🇺🇸 US 112|TG@BPXD666
+      - 🇺🇸 US 113|TG@BPXD666
+      - 🇺🇸 US 114|TG@BPXD666
+      - 🇺🇸 US 115|TG@BPXD666
+      - 🇺🇸 US 116|TG@BPXD666
+      - 🇺🇸 US 117|TG@BPXD666
+      - 🇺🇸 US 118|TG@BPXD666
+      - 🇺🇸 US 119|TG@BPXD666
       - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 120|TG@BPXD666
+      - 🇺🇸 US 121|TG@BPXD666
+      - 🇺🇸 US 122|TG@BPXD666
+      - 🇺🇸 US 123|TG@BPXD666
+      - 🇺🇸 US 124|TG@BPXD666
+      - 🇺🇸 US 125|TG@BPXD666
+      - 🇺🇸 US 126|TG@BPXD666
+      - 🇺🇸 US 127|TG@BPXD666
+      - 🇺🇸 US 128|TG@BPXD666
+      - 🇺🇸 US 129|TG@BPXD666
       - 🇺🇸 US 12|TG@BPXD666
       - 🇺🇸 US 13|TG@BPXD666
       - 🇺🇸 US 14|TG@BPXD666
@@ -876,6 +1051,15 @@ proxy-groups:
       - 🇺🇸 US 89|TG@BPXD666
       - 🇺🇸 US 8|TG@BPXD666
       - 🇺🇸 US 90|TG@BPXD666
+      - 🇺🇸 US 91|TG@BPXD666
+      - 🇺🇸 US 92|TG@BPXD666
+      - 🇺🇸 US 93|TG@BPXD666
+      - 🇺🇸 US 94|TG@BPXD666
+      - 🇺🇸 US 95|TG@BPXD666
+      - 🇺🇸 US 96|TG@BPXD666
+      - 🇺🇸 US 97|TG@BPXD666
+      - 🇺🇸 US 98|TG@BPXD666
+      - 🇺🇸 US 99|TG@BPXD666
       - 🇺🇸 US 9|TG@BPXD666
   - name: 🪜 故障转移
     type: fallback
@@ -884,8 +1068,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - IT 1|TG@BPXD666
-      - IT 2|TG@BPXD666
-      - LT 1|TG@BPXD666
       - LV 1|TG@BPXD666
       - NO 1|TG@BPXD666
       - NO 2|TG@BPXD666
@@ -911,9 +1093,8 @@ proxy-groups:
       - 🇫🇷 FR 1|TG@BPXD666
       - 🇬🇧 GB 1|TG@BPXD666
       - 🇬🇧 GB 2|TG@BPXD666
-      - 🇭🇰 HK 1|TG@BPXD666
       - 🇯🇵 JP 1|TG@BPXD666
-      - 🇰🇷 KR 1|TG@BPXD666
+      - 🇯🇵 JP 2|TG@BPXD666
       - 🇳🇱 NL 1|TG@BPXD666
       - 🇷🇺 RU 1|TG@BPXD666
       - 🇷🇺 RU 2|TG@BPXD666
@@ -924,8 +1105,38 @@ proxy-groups:
       - 🇷🇺 RU 7|TG@BPXD666
       - 🇷🇺 RU 8|TG@BPXD666
       - 🇸🇬 SG 1|TG@BPXD666
+      - 🇺🇸 US 100|TG@BPXD666
+      - 🇺🇸 US 101|TG@BPXD666
+      - 🇺🇸 US 102|TG@BPXD666
+      - 🇺🇸 US 103|TG@BPXD666
+      - 🇺🇸 US 104|TG@BPXD666
+      - 🇺🇸 US 105|TG@BPXD666
+      - 🇺🇸 US 106|TG@BPXD666
+      - 🇺🇸 US 107|TG@BPXD666
+      - 🇺🇸 US 108|TG@BPXD666
+      - 🇺🇸 US 109|TG@BPXD666
       - 🇺🇸 US 10|TG@BPXD666
+      - 🇺🇸 US 110|TG@BPXD666
+      - 🇺🇸 US 111|TG@BPXD666
+      - 🇺🇸 US 112|TG@BPXD666
+      - 🇺🇸 US 113|TG@BPXD666
+      - 🇺🇸 US 114|TG@BPXD666
+      - 🇺🇸 US 115|TG@BPXD666
+      - 🇺🇸 US 116|TG@BPXD666
+      - 🇺🇸 US 117|TG@BPXD666
+      - 🇺🇸 US 118|TG@BPXD666
+      - 🇺🇸 US 119|TG@BPXD666
       - 🇺🇸 US 11|TG@BPXD666
+      - 🇺🇸 US 120|TG@BPXD666
+      - 🇺🇸 US 121|TG@BPXD666
+      - 🇺🇸 US 122|TG@BPXD666
+      - 🇺🇸 US 123|TG@BPXD666
+      - 🇺🇸 US 124|TG@BPXD666
+      - 🇺🇸 US 125|TG@BPXD666
+      - 🇺🇸 US 126|TG@BPXD666
+      - 🇺🇸 US 127|TG@BPXD666
+      - 🇺🇸 US 128|TG@BPXD666
+      - 🇺🇸 US 129|TG@BPXD666
       - 🇺🇸 US 12|TG@BPXD666
       - 🇺🇸 US 13|TG@BPXD666
       - 🇺🇸 US 14|TG@BPXD666
@@ -1013,6 +1224,15 @@ proxy-groups:
       - 🇺🇸 US 89|TG@BPXD666
       - 🇺🇸 US 8|TG@BPXD666
       - 🇺🇸 US 90|TG@BPXD666
+      - 🇺🇸 US 91|TG@BPXD666
+      - 🇺🇸 US 92|TG@BPXD666
+      - 🇺🇸 US 93|TG@BPXD666
+      - 🇺🇸 US 94|TG@BPXD666
+      - 🇺🇸 US 95|TG@BPXD666
+      - 🇺🇸 US 96|TG@BPXD666
+      - 🇺🇸 US 97|TG@BPXD666
+      - 🇺🇸 US 98|TG@BPXD666
+      - 🇺🇸 US 99|TG@BPXD666
       - 🇺🇸 US 9|TG@BPXD666
   - name: 👉 国内网站
     type: select
